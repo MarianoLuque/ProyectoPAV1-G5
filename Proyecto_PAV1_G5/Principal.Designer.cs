@@ -47,7 +47,7 @@
             // 
             this.btn_clientes.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_clientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_clientes.BackgroundImage")));
-            this.btn_clientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_clientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_clientes.FlatAppearance.BorderSize = 0;
             this.btn_clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clientes.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -65,6 +65,7 @@
             // 
             this.btn_proveedores.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_proveedores.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_proveedores.BackgroundImage")));
+            this.btn_proveedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_proveedores.FlatAppearance.BorderSize = 0;
             this.btn_proveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_proveedores.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -82,6 +83,7 @@
             // 
             this.btn_articulos.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_articulos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_articulos.BackgroundImage")));
+            this.btn_articulos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_articulos.FlatAppearance.BorderSize = 0;
             this.btn_articulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_articulos.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,6 +101,7 @@
             // 
             this.btn_equipos.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_equipos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_equipos.BackgroundImage")));
+            this.btn_equipos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_equipos.FlatAppearance.BorderSize = 0;
             this.btn_equipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_equipos.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,7 +119,7 @@
             // 
             this.btn_compras.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_compras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_compras.BackgroundImage")));
-            this.btn_compras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_compras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_compras.FlatAppearance.BorderSize = 0;
             this.btn_compras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_compras.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,6 +136,7 @@
             // 
             this.btn_ventas.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_ventas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ventas.BackgroundImage")));
+            this.btn_ventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_ventas.FlatAppearance.BorderSize = 0;
             this.btn_ventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ventas.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,7 +171,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,6 +189,7 @@
             // 
             this.btn_formas_de_pago.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_formas_de_pago.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_formas_de_pago.BackgroundImage")));
+            this.btn_formas_de_pago.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_formas_de_pago.FlatAppearance.BorderSize = 0;
             this.btn_formas_de_pago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_formas_de_pago.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,6 +224,7 @@
             // 
             this.btn_rubros.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_rubros.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_rubros.BackgroundImage")));
+            this.btn_rubros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_rubros.FlatAppearance.BorderSize = 0;
             this.btn_rubros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_rubros.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
