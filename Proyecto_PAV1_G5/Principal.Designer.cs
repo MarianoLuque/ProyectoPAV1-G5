@@ -56,7 +56,7 @@
             this.btn_clientes.Name = "btn_clientes";
             this.btn_clientes.Size = new System.Drawing.Size(300, 200);
             this.btn_clientes.TabIndex = 0;
-            this.btn_clientes.Text = "Clientes";
+            this.btn_clientes.Text = " ";
             this.btn_clientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_clientes.UseVisualStyleBackColor = false;
             this.btn_clientes.Click += new System.EventHandler(this.btn_clientes_Click);
@@ -73,7 +73,7 @@
             this.btn_proveedores.Name = "btn_proveedores";
             this.btn_proveedores.Size = new System.Drawing.Size(300, 200);
             this.btn_proveedores.TabIndex = 0;
-            this.btn_proveedores.Text = "Proveedores";
+            this.btn_proveedores.Text = " ";
             this.btn_proveedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_proveedores.UseVisualStyleBackColor = false;
             this.btn_proveedores.Click += new System.EventHandler(this.btn_proveedores_Click);
@@ -90,7 +90,7 @@
             this.btn_articulos.Name = "btn_articulos";
             this.btn_articulos.Size = new System.Drawing.Size(300, 200);
             this.btn_articulos.TabIndex = 0;
-            this.btn_articulos.Text = "Artículos";
+            this.btn_articulos.Text = " ";
             this.btn_articulos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_articulos.UseVisualStyleBackColor = false;
             this.btn_articulos.Click += new System.EventHandler(this.btn_articulos_Click);
@@ -107,7 +107,7 @@
             this.btn_equipos.Name = "btn_equipos";
             this.btn_equipos.Size = new System.Drawing.Size(300, 200);
             this.btn_equipos.TabIndex = 0;
-            this.btn_equipos.Text = "Equipos";
+            this.btn_equipos.Text = " ";
             this.btn_equipos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_equipos.UseVisualStyleBackColor = false;
             this.btn_equipos.Click += new System.EventHandler(this.btn_equipos_Click);
@@ -125,7 +125,7 @@
             this.btn_compras.Name = "btn_compras";
             this.btn_compras.Size = new System.Drawing.Size(300, 200);
             this.btn_compras.TabIndex = 0;
-            this.btn_compras.Text = "Compras";
+            this.btn_compras.Text = " ";
             this.btn_compras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_compras.UseVisualStyleBackColor = false;
             // 
@@ -141,7 +141,7 @@
             this.btn_ventas.Name = "btn_ventas";
             this.btn_ventas.Size = new System.Drawing.Size(300, 200);
             this.btn_ventas.TabIndex = 0;
-            this.btn_ventas.Text = "Ventas";
+            this.btn_ventas.Text = " ";
             this.btn_ventas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ventas.UseVisualStyleBackColor = false;
             // 
@@ -158,7 +158,7 @@
             this.btn_empleados.Name = "btn_empleados";
             this.btn_empleados.Size = new System.Drawing.Size(300, 200);
             this.btn_empleados.TabIndex = 1;
-            this.btn_empleados.Text = "Empleados";
+            this.btn_empleados.Text = " ";
             this.btn_empleados.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_empleados.UseVisualStyleBackColor = false;
             this.btn_empleados.Click += new System.EventHandler(this.btn_empleados_Click);
@@ -176,7 +176,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(300, 200);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Categorías";
+            this.button2.Text = " ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.btn_categorias);
@@ -193,7 +193,7 @@
             this.btn_formas_de_pago.Name = "btn_formas_de_pago";
             this.btn_formas_de_pago.Size = new System.Drawing.Size(300, 200);
             this.btn_formas_de_pago.TabIndex = 0;
-            this.btn_formas_de_pago.Text = "Formas de pago";
+            this.btn_formas_de_pago.Text = " ";
             this.btn_formas_de_pago.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_formas_de_pago.UseVisualStyleBackColor = false;
             this.btn_formas_de_pago.Click += new System.EventHandler(this.btn_formas_de_pago_Click);
@@ -211,7 +211,7 @@
             this.btn_estadisticas.Name = "btn_estadisticas";
             this.btn_estadisticas.Size = new System.Drawing.Size(300, 200);
             this.btn_estadisticas.TabIndex = 0;
-            this.btn_estadisticas.Text = "Estadísticas";
+            this.btn_estadisticas.Text = " ";
             this.btn_estadisticas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_estadisticas.UseVisualStyleBackColor = false;
             // 
@@ -227,7 +227,7 @@
             this.btn_rubros.Name = "btn_rubros";
             this.btn_rubros.Size = new System.Drawing.Size(300, 200);
             this.btn_rubros.TabIndex = 0;
-            this.btn_rubros.Text = "Rubros";
+            this.btn_rubros.Text = " ";
             this.btn_rubros.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_rubros.UseVisualStyleBackColor = false;
             this.btn_rubros.Click += new System.EventHandler(this.btn_rubros_Click);
@@ -245,7 +245,7 @@
             this.btn_listados.Name = "btn_listados";
             this.btn_listados.Size = new System.Drawing.Size(300, 200);
             this.btn_listados.TabIndex = 1;
-            this.btn_listados.Text = "Listados";
+            this.btn_listados.Text = " ";
             this.btn_listados.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_listados.UseVisualStyleBackColor = false;
             // 
