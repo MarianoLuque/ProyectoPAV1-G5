@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BD1085E-5125-493B-BFC1-76817D533675}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_PAV1_G5</RootNamespace>
+    <AssemblyName>Proyecto_PAV1_G5</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABM\Articulos\Frm_ABMArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Articulos\Frm_ABMArticulos.Designer.cs">
+      <DependentUpon>Frm_ABMArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Articulos\Frm_AltaArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Articulos\Frm_AltaArticulo.Designer.cs">
+      <DependentUpon>Frm_AltaArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Articulos\Frm_BajaArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Articulos\Frm_BajaArticulo.Designer.cs">
+      <DependentUpon>Frm_BajaArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Articulos\Frm_ModificacionArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Articulos\Frm_ModificacionArticulo.Designer.cs">
+      <DependentUpon>Frm_ModificacionArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Categoria\Frm_ABMCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Categoria\Frm_ABMCategoria.Designer.cs">
+      <DependentUpon>Frm_ABMCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Categoria\Frm_AltaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Categoria\Frm_AltaCategoria.Designer.cs">
+      <DependentUpon>Frm_AltaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Categoria\Frm_BajaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Categoria\Frm_BajaCategoria.Designer.cs">
+      <DependentUpon>Frm_BajaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Categoria\Frm_ModificacionCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Categoria\Frm_ModificacionCategoria.Designer.cs">
+      <DependentUpon>Frm_ModificacionCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Clientes\Frm_ABMClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Clientes\Frm_ABMClientes.Designer.cs">
+      <DependentUpon>Frm_ABMClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Clientes\Frm_AltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Clientes\Frm_AltaCliente.Designer.cs">
+      <DependentUpon>Frm_AltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Clientes\Frm_BajaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Clientes\Frm_BajaCliente.Designer.cs">
+      <DependentUpon>Frm_BajaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Clientes\Frm_ModificacionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Clientes\Frm_ModificacionCliente.Designer.cs">
+      <DependentUpon>Frm_ModificacionCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Empleados\Frm_ABMEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Empleados\Frm_ABMEmpleados.Designer.cs">
+      <DependentUpon>Frm_ABMEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Empleados\Frm_AltaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Empleados\Frm_AltaEmpleado.Designer.cs">
+      <DependentUpon>Frm_AltaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Empleados\Frm_BajaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Empleados\Frm_BajaEmpleado.Designer.cs">
+      <DependentUpon>Frm_BajaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Empleados\Frm_ModificacionEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Empleados\Frm_ModificacionEmpleado.Designer.cs">
+      <DependentUpon>Frm_ModificacionEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipoEspecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipoEspecial.Designer.cs">
+      <DependentUpon>Frm_ABMEquipoEspecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_ABMEquipoSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_ABMEquipoSimple.Designer.cs">
+      <DependentUpon>Frm_ABMEquipoSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Equipos\Frm_Equipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Equipos\Frm_Equipos.Designer.cs">
+      <DependentUpon>Frm_Equipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\FormasPago\Frm_ABMFormasPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\FormasPago\Frm_ABMFormasPago.Designer.cs">
+      <DependentUpon>Frm_ABMFormasPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Proveedores\Frm_ABMProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Proveedores\Frm_ABMProveedores.Designer.cs">
+      <DependentUpon>Frm_ABMProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Rubros\Frm_ABMRubros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Rubros\Frm_ABMRubros.Designer.cs">
+      <DependentUpon>Frm_ABMRubros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ABM\Articulos\Frm_ABMArticulos.resx">
+      <DependentUpon>Frm_ABMArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Categoria\Frm_ABMCategoria.resx">
+      <DependentUpon>Frm_ABMCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Clientes\Frm_ABMClientes.resx">
+      <DependentUpon>Frm_ABMClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Empleados\Frm_ABMEmpleados.resx">
+      <DependentUpon>Frm_ABMEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipoEspecial.resx">
+      <DependentUpon>Frm_ABMEquipoEspecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Equipos\Equipos_Simples\Frm_ABMEquipoSimple.resx">
+      <DependentUpon>Frm_ABMEquipoSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Equipos\Frm_Equipos.resx">
+      <DependentUpon>Frm_Equipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\FormasPago\Frm_ABMFormasPago.resx">
+      <DependentUpon>Frm_ABMFormasPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Proveedores\Frm_ABMProveedores.resx">
+      <DependentUpon>Frm_ABMProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Rubros\Frm_ABMRubros.resx">
+      <DependentUpon>Frm_ABMRubros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Boton Compras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Boton Factura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes y Estadísticas\Estadísticas\" />
+    <Folder Include="Reportes y Estadísticas\Listados\" />
+    <Folder Include="Transacciones\Compras\" />
+    <Folder Include="Transacciones\Ventas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012-medal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001--add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\017-background-check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-contract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015-analysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-desktop-computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\022-illustration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\022-illustration1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
