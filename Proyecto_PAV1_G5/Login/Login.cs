@@ -55,6 +55,7 @@ namespace Proyecto_PAV1_G5
 
             Principal principal = new Principal();
             principal.ShowDialog();
+            this.Close();
         }
 
         private void btn_Ver_Contraeña_Click(object sender, EventArgs e)

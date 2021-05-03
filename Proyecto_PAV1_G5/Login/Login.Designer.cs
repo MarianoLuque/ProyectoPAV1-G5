@@ -154,6 +154,7 @@
             this.btn_Ver_Contraeña.Name = "btn_Ver_Contraeña";
             this.btn_Ver_Contraeña.Size = new System.Drawing.Size(26, 24);
             this.btn_Ver_Contraeña.TabIndex = 12;
+            this.toolTip1.SetToolTip(this.btn_Ver_Contraeña, "Ver contraseña");
             this.btn_Ver_Contraeña.UseVisualStyleBackColor = true;
             this.btn_Ver_Contraeña.Click += new System.EventHandler(this.btn_Ver_Contraeña_Click);
             // 
