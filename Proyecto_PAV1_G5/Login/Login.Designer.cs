@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -119,28 +120,32 @@
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.BackColor = System.Drawing.Color.Red;
+            this.btn_cancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.BackgroundImage")));
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_cancelar.Location = new System.Drawing.Point(19, 285);
+            this.btn_cancelar.Location = new System.Drawing.Point(19, 289);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(0);
             this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(88, 35);
+            this.btn_cancelar.Size = new System.Drawing.Size(105, 28);
             this.btn_cancelar.TabIndex = 9;
-            this.btn_cancelar.Text = "Cancelar";
             this.toolTip1.SetToolTip(this.btn_cancelar, "Cerrar el formulario de Logueo");
             this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_aceptar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_aceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_aceptar.BackgroundImage")));
+            this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_aceptar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_aceptar.Location = new System.Drawing.Point(145, 285);
+            this.btn_aceptar.Location = new System.Drawing.Point(137, 289);
+            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(0);
             this.btn_aceptar.Name = "btn_aceptar";
-            this.btn_aceptar.Size = new System.Drawing.Size(88, 35);
+            this.btn_aceptar.Size = new System.Drawing.Size(105, 28);
             this.btn_aceptar.TabIndex = 11;
-            this.btn_aceptar.Text = "Aceptar";
             this.toolTip1.SetToolTip(this.btn_aceptar, "Una vez ingresado el usuario y contraseña, lo va a llevar a la pantalla principal" +
         "");
             this.btn_aceptar.UseVisualStyleBackColor = false;
