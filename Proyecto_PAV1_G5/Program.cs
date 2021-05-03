@@ -24,10 +24,10 @@ namespace Proyecto_PAV1_G5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            //Application.Run(new Principal());
             //Application.Run(new Frm_ABMArticulos());
             //Application.Run(new Frm_ABMCategoria());
-
+            Application.Run(new Frm_Login());
         }
     }
 }
