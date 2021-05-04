@@ -15,7 +15,7 @@ namespace Proyecto_PAV1_G5.BackEnd
 
         private void conectar()
         {
-            conexion.ConnectionString = "Data Source=200.69.137.167,11333;Initial Catalog=BD3K6G05_2021;Persist Security Info=True;User ID=BD3K6G05_2021;Password=***********";
+            conexion.ConnectionString = "Data Source=200.69.137.167,11333;Initial Catalog=BD3K6G05_2021;Persist Security Info=True;User ID=BD3K6G05_2021;Password=BDG05_9852";
             conexion.Open();
             cmd.Connection = conexion;
             cmd.CommandType = CommandType.Text;

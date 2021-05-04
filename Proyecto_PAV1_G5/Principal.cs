@@ -44,7 +44,7 @@ namespace Proyecto_PAV1_G5
 
         private void btn_clientes_Click(object sender, EventArgs e)
         {
-            Clientes clientes = new Clientes();
+            Frm_ABMClientes clientes = new Frm_ABMClientes();
             clientes.ShowDialog();
         }
 

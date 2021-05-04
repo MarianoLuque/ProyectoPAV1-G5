@@ -179,6 +179,14 @@
       <DependentUpon>Frm_ABMRubros.cs</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\Acceso_Datos.cs" />
+    <Compile Include="Clases\ComboBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\Estructura_ComboBox.cs" />
+    <Compile Include="Clases\TextBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\Tratamientos_Especiales.cs" />
     <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Clientes\Frm_ABMClientes.resx">
       <DependentUpon>Frm_ABMClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Clientes\Frm_AltaCliente.resx">
+      <DependentUpon>Frm_AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Empleados\Frm_ABMEmpleados.resx">
       <DependentUpon>Frm_ABMEmpleados.cs</DependentUpon>

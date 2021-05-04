@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_PAV1_G5.ABM.Clientes
 {
-    partial class Clientes
+    partial class Frm_ABMClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABMClientes));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_AltaCliente = new System.Windows.Forms.Button();
+            this.btn_ModificarCliente = new System.Windows.Forms.Button();
+            this.btn_EliminarCliente = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -64,38 +64,41 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Clientes";
             // 
-            // button1
+            // btn_AltaCliente
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(119, 519);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 30);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_AltaCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_AltaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AltaCliente.Location = new System.Drawing.Point(119, 519);
+            this.btn_AltaCliente.Name = "btn_AltaCliente";
+            this.btn_AltaCliente.Size = new System.Drawing.Size(100, 30);
+            this.btn_AltaCliente.TabIndex = 5;
+            this.btn_AltaCliente.Text = "Agregar";
+            this.btn_AltaCliente.UseVisualStyleBackColor = true;
+            this.btn_AltaCliente.Click += new System.EventHandler(this.btn_AltaCliente_Click);
             // 
-            // button2
+            // btn_ModificarCliente
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(355, 519);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 30);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_ModificarCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_ModificarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ModificarCliente.Location = new System.Drawing.Point(355, 519);
+            this.btn_ModificarCliente.Name = "btn_ModificarCliente";
+            this.btn_ModificarCliente.Size = new System.Drawing.Size(100, 30);
+            this.btn_ModificarCliente.TabIndex = 9;
+            this.btn_ModificarCliente.Text = "Editar";
+            this.btn_ModificarCliente.UseVisualStyleBackColor = true;
+            this.btn_ModificarCliente.Click += new System.EventHandler(this.btn_ModificarCliente_Click);
             // 
-            // button3
+            // btn_EliminarCliente
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(591, 519);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 30);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_EliminarCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_EliminarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EliminarCliente.Location = new System.Drawing.Point(591, 519);
+            this.btn_EliminarCliente.Name = "btn_EliminarCliente";
+            this.btn_EliminarCliente.Size = new System.Drawing.Size(100, 30);
+            this.btn_EliminarCliente.TabIndex = 11;
+            this.btn_EliminarCliente.Text = "Eliminar";
+            this.btn_EliminarCliente.UseVisualStyleBackColor = true;
+            this.btn_EliminarCliente.Click += new System.EventHandler(this.btn_EliminarCliente_Click);
             // 
             // pictureBox4
             // 
@@ -137,23 +140,23 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // Clientes
+            // Frm_ABMClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_EliminarCliente);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_ModificarCliente);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_AltaCliente);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Clientes";
+            this.Name = "Frm_ABMClientes";
             this.Text = "Frm_ABMCliente";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -170,11 +173,11 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_AltaCliente;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_ModificarCliente;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_EliminarCliente;
     }
 }
