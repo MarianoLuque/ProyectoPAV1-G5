@@ -16,5 +16,21 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         {
             InitializeComponent();
         }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_guardar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea guardar los cambios en el artículo?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)==DialogResult.OK)
+            {
+                if (MessageBox.Show("El artículo se modificó correctamente", "Aviso", MessageBoxButtons.OK)==DialogResult.OK)
+                {
+                    this.Close();
+                }
+            }
+        }
     }
 }

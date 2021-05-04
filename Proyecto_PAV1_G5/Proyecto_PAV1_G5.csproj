@@ -205,6 +205,15 @@
     <EmbeddedResource Include="ABM\Articulos\Frm_ABMArticulos.resx">
       <DependentUpon>Frm_ABMArticulos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Articulos\Frm_AltaArticulo.resx">
+      <DependentUpon>Frm_AltaArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Articulos\Frm_BajaArticulo.resx">
+      <DependentUpon>Frm_BajaArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Articulos\Frm_ModificacionArticulo.resx">
+      <DependentUpon>Frm_ModificacionArticulo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ABM\Categoria\Frm_ABMCategoria.resx">
       <DependentUpon>Frm_ABMCategoria.cs</DependentUpon>
     </EmbeddedResource>

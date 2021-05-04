@@ -16,5 +16,21 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         {
             InitializeComponent();
         }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("¿Está seguro que desea eliminar el artículo?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)==DialogResult.OK)
+            {
+                if (MessageBox.Show("El artículo se eliminó correctamente", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    this.Close();
+                }
+            }
+        }
     }
 }
