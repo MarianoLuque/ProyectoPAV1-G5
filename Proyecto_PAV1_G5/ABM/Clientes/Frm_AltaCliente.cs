@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_PAV1_G5.Clases;
 using Proyecto_PAV1_G5.Negocios;
-using Proyecto_PAV1_G5.BackEnd;
 
 namespace Proyecto_PAV1_G5.ABM.Clientes
 {
@@ -40,10 +39,8 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
                 NE_Clientes cliente = new NE_Clientes();
 
 
-
-
                 cliente.Insertar(this.Controls);
-
+                MessageBox.Show("El cliente se registró con éxito");
             }
             else
             {

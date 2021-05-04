@@ -10,9 +10,10 @@ namespace Proyecto_PAV1_G5.Clases
 {
     class ComboBox01 : ComboBox
     {
-        public string Pp_Pk { get; set; }
-        public string Pp_descripcion { get; set; }
-        public string Pp_tabla { get; set; }
+        //Creo que se pueden sacar las 3 primeras Pp
+        //public string Pp_Pk { get; set; }
+        //public string Pp_descripcion { get; set; }
+        //public string Pp_tabla { get; set; }
         public bool Pp_Conseleccion { get; set; }
         public bool Pp_Validable { get; set; }
         public string Pp_MensajeError { get; set; }

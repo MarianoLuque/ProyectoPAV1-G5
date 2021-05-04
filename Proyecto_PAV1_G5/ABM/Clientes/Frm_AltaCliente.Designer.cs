@@ -160,10 +160,10 @@
             // 
             this.txt_legajo_vendedor.Location = new System.Drawing.Point(309, 386);
             this.txt_legajo_vendedor.Name = "txt_legajo_vendedor";
-            this.txt_legajo_vendedor.Pp_campo = null;
-            this.txt_legajo_vendedor.Pp_MensajeError = null;
+            this.txt_legajo_vendedor.Pp_campo = "legajo_vendedor_asignado";
+            this.txt_legajo_vendedor.Pp_MensajeError = "Falta cargar el legajo del vendedor asignado al cliente";
             this.txt_legajo_vendedor.Pp_tabla = null;
-            this.txt_legajo_vendedor.Pp_Validable = false;
+            this.txt_legajo_vendedor.Pp_Validable = true;
             this.txt_legajo_vendedor.Size = new System.Drawing.Size(233, 26);
             this.txt_legajo_vendedor.TabIndex = 5;
             // 
@@ -171,10 +171,10 @@
             // 
             this.txt_credito_limite.Location = new System.Drawing.Point(309, 337);
             this.txt_credito_limite.Name = "txt_credito_limite";
-            this.txt_credito_limite.Pp_campo = null;
-            this.txt_credito_limite.Pp_MensajeError = null;
+            this.txt_credito_limite.Pp_campo = "credito_limite";
+            this.txt_credito_limite.Pp_MensajeError = "Falta cargar el credito limite del cliente";
             this.txt_credito_limite.Pp_tabla = null;
-            this.txt_credito_limite.Pp_Validable = false;
+            this.txt_credito_limite.Pp_Validable = true;
             this.txt_credito_limite.Size = new System.Drawing.Size(233, 26);
             this.txt_credito_limite.TabIndex = 5;
             // 
@@ -182,10 +182,10 @@
             // 
             this.txt_numero_calle.Location = new System.Drawing.Point(309, 289);
             this.txt_numero_calle.Name = "txt_numero_calle";
-            this.txt_numero_calle.Pp_campo = null;
-            this.txt_numero_calle.Pp_MensajeError = null;
+            this.txt_numero_calle.Pp_campo = "nro_calle";
+            this.txt_numero_calle.Pp_MensajeError = "Falta cargar el numero de calle del cliente";
             this.txt_numero_calle.Pp_tabla = null;
-            this.txt_numero_calle.Pp_Validable = false;
+            this.txt_numero_calle.Pp_Validable = true;
             this.txt_numero_calle.Size = new System.Drawing.Size(233, 26);
             this.txt_numero_calle.TabIndex = 5;
             // 
@@ -193,10 +193,10 @@
             // 
             this.txt_calle.Location = new System.Drawing.Point(309, 241);
             this.txt_calle.Name = "txt_calle";
-            this.txt_calle.Pp_campo = null;
-            this.txt_calle.Pp_MensajeError = null;
+            this.txt_calle.Pp_campo = "calle";
+            this.txt_calle.Pp_MensajeError = "Falta cargar la calle del cliente";
             this.txt_calle.Pp_tabla = null;
-            this.txt_calle.Pp_Validable = false;
+            this.txt_calle.Pp_Validable = true;
             this.txt_calle.Size = new System.Drawing.Size(233, 26);
             this.txt_calle.TabIndex = 5;
             // 
@@ -204,10 +204,10 @@
             // 
             this.txt_nombre_contacto.Location = new System.Drawing.Point(309, 145);
             this.txt_nombre_contacto.Name = "txt_nombre_contacto";
-            this.txt_nombre_contacto.Pp_campo = null;
-            this.txt_nombre_contacto.Pp_MensajeError = null;
+            this.txt_nombre_contacto.Pp_campo = "nombre_contacto";
+            this.txt_nombre_contacto.Pp_MensajeError = "Falta cargar el nombre de contacto del cliente";
             this.txt_nombre_contacto.Pp_tabla = null;
-            this.txt_nombre_contacto.Pp_Validable = false;
+            this.txt_nombre_contacto.Pp_Validable = true;
             this.txt_nombre_contacto.Size = new System.Drawing.Size(233, 26);
             this.txt_nombre_contacto.TabIndex = 5;
             // 
@@ -215,10 +215,10 @@
             // 
             this.txt_razon_social.Location = new System.Drawing.Point(309, 97);
             this.txt_razon_social.Name = "txt_razon_social";
-            this.txt_razon_social.Pp_campo = null;
-            this.txt_razon_social.Pp_MensajeError = null;
+            this.txt_razon_social.Pp_campo = "razon_social";
+            this.txt_razon_social.Pp_MensajeError = "Falta cargar la razon social del cliente";
             this.txt_razon_social.Pp_tabla = null;
-            this.txt_razon_social.Pp_Validable = false;
+            this.txt_razon_social.Pp_Validable = true;
             this.txt_razon_social.Size = new System.Drawing.Size(233, 26);
             this.txt_razon_social.TabIndex = 5;
             // 
@@ -226,10 +226,10 @@
             // 
             this.txt_cuit.Location = new System.Drawing.Point(309, 48);
             this.txt_cuit.Name = "txt_cuit";
-            this.txt_cuit.Pp_campo = null;
-            this.txt_cuit.Pp_MensajeError = null;
+            this.txt_cuit.Pp_campo = "cuit_clientes";
+            this.txt_cuit.Pp_MensajeError = "Falta cargar el cuit del cliente";
             this.txt_cuit.Pp_tabla = null;
-            this.txt_cuit.Pp_Validable = false;
+            this.txt_cuit.Pp_Validable = true;
             this.txt_cuit.Size = new System.Drawing.Size(233, 26);
             this.txt_cuit.TabIndex = 5;
             // 
@@ -240,11 +240,11 @@
             this.cmb_barrios.Name = "cmb_barrios";
             this.cmb_barrios.Pp_Conseleccion = false;
             this.cmb_barrios.Pp_descripcion = null;
-            this.cmb_barrios.Pp_MensajeError = null;
-            this.cmb_barrios.Pp_NombreCampo = null;
+            this.cmb_barrios.Pp_MensajeError = "Falta cargar el barrio del cliente";
+            this.cmb_barrios.Pp_NombreCampo = "id_barrio";
             this.cmb_barrios.Pp_Pk = null;
             this.cmb_barrios.Pp_tabla = null;
-            this.cmb_barrios.Pp_Validable = false;
+            this.cmb_barrios.Pp_Validable = true;
             this.cmb_barrios.Size = new System.Drawing.Size(233, 28);
             this.cmb_barrios.TabIndex = 3;
             // 
@@ -274,6 +274,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Frm_AltaCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_AltaCliente";
             this.Load += new System.EventHandler(this.Frm_AltaCliente_Load);
             this.ResumeLayout(false);

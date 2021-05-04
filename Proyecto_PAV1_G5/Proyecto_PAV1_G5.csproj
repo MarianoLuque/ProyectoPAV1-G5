@@ -231,6 +231,12 @@
     <EmbeddedResource Include="ABM\Clientes\Frm_AltaCliente.resx">
       <DependentUpon>Frm_AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Clientes\Frm_BajaCliente.resx">
+      <DependentUpon>Frm_BajaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Clientes\Frm_ModificacionCliente.resx">
+      <DependentUpon>Frm_ModificacionCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ABM\Empleados\Frm_ABMEmpleados.resx">
       <DependentUpon>Frm_ABMEmpleados.cs</DependentUpon>
     </EmbeddedResource>

@@ -76,7 +76,7 @@ namespace Proyecto_PAV1_G5.Clases
                 }
 
             }
-            sql += paqueteColumnas + ") VALUES (" + paqueteValores + ") ";
+            sql += paqueteColumnas + ") VALUES (" + paqueteValores + ")";
             return sql;
         }
 
@@ -118,6 +118,7 @@ namespace Proyecto_PAV1_G5.Clases
                 case "Int16":
                 case "Int32":
                 case "Int64":
+                case "Decimal":
                     return valorColumna;
                 default:
                     return valorColumna;
