@@ -125,7 +125,7 @@
             this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_cancelar.Location = new System.Drawing.Point(19, 289);
+            this.btn_cancelar.Location = new System.Drawing.Point(128, 289);
             this.btn_cancelar.Margin = new System.Windows.Forms.Padding(0);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(105, 28);
@@ -141,7 +141,7 @@
             this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_aceptar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_aceptar.Location = new System.Drawing.Point(137, 289);
+            this.btn_aceptar.Location = new System.Drawing.Point(20, 289);
             this.btn_aceptar.Margin = new System.Windows.Forms.Padding(0);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(105, 28);
@@ -153,15 +153,17 @@
             // 
             // btn_Ver_Contraeña
             // 
-            this.btn_Ver_Contraeña.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources.Visualizar_Contraseña;
+            this.btn_Ver_Contraeña.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Ver_Contraeña.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Ver_Contraeña.BackgroundImage")));
             this.btn_Ver_Contraeña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Ver_Contraeña.Location = new System.Drawing.Point(240, 230);
+            this.btn_Ver_Contraeña.Location = new System.Drawing.Point(240, 228);
             this.btn_Ver_Contraeña.Name = "btn_Ver_Contraeña";
-            this.btn_Ver_Contraeña.Size = new System.Drawing.Size(26, 24);
+            this.btn_Ver_Contraeña.Size = new System.Drawing.Size(34, 26);
             this.btn_Ver_Contraeña.TabIndex = 12;
             this.toolTip1.SetToolTip(this.btn_Ver_Contraeña, "Ver contraseña");
-            this.btn_Ver_Contraeña.UseVisualStyleBackColor = true;
+            this.btn_Ver_Contraeña.UseVisualStyleBackColor = false;
             this.btn_Ver_Contraeña.Click += new System.EventHandler(this.btn_Ver_Contraeña_Click);
+            this.btn_Ver_Contraeña.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Ver_Contraeña_MouseClick);
             // 
             // pictureBox1
             // 

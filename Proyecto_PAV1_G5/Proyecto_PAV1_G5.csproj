@@ -178,6 +178,7 @@
     <Compile Include="ABM\Rubros\Frm_ABMRubros.Designer.cs">
       <DependentUpon>Frm_ABMRubros.cs</DependentUpon>
     </Compile>
+    <Compile Include="BackEnd\Acceso_Datos.cs" />
     <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +186,14 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\NE_Login.cs" />
+    <Compile Include="Negocios\NE_Articulos.cs" />
+    <Compile Include="Negocios\NE_Categoria.cs" />
+    <Compile Include="Negocios\NE_Clientes.cs" />
+    <Compile Include="Negocios\NE_Empleados.cs" />
+    <Compile Include="Negocios\NE_Equipos.cs" />
+    <Compile Include="Negocios\NE_FormasPago.cs" />
+    <Compile Include="Negocios\NE_Proveedores.cs" />
+    <Compile Include="Negocios\NE_Rubros.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,6 +314,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Visualizar Contraseña.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\visto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

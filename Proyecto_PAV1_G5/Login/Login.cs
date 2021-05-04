@@ -60,6 +60,7 @@ namespace Proyecto_PAV1_G5
 
         private void btn_Ver_Contraeña_Click(object sender, EventArgs e)
         {
+            
             if (txt_password.PasswordChar == '*')
             {
                 txt_password.PasswordChar = '\0';
@@ -68,6 +69,12 @@ namespace Proyecto_PAV1_G5
             {
                 txt_password.PasswordChar = '*';
             }
+
+        }
+
+        private void btn_Ver_Contraeña_MouseClick(object sender, MouseEventArgs e)
+        {
+            btn_Ver_Contraeña.BackgroundImage = Image.FromFile("C:\\Users\\NAFEVI\\Documents\\GitHub\\ProyectoPAV1-G5\\Proyecto_PAV1_G5\\Resources\\visto.png");
         }
     }
 }
