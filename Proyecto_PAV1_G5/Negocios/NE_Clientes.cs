@@ -27,7 +27,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
             edc.Value = "id_barrio";
             edc.Display = "nombre_barrio";
-            edc.Sql = "SELECT * FROM Barrios";
+            edc.Sql = "SELECT * FROM Barrios ";
             edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
 
             return edc;

@@ -76,7 +76,7 @@ namespace Proyecto_PAV1_G5.Clases
                 }
 
             }
-            sql += paqueteColumnas + ") VALUES (" + paqueteValores + ")";
+            sql += paqueteColumnas + ") VALUES (" + paqueteValores + ") ";
             return sql;
         }
 
