@@ -33,10 +33,10 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD.Insertar(tratamiento.ConstructorInsertar("Articulos", controles));
         }
 
-        //public void Modificar(string ValorPk, Control.ControlCollection controles)
-        //{
-        //    _BD.Modificar(tratamiento.ConstructorModificar("Articulos", ValorPk, controles));
-        //}
+        public void Modificar(string[] ValorPk, Control.ControlCollection controles)
+        {
+            _BD.Modificar(tratamiento.ConstructorModificar("Articulos", ValorPk, controles));
+        }
 
         public DataTable RecuperarTodos()
         {
@@ -73,10 +73,10 @@ namespace Proyecto_PAV1_G5.Negocios
             return _BD.Ejecutar_Select(sql);
         }
 
-        public DataTable Recuperar_x_Cuit_Array(string cuit)
+        public DataTable RecuperarCodigo(string[] codigo)
         {
 
-            string sql = "SELECT c.* FROM Clientes c WHERE c.cuit_clientes = " + cuit[0];
+            string sql = "SELECT c.* FROM Clientes c WHERE c.cuit_clientes = " + codigo[0];
             return _BD.Ejecutar_Select(sql);
         }
 

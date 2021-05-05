@@ -13,6 +13,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
 {
     public partial class Frm_ABMArticulos : Form
     {
+        public string[] Pp_codigo_articulo { get; set; }
         public Frm_ABMArticulos()
         {
             InitializeComponent();
@@ -46,6 +47,9 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         private void btn_modificararticulo_Click(object sender, EventArgs e)
         {
             Frm_ModificacionArticulo modifArt = new Frm_ModificacionArticulo();
+            string[] Pp_codigo_articulo = new string[1];
+            Pp_codigo_articulo[0] = grid_articulos.CurrentRow.Cells["Column1"].Value.ToString();
+            modifArt.Pp_codigo_articulo = Pp_codigo_articulo;
             modifArt.ShowDialog();
         }
 

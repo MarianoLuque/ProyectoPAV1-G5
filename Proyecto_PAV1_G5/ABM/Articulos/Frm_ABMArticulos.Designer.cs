@@ -75,7 +75,6 @@
             this.grid_articulos.ReadOnly = true;
             this.grid_articulos.Size = new System.Drawing.Size(760, 254);
             this.grid_articulos.TabIndex = 0;
-            this.grid_articulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_articulos_CellDoubleClick);
             // 
             // Column1
             // 
