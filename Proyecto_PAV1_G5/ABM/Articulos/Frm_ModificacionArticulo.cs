@@ -42,16 +42,11 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
             }
         }
 
-        private void Frm_ModificacionCliente_Load(object sender, EventArgs e)
-        {
-            cmb_pais.CargarCombo(art.DatosCombo());
-            MostrarDatos(art.RecuperarCodigo(Pp_codigo_articulo));
-        }
-
         private void MostrarDatos(DataTable tabla)
         {
             cmb_pais.SelectedValue = int.Parse(tabla.Rows[0]["id_pais"].ToString());
             txt_nombre.Text = tabla.Rows[0]["nombre_articulo"].ToString();
+            txt_descripcion.Text = tabla.Rows[0]["descripcion"].ToString();
             txt_stock.Text = tabla.Rows[0]["cantidad_stock"].ToString();
             txt_costomay.Text = tabla.Rows[0]["costo_mayorista"].ToString();
             txt_costomin.Text = tabla.Rows[0]["costo_minorista"].ToString();
@@ -63,6 +58,12 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         private void btn_cancelar_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Frm_ModificacionArticulo_Load(object sender, EventArgs e)
+        {
+            cmb_pais.CargarCombo(art.DatosCombo());
+            MostrarDatos(art.RecuperarCodigo(Pp_codigo_articulo));
         }
     }
 }

@@ -38,6 +38,11 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD.Modificar(tratamiento.ConstructorModificar("Articulos", ValorPk, controles));
         }
 
+        public void Eliminar(string[] ValorPk, Control.ControlCollection controles)
+        {
+            _BD.Borrar(tratamiento.ConstructorEliminar("Articulos", ValorPk, controles));
+        }
+
         public DataTable RecuperarTodos()
         {
             string sql = @"SELECT a.*, p.razon_social"
@@ -76,7 +81,7 @@ namespace Proyecto_PAV1_G5.Negocios
         public DataTable RecuperarCodigo(string[] codigo)
         {
 
-            string sql = "SELECT c.* FROM Clientes c WHERE c.cuit_clientes = " + codigo[0];
+            string sql = "SELECT a.* FROM Articulos a WHERE a.codigo_articulo = " + codigo[0];
             return _BD.Ejecutar_Select(sql);
         }
 

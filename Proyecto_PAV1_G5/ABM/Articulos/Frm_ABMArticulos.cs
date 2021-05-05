@@ -56,6 +56,9 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         private void btn_bajaarticulo_Click(object sender, EventArgs e)
         {
             Frm_BajaArticulo bajaArt = new Frm_BajaArticulo();
+            string[] Pp_codigo_articulo = new string[1];
+            Pp_codigo_articulo[0] = grid_articulos.CurrentRow.Cells["Column1"].Value.ToString();
+            bajaArt.Pp_codigo_articulo = Pp_codigo_articulo;
             bajaArt.ShowDialog();
         }
 

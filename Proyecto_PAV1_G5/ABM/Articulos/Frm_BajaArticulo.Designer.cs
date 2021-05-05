@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_agregar = new System.Windows.Forms.Button();
+            this.btn_aceptar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,15 +50,16 @@
             this.txt_descripcion = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.SuspendLayout();
             // 
-            // btn_agregar
+            // btn_aceptar
             // 
-            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
-            this.btn_agregar.Location = new System.Drawing.Point(160, 448);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(99, 30);
-            this.btn_agregar.TabIndex = 2;
-            this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
+            this.btn_aceptar.Location = new System.Drawing.Point(160, 448);
+            this.btn_aceptar.Name = "btn_aceptar";
+            this.btn_aceptar.Size = new System.Drawing.Size(99, 30);
+            this.btn_aceptar.TabIndex = 2;
+            this.btn_aceptar.Text = "Aceptar";
+            this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // btn_cancelar
             // 
@@ -162,7 +163,6 @@
             // 
             // txt_plazopago
             // 
-            this.txt_plazopago.Enabled = false;
             this.txt_plazopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_plazopago.Location = new System.Drawing.Point(158, 392);
             this.txt_plazopago.Margin = new System.Windows.Forms.Padding(5);
@@ -170,12 +170,12 @@
             this.txt_plazopago.Pp_campo = "plazo_pago";
             this.txt_plazopago.Pp_MensajeError = null;
             this.txt_plazopago.Pp_Validable = true;
+            this.txt_plazopago.ReadOnly = true;
             this.txt_plazopago.Size = new System.Drawing.Size(100, 26);
             this.txt_plazopago.TabIndex = 32;
             // 
             // txt_envio
             // 
-            this.txt_envio.Enabled = false;
             this.txt_envio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_envio.Location = new System.Drawing.Point(158, 356);
             this.txt_envio.Margin = new System.Windows.Forms.Padding(5);
@@ -183,12 +183,12 @@
             this.txt_envio.Pp_campo = "tiempo_envio";
             this.txt_envio.Pp_MensajeError = null;
             this.txt_envio.Pp_Validable = true;
+            this.txt_envio.ReadOnly = true;
             this.txt_envio.Size = new System.Drawing.Size(229, 26);
             this.txt_envio.TabIndex = 31;
             // 
             // txt_cuit
             // 
-            this.txt_cuit.Enabled = false;
             this.txt_cuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_cuit.Location = new System.Drawing.Point(159, 320);
             this.txt_cuit.Margin = new System.Windows.Forms.Padding(5);
@@ -196,6 +196,7 @@
             this.txt_cuit.Pp_campo = "cuit_proveedor";
             this.txt_cuit.Pp_MensajeError = null;
             this.txt_cuit.Pp_Validable = true;
+            this.txt_cuit.ReadOnly = true;
             this.txt_cuit.Size = new System.Drawing.Size(100, 26);
             this.txt_cuit.TabIndex = 30;
             // 
@@ -216,7 +217,6 @@
             // 
             // txt_stock
             // 
-            this.txt_stock.Enabled = false;
             this.txt_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_stock.Location = new System.Drawing.Point(159, 145);
             this.txt_stock.Margin = new System.Windows.Forms.Padding(5);
@@ -224,12 +224,12 @@
             this.txt_stock.Pp_campo = "cantidad_stock";
             this.txt_stock.Pp_MensajeError = null;
             this.txt_stock.Pp_Validable = true;
+            this.txt_stock.ReadOnly = true;
             this.txt_stock.Size = new System.Drawing.Size(233, 26);
             this.txt_stock.TabIndex = 18;
             // 
             // txt_costomin
             // 
-            this.txt_costomin.Enabled = false;
             this.txt_costomin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_costomin.Location = new System.Drawing.Point(159, 217);
             this.txt_costomin.Margin = new System.Windows.Forms.Padding(5);
@@ -237,12 +237,12 @@
             this.txt_costomin.Pp_campo = "costo_minorista";
             this.txt_costomin.Pp_MensajeError = null;
             this.txt_costomin.Pp_Validable = true;
+            this.txt_costomin.ReadOnly = true;
             this.txt_costomin.Size = new System.Drawing.Size(233, 26);
             this.txt_costomin.TabIndex = 17;
             // 
             // txt_costomay
             // 
-            this.txt_costomay.Enabled = false;
             this.txt_costomay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_costomay.Location = new System.Drawing.Point(159, 181);
             this.txt_costomay.Margin = new System.Windows.Forms.Padding(5);
@@ -250,12 +250,12 @@
             this.txt_costomay.Pp_campo = "costo_mayorista";
             this.txt_costomay.Pp_MensajeError = null;
             this.txt_costomay.Pp_Validable = true;
+            this.txt_costomay.ReadOnly = true;
             this.txt_costomay.Size = new System.Drawing.Size(233, 26);
             this.txt_costomay.TabIndex = 16;
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Enabled = false;
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_nombre.Location = new System.Drawing.Point(159, 24);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(5);
@@ -263,12 +263,12 @@
             this.txt_nombre.Pp_campo = "nombre_articulo";
             this.txt_nombre.Pp_MensajeError = null;
             this.txt_nombre.Pp_Validable = true;
+            this.txt_nombre.ReadOnly = true;
             this.txt_nombre.Size = new System.Drawing.Size(233, 26);
             this.txt_nombre.TabIndex = 15;
             // 
             // txt_descripcion
             // 
-            this.txt_descripcion.Enabled = false;
             this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_descripcion.Location = new System.Drawing.Point(159, 60);
             this.txt_descripcion.Margin = new System.Windows.Forms.Padding(5);
@@ -277,6 +277,7 @@
             this.txt_descripcion.Pp_campo = "descripcion";
             this.txt_descripcion.Pp_MensajeError = null;
             this.txt_descripcion.Pp_Validable = true;
+            this.txt_descripcion.ReadOnly = true;
             this.txt_descripcion.Size = new System.Drawing.Size(233, 75);
             this.txt_descripcion.TabIndex = 13;
             // 
@@ -303,19 +304,20 @@
             this.Controls.Add(this.txt_costomay);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.btn_agregar);
+            this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.txt_descripcion);
             this.MaximizeBox = false;
             this.Name = "Frm_BajaArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Artículo";
+            this.Load += new System.EventHandler(this.Frm_BajaArticulo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btn_agregar;
+        private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Button btn_cancelar;
         private Clases.TextBox01 txt_descripcion;
         private Clases.TextBox01 txt_nombre;

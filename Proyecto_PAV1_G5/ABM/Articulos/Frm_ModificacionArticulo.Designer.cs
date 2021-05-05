@@ -301,6 +301,7 @@
             this.Name = "Frm_ModificacionArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar Artículo";
+            this.Load += new System.EventHandler(this.Frm_ModificacionArticulo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
