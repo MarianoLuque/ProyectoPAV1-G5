@@ -172,7 +172,7 @@ namespace Proyecto_PAV1_G5.Clases
                         + "join INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE Col "
                         + "on Col.Constraint_Name = Tab.Constraint_Name "
                         + "and Col.Table_Name = Tab.Table_Name "
-                        + "where Constraint_Type = 'PRIMARY KEY' and Col.CONSTRAINT_NAME = " + NombreTabla;
+                        + "where Constraint_Type = 'PRIMARY KEY' and Col.CONSTRAINT_NAME = 'PK_" + NombreTabla + "'";
             return _BD.Ejecutar_Select(sql);
         }
 

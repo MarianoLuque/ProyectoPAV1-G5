@@ -97,7 +97,6 @@ C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_AltaArticulo.resources
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_BajaArticulo.resources
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ABMCategoria.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Clientes.resources
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ABMEmpleados.resources
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_ABMEquipoEspecial.resources
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_ABMEquipoSimple.resources
@@ -139,3 +138,7 @@ D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Pr
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_BajaCliente.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ModificacionCliente.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ABMClientes.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_AltaCliente.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_BajaCliente.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ModificacionCliente.resources

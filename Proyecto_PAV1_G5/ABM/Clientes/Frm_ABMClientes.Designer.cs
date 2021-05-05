@@ -40,9 +40,6 @@
             this.btn_consultar = new System.Windows.Forms.Button();
             this.txt_patron_razon_social = new System.Windows.Forms.TextBox();
             this.grid_Clientes = new System.Windows.Forms.DataGridView();
-            this.txt_patron_cuit = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.Cuit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Razon_social = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +51,9 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_patron_cuit = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -187,32 +187,6 @@
             this.grid_Clientes.ReadOnly = true;
             this.grid_Clientes.Size = new System.Drawing.Size(735, 279);
             this.grid_Clientes.TabIndex = 16;
-            this.grid_Clientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Clientes_CellClick);
-            // 
-            // txt_patron_cuit
-            // 
-            this.txt_patron_cuit.Location = new System.Drawing.Point(196, 167);
-            this.txt_patron_cuit.Name = "txt_patron_cuit";
-            this.txt_patron_cuit.Size = new System.Drawing.Size(192, 20);
-            this.txt_patron_cuit.TabIndex = 15;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(116, 131);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Razon social";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(152, 170);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "CUIT";
             // 
             // Cuit
             // 
@@ -279,6 +253,31 @@
             this.Column9.HeaderText = "Vendedor asignado";
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
+            // 
+            // txt_patron_cuit
+            // 
+            this.txt_patron_cuit.Location = new System.Drawing.Point(196, 167);
+            this.txt_patron_cuit.Name = "txt_patron_cuit";
+            this.txt_patron_cuit.Size = new System.Drawing.Size(192, 20);
+            this.txt_patron_cuit.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(116, 131);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Razon social";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(152, 170);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "CUIT";
             // 
             // Frm_ABMClientes
             // 

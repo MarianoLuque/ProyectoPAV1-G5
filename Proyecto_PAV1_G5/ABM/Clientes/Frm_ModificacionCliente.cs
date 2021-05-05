@@ -31,7 +31,10 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
 
 
                 cliente.Modificar(Pp_cuit_clientes, this.Controls);
-                MessageBox.Show("El cliente se modificó con éxito");
+                if (MessageBox.Show("El cliente se modificó con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    this.Close();
+                }
             }
             else
             {

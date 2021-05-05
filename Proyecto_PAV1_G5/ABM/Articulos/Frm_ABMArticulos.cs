@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_PAV1_G5.Negocios;
 
 namespace Proyecto_PAV1_G5.ABM.Articulos
 {
@@ -23,6 +24,47 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
             altaArt.ShowDialog();
         }
 
+        private void CargarGrilla(DataTable tabla)
+        {
+            //Voy a recorrer la tabla con su contenido para cargar la grilla
+            grid_articulos.Rows.Clear();
+
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                grid_articulos.Rows.Add();
+                grid_articulos.Rows[i].Cells[0].Value = tabla.Rows[i]["codigo_articulo"].ToString();
+                grid_articulos.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_articulo"].ToString();
+                grid_articulos.Rows[i].Cells[2].Value = tabla.Rows[i]["descripcion"].ToString();
+                grid_articulos.Rows[i].Cells[3].Value = tabla.Rows[i]["cantidad_stock"].ToString();
+                grid_articulos.Rows[i].Cells[4].Value = tabla.Rows[i]["costo_mayorista"].ToString();
+                grid_articulos.Rows[i].Cells[5].Value = tabla.Rows[i]["costo_minorista"].ToString();
+                grid_articulos.Rows[i].Cells[6].Value = tabla.Rows[i]["cuit_proveedor"].ToString();
+            }
+
+        }
+
+        private void btn_consultar_Click(object sender, EventArgs e)
+        {
+            NE_Articulos art = new NE_Articulos();
+
+            if (txt_codigo.Text == "" && txt_nombre.Text == "")
+            {
+                CargarGrilla(art.RecuperarTodos());
+            }
+            if (txt_codigo.Text != "" && txt_nombre.Text != "")
+            {
+                CargarGrilla(art.Recuperar_Mixto(txt_codigo.Text, txt_nombre.Text));
+                return;
+            }
+            if (txt_codigo.Text != "")
+            {
+                CargarGrilla(art.Recuperar_x_Codigo(txt_codigo.Text));
+            }
+            if (txt_nombre.Text != "")
+            {
+                CargarGrilla(art.Recuperar_x_Nombre(txt_nombre.Text));
+            }
+        }
         private void btn_modificararticulo_Click(object sender, EventArgs e)
         {
             Frm_ModificacionArticulo modifArt = new Frm_ModificacionArticulo();
@@ -33,6 +75,11 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         {
             Frm_BajaArticulo bajaArt = new Frm_BajaArticulo();
             bajaArt.ShowDialog();
+        }
+
+        private void grid_articulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

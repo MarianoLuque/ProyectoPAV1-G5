@@ -40,7 +40,10 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
 
 
                 cliente.Insertar(this.Controls);
-                MessageBox.Show("El cliente se registró con éxito");
+                if (MessageBox.Show("El cliente se registró con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    this.Close();
+                }
             }
             else
             {
