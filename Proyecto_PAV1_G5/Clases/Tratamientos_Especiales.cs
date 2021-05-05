@@ -161,7 +161,7 @@ namespace Proyecto_PAV1_G5.Clases
                 string NombrePK = tabla.Rows[0][0].ToString();
                 minisql += NombrePK + " = " + ValorPK[0];
             }
-            string sql = "DELETE * FROM " + NombreTabla + "WHERE " + minisql ;
+            string sql = "DELETE FROM " + NombreTabla + " WHERE " + minisql ;
             return sql;
         }
 

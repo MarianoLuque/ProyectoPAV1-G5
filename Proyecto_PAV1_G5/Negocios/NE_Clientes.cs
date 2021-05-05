@@ -24,6 +24,11 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD.Insertar(tratamiento.ConstructorInsertar("Clientes", controles));
         }
 
+        public void Eliminar(string[] ValorPk, Control.ControlCollection controles)
+        {
+            _BD.Borrar(tratamiento.ConstructorEliminar("Clientes", ValorPk, controles));
+        }
+
         //Con esto hicimos el combobox para el barrio
         Acceso_Datos _BD = new Acceso_Datos();
         public Estructura_ComboBox DatosCombo()

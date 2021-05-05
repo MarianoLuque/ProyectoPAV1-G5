@@ -37,6 +37,9 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
         private void btn_EliminarCliente_Click(object sender, EventArgs e)
         {
             Frm_BajaCliente bajaCliente = new Frm_BajaCliente();
+            string[] Pp_cuit_clientes = new string[1];
+            Pp_cuit_clientes[0] = grid_Clientes.CurrentRow.Cells["Cuit"].Value.ToString();
+            bajaCliente.Pp_cuit_clientes = Pp_cuit_clientes;
             bajaCliente.ShowDialog();
         }
 
