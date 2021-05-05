@@ -43,7 +43,19 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
 
         }
 
-        private void btn_consultar_Click(object sender, EventArgs e)
+        private void btn_modificararticulo_Click(object sender, EventArgs e)
+        {
+            Frm_ModificacionArticulo modifArt = new Frm_ModificacionArticulo();
+            modifArt.ShowDialog();
+        }
+
+        private void btn_bajaarticulo_Click(object sender, EventArgs e)
+        {
+            Frm_BajaArticulo bajaArt = new Frm_BajaArticulo();
+            bajaArt.ShowDialog();
+        }
+
+        private void btn_consultar_Click_1(object sender, EventArgs e)
         {
             NE_Articulos art = new NE_Articulos();
 
@@ -64,17 +76,6 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
             {
                 CargarGrilla(art.Recuperar_x_Nombre(txt_nombre.Text));
             }
-        }
-        private void btn_modificararticulo_Click(object sender, EventArgs e)
-        {
-            Frm_ModificacionArticulo modifArt = new Frm_ModificacionArticulo();
-            modifArt.ShowDialog();
-        }
-
-        private void btn_bajaarticulo_Click(object sender, EventArgs e)
-        {
-            Frm_BajaArticulo bajaArt = new Frm_BajaArticulo();
-            bajaArt.ShowDialog();
         }
 
         private void grid_articulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

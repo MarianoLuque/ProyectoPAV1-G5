@@ -299,7 +299,9 @@
             this.Controls.Add(this.txt_descripcion);
             this.MaximizeBox = false;
             this.Name = "Frm_AltaArticulo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Artículo";
+            this.Load += new System.EventHandler(this.Frm_AltaArticulo_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

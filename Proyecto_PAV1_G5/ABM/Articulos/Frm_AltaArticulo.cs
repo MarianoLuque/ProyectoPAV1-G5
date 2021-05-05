@@ -20,7 +20,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
             InitializeComponent();
         }
 
-        private void Frm_AltaCliente_Load(object sender, EventArgs e)
+        private void Frm_AltaArticulo_Load_1(object sender, EventArgs e)
         {
             cmb_pais.CargarCombo(articulo.DatosCombo());
         }
@@ -50,5 +50,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
                 return;
             }
         }
+
+        
     }
 }

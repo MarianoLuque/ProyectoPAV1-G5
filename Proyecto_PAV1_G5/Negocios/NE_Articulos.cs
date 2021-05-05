@@ -33,10 +33,10 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD.Insertar(tratamiento.ConstructorInsertar("Articulos", controles));
         }
 
-        public void Modificar(string[] ValorPk, Control.ControlCollection controles)
-        {
-            _BD.Modificar(tratamiento.ConstructorModificar("Articulos", ValorPk, controles));
-        }
+        //public void Modificar(string ValorPk, Control.ControlCollection controles)
+        //{
+        //    _BD.Modificar(tratamiento.ConstructorModificar("Articulos", ValorPk, controles));
+        //}
 
         public DataTable RecuperarTodos()
         {
@@ -68,12 +68,12 @@ namespace Proyecto_PAV1_G5.Negocios
             string sql = @"SELECT a.*, p.razon_social"
                         + " FROM Articulos a "
                         + " join Proveedores p on p.cuit_proveedor = a.cuit_proveedor"
-                        + " WHERE a.codigo_articulo like '%" + patron_codigo.Trim() + "%'"
+                        + " WHERE a.codigo_articulo like '%" + patron_codigo.Trim() + "%' AND"
                         + " a.nombre_articulo like '%" + patron_nombre.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
 
-        public DataTable Recuperar_x_Cuit_Array(string[] cuit)
+        public DataTable Recuperar_x_Cuit_Array(string cuit)
         {
 
             string sql = "SELECT c.* FROM Clientes c WHERE c.cuit_clientes = " + cuit[0];

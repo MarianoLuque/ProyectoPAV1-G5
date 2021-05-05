@@ -92,7 +92,6 @@ C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proy
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ABMArticulos.resources
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_AltaArticulo.resources
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_BajaArticulo.resources
