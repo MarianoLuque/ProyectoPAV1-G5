@@ -48,7 +48,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         {
             Frm_ModificacionArticulo modifArt = new Frm_ModificacionArticulo();
             string[] Pp_codigo_articulo = new string[1];
-            Pp_codigo_articulo[0] = grid_articulos.CurrentRow.Cells["Column1"].Value.ToString();
+            Pp_codigo_articulo[0] = grid_articulos.CurrentRow.Cells["Codigo"].Value.ToString();
             modifArt.Pp_codigo_articulo = Pp_codigo_articulo;
             modifArt.ShowDialog();
         }
@@ -57,7 +57,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         {
             Frm_BajaArticulo bajaArt = new Frm_BajaArticulo();
             string[] Pp_codigo_articulo = new string[1];
-            Pp_codigo_articulo[0] = grid_articulos.CurrentRow.Cells["Column1"].Value.ToString();
+            Pp_codigo_articulo[0] = grid_articulos.CurrentRow.Cells["Codigo"].Value.ToString();
             bajaArt.Pp_codigo_articulo = Pp_codigo_articulo;
             bajaArt.ShowDialog();
         }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_agregar = new System.Windows.Forms.Button();
+            this.btn_aceptar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,15 +50,16 @@
             this.txt_descripcion = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.SuspendLayout();
             // 
-            // btn_agregar
+            // btn_aceptar
             // 
-            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
-            this.btn_agregar.Location = new System.Drawing.Point(160, 448);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(99, 30);
-            this.btn_agregar.TabIndex = 2;
-            this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
+            this.btn_aceptar.Location = new System.Drawing.Point(160, 448);
+            this.btn_aceptar.Name = "btn_aceptar";
+            this.btn_aceptar.Size = new System.Drawing.Size(99, 30);
+            this.btn_aceptar.TabIndex = 2;
+            this.btn_aceptar.Text = "Aceptar";
+            this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // btn_cancelar
             // 
@@ -295,7 +296,7 @@
             this.Controls.Add(this.txt_costomay);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.btn_agregar);
+            this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.txt_descripcion);
             this.MaximizeBox = false;
             this.Name = "Frm_ModificacionArticulo";
@@ -308,7 +309,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btn_agregar;
+        private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Button btn_cancelar;
         private Clases.TextBox01 txt_descripcion;
         private Clases.TextBox01 txt_nombre;
