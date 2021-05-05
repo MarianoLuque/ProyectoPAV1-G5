@@ -48,6 +48,8 @@
             this.txt_costomay = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_nombre = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_descripcion = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_codigo_articulo = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_aceptar
@@ -76,7 +78,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(86, 27);
+            this.label1.Location = new System.Drawing.Point(85, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 20;
@@ -86,7 +88,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(60, 63);
+            this.label3.Location = new System.Drawing.Point(59, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 22;
@@ -96,7 +98,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(12, 148);
+            this.label4.Location = new System.Drawing.Point(11, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 20);
             this.label4.TabIndex = 23;
@@ -106,7 +108,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(25, 184);
+            this.label5.Location = new System.Drawing.Point(24, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 20);
             this.label5.TabIndex = 24;
@@ -116,7 +118,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(29, 220);
+            this.label6.Location = new System.Drawing.Point(28, 247);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 20);
             this.label6.TabIndex = 25;
@@ -126,7 +128,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(109, 256);
+            this.label7.Location = new System.Drawing.Point(108, 283);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 20);
             this.label7.TabIndex = 26;
@@ -202,7 +204,7 @@
             // 
             this.cmb_pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmb_pais.FormattingEnabled = true;
-            this.cmb_pais.Location = new System.Drawing.Point(159, 253);
+            this.cmb_pais.Location = new System.Drawing.Point(158, 280);
             this.cmb_pais.Margin = new System.Windows.Forms.Padding(5);
             this.cmb_pais.Name = "cmb_pais";
             this.cmb_pais.Pp_Conseleccion = false;
@@ -215,7 +217,7 @@
             // txt_stock
             // 
             this.txt_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_stock.Location = new System.Drawing.Point(159, 145);
+            this.txt_stock.Location = new System.Drawing.Point(158, 172);
             this.txt_stock.Margin = new System.Windows.Forms.Padding(5);
             this.txt_stock.Name = "txt_stock";
             this.txt_stock.Pp_campo = "cantidad_stock";
@@ -227,7 +229,7 @@
             // txt_costomin
             // 
             this.txt_costomin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_costomin.Location = new System.Drawing.Point(159, 217);
+            this.txt_costomin.Location = new System.Drawing.Point(158, 244);
             this.txt_costomin.Margin = new System.Windows.Forms.Padding(5);
             this.txt_costomin.Name = "txt_costomin";
             this.txt_costomin.Pp_campo = "costo_minorista";
@@ -239,7 +241,7 @@
             // txt_costomay
             // 
             this.txt_costomay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_costomay.Location = new System.Drawing.Point(159, 181);
+            this.txt_costomay.Location = new System.Drawing.Point(158, 208);
             this.txt_costomay.Margin = new System.Windows.Forms.Padding(5);
             this.txt_costomay.Name = "txt_costomay";
             this.txt_costomay.Pp_campo = "costo_mayorista";
@@ -251,7 +253,7 @@
             // txt_nombre
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_nombre.Location = new System.Drawing.Point(159, 24);
+            this.txt_nombre.Location = new System.Drawing.Point(158, 51);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(5);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Pp_campo = "nombre_articulo";
@@ -263,7 +265,7 @@
             // txt_descripcion
             // 
             this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_descripcion.Location = new System.Drawing.Point(159, 60);
+            this.txt_descripcion.Location = new System.Drawing.Point(158, 87);
             this.txt_descripcion.Margin = new System.Windows.Forms.Padding(5);
             this.txt_descripcion.Multiline = true;
             this.txt_descripcion.Name = "txt_descripcion";
@@ -273,11 +275,35 @@
             this.txt_descripcion.Size = new System.Drawing.Size(233, 75);
             this.txt_descripcion.TabIndex = 13;
             // 
+            // txt_codigo_articulo
+            // 
+            this.txt_codigo_articulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_codigo_articulo.Location = new System.Drawing.Point(159, 17);
+            this.txt_codigo_articulo.Name = "txt_codigo_articulo";
+            this.txt_codigo_articulo.Pp_campo = "codigo_articulo";
+            this.txt_codigo_articulo.Pp_MensajeError = null;
+            this.txt_codigo_articulo.Pp_Validable = false;
+            this.txt_codigo_articulo.ReadOnly = true;
+            this.txt_codigo_articulo.Size = new System.Drawing.Size(233, 26);
+            this.txt_codigo_articulo.TabIndex = 35;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(39, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 20);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Codigo articulo";
+            // 
             // Frm_ModificacionArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(415, 493);
+            this.Controls.Add(this.txt_codigo_articulo);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_plazopago);
             this.Controls.Add(this.txt_envio);
             this.Controls.Add(this.txt_cuit);
@@ -329,5 +355,7 @@
         private Clases.TextBox01 txt_cuit;
         private Clases.TextBox01 txt_envio;
         private Clases.TextBox01 txt_plazopago;
+        private Clases.TextBox01 txt_codigo_articulo;
+        private System.Windows.Forms.Label label2;
     }
 }

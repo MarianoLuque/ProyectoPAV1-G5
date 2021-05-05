@@ -35,7 +35,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public void Modificar(string[] ValorPk, Control.ControlCollection controles)
         {
-            _BD.Modificar(tratamiento.ConstructorModificar("Articulos", ValorPk, controles));
+            _BD.Modificar(tratamiento.ConstructorModificar_Sin_PK("Articulos", ValorPk, controles));
         }
 
         public void Eliminar(string[] ValorPk, Control.ControlCollection controles)

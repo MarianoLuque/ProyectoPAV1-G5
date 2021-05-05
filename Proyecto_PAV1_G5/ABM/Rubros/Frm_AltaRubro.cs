@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
+namespace Proyecto_PAV1_G5.ABM.Rubros
 {
-    public partial class Frm_ABMEquipoEspecial : Form
+    public partial class Frm_AltaRubro : Form
     {
-        public Frm_ABMEquipoEspecial()
+        public Frm_AltaRubro()
         {
             InitializeComponent();
         }
-
     }
 }

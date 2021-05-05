@@ -178,6 +178,24 @@
     <Compile Include="ABM\Rubros\Frm_ABMRubros.Designer.cs">
       <DependentUpon>Frm_ABMRubros.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM\Rubros\Frm_AltaRubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Rubros\Frm_AltaRubro.Designer.cs">
+      <DependentUpon>Frm_AltaRubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Rubros\Frm_BajaRubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Rubros\Frm_BajaRubro.Designer.cs">
+      <DependentUpon>Frm_BajaRubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Rubros\Frm_ModificacionRubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Rubros\Frm_ModificacionRubro.Designer.cs">
+      <DependentUpon>Frm_ModificacionRubro.cs</DependentUpon>
+    </Compile>
     <Compile Include="BackEnd\Acceso_Datos.cs" />
     <Compile Include="Clases\ComboBox01.cs">
       <SubType>Component</SubType>
@@ -260,6 +278,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Rubros\Frm_ABMRubros.resx">
       <DependentUpon>Frm_ABMRubros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Rubros\Frm_AltaRubro.resx">
+      <DependentUpon>Frm_AltaRubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Rubros\Frm_BajaRubro.resx">
+      <DependentUpon>Frm_BajaRubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Rubros\Frm_ModificacionRubro.resx">
+      <DependentUpon>Frm_ModificacionRubro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

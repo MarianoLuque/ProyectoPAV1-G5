@@ -81,7 +81,7 @@ namespace Proyecto_PAV1_G5.Clases
         }
 
 
-        public string ConstructorModificar(string NombreTabla, string[] ValorPK, Control.ControlCollection controles)
+        public string ConstructorModificar_Con_PK(string NombreTabla, string[] ValorPK, Control.ControlCollection controles)
         {
             string sql = "UPDATE " + NombreTabla + " SET ";
             string columna = "";
@@ -99,10 +99,65 @@ namespace Proyecto_PAV1_G5.Clases
                 tipoDatoColumna = Estructura.Columns[i].DataType.Name;
                 valorColumna = BuscarColumnaEnControles(columna, controles);
                 if (valorColumna != string.Empty)
-                //Tambien se puede comparar contra ""
                 {
                     valorColumna = FormatearDato(valorColumna, tipoDatoColumna);
                     if (i==0)
+                    {
+                        sql += columna + " = " + valorColumna;
+                    }
+                    else
+                    {
+                        sql += ", " + columna + " = " + valorColumna;
+                    }
+                }
+
+            }
+            DataTable tabla = BuscarPkTabla(NombreTabla);
+            if (tabla.Rows.Count > 1)
+            {
+                for (int i = 0; i < tabla.Rows.Count; i++)
+                {
+                    if (i == 0)
+                    {
+                        minisql += tabla.Rows[0][0].ToString() + " = " + ValorPK[0];
+                    }
+                    else
+                    {
+                        minisql += ", " + tabla.Rows[i][0].ToString() + " = " + ValorPK[i];
+                    }
+                }
+            }
+            else
+            {
+                string NombrePK = tabla.Rows[0][0].ToString();
+                minisql += NombrePK + " = " + ValorPK[0];
+            }
+            sql += " WHERE " + minisql;
+            return sql;
+        }
+
+        public string ConstructorModificar_Sin_PK(string NombreTabla, string[] ValorPK, Control.ControlCollection controles)
+        {
+            string sql = "UPDATE " + NombreTabla + " SET ";
+            string columna = "";
+            string tipoDatoColumna = "";
+            string valorColumna = "";
+            string minisql = "";
+
+            DataTable Estructura = new DataTable();
+            Estructura = BuscarEstructuraTabla(NombreTabla);
+            int Cantidad_PKs = ValorPK.Length;
+
+            for (int i = Cantidad_PKs; i < Estructura.Columns.Count; i++)
+            {
+                columna = Estructura.Columns[i].Caption;
+                //Caption devuelve el nombre de la columna de Estructura en la posicion Estructura.Columns[i]
+                tipoDatoColumna = Estructura.Columns[i].DataType.Name;
+                valorColumna = BuscarColumnaEnControles(columna, controles);
+                if (valorColumna != string.Empty)
+                {
+                    valorColumna = FormatearDato(valorColumna, tipoDatoColumna);
+                    if (i == Cantidad_PKs)
                     {
                         sql += columna + " = " + valorColumna;
                     }

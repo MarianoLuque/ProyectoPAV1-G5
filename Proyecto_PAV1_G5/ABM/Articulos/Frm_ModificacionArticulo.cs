@@ -44,6 +44,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
 
         private void MostrarDatos(DataTable tabla)
         {
+            txt_codigo_articulo.Text = tabla.Rows[0]["codigo_articulo"].ToString();
             cmb_pais.SelectedValue = int.Parse(tabla.Rows[0]["id_pais"].ToString());
             txt_nombre.Text = tabla.Rows[0]["nombre_articulo"].ToString();
             txt_descripcion.Text = tabla.Rows[0]["descripcion"].ToString();

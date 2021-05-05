@@ -16,7 +16,7 @@ namespace Proyecto_PAV1_G5.Negocios
         //Funcion insertar cliente
         public void Modificar(string[] ValorPk, Control.ControlCollection controles)
         {
-            _BD.Modificar(tratamiento.ConstructorModificar("Clientes", ValorPk, controles));
+            _BD.Modificar(tratamiento.ConstructorModificar_Con_PK("Clientes", ValorPk, controles));
         }
 
         public void Insertar(Control.ControlCollection controles)
