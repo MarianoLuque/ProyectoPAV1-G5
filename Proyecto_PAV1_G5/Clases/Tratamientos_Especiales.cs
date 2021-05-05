@@ -41,7 +41,7 @@ namespace Proyecto_PAV1_G5.Clases
             return Resultado.correcto;
         }
 
-        public string ConstructorInsert(string NombreTabla, Control.ControlCollection controles)
+        public string ConstructorInsertar(string NombreTabla, Control.ControlCollection controles)
         {
             string sql = "INSERT INTO " + NombreTabla + " (";
             string columna = "";
@@ -80,11 +80,108 @@ namespace Proyecto_PAV1_G5.Clases
             return sql;
         }
 
+
+        public string ConstructorModificar(string NombreTabla, string[] ValorPK, Control.ControlCollection controles)
+        {
+            string sql = "UPDATE " + NombreTabla + " SET ";
+            string columna = "";
+            string tipoDatoColumna = "";
+            string valorColumna = "";
+            string minisql = "";
+
+            DataTable Estructura = new DataTable();
+            Estructura = BuscarEstructuraTabla(NombreTabla);
+
+            for (int i = 0; i < Estructura.Columns.Count; i++)
+            {
+                columna = Estructura.Columns[i].Caption;
+                //Caption devuelve el nombre de la columna de Estructura en la posicion Estructura.Columns[i]
+                tipoDatoColumna = Estructura.Columns[i].DataType.Name;
+                valorColumna = BuscarColumnaEnControles(columna, controles);
+                if (valorColumna != string.Empty)
+                //Tambien se puede comparar contra ""
+                {
+                    valorColumna = FormatearDato(valorColumna, tipoDatoColumna);
+                    if (i==0)
+                    {
+                        sql += columna + " = " + valorColumna;
+                    }
+                    else
+                    {
+                        sql += ", " + columna + " = " + valorColumna;
+                    }
+                }
+
+            }
+            DataTable tabla = BuscarPkTabla(NombreTabla);
+            if (tabla.Rows.Count > 1)
+            {
+                for (int i = 0; i < tabla.Rows.Count; i++)
+                {
+                    if (i == 0)
+                    {
+                        minisql += tabla.Rows[0][0].ToString() + " = " + ValorPK[0];
+                    }
+                    else
+                    {
+                        minisql += ", " + tabla.Rows[i][0].ToString() + " = " + ValorPK[i];
+                    }
+                }
+            }
+            else
+            {
+                string NombrePK = tabla.Rows[0][0].ToString();
+                minisql += NombrePK + " = " + ValorPK[0];
+            }
+            sql += " WHERE " + minisql;
+            return sql;
+        }
+
+        public string ConstructorEliminar (string NombreTabla, string[] ValorPK, Control.ControlCollection controles)
+        {
+            string minisql = "";
+            DataTable tabla = BuscarPkTabla(NombreTabla);
+
+            if (tabla.Rows.Count > 1)
+            {
+                for (int i = 0; i < tabla.Rows.Count; i++)
+                {
+                    if (i == 0)
+                    {
+                        minisql += tabla.Rows[0][0].ToString() + " = " + ValorPK[0];
+                    }
+                    else
+                    {
+                        minisql += ", " + tabla.Rows[i][0].ToString() + " = " + ValorPK[i];
+                    }
+                }
+            }
+            else
+            {
+                string NombrePK = tabla.Rows[0][0].ToString();
+                minisql += NombrePK + " = " + ValorPK[0];
+            }
+            string sql = "DELETE * FROM " + NombreTabla + "WHERE " + minisql ;
+            return sql;
+        }
+
+        private DataTable BuscarPkTabla(string NombreTabla)
+        {
+            Acceso_Datos _BD = new Acceso_Datos();
+            string sql = @"select Col.COLUMN_NAME from INFORMATION_SCHEMA.TABLE_CONSTRAINTS Tab "
+                        + "join INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE Col "
+                        + "on Col.Constraint_Name = Tab.Constraint_Name "
+                        + "and Col.Table_Name = Tab.Table_Name "
+                        + "where Constraint_Type = 'PRIMARY KEY' and Col.CONSTRAINT_NAME = " + NombreTabla;
+            return _BD.Ejecutar_Select(sql);
+        }
+
         private DataTable BuscarEstructuraTabla(string NombreTabla)
         {
             Acceso_Datos _BD = new Acceso_Datos();
             return _BD.Ejecutar_Select("SELECT TOP 1 * FROM " + NombreTabla);
         }
+
 
         private string BuscarColumnaEnControles(string campo, Control.ControlCollection controles)
         {

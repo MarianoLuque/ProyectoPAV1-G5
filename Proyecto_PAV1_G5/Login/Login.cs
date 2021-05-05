@@ -64,17 +64,15 @@ namespace Proyecto_PAV1_G5
             if (txt_password.PasswordChar == '*')
             {
                 txt_password.PasswordChar = '\0';
+                btn_Ver_Contraseña.BackgroundImage = Image.FromFile("D:\\nano\\Facultad\\UTN\\TERCER AÑO\\PAV\\Grupo 5\\Proyecto_PAV1_G5\\ProyectoPAV1-G5\\Proyecto_PAV1_G5\\Resources\\visto.png");
             }
             else
             {
                 txt_password.PasswordChar = '*';
+                btn_Ver_Contraseña.BackgroundImage = Image.FromFile("D:\\nano\\Facultad\\UTN\\TERCER AÑO\\PAV\\Grupo 5\\Proyecto_PAV1_G5\\ProyectoPAV1-G5\\Proyecto_PAV1_G5\\Resources\\novistoo.png");
             }
 
         }
 
-        private void btn_Ver_Contraeña_MouseClick(object sender, MouseEventArgs e)
-        {
-            btn_Ver_Contraeña.BackgroundImage = Image.FromFile("C:\\Users\\NAFEVI\\Documents\\GitHub\\ProyectoPAV1-G5\\Proyecto_PAV1_G5\\Resources\\visto.png");
-        }
     }
 }

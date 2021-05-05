@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABMClientes));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_AltaCliente = new System.Windows.Forms.Button();
             this.btn_ModificarCliente = new System.Windows.Forms.Button();
@@ -38,20 +37,29 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btn_consultar = new System.Windows.Forms.Button();
+            this.txt_patron_razon_social = new System.Windows.Forms.TextBox();
+            this.grid_Clientes = new System.Windows.Forms.DataGridView();
+            this.txt_patron_cuit = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Cuit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Razon_social = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Clientes)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 243);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(760, 254);
-            this.dataGridView1.TabIndex = 0;
             // 
             // textBox1
             // 
@@ -140,11 +148,149 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_consultar
+            // 
+            this.btn_consultar.Location = new System.Drawing.Point(455, 167);
+            this.btn_consultar.Name = "btn_consultar";
+            this.btn_consultar.Size = new System.Drawing.Size(75, 23);
+            this.btn_consultar.TabIndex = 14;
+            this.btn_consultar.Text = "Consultar";
+            this.btn_consultar.UseVisualStyleBackColor = true;
+            this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
+            // 
+            // txt_patron_razon_social
+            // 
+            this.txt_patron_razon_social.Location = new System.Drawing.Point(196, 128);
+            this.txt_patron_razon_social.Name = "txt_patron_razon_social";
+            this.txt_patron_razon_social.Size = new System.Drawing.Size(192, 20);
+            this.txt_patron_razon_social.TabIndex = 15;
+            // 
+            // grid_Clientes
+            // 
+            this.grid_Clientes.AllowUserToAddRows = false;
+            this.grid_Clientes.AllowUserToDeleteRows = false;
+            this.grid_Clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_Clientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Cuit,
+            this.Razon_social,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9});
+            this.grid_Clientes.Location = new System.Drawing.Point(23, 213);
+            this.grid_Clientes.Name = "grid_Clientes";
+            this.grid_Clientes.ReadOnly = true;
+            this.grid_Clientes.Size = new System.Drawing.Size(735, 279);
+            this.grid_Clientes.TabIndex = 16;
+            this.grid_Clientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Clientes_CellClick);
+            // 
+            // txt_patron_cuit
+            // 
+            this.txt_patron_cuit.Location = new System.Drawing.Point(196, 167);
+            this.txt_patron_cuit.Name = "txt_patron_cuit";
+            this.txt_patron_cuit.Size = new System.Drawing.Size(192, 20);
+            this.txt_patron_cuit.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(116, 131);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Razon social";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(152, 170);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "CUIT";
+            // 
+            // Cuit
+            // 
+            this.Cuit.HeaderText = "Cuit";
+            this.Cuit.Name = "Cuit";
+            this.Cuit.ReadOnly = true;
+            // 
+            // Razon_social
+            // 
+            this.Razon_social.HeaderText = "Razon social";
+            this.Razon_social.Name = "Razon_social";
+            this.Razon_social.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nombre de contacto";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Credito limite";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Clasificacion";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Fecha primera compra";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Cantidad de compras";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Barrio";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Calle";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Numero calle";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Vendedor asignado";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
             // Frm_ABMClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.grid_Clientes);
+            this.Controls.Add(this.txt_patron_cuit);
+            this.Controls.Add(this.txt_patron_razon_social);
+            this.Controls.Add(this.btn_consultar);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_EliminarCliente);
             this.Controls.Add(this.pictureBox3);
@@ -153,24 +299,22 @@
             this.Controls.Add(this.btn_AltaCliente);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Frm_ABMClientes";
-            this.Text = "Frm_ABMCliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.Frm_ABMClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Clientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_AltaCliente;
@@ -179,5 +323,22 @@
         private System.Windows.Forms.Button btn_ModificarCliente;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btn_EliminarCliente;
+        private System.Windows.Forms.Button btn_consultar;
+        private System.Windows.Forms.TextBox txt_patron_razon_social;
+        private System.Windows.Forms.DataGridView grid_Clientes;
+        private System.Windows.Forms.TextBox txt_patron_cuit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cuit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Razon_social;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
     }
 }

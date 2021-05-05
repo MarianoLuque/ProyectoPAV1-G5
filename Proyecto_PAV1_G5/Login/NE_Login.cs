@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using Proyecto_PAV1_G5.BackEnd;
 
 namespace Proyecto_PAV1_G5.Login
 {
@@ -12,12 +13,12 @@ namespace Proyecto_PAV1_G5.Login
         // Z O N A    D E    D E C L A R A C I O N E S 
         public enum ResultadoValidacion { existe, no_existe }
         DataTable tabla = new DataTable();
-
+        Acceso_Datos _BD = new Acceso_Datos();
         public ResultadoValidacion Validar_Usuario(String usuario, String password)
         {
-            String sql = @"SELECT * FROM usuarios WHERE n_usuario = '" + usuario + "'"
-                                + "AND password = '" + password + "'"; // comando que va a ejecutar
-            //tabla = _BD.Ejecutar_Select(sql); //la ejecucion de este comando me devuelve un DataTable
+            String sql = @"SELECT * FROM usuarios WHERE usuario = '" + usuario + "'"
+                                + "AND contrasena = '" + password + "'"; // comando que va a ejecutar
+            tabla = _BD.Ejecutar_Select(sql); //la ejecucion de este comando me devuelve un DataTable
 
             if (tabla.Rows.Count == 1)
             {

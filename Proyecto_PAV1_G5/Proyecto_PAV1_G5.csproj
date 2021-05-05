@@ -183,6 +183,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\Estructura_ComboBox.cs" />
+    <Compile Include="Clases\Grid01.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Clases\TextBox01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -342,6 +345,7 @@
     <None Include="Resources\Visualizar Contraseña.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\novistoo.png" />
     <Content Include="Resources\visto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
