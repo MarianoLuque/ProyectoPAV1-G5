@@ -29,16 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABMEmpleados));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gridempleados = new System.Windows.Forms.DataGridView();
-            this.tipoDoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numDoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaingreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grid_empleados = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.btn_editar = new System.Windows.Forms.Button();
@@ -52,93 +43,44 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_consultar = new System.Windows.Forms.Button();
-            this.textBox013 = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.textBox012 = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.textBox011 = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.comboBox011 = new Proyecto_PAV1_G5.Clases.ComboBox01();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridempleados)).BeginInit();
+            this.txt_patron_apellido = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_patron_legajo = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_patron_nro_doc = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.cmb_tipo_doc = new Proyecto_PAV1_G5.Clases.ComboBox01();
+            this.legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nro_documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_ingreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_empleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // grid_empleados
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 243);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(760, 254);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // gridempleados
-            // 
-            this.gridempleados.AllowUserToAddRows = false;
-            this.gridempleados.AllowUserToDeleteRows = false;
-            this.gridempleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridempleados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tipoDoc,
-            this.numDoc,
+            this.grid_empleados.AllowUserToAddRows = false;
+            this.grid_empleados.AllowUserToDeleteRows = false;
+            this.grid_empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_empleados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.legajo,
+            this.tipo_documento,
+            this.nro_documento,
             this.nombre,
             this.apellido,
-            this.fechaingreso,
+            this.fecha_ingreso,
             this.telefono,
             this.barrio});
-            this.gridempleados.Location = new System.Drawing.Point(12, 243);
-            this.gridempleados.Name = "gridempleados";
-            this.gridempleados.ReadOnly = true;
-            this.gridempleados.Size = new System.Drawing.Size(760, 254);
-            this.gridempleados.TabIndex = 0;
-            // 
-            // tipoDoc
-            // 
-            this.tipoDoc.HeaderText = "Tipo Documento";
-            this.tipoDoc.Name = "tipoDoc";
-            this.tipoDoc.ReadOnly = true;
-            // 
-            // numDoc
-            // 
-            this.numDoc.HeaderText = "Número Documento";
-            this.numDoc.Name = "numDoc";
-            this.numDoc.ReadOnly = true;
-            // 
-            // legajo
-            // 
-            this.legajo.HeaderText = "Legajo";
-            this.legajo.Name = "legajo";
-            this.legajo.ReadOnly = true;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            // 
-            // apellido
-            // 
-            this.apellido.HeaderText = "Apellido";
-            this.apellido.Name = "apellido";
-            this.apellido.ReadOnly = true;
-            // 
-            // fechaingreso
-            // 
-            this.fechaingreso.HeaderText = "Fecha de Ingreso";
-            this.fechaingreso.Name = "fechaingreso";
-            this.fechaingreso.ReadOnly = true;
-            // 
-            // telefono
-            // 
-            this.telefono.HeaderText = "Telefono";
-            this.telefono.Name = "telefono";
-            this.telefono.ReadOnly = true;
-            // 
-            // barrio
-            // 
-            this.barrio.HeaderText = "Barrio";
-            this.barrio.Name = "barrio";
-            this.barrio.ReadOnly = true;
+            this.grid_empleados.Location = new System.Drawing.Point(12, 243);
+            this.grid_empleados.Name = "grid_empleados";
+            this.grid_empleados.ReadOnly = true;
+            this.grid_empleados.Size = new System.Drawing.Size(760, 254);
+            this.grid_empleados.TabIndex = 0;
             // 
             // textBox1
             // 
@@ -279,55 +221,103 @@
             this.btn_consultar.UseVisualStyleBackColor = true;
             this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click_1);
             // 
-            // textBox013
+            // txt_patron_apellido
             // 
-            this.textBox013.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox013.Location = new System.Drawing.Point(171, 206);
-            this.textBox013.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox013.Name = "textBox013";
-            this.textBox013.Pp_campo = null;
-            this.textBox013.Pp_MensajeError = null;
-            this.textBox013.Pp_Validable = false;
-            this.textBox013.Size = new System.Drawing.Size(178, 26);
-            this.textBox013.TabIndex = 7;
+            this.txt_patron_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_patron_apellido.Location = new System.Drawing.Point(171, 206);
+            this.txt_patron_apellido.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_patron_apellido.Name = "txt_patron_apellido";
+            this.txt_patron_apellido.Pp_campo = null;
+            this.txt_patron_apellido.Pp_MensajeError = null;
+            this.txt_patron_apellido.Pp_Validable = false;
+            this.txt_patron_apellido.Size = new System.Drawing.Size(178, 26);
+            this.txt_patron_apellido.TabIndex = 7;
             // 
-            // textBox012
+            // txt_patron_legajo
             // 
-            this.textBox012.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox012.Location = new System.Drawing.Point(171, 170);
-            this.textBox012.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox012.Name = "textBox012";
-            this.textBox012.Pp_campo = null;
-            this.textBox012.Pp_MensajeError = null;
-            this.textBox012.Pp_Validable = false;
-            this.textBox012.Size = new System.Drawing.Size(178, 26);
-            this.textBox012.TabIndex = 5;
+            this.txt_patron_legajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_patron_legajo.Location = new System.Drawing.Point(171, 170);
+            this.txt_patron_legajo.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_patron_legajo.Name = "txt_patron_legajo";
+            this.txt_patron_legajo.Pp_campo = null;
+            this.txt_patron_legajo.Pp_MensajeError = null;
+            this.txt_patron_legajo.Pp_Validable = false;
+            this.txt_patron_legajo.Size = new System.Drawing.Size(178, 26);
+            this.txt_patron_legajo.TabIndex = 5;
             // 
-            // textBox011
+            // txt_patron_nro_doc
             // 
-            this.textBox011.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox011.Location = new System.Drawing.Point(171, 134);
-            this.textBox011.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox011.Name = "textBox011";
-            this.textBox011.Pp_campo = null;
-            this.textBox011.Pp_MensajeError = null;
-            this.textBox011.Pp_Validable = false;
-            this.textBox011.Size = new System.Drawing.Size(178, 26);
-            this.textBox011.TabIndex = 3;
+            this.txt_patron_nro_doc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_patron_nro_doc.Location = new System.Drawing.Point(171, 134);
+            this.txt_patron_nro_doc.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_patron_nro_doc.Name = "txt_patron_nro_doc";
+            this.txt_patron_nro_doc.Pp_campo = null;
+            this.txt_patron_nro_doc.Pp_MensajeError = null;
+            this.txt_patron_nro_doc.Pp_Validable = false;
+            this.txt_patron_nro_doc.Size = new System.Drawing.Size(178, 26);
+            this.txt_patron_nro_doc.TabIndex = 3;
             // 
-            // comboBox011
+            // cmb_tipo_doc
             // 
-            this.comboBox011.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox011.FormattingEnabled = true;
-            this.comboBox011.Location = new System.Drawing.Point(171, 96);
-            this.comboBox011.Margin = new System.Windows.Forms.Padding(5);
-            this.comboBox011.Name = "comboBox011";
-            this.comboBox011.Pp_Conseleccion = false;
-            this.comboBox011.Pp_MensajeError = null;
-            this.comboBox011.Pp_NombreCampo = null;
-            this.comboBox011.Pp_Validable = false;
-            this.comboBox011.Size = new System.Drawing.Size(178, 28);
-            this.comboBox011.TabIndex = 1;
+            this.cmb_tipo_doc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmb_tipo_doc.FormattingEnabled = true;
+            this.cmb_tipo_doc.Location = new System.Drawing.Point(171, 96);
+            this.cmb_tipo_doc.Margin = new System.Windows.Forms.Padding(5);
+            this.cmb_tipo_doc.Name = "cmb_tipo_doc";
+            this.cmb_tipo_doc.Pp_Conseleccion = false;
+            this.cmb_tipo_doc.Pp_MensajeError = null;
+            this.cmb_tipo_doc.Pp_NombreCampo = null;
+            this.cmb_tipo_doc.Pp_Validable = false;
+            this.cmb_tipo_doc.Size = new System.Drawing.Size(178, 28);
+            this.cmb_tipo_doc.TabIndex = 1;
+            // 
+            // legajo
+            // 
+            this.legajo.HeaderText = "Legajo";
+            this.legajo.Name = "legajo";
+            this.legajo.ReadOnly = true;
+            // 
+            // tipo_documento
+            // 
+            this.tipo_documento.HeaderText = "Tipo Documento";
+            this.tipo_documento.Name = "tipo_documento";
+            this.tipo_documento.ReadOnly = true;
+            // 
+            // nro_documento
+            // 
+            this.nro_documento.HeaderText = "Número Documento";
+            this.nro_documento.Name = "nro_documento";
+            this.nro_documento.ReadOnly = true;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
+            // apellido
+            // 
+            this.apellido.HeaderText = "Apellido";
+            this.apellido.Name = "apellido";
+            this.apellido.ReadOnly = true;
+            // 
+            // fecha_ingreso
+            // 
+            this.fecha_ingreso.HeaderText = "Fecha de Ingreso";
+            this.fecha_ingreso.Name = "fecha_ingreso";
+            this.fecha_ingreso.ReadOnly = true;
+            // 
+            // telefono
+            // 
+            this.telefono.HeaderText = "Telefono";
+            this.telefono.Name = "telefono";
+            this.telefono.ReadOnly = true;
+            // 
+            // barrio
+            // 
+            this.barrio.HeaderText = "Barrio";
+            this.barrio.Name = "barrio";
+            this.barrio.ReadOnly = true;
             // 
             // Frm_ABMEmpleados
             // 
@@ -339,10 +329,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox013);
-            this.Controls.Add(this.textBox012);
-            this.Controls.Add(this.textBox011);
-            this.Controls.Add(this.comboBox011);
+            this.Controls.Add(this.txt_patron_apellido);
+            this.Controls.Add(this.txt_patron_legajo);
+            this.Controls.Add(this.txt_patron_nro_doc);
+            this.Controls.Add(this.cmb_tipo_doc);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.pictureBox3);
@@ -351,15 +341,14 @@
             this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.gridempleados);
+            this.Controls.Add(this.grid_empleados);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Frm_ABMEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridempleados)).EndInit();
+            this.Load += new System.EventHandler(this.Frm_ABMEmpleados_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grid_empleados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -370,9 +359,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView gridempleados;
+        private System.Windows.Forms.DataGridView grid_empleados;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_agregar;
@@ -381,22 +368,22 @@
         private System.Windows.Forms.Button btn_editar;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btn_eliminar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoDoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numDoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn legajo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaingreso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn barrio;
-        private Clases.ComboBox01 comboBox011;
-        private Clases.TextBox01 textBox011;
-        private Clases.TextBox01 textBox012;
-        private Clases.TextBox01 textBox013;
+        private Clases.ComboBox01 cmb_tipo_doc;
+        private Clases.TextBox01 txt_patron_nro_doc;
+        private Clases.TextBox01 txt_patron_legajo;
+        private Clases.TextBox01 txt_patron_apellido;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_consultar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn legajo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipo_documento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nro_documento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_ingreso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn barrio;
     }
 }
