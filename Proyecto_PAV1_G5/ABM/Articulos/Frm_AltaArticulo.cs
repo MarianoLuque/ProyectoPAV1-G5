@@ -51,6 +51,9 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
             }
         }
 
-        
+        private void btn_cancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

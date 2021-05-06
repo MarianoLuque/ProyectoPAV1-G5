@@ -5,26 +5,30 @@ using System.Text;
 using System.Threading.Tasks;
 using Proyecto_PAV1_G5.BackEnd;
 using Proyecto_PAV1_G5.Clases;
+using System.Windows.Forms;
 using System.Data;
 
 namespace Proyecto_PAV1_G5.Negocios
 {
     class NE_Rubros
     {
-        Acceso_Datos _BD = new Acceso_Datos();
-
-        public Estructura_ComboBox DatosCombo()
+        Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
+        public void Modificar(string[] ValorPk, Control.ControlCollection controles)
         {
-            Estructura_ComboBox edc = new Estructura_ComboBox();
-
-            edc.Value = "id_tabla";
-            edc.Display = "nombre_a_recuperar";
-            edc.Sql = "SELECT * FROM NombreTabla";
-            edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
-
-            return edc;
-
+            _BD.Modificar(tratamiento.ConstructorModificar_Con_PK("Rubros", ValorPk, controles));
         }
+
+        public void Insertar(Control.ControlCollection controles)
+        {
+            _BD.Insertar(tratamiento.ConstructorInsertar("Rubros", controles));
+        }
+
+        public void Eliminar(string[] ValorPk, Control.ControlCollection controles)
+        {
+            _BD.Borrar(tratamiento.ConstructorEliminar("Rubros", ValorPk, controles));
+        }
+
+        Acceso_Datos _BD = new Acceso_Datos();
 
         public DataTable Recuperar_x_Nombre(string nombre_rubro)
         {

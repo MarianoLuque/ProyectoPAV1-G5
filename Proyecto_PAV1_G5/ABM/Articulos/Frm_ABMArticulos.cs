@@ -89,5 +89,10 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         {
 
         }
+
+        private void grid_articulos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

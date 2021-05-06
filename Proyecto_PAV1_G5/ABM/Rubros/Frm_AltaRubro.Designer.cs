@@ -110,6 +110,7 @@
             this.btn_aceptar.TabIndex = 4;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // btn_cancelar
             // 
@@ -120,6 +121,7 @@
             this.btn_cancelar.TabIndex = 5;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // Frm_AltaRubro
             // 

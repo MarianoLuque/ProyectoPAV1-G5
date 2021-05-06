@@ -28,6 +28,7 @@ namespace Proyecto_PAV1_G5.ABM.Rubros
         private void btn_editar_Click(object sender, EventArgs e)
         {
             Frm_ModificacionRubro modif = new Frm_ModificacionRubro();
+            string[] Pp_id_rubro = new string[1];
             Pp_id_rubro[0] = grid_rubros.CurrentRow.Cells["id_rubro"].Value.ToString();
             modif.Pp_id_rubro = Pp_id_rubro;
             modif.ShowDialog();
@@ -36,6 +37,7 @@ namespace Proyecto_PAV1_G5.ABM.Rubros
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             Frm_BajaRubro baja = new Frm_BajaRubro();
+            string[] Pp_id_rubro = new string[1];
             Pp_id_rubro[0] = grid_rubros.CurrentRow.Cells["id_rubro"].Value.ToString();
             baja.Pp_id_rubro = Pp_id_rubro;
             baja.ShowDialog();

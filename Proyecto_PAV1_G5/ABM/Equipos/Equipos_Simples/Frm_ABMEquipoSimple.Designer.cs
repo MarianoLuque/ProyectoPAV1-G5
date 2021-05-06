@@ -28,29 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grid_Equipos_Simples = new System.Windows.Forms.DataGridView();
+            this.codigo_equipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio_mayorista = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio_minorista = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre_equipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_Agregar_Equipo = new System.Windows.Forms.Button();
+            this.btn_Modificar_Equipo = new System.Windows.Forms.Button();
+            this.btn_Eliminar_Equipo = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_Codigo_Equipo = new System.Windows.Forms.TextBox();
+            this.txt_Nombre_Equipo = new System.Windows.Forms.TextBox();
+            this.btn_Consultar = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Equipos_Simples)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // grid_Equipos_Simples
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 243);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(760, 254);
-            this.dataGridView1.TabIndex = 0;
+            this.grid_Equipos_Simples.AllowUserToAddRows = false;
+            this.grid_Equipos_Simples.AllowUserToDeleteRows = false;
+            this.grid_Equipos_Simples.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_Equipos_Simples.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigo_equipo,
+            this.precio_mayorista,
+            this.precio_minorista,
+            this.nombre_equipo});
+            this.grid_Equipos_Simples.Location = new System.Drawing.Point(12, 221);
+            this.grid_Equipos_Simples.Name = "grid_Equipos_Simples";
+            this.grid_Equipos_Simples.ReadOnly = true;
+            this.grid_Equipos_Simples.Size = new System.Drawing.Size(760, 276);
+            this.grid_Equipos_Simples.TabIndex = 0;
+            this.grid_Equipos_Simples.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Equipos_Simples_CellClick);
+            // 
+            // codigo_equipo
+            // 
+            this.codigo_equipo.HeaderText = "Codigo Equipo";
+            this.codigo_equipo.Name = "codigo_equipo";
+            this.codigo_equipo.ReadOnly = true;
+            // 
+            // precio_mayorista
+            // 
+            this.precio_mayorista.HeaderText = "Precio Mayorista";
+            this.precio_mayorista.Name = "precio_mayorista";
+            this.precio_mayorista.ReadOnly = true;
+            this.precio_mayorista.Width = 150;
+            // 
+            // precio_minorista
+            // 
+            this.precio_minorista.HeaderText = "Precio Minorista";
+            this.precio_minorista.Name = "precio_minorista";
+            this.precio_minorista.ReadOnly = true;
+            this.precio_minorista.Width = 150;
+            // 
+            // nombre_equipo
+            // 
+            this.nombre_equipo.HeaderText = "Nombre Equipo";
+            this.nombre_equipo.Name = "nombre_equipo";
+            this.nombre_equipo.ReadOnly = true;
+            this.nombre_equipo.Width = 300;
             // 
             // textBox1
             // 
@@ -63,38 +108,83 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Equipos Simples";
             // 
-            // button1
+            // btn_Agregar_Equipo
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(119, 519);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 30);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Agregar_Equipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Agregar_Equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Agregar_Equipo.Location = new System.Drawing.Point(119, 519);
+            this.btn_Agregar_Equipo.Name = "btn_Agregar_Equipo";
+            this.btn_Agregar_Equipo.Size = new System.Drawing.Size(100, 30);
+            this.btn_Agregar_Equipo.TabIndex = 5;
+            this.btn_Agregar_Equipo.Text = "Agregar";
+            this.btn_Agregar_Equipo.UseVisualStyleBackColor = true;
+            this.btn_Agregar_Equipo.Click += new System.EventHandler(this.btn_Agregar_Equipo_Click);
             // 
-            // button2
+            // btn_Modificar_Equipo
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(355, 519);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 30);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Modificar_Equipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Modificar_Equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Modificar_Equipo.Location = new System.Drawing.Point(355, 519);
+            this.btn_Modificar_Equipo.Name = "btn_Modificar_Equipo";
+            this.btn_Modificar_Equipo.Size = new System.Drawing.Size(100, 30);
+            this.btn_Modificar_Equipo.TabIndex = 9;
+            this.btn_Modificar_Equipo.Text = "Editar";
+            this.btn_Modificar_Equipo.UseVisualStyleBackColor = true;
+            this.btn_Modificar_Equipo.Click += new System.EventHandler(this.btn_Modificar_Equipo_Click);
             // 
-            // button3
+            // btn_Eliminar_Equipo
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(591, 519);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 30);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Eliminar_Equipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Eliminar_Equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar_Equipo.Location = new System.Drawing.Point(591, 519);
+            this.btn_Eliminar_Equipo.Name = "btn_Eliminar_Equipo";
+            this.btn_Eliminar_Equipo.Size = new System.Drawing.Size(100, 30);
+            this.btn_Eliminar_Equipo.TabIndex = 11;
+            this.btn_Eliminar_Equipo.Text = "Eliminar";
+            this.btn_Eliminar_Equipo.UseVisualStyleBackColor = true;
+            this.btn_Eliminar_Equipo.Click += new System.EventHandler(this.btn_Eliminar_Equipo_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(155, 176);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Codigo Equipo";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(151, 137);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Nombre Equipo";
+            // 
+            // txt_Codigo_Equipo
+            // 
+            this.txt_Codigo_Equipo.Location = new System.Drawing.Point(231, 173);
+            this.txt_Codigo_Equipo.Name = "txt_Codigo_Equipo";
+            this.txt_Codigo_Equipo.Size = new System.Drawing.Size(192, 20);
+            this.txt_Codigo_Equipo.TabIndex = 20;
+            // 
+            // txt_Nombre_Equipo
+            // 
+            this.txt_Nombre_Equipo.Location = new System.Drawing.Point(231, 134);
+            this.txt_Nombre_Equipo.Name = "txt_Nombre_Equipo";
+            this.txt_Nombre_Equipo.Size = new System.Drawing.Size(192, 20);
+            this.txt_Nombre_Equipo.TabIndex = 21;
+            // 
+            // btn_Consultar
+            // 
+            this.btn_Consultar.Location = new System.Drawing.Point(451, 173);
+            this.btn_Consultar.Name = "btn_Consultar";
+            this.btn_Consultar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Consultar.TabIndex = 19;
+            this.btn_Consultar.Text = "Consultar";
+            this.btn_Consultar.UseVisualStyleBackColor = true;
+            this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
             // 
             // pictureBox4
             // 
@@ -141,19 +231,25 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_Codigo_Equipo);
+            this.Controls.Add(this.txt_Nombre_Equipo);
+            this.Controls.Add(this.btn_Consultar);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_Eliminar_Equipo);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_Modificar_Equipo);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Agregar_Equipo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grid_Equipos_Simples);
             this.MaximizeBox = false;
             this.Name = "Frm_ABMEquipoSimple";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Equipos Simples";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Equipos_Simples)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -165,14 +261,23 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grid_Equipos_Simples;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Agregar_Equipo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Modificar_Equipo;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_Eliminar_Equipo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_Codigo_Equipo;
+        private System.Windows.Forms.TextBox txt_Nombre_Equipo;
+        private System.Windows.Forms.Button btn_Consultar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo_equipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio_mayorista;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio_minorista;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre_equipo;
     }
 }

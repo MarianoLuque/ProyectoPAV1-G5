@@ -27,10 +27,8 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
 
             if (tratamiento.Validar(this.Controls) == Tratamientos_Especiales.Resultado.correcto)
             {
-                NE_Clientes cliente = new NE_Clientes();
 
-
-                cliente.Modificar(Pp_cuit_clientes, this.Controls);
+                cli.Modificar(Pp_cuit_clientes, this.Controls);
                 if (MessageBox.Show("El cliente se modificó con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
                 {
                     this.Close();

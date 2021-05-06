@@ -154,6 +154,24 @@
     <Compile Include="ABM\Equipos\Equipos_Simples\Frm_ABMEquipoSimple.Designer.cs">
       <DependentUpon>Frm_ABMEquipoSimple.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Alta_Equipo_Simple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Alta_Equipo_Simple.Designer.cs">
+      <DependentUpon>Frm_Alta_Equipo_Simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Baja_Equipo_Simple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Baja_Equipo_Simple.Designer.cs">
+      <DependentUpon>Frm_Baja_Equipo_Simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Modificacion_Equipo_Simple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Modificacion_Equipo_Simple.Designer.cs">
+      <DependentUpon>Frm_Modificacion_Equipo_Simple.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABM\Equipos\Frm_Equipos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,7 +237,8 @@
     <Compile Include="Negocios\NE_Categoria.cs" />
     <Compile Include="Negocios\NE_Clientes.cs" />
     <Compile Include="Negocios\NE_Empleados.cs" />
-    <Compile Include="Negocios\NE_Equipos.cs" />
+    <Compile Include="Negocios\NE_Equipos_Simples.cs" />
+    <Compile Include="Negocios\NE_EquiposEspeciales.cs" />
     <Compile Include="Negocios\NE_FormasPago.cs" />
     <Compile Include="Negocios\NE_Proveedores.cs" />
     <Compile Include="Negocios\NE_Rubros.cs" />
@@ -266,6 +285,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Equipos\Equipos_Simples\Frm_ABMEquipoSimple.resx">
       <DependentUpon>Frm_ABMEquipoSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Equipos\Equipos_Simples\Frm_Alta_Equipo_Simple.resx">
+      <DependentUpon>Frm_Alta_Equipo_Simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Equipos\Equipos_Simples\Frm_Baja_Equipo_Simple.resx">
+      <DependentUpon>Frm_Baja_Equipo_Simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Equipos\Equipos_Simples\Frm_Modificacion_Equipo_Simple.resx">
+      <DependentUpon>Frm_Modificacion_Equipo_Simple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Equipos\Frm_Equipos.resx">
       <DependentUpon>Frm_Equipos.cs</DependentUpon>

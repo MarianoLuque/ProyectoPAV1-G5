@@ -50,11 +50,10 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
 
             if (tratamiento.Validar(this.Controls) == Tratamientos_Especiales.Resultado.correcto)
             {
-                NE_Clientes cliente = new NE_Clientes();
                 
                 if (MessageBox.Show("¿Esta seguro de borrar?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    cliente.Eliminar(Pp_cuit_clientes, this.Controls);
+                    cli.Eliminar(Pp_cuit_clientes, this.Controls);
                 }
                 if (MessageBox.Show("El cliente se eliminó con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
                 {

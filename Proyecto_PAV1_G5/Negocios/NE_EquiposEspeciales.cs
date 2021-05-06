@@ -5,13 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Proyecto_PAV1_G5.BackEnd;
 using Proyecto_PAV1_G5.Clases;
+using System.Windows.Forms;
+using System.Data;
 
 namespace Proyecto_PAV1_G5.Negocios
 {
-    class NE_Equipos
+    class NE_EquiposEspeciales
     {
+        // ZONA DE DECLARACIONES
         Acceso_Datos _BD = new Acceso_Datos();
-
+        Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
         public Estructura_ComboBox DatosCombo()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();

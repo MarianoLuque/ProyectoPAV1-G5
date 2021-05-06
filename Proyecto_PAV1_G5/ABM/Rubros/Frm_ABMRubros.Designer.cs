@@ -176,10 +176,10 @@
             this.id_rubro,
             this.nombre_rubro,
             this.descripcion});
-            this.grid_rubros.Location = new System.Drawing.Point(83, 226);
+            this.grid_rubros.Location = new System.Drawing.Point(12, 226);
             this.grid_rubros.Name = "grid_rubros";
             this.grid_rubros.ReadOnly = true;
-            this.grid_rubros.Size = new System.Drawing.Size(608, 228);
+            this.grid_rubros.Size = new System.Drawing.Size(760, 228);
             this.grid_rubros.TabIndex = 16;
             this.grid_rubros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_rubros_CellClick);
             // 
@@ -188,18 +188,21 @@
             this.id_rubro.HeaderText = "Numero de rubro";
             this.id_rubro.Name = "id_rubro";
             this.id_rubro.ReadOnly = true;
+            this.id_rubro.Width = 125;
             // 
             // nombre_rubro
             // 
             this.nombre_rubro.HeaderText = "Nombre";
             this.nombre_rubro.Name = "nombre_rubro";
             this.nombre_rubro.ReadOnly = true;
+            this.nombre_rubro.Width = 200;
             // 
             // descripcion
             // 
             this.descripcion.HeaderText = "Descripcion";
             this.descripcion.Name = "descripcion";
             this.descripcion.ReadOnly = true;
+            this.descripcion.Width = 392;
             // 
             // Frm_ABMRubros
             // 

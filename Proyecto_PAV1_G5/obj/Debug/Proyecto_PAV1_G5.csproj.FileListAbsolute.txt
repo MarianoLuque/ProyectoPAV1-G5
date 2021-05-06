@@ -149,3 +149,6 @@ D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Pr
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_AltaRubro.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_BajaRubro.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ModificacionRubro.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Alta_Equipo_Simple.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Baja_Equipo_Simple.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Modificacion_Equipo_Simple.resources
