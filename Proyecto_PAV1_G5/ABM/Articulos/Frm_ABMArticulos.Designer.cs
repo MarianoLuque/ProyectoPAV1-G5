@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABMArticulos));
             this.grid_articulos = new System.Windows.Forms.DataGridView();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_bajaarticulo = new System.Windows.Forms.Button();
@@ -43,13 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_codigo = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grid_articulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -75,6 +75,48 @@
             this.grid_articulos.ReadOnly = true;
             this.grid_articulos.Size = new System.Drawing.Size(760, 254);
             this.grid_articulos.TabIndex = 0;
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Nombre";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Descripción";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Stock";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Costo Mayorista";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Costo Minorista";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Proveedor";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // textBox1
             // 
@@ -105,7 +147,7 @@
             this.btn_bajaarticulo.Location = new System.Drawing.Point(591, 519);
             this.btn_bajaarticulo.Name = "btn_bajaarticulo";
             this.btn_bajaarticulo.Size = new System.Drawing.Size(100, 30);
-            this.btn_bajaarticulo.TabIndex = 11;
+            this.btn_bajaarticulo.TabIndex = 7;
             this.btn_bajaarticulo.Text = "Eliminar";
             this.btn_bajaarticulo.UseVisualStyleBackColor = true;
             this.btn_bajaarticulo.Click += new System.EventHandler(this.btn_bajaarticulo_Click);
@@ -128,7 +170,7 @@
             this.btn_modificararticulo.Location = new System.Drawing.Point(355, 519);
             this.btn_modificararticulo.Name = "btn_modificararticulo";
             this.btn_modificararticulo.Size = new System.Drawing.Size(100, 30);
-            this.btn_modificararticulo.TabIndex = 9;
+            this.btn_modificararticulo.TabIndex = 6;
             this.btn_modificararticulo.Text = "Editar";
             this.btn_modificararticulo.UseVisualStyleBackColor = true;
             this.btn_modificararticulo.Click += new System.EventHandler(this.btn_modificararticulo_Click);
@@ -174,7 +216,7 @@
             this.btn_consultar.Location = new System.Drawing.Point(591, 207);
             this.btn_consultar.Name = "btn_consultar";
             this.btn_consultar.Size = new System.Drawing.Size(100, 30);
-            this.btn_consultar.TabIndex = 13;
+            this.btn_consultar.TabIndex = 4;
             this.btn_consultar.Text = "Consultar";
             this.btn_consultar.UseVisualStyleBackColor = true;
             this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click_1);
@@ -186,7 +228,7 @@
             this.label1.Location = new System.Drawing.Point(54, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 20);
-            this.label1.TabIndex = 17;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Código de Artículo";
             // 
             // label2
@@ -196,7 +238,7 @@
             this.label2.Location = new System.Drawing.Point(54, 154);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 20);
-            this.label2.TabIndex = 18;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Nombre de Artículo";
             // 
             // txt_codigo
@@ -205,7 +247,7 @@
             this.txt_codigo.Location = new System.Drawing.Point(204, 115);
             this.txt_codigo.Name = "txt_codigo";
             this.txt_codigo.Size = new System.Drawing.Size(203, 26);
-            this.txt_codigo.TabIndex = 19;
+            this.txt_codigo.TabIndex = 1;
             // 
             // txt_nombre
             // 
@@ -213,49 +255,7 @@
             this.txt_nombre.Location = new System.Drawing.Point(204, 151);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(203, 26);
-            this.txt_nombre.TabIndex = 20;
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.Name = "Codigo";
-            this.Codigo.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Nombre";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Descripción";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Stock";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Costo Mayorista";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Costo Minorista";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Proveedor";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
+            this.txt_nombre.TabIndex = 3;
             // 
             // Frm_ABMArticulos
             // 

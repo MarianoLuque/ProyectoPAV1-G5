@@ -67,7 +67,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 20);
-            this.label2.TabIndex = 0;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Razón social";
             // 
             // label3
@@ -78,7 +78,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 20);
-            this.label3.TabIndex = 0;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Nombre de contacto";
             // 
             // label4
@@ -89,7 +89,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 0;
+            this.label4.TabIndex = 6;
             this.label4.Text = "Barrio";
             // 
             // label5
@@ -100,7 +100,7 @@
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 20);
-            this.label5.TabIndex = 0;
+            this.label5.TabIndex = 8;
             this.label5.Text = "Calle";
             // 
             // label6
@@ -111,7 +111,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 20);
-            this.label6.TabIndex = 0;
+            this.label6.TabIndex = 10;
             this.label6.Text = "Número de calle";
             // 
             // label7
@@ -122,7 +122,7 @@
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 20);
-            this.label7.TabIndex = 0;
+            this.label7.TabIndex = 12;
             this.label7.Text = "Crédito límite";
             // 
             // label8
@@ -133,7 +133,7 @@
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(221, 20);
-            this.label8.TabIndex = 1;
+            this.label8.TabIndex = 14;
             this.label8.Text = "Legajo del vendedor asignado";
             // 
             // btn_aceptar
@@ -141,7 +141,7 @@
             this.btn_aceptar.Location = new System.Drawing.Point(205, 472);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(75, 28);
-            this.btn_aceptar.TabIndex = 4;
+            this.btn_aceptar.TabIndex = 16;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
@@ -151,7 +151,7 @@
             this.btn_cancelar.Location = new System.Drawing.Point(371, 472);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(83, 28);
-            this.btn_cancelar.TabIndex = 4;
+            this.btn_cancelar.TabIndex = 17;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
@@ -164,7 +164,7 @@
             this.txt_legajo_vendedor.Pp_MensajeError = "Falta cargar el legajo del vendedor asignado al cliente";
             this.txt_legajo_vendedor.Pp_Validable = true;
             this.txt_legajo_vendedor.Size = new System.Drawing.Size(233, 26);
-            this.txt_legajo_vendedor.TabIndex = 5;
+            this.txt_legajo_vendedor.TabIndex = 15;
             // 
             // txt_credito_limite
             // 
@@ -174,7 +174,7 @@
             this.txt_credito_limite.Pp_MensajeError = "Falta cargar el credito limite del cliente";
             this.txt_credito_limite.Pp_Validable = true;
             this.txt_credito_limite.Size = new System.Drawing.Size(233, 26);
-            this.txt_credito_limite.TabIndex = 5;
+            this.txt_credito_limite.TabIndex = 13;
             // 
             // txt_numero_calle
             // 
@@ -184,7 +184,7 @@
             this.txt_numero_calle.Pp_MensajeError = "Falta cargar el numero de calle del cliente";
             this.txt_numero_calle.Pp_Validable = true;
             this.txt_numero_calle.Size = new System.Drawing.Size(233, 26);
-            this.txt_numero_calle.TabIndex = 5;
+            this.txt_numero_calle.TabIndex = 11;
             // 
             // txt_calle
             // 
@@ -194,7 +194,7 @@
             this.txt_calle.Pp_MensajeError = "Falta cargar la calle del cliente";
             this.txt_calle.Pp_Validable = true;
             this.txt_calle.Size = new System.Drawing.Size(233, 26);
-            this.txt_calle.TabIndex = 5;
+            this.txt_calle.TabIndex = 9;
             // 
             // txt_nombre_contacto
             // 
@@ -214,7 +214,7 @@
             this.txt_razon_social.Pp_MensajeError = "Falta cargar la razon social del cliente";
             this.txt_razon_social.Pp_Validable = true;
             this.txt_razon_social.Size = new System.Drawing.Size(233, 26);
-            this.txt_razon_social.TabIndex = 5;
+            this.txt_razon_social.TabIndex = 3;
             // 
             // txt_cuit
             // 
@@ -224,7 +224,7 @@
             this.txt_cuit.Pp_MensajeError = "Falta cargar el cuit del cliente";
             this.txt_cuit.Pp_Validable = true;
             this.txt_cuit.Size = new System.Drawing.Size(233, 26);
-            this.txt_cuit.TabIndex = 5;
+            this.txt_cuit.TabIndex = 1;
             // 
             // cmb_barrios
             // 
@@ -236,7 +236,7 @@
             this.cmb_barrios.Pp_NombreCampo = "id_barrio";
             this.cmb_barrios.Pp_Validable = true;
             this.cmb_barrios.Size = new System.Drawing.Size(233, 28);
-            this.cmb_barrios.TabIndex = 3;
+            this.cmb_barrios.TabIndex = 7;
             // 
             // Frm_AltaCliente
             // 

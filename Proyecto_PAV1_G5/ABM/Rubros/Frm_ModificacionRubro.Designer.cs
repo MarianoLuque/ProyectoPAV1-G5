@@ -47,7 +47,7 @@
             this.txt_id_rubro.Pp_MensajeError = "Falta cargar el id del rubro";
             this.txt_id_rubro.Pp_Validable = true;
             this.txt_id_rubro.Size = new System.Drawing.Size(100, 26);
-            this.txt_id_rubro.TabIndex = 0;
+            this.txt_id_rubro.TabIndex = 1;
             // 
             // txt_rubros
             // 
@@ -58,7 +58,7 @@
             this.txt_rubros.Pp_MensajeError = "Falta cargar el nombre del rubro";
             this.txt_rubros.Pp_Validable = true;
             this.txt_rubros.Size = new System.Drawing.Size(100, 26);
-            this.txt_rubros.TabIndex = 1;
+            this.txt_rubros.TabIndex = 3;
             // 
             // txt_descripcion
             // 
@@ -69,7 +69,7 @@
             this.txt_descripcion.Pp_MensajeError = "Falta cargar la descripcion del rubro";
             this.txt_descripcion.Pp_Validable = true;
             this.txt_descripcion.Size = new System.Drawing.Size(100, 26);
-            this.txt_descripcion.TabIndex = 2;
+            this.txt_descripcion.TabIndex = 5;
             // 
             // label1
             // 
@@ -78,7 +78,7 @@
             this.label1.Location = new System.Drawing.Point(80, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Id rubro";
             // 
             // label2
@@ -88,7 +88,7 @@
             this.label2.Location = new System.Drawing.Point(79, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 20);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Nombre";
             // 
             // label3
@@ -98,7 +98,7 @@
             this.label3.Location = new System.Drawing.Point(60, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 20);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Descripcion";
             // 
             // btn_aceptar
@@ -107,7 +107,7 @@
             this.btn_aceptar.Location = new System.Drawing.Point(69, 186);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(75, 30);
-            this.btn_aceptar.TabIndex = 4;
+            this.btn_aceptar.TabIndex = 6;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
             // 
@@ -117,7 +117,7 @@
             this.btn_cancelar.Location = new System.Drawing.Point(185, 186);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(81, 30);
-            this.btn_cancelar.TabIndex = 5;
+            this.btn_cancelar.TabIndex = 7;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
             // 

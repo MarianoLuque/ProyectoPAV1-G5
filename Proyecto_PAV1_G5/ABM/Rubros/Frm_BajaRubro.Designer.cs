@@ -40,6 +40,7 @@
             // 
             // txt_id_rubro
             // 
+            this.txt_id_rubro.Enabled = false;
             this.txt_id_rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_rubro.Location = new System.Drawing.Point(175, 49);
             this.txt_id_rubro.Name = "txt_id_rubro";
@@ -48,10 +49,11 @@
             this.txt_id_rubro.Pp_Validable = true;
             this.txt_id_rubro.ReadOnly = true;
             this.txt_id_rubro.Size = new System.Drawing.Size(100, 26);
-            this.txt_id_rubro.TabIndex = 0;
+            this.txt_id_rubro.TabIndex = 1;
             // 
             // txt_rubros
             // 
+            this.txt_rubros.Enabled = false;
             this.txt_rubros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_rubros.Location = new System.Drawing.Point(175, 88);
             this.txt_rubros.Name = "txt_rubros";
@@ -60,10 +62,11 @@
             this.txt_rubros.Pp_Validable = true;
             this.txt_rubros.ReadOnly = true;
             this.txt_rubros.Size = new System.Drawing.Size(100, 26);
-            this.txt_rubros.TabIndex = 1;
+            this.txt_rubros.TabIndex = 3;
             // 
             // txt_descripcion
             // 
+            this.txt_descripcion.Enabled = false;
             this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_descripcion.Location = new System.Drawing.Point(175, 126);
             this.txt_descripcion.Name = "txt_descripcion";
@@ -72,7 +75,7 @@
             this.txt_descripcion.Pp_Validable = true;
             this.txt_descripcion.ReadOnly = true;
             this.txt_descripcion.Size = new System.Drawing.Size(100, 26);
-            this.txt_descripcion.TabIndex = 2;
+            this.txt_descripcion.TabIndex = 5;
             // 
             // label1
             // 
@@ -81,7 +84,7 @@
             this.label1.Location = new System.Drawing.Point(80, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Id rubro";
             // 
             // label2
@@ -91,7 +94,7 @@
             this.label2.Location = new System.Drawing.Point(79, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 20);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Nombre";
             // 
             // label3
@@ -101,7 +104,7 @@
             this.label3.Location = new System.Drawing.Point(60, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 20);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Descripcion";
             // 
             // btn_aceptar
@@ -110,7 +113,7 @@
             this.btn_aceptar.Location = new System.Drawing.Point(69, 186);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(75, 30);
-            this.btn_aceptar.TabIndex = 4;
+            this.btn_aceptar.TabIndex = 6;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
             // 
@@ -120,7 +123,7 @@
             this.btn_cancelar.Location = new System.Drawing.Point(185, 186);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(81, 30);
-            this.btn_cancelar.TabIndex = 5;
+            this.btn_cancelar.TabIndex = 7;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
             // 
