@@ -58,7 +58,7 @@
             this.btn_aceptar.Location = new System.Drawing.Point(160, 448);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(99, 30);
-            this.btn_aceptar.TabIndex = 2;
+            this.btn_aceptar.TabIndex = 20;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
@@ -69,7 +69,7 @@
             this.btn_cancelar.Location = new System.Drawing.Point(286, 448);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(101, 30);
-            this.btn_cancelar.TabIndex = 3;
+            this.btn_cancelar.TabIndex = 21;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click_1);
@@ -81,7 +81,7 @@
             this.label1.Location = new System.Drawing.Point(85, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
-            this.label1.TabIndex = 20;
+            this.label1.TabIndex = 2;
             this.label1.Text = "Nombre";
             // 
             // label3
@@ -91,7 +91,7 @@
             this.label3.Location = new System.Drawing.Point(59, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 20);
-            this.label3.TabIndex = 22;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Descripción";
             // 
             // label4
@@ -101,7 +101,7 @@
             this.label4.Location = new System.Drawing.Point(11, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 20);
-            this.label4.TabIndex = 23;
+            this.label4.TabIndex = 6;
             this.label4.Text = "Cantidad en Stock";
             // 
             // label5
@@ -111,7 +111,7 @@
             this.label5.Location = new System.Drawing.Point(24, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 20);
-            this.label5.TabIndex = 24;
+            this.label5.TabIndex = 8;
             this.label5.Text = "Costo Mayorista";
             // 
             // label6
@@ -121,7 +121,7 @@
             this.label6.Location = new System.Drawing.Point(28, 247);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 20);
-            this.label6.TabIndex = 25;
+            this.label6.TabIndex = 10;
             this.label6.Text = "Costo Minorista";
             // 
             // label7
@@ -131,7 +131,7 @@
             this.label7.Location = new System.Drawing.Point(108, 283);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 20);
-            this.label7.TabIndex = 26;
+            this.label7.TabIndex = 12;
             this.label7.Text = "País";
             // 
             // label8
@@ -141,7 +141,7 @@
             this.label8.Location = new System.Drawing.Point(30, 326);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 20);
-            this.label8.TabIndex = 27;
+            this.label8.TabIndex = 14;
             this.label8.Text = "CUIT Proveedor";
             // 
             // label9
@@ -151,7 +151,7 @@
             this.label9.Location = new System.Drawing.Point(30, 359);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 20);
-            this.label9.TabIndex = 28;
+            this.label9.TabIndex = 16;
             this.label9.Text = "Tiempo de Envío";
             // 
             // label10
@@ -161,7 +161,7 @@
             this.label10.Location = new System.Drawing.Point(41, 395);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 20);
-            this.label10.TabIndex = 29;
+            this.label10.TabIndex = 18;
             this.label10.Text = "Plazo de Pago";
             // 
             // txt_plazopago
@@ -174,7 +174,7 @@
             this.txt_plazopago.Pp_MensajeError = null;
             this.txt_plazopago.Pp_Validable = true;
             this.txt_plazopago.Size = new System.Drawing.Size(100, 26);
-            this.txt_plazopago.TabIndex = 32;
+            this.txt_plazopago.TabIndex = 19;
             // 
             // txt_envio
             // 
@@ -186,7 +186,7 @@
             this.txt_envio.Pp_MensajeError = null;
             this.txt_envio.Pp_Validable = true;
             this.txt_envio.Size = new System.Drawing.Size(229, 26);
-            this.txt_envio.TabIndex = 31;
+            this.txt_envio.TabIndex = 17;
             // 
             // txt_cuit
             // 
@@ -198,7 +198,7 @@
             this.txt_cuit.Pp_MensajeError = null;
             this.txt_cuit.Pp_Validable = true;
             this.txt_cuit.Size = new System.Drawing.Size(100, 26);
-            this.txt_cuit.TabIndex = 30;
+            this.txt_cuit.TabIndex = 15;
             // 
             // cmb_pais
             // 
@@ -212,7 +212,7 @@
             this.cmb_pais.Pp_NombreCampo = "id_pais";
             this.cmb_pais.Pp_Validable = true;
             this.cmb_pais.Size = new System.Drawing.Size(233, 28);
-            this.cmb_pais.TabIndex = 19;
+            this.cmb_pais.TabIndex = 13;
             // 
             // txt_stock
             // 
@@ -224,7 +224,7 @@
             this.txt_stock.Pp_MensajeError = null;
             this.txt_stock.Pp_Validable = true;
             this.txt_stock.Size = new System.Drawing.Size(233, 26);
-            this.txt_stock.TabIndex = 18;
+            this.txt_stock.TabIndex = 7;
             // 
             // txt_costomin
             // 
@@ -236,7 +236,7 @@
             this.txt_costomin.Pp_MensajeError = null;
             this.txt_costomin.Pp_Validable = true;
             this.txt_costomin.Size = new System.Drawing.Size(233, 26);
-            this.txt_costomin.TabIndex = 17;
+            this.txt_costomin.TabIndex = 11;
             // 
             // txt_costomay
             // 
@@ -248,7 +248,7 @@
             this.txt_costomay.Pp_MensajeError = null;
             this.txt_costomay.Pp_Validable = true;
             this.txt_costomay.Size = new System.Drawing.Size(233, 26);
-            this.txt_costomay.TabIndex = 16;
+            this.txt_costomay.TabIndex = 9;
             // 
             // txt_nombre
             // 
@@ -260,7 +260,7 @@
             this.txt_nombre.Pp_MensajeError = null;
             this.txt_nombre.Pp_Validable = true;
             this.txt_nombre.Size = new System.Drawing.Size(233, 26);
-            this.txt_nombre.TabIndex = 15;
+            this.txt_nombre.TabIndex = 3;
             // 
             // txt_descripcion
             // 
@@ -273,7 +273,7 @@
             this.txt_descripcion.Pp_MensajeError = null;
             this.txt_descripcion.Pp_Validable = true;
             this.txt_descripcion.Size = new System.Drawing.Size(233, 75);
-            this.txt_descripcion.TabIndex = 13;
+            this.txt_descripcion.TabIndex = 5;
             // 
             // txt_codigo_articulo
             // 
@@ -285,7 +285,7 @@
             this.txt_codigo_articulo.Pp_Validable = false;
             this.txt_codigo_articulo.ReadOnly = true;
             this.txt_codigo_articulo.Size = new System.Drawing.Size(233, 26);
-            this.txt_codigo_articulo.TabIndex = 35;
+            this.txt_codigo_articulo.TabIndex = 1;
             // 
             // label2
             // 
@@ -294,7 +294,7 @@
             this.label2.Location = new System.Drawing.Point(39, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 20);
-            this.label2.TabIndex = 34;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Codigo articulo";
             // 
             // Frm_ModificacionArticulo

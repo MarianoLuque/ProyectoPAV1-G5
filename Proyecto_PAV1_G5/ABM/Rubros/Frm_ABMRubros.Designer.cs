@@ -69,7 +69,7 @@
             this.btn_agregar.Location = new System.Drawing.Point(119, 519);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(100, 30);
-            this.btn_agregar.TabIndex = 5;
+            this.btn_agregar.TabIndex = 3;
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.UseVisualStyleBackColor = true;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
@@ -81,7 +81,7 @@
             this.btn_editar.Location = new System.Drawing.Point(355, 519);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(100, 30);
-            this.btn_editar.TabIndex = 9;
+            this.btn_editar.TabIndex = 4;
             this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = true;
             this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
@@ -93,7 +93,7 @@
             this.btn_eliminar.Location = new System.Drawing.Point(591, 519);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(100, 30);
-            this.btn_eliminar.TabIndex = 11;
+            this.btn_eliminar.TabIndex = 5;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = true;
             this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
@@ -104,7 +104,7 @@
             this.txt_nombre_rubro.Location = new System.Drawing.Point(239, 150);
             this.txt_nombre_rubro.Name = "txt_nombre_rubro";
             this.txt_nombre_rubro.Size = new System.Drawing.Size(153, 26);
-            this.txt_nombre_rubro.TabIndex = 13;
+            this.txt_nombre_rubro.TabIndex = 1;
             // 
             // label1
             // 
@@ -113,7 +113,7 @@
             this.label1.Location = new System.Drawing.Point(168, 153);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
-            this.label1.TabIndex = 14;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
             // btn_consultar
@@ -122,7 +122,7 @@
             this.btn_consultar.Location = new System.Drawing.Point(428, 150);
             this.btn_consultar.Name = "btn_consultar";
             this.btn_consultar.Size = new System.Drawing.Size(102, 26);
-            this.btn_consultar.TabIndex = 15;
+            this.btn_consultar.TabIndex = 2;
             this.btn_consultar.Text = "Consultar";
             this.btn_consultar.UseVisualStyleBackColor = true;
             this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
@@ -224,6 +224,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Frm_ABMRubros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rubros";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

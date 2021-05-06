@@ -38,11 +38,6 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_codigo = new System.Windows.Forms.TextBox();
-            this.txt_nombre = new System.Windows.Forms.TextBox();
-            this.btn_consultar = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_bajaarticulo = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -50,6 +45,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_altaarticulo = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_consultar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_codigo = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grid_articulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -75,7 +75,6 @@
             this.grid_articulos.ReadOnly = true;
             this.grid_articulos.Size = new System.Drawing.Size(760, 254);
             this.grid_articulos.TabIndex = 0;
-            this.grid_articulos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_articulos_CellClick);
             // 
             // Codigo
             // 
@@ -130,55 +129,6 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Artículos";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 118);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 20);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Código de Artículo";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 20);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Nombre de Artículo";
-            // 
-            // txt_codigo
-            // 
-            this.txt_codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_codigo.Location = new System.Drawing.Point(204, 115);
-            this.txt_codigo.Name = "txt_codigo";
-            this.txt_codigo.Size = new System.Drawing.Size(203, 26);
-            this.txt_codigo.TabIndex = 19;
-            // 
-            // txt_nombre
-            // 
-            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_nombre.Location = new System.Drawing.Point(204, 151);
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(203, 26);
-            this.txt_nombre.TabIndex = 20;
-            // 
-            // btn_consultar
-            // 
-            this.btn_consultar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_consultar.BackgroundImage")));
-            this.btn_consultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_consultar.Location = new System.Drawing.Point(591, 207);
-            this.btn_consultar.Name = "btn_consultar";
-            this.btn_consultar.Size = new System.Drawing.Size(100, 30);
-            this.btn_consultar.TabIndex = 13;
-            this.btn_consultar.Text = "Consultar";
-            this.btn_consultar.UseVisualStyleBackColor = true;
-            this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click_1);
-            // 
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
@@ -197,7 +147,7 @@
             this.btn_bajaarticulo.Location = new System.Drawing.Point(591, 519);
             this.btn_bajaarticulo.Name = "btn_bajaarticulo";
             this.btn_bajaarticulo.Size = new System.Drawing.Size(100, 30);
-            this.btn_bajaarticulo.TabIndex = 11;
+            this.btn_bajaarticulo.TabIndex = 7;
             this.btn_bajaarticulo.Text = "Eliminar";
             this.btn_bajaarticulo.UseVisualStyleBackColor = true;
             this.btn_bajaarticulo.Click += new System.EventHandler(this.btn_bajaarticulo_Click);
@@ -220,7 +170,7 @@
             this.btn_modificararticulo.Location = new System.Drawing.Point(355, 519);
             this.btn_modificararticulo.Name = "btn_modificararticulo";
             this.btn_modificararticulo.Size = new System.Drawing.Size(100, 30);
-            this.btn_modificararticulo.TabIndex = 9;
+            this.btn_modificararticulo.TabIndex = 6;
             this.btn_modificararticulo.Text = "Editar";
             this.btn_modificararticulo.UseVisualStyleBackColor = true;
             this.btn_modificararticulo.Click += new System.EventHandler(this.btn_modificararticulo_Click);
@@ -257,6 +207,55 @@
             this.pictureBox1.Size = new System.Drawing.Size(101, 81);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // btn_consultar
+            // 
+            this.btn_consultar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_consultar.BackgroundImage")));
+            this.btn_consultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_consultar.Location = new System.Drawing.Point(591, 207);
+            this.btn_consultar.Name = "btn_consultar";
+            this.btn_consultar.Size = new System.Drawing.Size(100, 30);
+            this.btn_consultar.TabIndex = 4;
+            this.btn_consultar.Text = "Consultar";
+            this.btn_consultar.UseVisualStyleBackColor = true;
+            this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(54, 118);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Código de Artículo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(54, 154);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Nombre de Artículo";
+            // 
+            // txt_codigo
+            // 
+            this.txt_codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_codigo.Location = new System.Drawing.Point(204, 115);
+            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Size = new System.Drawing.Size(203, 26);
+            this.txt_codigo.TabIndex = 1;
+            // 
+            // txt_nombre
+            // 
+            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_nombre.Location = new System.Drawing.Point(204, 151);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(203, 26);
+            this.txt_nombre.TabIndex = 3;
             // 
             // Frm_ABMArticulos
             // 

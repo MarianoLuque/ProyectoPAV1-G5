@@ -91,7 +91,7 @@
             this.btn_ModificarCliente.Location = new System.Drawing.Point(355, 519);
             this.btn_ModificarCliente.Name = "btn_ModificarCliente";
             this.btn_ModificarCliente.Size = new System.Drawing.Size(100, 30);
-            this.btn_ModificarCliente.TabIndex = 9;
+            this.btn_ModificarCliente.TabIndex = 6;
             this.btn_ModificarCliente.Text = "Editar";
             this.btn_ModificarCliente.UseVisualStyleBackColor = true;
             this.btn_ModificarCliente.Click += new System.EventHandler(this.btn_ModificarCliente_Click);
@@ -103,7 +103,7 @@
             this.btn_EliminarCliente.Location = new System.Drawing.Point(591, 519);
             this.btn_EliminarCliente.Name = "btn_EliminarCliente";
             this.btn_EliminarCliente.Size = new System.Drawing.Size(100, 30);
-            this.btn_EliminarCliente.TabIndex = 11;
+            this.btn_EliminarCliente.TabIndex = 7;
             this.btn_EliminarCliente.Text = "Eliminar";
             this.btn_EliminarCliente.UseVisualStyleBackColor = true;
             this.btn_EliminarCliente.Click += new System.EventHandler(this.btn_EliminarCliente_Click);
@@ -150,20 +150,22 @@
             // 
             // btn_consultar
             // 
-            this.btn_consultar.Location = new System.Drawing.Point(455, 167);
+            this.btn_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_consultar.Location = new System.Drawing.Point(591, 170);
             this.btn_consultar.Name = "btn_consultar";
-            this.btn_consultar.Size = new System.Drawing.Size(75, 23);
-            this.btn_consultar.TabIndex = 14;
+            this.btn_consultar.Size = new System.Drawing.Size(90, 26);
+            this.btn_consultar.TabIndex = 4;
             this.btn_consultar.Text = "Consultar";
             this.btn_consultar.UseVisualStyleBackColor = true;
             this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
             // 
             // txt_patron_razon_social
             // 
-            this.txt_patron_razon_social.Location = new System.Drawing.Point(196, 128);
+            this.txt_patron_razon_social.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patron_razon_social.Location = new System.Drawing.Point(222, 128);
             this.txt_patron_razon_social.Name = "txt_patron_razon_social";
-            this.txt_patron_razon_social.Size = new System.Drawing.Size(192, 20);
-            this.txt_patron_razon_social.TabIndex = 15;
+            this.txt_patron_razon_social.Size = new System.Drawing.Size(192, 26);
+            this.txt_patron_razon_social.TabIndex = 1;
             // 
             // grid_Clientes
             // 
@@ -256,27 +258,30 @@
             // 
             // txt_patron_cuit
             // 
-            this.txt_patron_cuit.Location = new System.Drawing.Point(196, 167);
+            this.txt_patron_cuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patron_cuit.Location = new System.Drawing.Point(222, 167);
             this.txt_patron_cuit.Name = "txt_patron_cuit";
-            this.txt_patron_cuit.Size = new System.Drawing.Size(192, 20);
-            this.txt_patron_cuit.TabIndex = 15;
+            this.txt_patron_cuit.Size = new System.Drawing.Size(192, 26);
+            this.txt_patron_cuit.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(116, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
-            this.label1.TabIndex = 17;
+            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.TabIndex = 0;
             this.label1.Text = "Razon social";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(152, 170);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 18;
+            this.label2.Size = new System.Drawing.Size(46, 20);
+            this.label2.TabIndex = 2;
             this.label2.Text = "CUIT";
             // 
             // Frm_ABMClientes
@@ -301,6 +306,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Frm_ABMClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.Frm_ABMClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

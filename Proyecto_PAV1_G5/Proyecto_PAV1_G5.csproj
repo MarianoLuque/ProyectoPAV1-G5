@@ -280,6 +280,15 @@
     <EmbeddedResource Include="ABM\Empleados\Frm_ABMEmpleados.resx">
       <DependentUpon>Frm_ABMEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Empleados\Frm_AltaEmpleado.resx">
+      <DependentUpon>Frm_AltaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Empleados\Frm_BajaEmpleado.resx">
+      <DependentUpon>Frm_BajaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Empleados\Frm_ModificacionEmpleado.resx">
+      <DependentUpon>Frm_ModificacionEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipoEspecial.resx">
       <DependentUpon>Frm_ABMEquipoEspecial.cs</DependentUpon>
     </EmbeddedResource>
