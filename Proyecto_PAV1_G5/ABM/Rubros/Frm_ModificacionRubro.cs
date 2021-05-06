@@ -21,11 +21,6 @@ namespace Proyecto_PAV1_G5.ABM.Rubros
             InitializeComponent();
         }
 
-        private void Frm_ModificacionRubro_Load(object sender, EventArgs e)
-        {
-            MostrarDatos(rubro.Recuperar_x_Id_Rubro_Array(Pp_id_rubro));
-        }
-
         private void MostrarDatos(DataTable tabla)
         {
             txt_id_rubro.Text = tabla.Rows[0]["id_rubro"].ToString();
@@ -56,5 +51,11 @@ namespace Proyecto_PAV1_G5.ABM.Rubros
         {
             this.Close();
         }
+
+        private void Frm_ModificacionRubro_Load_1(object sender, EventArgs e)
+        {
+            MostrarDatos(rubro.Recuperar_x_Id_Rubro_Array(Pp_id_rubro));
+        }
+
     }
 }

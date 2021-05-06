@@ -60,5 +60,10 @@ namespace Proyecto_PAV1_G5.ABM.Rubros
         {
             MostrarDatos(rubros.Recuperar_x_Id_Rubro_Array(Pp_id_rubro));
         }
+
+        private void btn_cancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

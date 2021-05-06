@@ -155,3 +155,9 @@ C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_AltaEmpleado.resources
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_BajaEmpleado.resources
 C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ModificacionEmpleado.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_AltaEmpleado.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_BajaEmpleado.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ModificacionEmpleado.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Alta_Equipo_Simple.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Baja_Equipo_Simple.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Modificacion_Equipo_Simple.resources

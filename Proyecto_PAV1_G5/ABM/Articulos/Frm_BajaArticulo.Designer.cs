@@ -166,7 +166,6 @@
             // 
             // txt_plazopago
             // 
-            this.txt_plazopago.Enabled = false;
             this.txt_plazopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_plazopago.Location = new System.Drawing.Point(158, 392);
             this.txt_plazopago.Margin = new System.Windows.Forms.Padding(5);
@@ -180,7 +179,6 @@
             // 
             // txt_envio
             // 
-            this.txt_envio.Enabled = false;
             this.txt_envio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_envio.Location = new System.Drawing.Point(158, 356);
             this.txt_envio.Margin = new System.Windows.Forms.Padding(5);
@@ -194,7 +192,6 @@
             // 
             // txt_cuit
             // 
-            this.txt_cuit.Enabled = false;
             this.txt_cuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_cuit.Location = new System.Drawing.Point(159, 320);
             this.txt_cuit.Margin = new System.Windows.Forms.Padding(5);
@@ -223,7 +220,6 @@
             // 
             // txt_stock
             // 
-            this.txt_stock.Enabled = false;
             this.txt_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_stock.Location = new System.Drawing.Point(158, 172);
             this.txt_stock.Margin = new System.Windows.Forms.Padding(5);
@@ -237,7 +233,6 @@
             // 
             // txt_costomin
             // 
-            this.txt_costomin.Enabled = false;
             this.txt_costomin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_costomin.Location = new System.Drawing.Point(158, 244);
             this.txt_costomin.Margin = new System.Windows.Forms.Padding(5);
@@ -251,7 +246,6 @@
             // 
             // txt_costomay
             // 
-            this.txt_costomay.Enabled = false;
             this.txt_costomay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_costomay.Location = new System.Drawing.Point(158, 208);
             this.txt_costomay.Margin = new System.Windows.Forms.Padding(5);
@@ -265,7 +259,6 @@
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Enabled = false;
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_nombre.Location = new System.Drawing.Point(158, 51);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(5);
@@ -279,7 +272,6 @@
             // 
             // txt_descripcion
             // 
-            this.txt_descripcion.Enabled = false;
             this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_descripcion.Location = new System.Drawing.Point(158, 87);
             this.txt_descripcion.Margin = new System.Windows.Forms.Padding(5);
@@ -294,7 +286,6 @@
             // 
             // txt_codigo_articulo
             // 
-            this.txt_codigo_articulo.Enabled = false;
             this.txt_codigo_articulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_codigo_articulo.Location = new System.Drawing.Point(158, 12);
             this.txt_codigo_articulo.Name = "txt_codigo_articulo";
@@ -342,7 +333,6 @@
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.txt_descripcion);
-            this.Enabled = false;
             this.MaximizeBox = false;
             this.Name = "Frm_BajaArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
