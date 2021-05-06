@@ -24,13 +24,18 @@ namespace Proyecto_PAV1_G5.ABM.Empleados
         private void MostrarDatos(DataTable tabla)
         {
             cmb_barrio.SelectedValue = int.Parse(tabla.Rows[0]["id_barrio"].ToString());
-            txt_numdoc.Text = tabla.Rows[0]["cuit_clientes"].ToString();
-            txt_apellido.Text = tabla.Rows[0]["nombre_contacto"].ToString();
-            txt_nombre.Text = tabla.Rows[0]["razon_social"].ToString();
-            txt_telefono.Text = tabla.Rows[0]["calle"].ToString();
-            txt_legajo.Text = tabla.Rows[0]["nro_calle"].ToString();
-            txt_fechaingreso.Text = tabla.Rows[0]["credito_limite"].ToString();
-            cmb_tipodoc.SelectedValue = int.Parse(tabla.Rows[0]["id_barrio"].ToString());
+            txt_numdoc.Text = tabla.Rows[0]["nro_documento"].ToString();
+            txt_apellido.Text = tabla.Rows[0]["apellido"].ToString();
+            txt_nombre.Text = tabla.Rows[0]["nombre"].ToString();
+            txt_telefono.Text = tabla.Rows[0]["telefono"].ToString();
+            txt_legajo.Text = tabla.Rows[0]["legajo"].ToString();
+            txt_fechaingreso.Text = tabla.Rows[0]["fecha_ingreso"].ToString();
+            cmb_tipodoc.SelectedValue = int.Parse(tabla.Rows[0]["id_tipo_documento"].ToString());
+            txt_usuario.Text = tabla.Rows[0]["usuario"].ToString();
+            txt_contrasena.Text = tabla.Rows[0]["contrasena"].ToString();
+            txt_calle.Text = tabla.Rows[0]["calle"].ToString();
+            txt_nro_calle.Text = tabla.Rows[0]["nro_calle"].ToString();
+
         }
 
         private void btn_cancelar_Click_1(object sender, EventArgs e)
@@ -65,7 +70,7 @@ namespace Proyecto_PAV1_G5.ABM.Empleados
         {
             cmb_barrio.CargarCombo(emp.DatosComboBarrio());
             cmb_tipodoc.CargarCombo(emp.DatosComboTipoDoc());
-            //MostrarDatos(emp.Recuperar_x_Cuit_Array(Pp_legajo));
+            MostrarDatos(emp.Recuperar_x_Legajo_Array(Pp_legajo));
         }
     }
 }

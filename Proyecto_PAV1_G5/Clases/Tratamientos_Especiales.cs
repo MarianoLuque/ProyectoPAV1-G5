@@ -265,6 +265,8 @@ namespace Proyecto_PAV1_G5.Clases
             switch (tipoDatoColumna)
             {
                 case "String":
+                case "Date":
+                case "DateTime":
                     return "'" + valorColumna + "'";
                 //al valor columna pasado por parámetro le agrego comillas simples y retorno eso
                 case "Int16":

@@ -30,7 +30,7 @@ namespace Proyecto_PAV1_G5.ABM.Empleados
             {
                 grid_empleados.Rows.Add();
                 grid_empleados.Rows[i].Cells[0].Value = tabla.Rows[i]["legajo"].ToString();
-                grid_empleados.Rows[i].Cells[1].Value = tabla.Rows[i]["tipo_documento"].ToString();
+                grid_empleados.Rows[i].Cells[1].Value = tabla.Rows[i]["documento"].ToString();
                 grid_empleados.Rows[i].Cells[2].Value = tabla.Rows[i]["nro_documento"].ToString();
                 grid_empleados.Rows[i].Cells[3].Value = tabla.Rows[i]["nombre"].ToString();
                 grid_empleados.Rows[i].Cells[4].Value = tabla.Rows[i]["apellido"].ToString();
@@ -56,55 +56,55 @@ namespace Proyecto_PAV1_G5.ABM.Empleados
             }
             if (cmb_tipo_doc.SelectedIndex == -1 && txt_patron_apellido.Text != "" && txt_patron_legajo.Text == "" && txt_patron_nro_doc.Text == "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Apellido(txt_patron_apellido.Text));
             }
             if (cmb_tipo_doc.SelectedIndex != -1 && txt_patron_apellido.Text == "" && txt_patron_legajo.Text == "" && txt_patron_nro_doc.Text == "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Tipo_Documento(cmb_tipo_doc.SelectedValue.ToString()));
             }
             if (cmb_tipo_doc.SelectedIndex == -1 && txt_patron_apellido.Text == "" && txt_patron_legajo.Text != "" && txt_patron_nro_doc.Text != "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Numero_Documento_y_Legajo(txt_patron_legajo.Text, txt_patron_nro_doc.Text));
             }
             if (cmb_tipo_doc.SelectedIndex == -1 && txt_patron_apellido.Text != "" && txt_patron_legajo.Text == "" && txt_patron_nro_doc.Text != "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Numero_Documento_y_Apellido(txt_patron_apellido.Text, txt_patron_nro_doc.Text));
             }
             if (cmb_tipo_doc.SelectedIndex != -1 && txt_patron_apellido.Text == "" && txt_patron_legajo.Text == "" && txt_patron_nro_doc.Text != "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Tipo_y_Numero_Documento(txt_patron_nro_doc.Text, cmb_tipo_doc.SelectedValue.ToString()));
             }
             if (cmb_tipo_doc.SelectedIndex == -1 && txt_patron_apellido.Text != "" && txt_patron_legajo.Text != "" && txt_patron_nro_doc.Text == "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Apellido_y_Legajo(txt_patron_apellido.Text, txt_patron_legajo.Text));
             }
             if (cmb_tipo_doc.SelectedIndex != -1 && txt_patron_apellido.Text == "" && txt_patron_legajo.Text != "" && txt_patron_nro_doc.Text == "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Tipo_Documento_y_Legajo(txt_patron_legajo.Text, cmb_tipo_doc.SelectedValue.ToString()));
             }
             if (cmb_tipo_doc.SelectedIndex != -1 && txt_patron_apellido.Text != "" && txt_patron_legajo.Text == "" && txt_patron_nro_doc.Text == "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Tipo_Documento_y_Apellido(txt_patron_apellido.Text, cmb_tipo_doc.SelectedValue.ToString()));
             }
             if (cmb_tipo_doc.SelectedIndex == -1 && txt_patron_apellido.Text != "" && txt_patron_legajo.Text != "" && txt_patron_nro_doc.Text != "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Apellido_Legajo_y_Numero_Documento(txt_patron_apellido.Text, txt_patron_legajo.Text, txt_patron_nro_doc.Text));
             }
             if (cmb_tipo_doc.SelectedIndex != -1 && txt_patron_apellido.Text == "" && txt_patron_legajo.Text != "" && txt_patron_nro_doc.Text != "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Tipo_y_Numero_Documento_y_Legajo(txt_patron_legajo.Text, cmb_tipo_doc.SelectedValue.ToString(), txt_patron_nro_doc.Text));
             }
             if (cmb_tipo_doc.SelectedIndex != -1 && txt_patron_apellido.Text != "" && txt_patron_legajo.Text == "" && txt_patron_nro_doc.Text != "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Tipo_y_Numero_Documento_y_Apellido(txt_patron_apellido.Text, cmb_tipo_doc.SelectedValue.ToString(), txt_patron_nro_doc.Text));
             }
             if (cmb_tipo_doc.SelectedIndex != -1 && txt_patron_apellido.Text != "" && txt_patron_legajo.Text != "" && txt_patron_nro_doc.Text == "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Tipo_Documento_Legajo_y_Apellido(txt_patron_apellido.Text, cmb_tipo_doc.SelectedValue.ToString(), txt_patron_legajo.Text));
             }
             if (cmb_tipo_doc.SelectedIndex != -1 && txt_patron_apellido.Text != "" && txt_patron_legajo.Text != "" && txt_patron_nro_doc.Text != "")
             {
-
+                CargarGrilla(emp.Recuperar_x_Tipo_y_Numero_Documento_Apellido_y_Legajo(txt_patron_apellido.Text, cmb_tipo_doc.SelectedValue.ToString(), txt_patron_nro_doc.Text, txt_patron_legajo.Text));
             }
         }
 

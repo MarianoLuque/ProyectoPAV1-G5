@@ -43,7 +43,7 @@ namespace Proyecto_PAV1_G5.Negocios
         //Funcion insertar cliente
         public void Modificar(string[] ValorPk, Control.ControlCollection controles)
         {
-            _BD.Modificar(tratamiento.ConstructorModificar_Con_PK("Empleados", ValorPk, controles));
+            _BD.Modificar(tratamiento.ConstructorModificar_Sin_PK("Empleados", ValorPk, controles));
         }
 
         public void Insertar(Control.ControlCollection controles)
@@ -60,8 +60,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento";
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento";
             return _BD.Ejecutar_Select(sql);
         }
 
@@ -69,8 +69,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.legajo like '%" + patron.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
@@ -79,8 +79,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.id_tipo_documento = " + id_tipo_documento;
             return _BD.Ejecutar_Select(sql);
         }
@@ -89,8 +89,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.nro_documento like '%" + numero_documento.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
@@ -99,8 +99,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.apellido like '%" + apellido.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
@@ -109,8 +109,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.nro_documento like '%" + numero_documento.Trim() + "%' AND "
                         + "e.id_tipo_documento = " + id_tipo_documento;
             return _BD.Ejecutar_Select(sql);
@@ -120,8 +120,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.legajo like '%" + legajo.Trim() + "%' AND "
                         + "e.id_tipo_documento = " + id_tipo_documento;
             return _BD.Ejecutar_Select(sql);
@@ -131,8 +131,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.apellido like '%" + apellido.Trim() + "%' AND "
                         + "e.id_tipo_documento = " + id_tipo_documento;
             return _BD.Ejecutar_Select(sql);
@@ -142,8 +142,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.nro_documento like '%" + numero_documento.Trim() + "%' AND "
                         + "e.legajo like '%" + legajo.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
@@ -153,8 +153,8 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.nro_documento like '%" + numero_documento.Trim() + "%' AND "
                         + "e.apellido like '%" + apellido.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
@@ -164,12 +164,79 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
                         + " FROM Empleados e "
-                        + "join Barrios b on e.id_barrio = e.id_barrio "
-                        + "join Tipo Documento d on d.id_tipo_documento = e.id_tipo_documento "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
                         + "WHERE e.apellido like '%" + apellido.Trim() + "%' AND "
                         + "e.legajo like '%" + legajo.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
 
+        public DataTable Recuperar_x_Apellido_Legajo_y_Numero_Documento(string apellido, string legajo, string nro_documento)
+        {
+            string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
+                        + " FROM Empleados e "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
+                        + "WHERE e.apellido like '%" + apellido.Trim() + "%' AND "
+                        + "e.legajo like '%" + legajo.Trim() + "%' AND "
+                        + "e.nro_documento like '%" + legajo.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Tipo_y_Numero_Documento_y_Legajo(string legajo, string id_tipo_documento, string nro_documento)
+        {
+            string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
+                        + " FROM Empleados e "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
+                        + "WHERE e.legajo like '%" + legajo.Trim() + "%' AND "
+                        + "e.id_tipo_documento = " + id_tipo_documento + " AND "
+                        + "e.nro_documento like '%" + nro_documento.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Tipo_y_Numero_Documento_y_Apellido(string apellido, string id_tipo_documento, string nro_documento)
+        {
+            string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
+                        + " FROM Empleados e "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
+                        + "WHERE e.apellido like '%" + apellido.Trim() + "%' AND "
+                        + "e.id_tipo_documento = " + id_tipo_documento + " AND "
+                        + "e.nro_documento like '%" + nro_documento.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Tipo_Documento_Legajo_y_Apellido(string apellido, string id_tipo_documento, string legajo)
+        {
+            string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
+                        + " FROM Empleados e "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
+                        + "WHERE e.apellido like '%" + apellido.Trim() + "%' AND "
+                        + "e.id_tipo_documento = " + id_tipo_documento + " AND "
+                        + "e.nro_documento like '%" + legajo.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Tipo_y_Numero_Documento_Apellido_y_Legajo(string apellido, string id_tipo_documento, string nro_documento, string legajo)
+        {
+            string sql = @"SELECT e.*, b.nombre_barrio as barrio, d.nombre_tipo_documento as documento"
+                        + " FROM Empleados e "
+                        + "join Barrios b on e.id_barrio = b.id_barrio "
+                        + "join Tipo_Documento d on e.id_tipo_documento = d.id_tipo_documento "
+                        + "WHERE e.apellido like '%" + apellido.Trim() + "%' AND "
+                        + "e.id_tipo_documento = " + id_tipo_documento + " AND "
+                        + "e.nro_documento like '%" + nro_documento.Trim() + "%' AND "
+                        + "e.nro_documento like '%" + legajo.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Legajo_Array(string[] legajo)
+        {
+
+            string sql = "SELECT e.* FROM Empleados e WHERE e.legajo = " + legajo[0];
+            return _BD.Ejecutar_Select(sql);
+        }
     }
 }

@@ -30,7 +30,7 @@ namespace Proyecto_PAV1_G5.Clases
 
             if (this.Pp_Conseleccion == true)
             {
-                this.SelectedIndex = 1;
+                this.SelectedIndex = 0;
             }
             else
             {
