@@ -35,13 +35,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_usuario = new System.Windows.Forms.MaskedTextBox();
-            this.txt_password = new System.Windows.Forms.MaskedTextBox();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btn_Ver_Contraseña = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,25 +99,6 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Password";
             // 
-            // txt_usuario
-            // 
-            this.txt_usuario.Location = new System.Drawing.Point(20, 149);
-            this.txt_usuario.Mask = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-            this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(213, 26);
-            this.txt_usuario.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.txt_usuario, "Ingrese su nombre de usuario");
-            // 
-            // txt_password
-            // 
-            this.txt_password.Location = new System.Drawing.Point(20, 228);
-            this.txt_password.Mask = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-            this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '*';
-            this.txt_password.Size = new System.Drawing.Size(213, 26);
-            this.txt_password.TabIndex = 8;
-            this.toolTip1.SetToolTip(this.txt_password, "Ingrese su contraseña");
-            // 
             // btn_cancelar
             // 
             this.btn_cancelar.BackColor = System.Drawing.Color.Transparent;
@@ -156,7 +137,7 @@
             this.btn_Ver_Contraseña.BackColor = System.Drawing.Color.Transparent;
             this.btn_Ver_Contraseña.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Ver_Contraseña.BackgroundImage")));
             this.btn_Ver_Contraseña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Ver_Contraseña.Location = new System.Drawing.Point(240, 228);
+            this.btn_Ver_Contraseña.Location = new System.Drawing.Point(240, 224);
             this.btn_Ver_Contraseña.Name = "btn_Ver_Contraseña";
             this.btn_Ver_Contraseña.Size = new System.Drawing.Size(34, 26);
             this.btn_Ver_Contraseña.TabIndex = 12;
@@ -174,17 +155,32 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // txt_usuario
+            // 
+            this.txt_usuario.Location = new System.Drawing.Point(23, 152);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(210, 26);
+            this.txt_usuario.TabIndex = 13;
+            // 
+            // txt_password
+            // 
+            this.txt_password.Location = new System.Drawing.Point(23, 225);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '*';
+            this.txt_password.Size = new System.Drawing.Size(211, 26);
+            this.txt_password.TabIndex = 14;
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 387);
             this.ControlBox = false;
+            this.Controls.Add(this.txt_password);
+            this.Controls.Add(this.txt_usuario);
             this.Controls.Add(this.btn_Ver_Contraseña);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.txt_password);
-            this.Controls.Add(this.txt_usuario);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -210,11 +206,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox txt_usuario;
-        private System.Windows.Forms.MaskedTextBox txt_password;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button btn_Ver_Contraseña;
+        private System.Windows.Forms.TextBox txt_usuario;
+        private System.Windows.Forms.TextBox txt_password;
     }
 }

@@ -161,3 +161,19 @@ D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Pr
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Alta_Equipo_Simple.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Baja_Equipo_Simple.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Modificacion_Equipo_Simple.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_AltaArticulo.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_BajaArticulo.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ModificacionArticulo.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ABMClientes.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_AltaCliente.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_BajaCliente.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ModificacionCliente.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_AltaEmpleado.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_BajaEmpleado.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ModificacionEmpleado.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Alta_Equipo_Simple.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Baja_Equipo_Simple.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Modificacion_Equipo_Simple.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_AltaRubro.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_BajaRubro.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ModificacionRubro.resources

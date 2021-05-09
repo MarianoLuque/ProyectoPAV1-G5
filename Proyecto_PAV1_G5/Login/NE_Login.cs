@@ -16,7 +16,7 @@ namespace Proyecto_PAV1_G5.Login
         Acceso_Datos _BD = new Acceso_Datos();
         public ResultadoValidacion Validar_Usuario(String usuario, String password)
         {
-            String sql = @"SELECT * FROM usuarios WHERE usuario = '" + usuario + "'"
+            String sql = @"SELECT * FROM Empleados WHERE usuario = '" + usuario + "'"
                                 + "AND contrasena = '" + password + "'"; // comando que va a ejecutar
             tabla = _BD.Ejecutar_Select(sql); //la ejecucion de este comando me devuelve un DataTable
 

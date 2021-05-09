@@ -45,7 +45,7 @@
             this.btn_Cancelar.Location = new System.Drawing.Point(339, 187);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(83, 28);
-            this.btn_Cancelar.TabIndex = 16;
+            this.btn_Cancelar.TabIndex = 5;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
@@ -55,7 +55,7 @@
             this.btn_Aceptar.Location = new System.Drawing.Point(173, 187);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(75, 28);
-            this.btn_Aceptar.TabIndex = 15;
+            this.btn_Aceptar.TabIndex = 4;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.UseVisualStyleBackColor = true;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
@@ -102,7 +102,7 @@
             this.txt_Precio_Minorista.Pp_Validable = true;
             this.txt_Precio_Minorista.ReadOnly = true;
             this.txt_Precio_Minorista.Size = new System.Drawing.Size(233, 20);
-            this.txt_Precio_Minorista.TabIndex = 21;
+            this.txt_Precio_Minorista.TabIndex = 2;
             // 
             // txt_Nombre_Equipo
             // 
@@ -113,7 +113,7 @@
             this.txt_Nombre_Equipo.Pp_Validable = true;
             this.txt_Nombre_Equipo.ReadOnly = true;
             this.txt_Nombre_Equipo.Size = new System.Drawing.Size(233, 20);
-            this.txt_Nombre_Equipo.TabIndex = 20;
+            this.txt_Nombre_Equipo.TabIndex = 3;
             // 
             // txt_Precio_Mayorista
             // 
@@ -124,7 +124,7 @@
             this.txt_Precio_Mayorista.Pp_Validable = true;
             this.txt_Precio_Mayorista.ReadOnly = true;
             this.txt_Precio_Mayorista.Size = new System.Drawing.Size(233, 20);
-            this.txt_Precio_Mayorista.TabIndex = 19;
+            this.txt_Precio_Mayorista.TabIndex = 1;
             // 
             // label1
             // 
@@ -145,7 +145,7 @@
             this.txt_codigo_equipo.Pp_Validable = false;
             this.txt_codigo_equipo.ReadOnly = true;
             this.txt_codigo_equipo.Size = new System.Drawing.Size(233, 20);
-            this.txt_codigo_equipo.TabIndex = 23;
+            this.txt_codigo_equipo.TabIndex = 0;
             // 
             // Frm_Baja_Equipo_Simple
             // 

@@ -67,7 +67,7 @@
             this.grid_Equipos_Simples.Name = "grid_Equipos_Simples";
             this.grid_Equipos_Simples.ReadOnly = true;
             this.grid_Equipos_Simples.Size = new System.Drawing.Size(760, 276);
-            this.grid_Equipos_Simples.TabIndex = 0;
+            this.grid_Equipos_Simples.TabIndex = 4;
             this.grid_Equipos_Simples.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Equipos_Simples_CellClick);
             // 
             // codigo_equipo
@@ -115,7 +115,7 @@
             this.btn_Agregar_Equipo.Location = new System.Drawing.Point(119, 519);
             this.btn_Agregar_Equipo.Name = "btn_Agregar_Equipo";
             this.btn_Agregar_Equipo.Size = new System.Drawing.Size(100, 30);
-            this.btn_Agregar_Equipo.TabIndex = 5;
+            this.btn_Agregar_Equipo.TabIndex = 3;
             this.btn_Agregar_Equipo.Text = "Agregar";
             this.btn_Agregar_Equipo.UseVisualStyleBackColor = true;
             this.btn_Agregar_Equipo.Click += new System.EventHandler(this.btn_Agregar_Equipo_Click);
@@ -127,7 +127,7 @@
             this.btn_Modificar_Equipo.Location = new System.Drawing.Point(355, 519);
             this.btn_Modificar_Equipo.Name = "btn_Modificar_Equipo";
             this.btn_Modificar_Equipo.Size = new System.Drawing.Size(100, 30);
-            this.btn_Modificar_Equipo.TabIndex = 9;
+            this.btn_Modificar_Equipo.TabIndex = 5;
             this.btn_Modificar_Equipo.Text = "Editar";
             this.btn_Modificar_Equipo.UseVisualStyleBackColor = true;
             this.btn_Modificar_Equipo.Click += new System.EventHandler(this.btn_Modificar_Equipo_Click);
@@ -139,7 +139,7 @@
             this.btn_Eliminar_Equipo.Location = new System.Drawing.Point(591, 519);
             this.btn_Eliminar_Equipo.Name = "btn_Eliminar_Equipo";
             this.btn_Eliminar_Equipo.Size = new System.Drawing.Size(100, 30);
-            this.btn_Eliminar_Equipo.TabIndex = 11;
+            this.btn_Eliminar_Equipo.TabIndex = 6;
             this.btn_Eliminar_Equipo.Text = "Eliminar";
             this.btn_Eliminar_Equipo.UseVisualStyleBackColor = true;
             this.btn_Eliminar_Equipo.Click += new System.EventHandler(this.btn_Eliminar_Equipo_Click);
@@ -167,21 +167,21 @@
             this.txt_Codigo_Equipo.Location = new System.Drawing.Point(231, 173);
             this.txt_Codigo_Equipo.Name = "txt_Codigo_Equipo";
             this.txt_Codigo_Equipo.Size = new System.Drawing.Size(192, 20);
-            this.txt_Codigo_Equipo.TabIndex = 20;
+            this.txt_Codigo_Equipo.TabIndex = 1;
             // 
             // txt_Nombre_Equipo
             // 
             this.txt_Nombre_Equipo.Location = new System.Drawing.Point(231, 134);
             this.txt_Nombre_Equipo.Name = "txt_Nombre_Equipo";
             this.txt_Nombre_Equipo.Size = new System.Drawing.Size(192, 20);
-            this.txt_Nombre_Equipo.TabIndex = 21;
+            this.txt_Nombre_Equipo.TabIndex = 0;
             // 
             // btn_Consultar
             // 
             this.btn_Consultar.Location = new System.Drawing.Point(451, 173);
             this.btn_Consultar.Name = "btn_Consultar";
             this.btn_Consultar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Consultar.TabIndex = 19;
+            this.btn_Consultar.TabIndex = 2;
             this.btn_Consultar.Text = "Consultar";
             this.btn_Consultar.UseVisualStyleBackColor = true;
             this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);

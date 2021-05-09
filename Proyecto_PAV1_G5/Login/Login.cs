@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_PAV1_G5.Login;
+
 
 namespace Proyecto_PAV1_G5
 {
@@ -19,11 +21,14 @@ namespace Proyecto_PAV1_G5
             set { txt_usuario.Text = value; }
         }
 
+        
         public String Pp_password
         {
             get { return txt_password.Text; }
             set { txt_password.Text = value; }
         }
+
+        NE_Login login = new NE_Login();
 
         // CONSTRUCTOR
         public Frm_Login()
@@ -34,7 +39,7 @@ namespace Proyecto_PAV1_G5
         // BOTON CANCELAR
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         // BOTON ACEPTAR
@@ -53,11 +58,23 @@ namespace Proyecto_PAV1_G5
                 return;
             }
 
-            Principal principal = new Principal();
-            principal.ShowDialog();
-            this.Close();
+            NE_Login.ResultadoValidacion resultado = login.Validar_Usuario(txt_usuario.Text,txt_password.Text);
+
+            if (resultado == NE_Login.ResultadoValidacion.existe)
+            {
+                Principal principal = new Principal();
+                principal.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("El usuario y la password no coinciden con ninguno de nuestra Base Datos.");
+                txt_usuario.Focus();
+            }
+
         }
 
+        // BOTON PARA VER CONTRASEÑA 
         private void btn_Ver_Contraeña_Click(object sender, EventArgs e)
         {
             
