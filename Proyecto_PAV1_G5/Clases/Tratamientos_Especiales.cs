@@ -275,6 +275,7 @@ namespace Proyecto_PAV1_G5.Clases
                 case "Int64":
                 case "Decimal":
                 case "Float":
+                case "Single":
                     return valorColumna;
                 default:
                     return valorColumna;
