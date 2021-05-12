@@ -15,10 +15,7 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
 {
     public partial class Frm_Modificacion_Equipo_Especial : Form
     {
-        public string[] Pp_codigo_equipo_especial;
-        public int codigo_equipo_especial { get; set; }
-        public int cuit_cliente { get; set; }
-        Acceso_Datos _BD = new Acceso_Datos();
+        public string[] Pp_codigo_y_cuit_equipo_especial;
         NE_EquiposEspeciales equipoEs = new NE_EquiposEspeciales();
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
 
@@ -33,16 +30,11 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
             this.Close();
         }
 
-        private void Frm_Modificacion_Equipo_Especial_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             if (tratamiento.Validar(this.Controls) == Tratamientos_Especiales.Resultado.correcto)
             { 
-                equipoEs.Modificar(Pp_codigo_equipo_especial, this.Controls);
+                equipoEs.Modificar(Pp_codigo_y_cuit_equipo_especial, this.Controls);
                 if (MessageBox.Show("El equipo se modificó con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
                 {
                     this.Close();
@@ -63,6 +55,9 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
             txt_Nombre_Equipo_Especial.Text = tabla.Rows[0]["nombre_equipo_especial"].ToString();
         }
 
-
+        private void Frm_Modificacion_Equipo_Especial_Load_1(object sender, EventArgs e)
+        {
+            MostrarDatos(equipoEs.Recuperar_x_Codigo_y_Cuit_Array(Pp_codigo_y_cuit_equipo_especial));
+        }
     }
 }

@@ -118,7 +118,8 @@
             this.txt_Nombre_Equipo_Especial.Name = "txt_Nombre_Equipo_Especial";
             this.txt_Nombre_Equipo_Especial.Pp_campo = "nombre_equipo_especial";
             this.txt_Nombre_Equipo_Especial.Pp_MensajeError = null;
-            this.txt_Nombre_Equipo_Especial.Pp_Validable = false;
+            this.txt_Nombre_Equipo_Especial.Pp_Validable = true;
+            this.txt_Nombre_Equipo_Especial.ReadOnly = true;
             this.txt_Nombre_Equipo_Especial.Size = new System.Drawing.Size(233, 20);
             this.txt_Nombre_Equipo_Especial.TabIndex = 4;
             // 
@@ -128,7 +129,8 @@
             this.txt_Precio_Equipo_Especial.Name = "txt_Precio_Equipo_Especial";
             this.txt_Precio_Equipo_Especial.Pp_campo = "precio";
             this.txt_Precio_Equipo_Especial.Pp_MensajeError = null;
-            this.txt_Precio_Equipo_Especial.Pp_Validable = false;
+            this.txt_Precio_Equipo_Especial.Pp_Validable = true;
+            this.txt_Precio_Equipo_Especial.ReadOnly = true;
             this.txt_Precio_Equipo_Especial.Size = new System.Drawing.Size(233, 20);
             this.txt_Precio_Equipo_Especial.TabIndex = 3;
             // 
@@ -138,7 +140,8 @@
             this.txt_Descripcion_Equipo_Especial.Name = "txt_Descripcion_Equipo_Especial";
             this.txt_Descripcion_Equipo_Especial.Pp_campo = "descripcion";
             this.txt_Descripcion_Equipo_Especial.Pp_MensajeError = null;
-            this.txt_Descripcion_Equipo_Especial.Pp_Validable = false;
+            this.txt_Descripcion_Equipo_Especial.Pp_Validable = true;
+            this.txt_Descripcion_Equipo_Especial.ReadOnly = true;
             this.txt_Descripcion_Equipo_Especial.Size = new System.Drawing.Size(233, 20);
             this.txt_Descripcion_Equipo_Especial.TabIndex = 2;
             // 
@@ -148,7 +151,8 @@
             this.txt_Cuit_Cliente_Equipo_Especial.Name = "txt_Cuit_Cliente_Equipo_Especial";
             this.txt_Cuit_Cliente_Equipo_Especial.Pp_campo = "cuit_cliente";
             this.txt_Cuit_Cliente_Equipo_Especial.Pp_MensajeError = null;
-            this.txt_Cuit_Cliente_Equipo_Especial.Pp_Validable = false;
+            this.txt_Cuit_Cliente_Equipo_Especial.Pp_Validable = true;
+            this.txt_Cuit_Cliente_Equipo_Especial.ReadOnly = true;
             this.txt_Cuit_Cliente_Equipo_Especial.Size = new System.Drawing.Size(233, 20);
             this.txt_Cuit_Cliente_Equipo_Especial.TabIndex = 1;
             // 
@@ -158,7 +162,8 @@
             this.txt_Codigo_Equipo_Especial.Name = "txt_Codigo_Equipo_Especial";
             this.txt_Codigo_Equipo_Especial.Pp_campo = "codigo_equipo_especial";
             this.txt_Codigo_Equipo_Especial.Pp_MensajeError = null;
-            this.txt_Codigo_Equipo_Especial.Pp_Validable = false;
+            this.txt_Codigo_Equipo_Especial.Pp_Validable = true;
+            this.txt_Codigo_Equipo_Especial.ReadOnly = true;
             this.txt_Codigo_Equipo_Especial.Size = new System.Drawing.Size(233, 20);
             this.txt_Codigo_Equipo_Especial.TabIndex = 0;
             // 
@@ -183,6 +188,7 @@
             this.Name = "Frm_Baja_Equipo_Especial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Equipo Especial";
+            this.Load += new System.EventHandler(this.Frm_Baja_Equipo_Especial_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

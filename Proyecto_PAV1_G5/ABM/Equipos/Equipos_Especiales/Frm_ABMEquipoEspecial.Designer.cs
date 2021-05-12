@@ -73,6 +73,7 @@
             this.grid_Equipo_Especial.ReadOnly = true;
             this.grid_Equipo_Especial.Size = new System.Drawing.Size(760, 254);
             this.grid_Equipo_Especial.TabIndex = 0;
+            this.grid_Equipo_Especial.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Equipo_Especial_CellClick);
             // 
             // codigo_equipo_especial
             // 

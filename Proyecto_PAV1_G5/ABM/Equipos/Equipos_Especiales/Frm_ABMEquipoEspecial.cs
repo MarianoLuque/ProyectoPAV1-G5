@@ -15,7 +15,7 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
 {
     public partial class Frm_ABMEquipoEspecial : Form
     {
-        public string[] Pp_codigo_equipo_especial { get; set; }
+        public string[] Pp_codigo_y_cuit_equipo_especial { get; set; }
         NE_EquiposEspeciales equipoEs = new NE_EquiposEspeciales();
         Acceso_Datos _BD = new Acceso_Datos();
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
@@ -58,18 +58,33 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
             {
                 CargarGrilla(equipoEs.RecuperarTodos());
             }
-            if (txt_Codigo_Equipo_Especial.Text == "" && txt_Nombre_Equipo_Especial.Text == "")
+            if (txt_Codigo_Equipo_Especial.Text == "" && txt_Nombre_Equipo_Especial.Text == "" && txt_Cuit_Cliente.Text != "")
             {
                 CargarGrilla(equipoEs.Recuperar_Cuit_Cliente(txt_Cuit_Cliente.Text));
-                return;
             }
             if (txt_Cuit_Cliente.Text ==  "" && txt_Nombre_Equipo_Especial.Text == "" && txt_Codigo_Equipo_Especial.Text != "")
             {
                 CargarGrilla(equipoEs.Recuperar_x_Codigo_Equipo(txt_Codigo_Equipo_Especial.Text));
             }
-            if (txt_Cuit_Cliente.Text == "" && txt_Codigo_Equipo_Especial.Text == "")
+            if (txt_Cuit_Cliente.Text == "" && txt_Codigo_Equipo_Especial.Text == "" && txt_Nombre_Equipo_Especial.Text != "")
             {
                 CargarGrilla(equipoEs.Recuperar_x_Nombre(txt_Nombre_Equipo_Especial.Text));
+            }
+            if (txt_Cuit_Cliente.Text == "" && txt_Codigo_Equipo_Especial.Text != "" && txt_Nombre_Equipo_Especial.Text != "")
+            {
+                CargarGrilla(equipoEs.Recuperar_x_Nombre_y_Codigo(txt_Nombre_Equipo_Especial.Text, txt_Codigo_Equipo_Especial.Text));
+            }
+            if (txt_Cuit_Cliente.Text != "" && txt_Codigo_Equipo_Especial.Text == "" && txt_Nombre_Equipo_Especial.Text != "")
+            {
+                CargarGrilla(equipoEs.Recuperar_x_Cuit_y_Nombre(txt_Cuit_Cliente.Text, txt_Nombre_Equipo_Especial.Text));
+            }
+            if (txt_Cuit_Cliente.Text != "" && txt_Codigo_Equipo_Especial.Text != "" && txt_Nombre_Equipo_Especial.Text == "")
+            {
+                CargarGrilla(equipoEs.Recuperar_x_Cuit_y_Codigo(txt_Cuit_Cliente.Text, txt_Codigo_Equipo_Especial.Text));
+            }
+            if (txt_Cuit_Cliente.Text != "" && txt_Codigo_Equipo_Especial.Text != "" && txt_Nombre_Equipo_Especial.Text != "")
+            {
+                CargarGrilla(equipoEs.Recuperar_x_Cuit_Nombre_y_Codigo(txt_Cuit_Cliente.Text, txt_Nombre_Equipo_Especial.Text, txt_Codigo_Equipo_Especial.Text));
             }
         }
 
@@ -77,22 +92,28 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
             private void btn_Modificar_Equipo_Especial_Click(object sender, EventArgs e)
         {
             Frm_Modificacion_Equipo_Especial modifEq = new Frm_Modificacion_Equipo_Especial();
-            string[] Pp_codigo_equipo_especial = new string[2];
-            Pp_codigo_equipo_especial[0] = grid_Equipo_Especial.CurrentRow.Cells["codigo_equipo_especial"].Value.ToString();
-            Pp_codigo_equipo_especial[1] = grid_Equipo_Especial.CurrentRow.Cells["cuit_cliente"].Value.ToString();
-            modifEq.Pp_codigo_equipo_especial = Pp_codigo_equipo_especial;
+            string[] Pp_codigo_y_cuit_equipo_especial = new string[2];
+            Pp_codigo_y_cuit_equipo_especial[0] = grid_Equipo_Especial.CurrentRow.Cells["codigo_equipo_especial"].Value.ToString();
+            Pp_codigo_y_cuit_equipo_especial[1] = grid_Equipo_Especial.CurrentRow.Cells["cuit_cliente"].Value.ToString();
+            modifEq.Pp_codigo_y_cuit_equipo_especial = Pp_codigo_y_cuit_equipo_especial;
             modifEq.ShowDialog();
         }
 
         private void btn_Eliminar_Equipo_Especial_Click(object sender, EventArgs e)
         {
             Frm_Baja_Equipo_Especial equipoDel = new Frm_Baja_Equipo_Especial();
-            string[] Pp_codigo_equipo_especial = new string[2];
-            Pp_codigo_equipo_especial[0] = grid_Equipo_Especial.CurrentRow.Cells["codigo_equipo_especial"].Value.ToString();
-            Pp_codigo_equipo_especial[1] = grid_Equipo_Especial.CurrentRow.Cells["cuit_cliente"].Value.ToString();
-            equipoDel.Pp_codigo_equipo_especial = Pp_codigo_equipo_especial;
+            string[] Pp_codigo_y_cuit_equipo_especial = new string[2];
+            Pp_codigo_y_cuit_equipo_especial[0] = grid_Equipo_Especial.CurrentRow.Cells["codigo_equipo_especial"].Value.ToString();
+            Pp_codigo_y_cuit_equipo_especial[1] = grid_Equipo_Especial.CurrentRow.Cells["cuit_cliente"].Value.ToString();
+            equipoDel.Pp_codigo_y_cuit_equipo_especial = Pp_codigo_y_cuit_equipo_especial;
             equipoDel.ShowDialog();
         }
 
+        private void grid_Equipo_Especial_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string[] Pp_codigo_y_cuit_equipo_especial = new string[2];
+            Pp_codigo_y_cuit_equipo_especial[0] = grid_Equipo_Especial.CurrentRow.Cells["codigo_equipo_especial"].Value.ToString();
+            Pp_codigo_y_cuit_equipo_especial[1] = grid_Equipo_Especial.CurrentRow.Cells["cuit_cliente"].Value.ToString();
+        }
     }
 }
