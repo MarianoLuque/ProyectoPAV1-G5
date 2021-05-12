@@ -59,6 +59,8 @@
             // 
             // grid_Equipo_Especial
             // 
+            this.grid_Equipo_Especial.AllowUserToAddRows = false;
+            this.grid_Equipo_Especial.AllowUserToDeleteRows = false;
             this.grid_Equipo_Especial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_Equipo_Especial.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codigo_equipo_especial,
@@ -68,6 +70,7 @@
             this.descripcion});
             this.grid_Equipo_Especial.Location = new System.Drawing.Point(12, 243);
             this.grid_Equipo_Especial.Name = "grid_Equipo_Especial";
+            this.grid_Equipo_Especial.ReadOnly = true;
             this.grid_Equipo_Especial.Size = new System.Drawing.Size(760, 254);
             this.grid_Equipo_Especial.TabIndex = 0;
             // 
@@ -75,29 +78,34 @@
             // 
             this.codigo_equipo_especial.HeaderText = "Codigo";
             this.codigo_equipo_especial.Name = "codigo_equipo_especial";
+            this.codigo_equipo_especial.ReadOnly = true;
             this.codigo_equipo_especial.Width = 65;
             // 
             // cuit_cliente
             // 
             this.cuit_cliente.HeaderText = "Cliente";
             this.cuit_cliente.Name = "cuit_cliente";
+            this.cuit_cliente.ReadOnly = true;
             // 
             // nombre_equipo_especial
             // 
             this.nombre_equipo_especial.HeaderText = "Nombre Equipo";
             this.nombre_equipo_especial.Name = "nombre_equipo_especial";
+            this.nombre_equipo_especial.ReadOnly = true;
             this.nombre_equipo_especial.Width = 250;
             // 
             // precio
             // 
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
+            this.precio.ReadOnly = true;
             this.precio.Width = 65;
             // 
             // descripcion
             // 
             this.descripcion.HeaderText = "Descripcion";
             this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
             this.descripcion.Width = 230;
             // 
             // textBox1

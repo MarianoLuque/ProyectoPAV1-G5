@@ -38,22 +38,22 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Cuit_Cliente(string cuit)
         {
-            string sql = @"SELECT * FROM Equipos_Especiales "
-                        + "WHERE cuit_cliente like '%" + cuit.Trim() + "%'";
+            string sql = @"SELECT e.* FROM Equipos_Especiales e "
+                        + "WHERE e.cuit_cliente like '%" + cuit.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
 
         public DataTable Recuperar_x_Codigo_Equipo(string codigo)
         {
-            string sql = @"SELECT * FROM Equipos_Especiales "
-            + "WHERE cuit_cliente like '%" + codigo.Trim() + "%'";
+            string sql = @"SELECT e.* FROM Equipos_Especiales e "
+            + "WHERE e.codigo_equipo_especial '%" + codigo.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
 
         public DataTable Recuperar_x_Nombre(string nombre)
         {
-            string sql = @"SELECT * FROM Equipos_Especiales "
-           + "WHERE cuit_cliente like '%" + nombre.Trim() + "%'";
+            string sql = @"SELECT e.* FROM Equipos_Especiales e "
+           + "WHERE e.nombre_equipo_especial like '%" + nombre.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
 
@@ -103,7 +103,7 @@ namespace Proyecto_PAV1_G5.Negocios
         }
         public DataTable Recuperar_x_Codigo_Array(string[] codigo)
         {
-            string sql = "SELECT e.* FROM Equipos_Especiales e WHERE e.codigo_equipo_especial = " + codigo[0];
+            string sql = "SELECT e.* FROM Equipos_Especiales e WHERE e.codigo_equipo_especial = " + codigo[0] + " AND e.cuit_cliente = " + codigo[1];
             return _BD.Ejecutar_Select(sql);
         }
     }

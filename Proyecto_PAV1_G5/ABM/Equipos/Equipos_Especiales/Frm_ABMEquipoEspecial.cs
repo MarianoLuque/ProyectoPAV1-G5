@@ -44,16 +44,15 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
                 grid_Equipo_Especial.Rows.Add();
                 grid_Equipo_Especial.Rows[i].Cells[0].Value = tabla.Rows[i]["codigo_equipo_especial"].ToString();
                 grid_Equipo_Especial.Rows[i].Cells[1].Value = tabla.Rows[i]["cuit_cliente"].ToString();
-                grid_Equipo_Especial.Rows[i].Cells[2].Value = tabla.Rows[i]["descripcion"].ToString();
+                grid_Equipo_Especial.Rows[i].Cells[2].Value = tabla.Rows[i]["nombre_equipo_especial"].ToString();
                 grid_Equipo_Especial.Rows[i].Cells[3].Value = tabla.Rows[i]["precio"].ToString();
-                grid_Equipo_Especial.Rows[i].Cells[4].Value = tabla.Rows[i]["nombre_equipo_especial"].ToString();
+                grid_Equipo_Especial.Rows[i].Cells[4].Value = tabla.Rows[i]["descripcion"].ToString();
             }
 
         }
 
         private void btn_Consultar_Click(object sender, EventArgs e)
         {
-            grid_Equipo_Especial.Rows.Clear();
 
             if (txt_Codigo_Equipo_Especial.Text == "" && txt_Nombre_Equipo_Especial.Text == "" && txt_Cuit_Cliente.Text == "")
             {
@@ -64,7 +63,7 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
                 CargarGrilla(equipoEs.Recuperar_Cuit_Cliente(txt_Cuit_Cliente.Text));
                 return;
             }
-            if (txt_Cuit_Cliente.Text ==  "" && txt_Nombre_Equipo_Especial.Text == "")
+            if (txt_Cuit_Cliente.Text ==  "" && txt_Nombre_Equipo_Especial.Text == "" && txt_Codigo_Equipo_Especial.Text != "")
             {
                 CargarGrilla(equipoEs.Recuperar_x_Codigo_Equipo(txt_Codigo_Equipo_Especial.Text));
             }
