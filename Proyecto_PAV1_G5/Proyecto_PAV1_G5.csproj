@@ -301,6 +301,15 @@
     <EmbeddedResource Include="ABM\Categoria\Frm_ABMCategoria.resx">
       <DependentUpon>Frm_ABMCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Categoria\Frm_AltaCategoria.resx">
+      <DependentUpon>Frm_AltaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Categoria\Frm_BajaCategoria.resx">
+      <DependentUpon>Frm_BajaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Categoria\Frm_ModificacionCategoria.resx">
+      <DependentUpon>Frm_ModificacionCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ABM\Clientes\Frm_ABMClientes.resx">
       <DependentUpon>Frm_ABMClientes.cs</DependentUpon>
     </EmbeddedResource>

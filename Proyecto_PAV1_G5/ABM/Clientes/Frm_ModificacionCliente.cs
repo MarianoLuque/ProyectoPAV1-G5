@@ -63,5 +63,6 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
             txt_legajo_vendedor.Text = tabla.Rows[0]["legajo_vendedor_asignado"].ToString();
         }
 
+
     }
 }

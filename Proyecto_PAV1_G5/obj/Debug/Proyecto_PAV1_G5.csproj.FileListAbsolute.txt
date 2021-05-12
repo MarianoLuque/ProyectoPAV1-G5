@@ -75,6 +75,7 @@ D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Pr
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
+<<<<<<< Updated upstream
 C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
 C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
 C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
@@ -115,3 +116,8 @@ C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proy
 C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
 C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
 C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
+=======
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_AltaCategoria.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_BajaCategoria.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ModificacionCategoria.resources
+>>>>>>> Stashed changes
