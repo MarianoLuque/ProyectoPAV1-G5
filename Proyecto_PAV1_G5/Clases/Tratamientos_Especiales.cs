@@ -53,6 +53,7 @@ namespace Proyecto_PAV1_G5.Clases
             DataTable Estructura = new DataTable();
             Estructura = BuscarEstructuraTabla(NombreTabla);
 
+
             for (int i = 0; i < Estructura.Columns.Count; i++)
             {
                 columna = Estructura.Columns[i].Caption;
@@ -123,7 +124,7 @@ namespace Proyecto_PAV1_G5.Clases
                     }
                     else
                     {
-                        minisql += ", " + tabla.Rows[i][0].ToString() + " = " + ValorPK[i];
+                        minisql += " AND " + tabla.Rows[i][0].ToString() + " = " + ValorPK[i];
                     }
                 }
             }
@@ -179,7 +180,7 @@ namespace Proyecto_PAV1_G5.Clases
                     }
                     else
                     {
-                        minisql += ", " + tabla.Rows[i][0].ToString() + " = " + ValorPK[i];
+                        minisql += " AND " + tabla.Rows[i][0].ToString() + " = " + ValorPK[i];
                     }
                 }
             }
@@ -207,7 +208,7 @@ namespace Proyecto_PAV1_G5.Clases
                     }
                     else
                     {
-                        minisql += ", " + tabla.Rows[i][0].ToString() + " = " + ValorPK[i];
+                        minisql += " AND " + tabla.Rows[i][0].ToString() + " = " + ValorPK[i];
                     }
                 }
             }
@@ -276,6 +277,26 @@ namespace Proyecto_PAV1_G5.Clases
                     return valorColumna;
                 default:
                     return valorColumna;
+            }
+        }
+        public object FormatearIntString(string dato)
+        {
+            try
+            {
+                return int.Parse(dato);
+            }
+            catch (Exception)
+            {
+                try
+                {
+                    return float.Parse(dato);
+                }
+                catch (Exception)
+                {
+                    return $"'{dato}'";
+                    throw;
+                }
+                throw;
             }
         }
     }

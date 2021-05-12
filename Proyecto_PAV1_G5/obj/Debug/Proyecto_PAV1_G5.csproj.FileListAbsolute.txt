@@ -1,179 +1,39 @@
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyectoo\Proyecto-PAV1-G5\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Form1.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyectoo\Proyecto-PAV1-G5\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Properties.Resources.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyectoo\Proyecto-PAV1-G5\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.GenerateResource.cache
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyectoo\Proyecto-PAV1-G5\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyectoo\Proyecto-PAV1-G5\Proyecto_PAV1_G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyectoo\Proyecto-PAV1-G5\Proyecto_PAV1_G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyectoo\Proyecto-PAV1-G5\Proyecto_PAV1_G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyectoo\Proyecto-PAV1-G5\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyectoo\Proyecto-PAV1-G5\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Properties.Resources.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.GenerateResource.cache
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ABMArticulos.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ABMCategoria.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Principal.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ABMEmpleados.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.FormasPago.Frm_ABMFormasPago.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Proveedores.Frm_ABMProveedores.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ABMRubros.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Frm_Equipos.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_ABMEquipoEspecial.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_ABMEquipoSimple.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ABMArticulos.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ABMCategoria.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ABMClientes.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ABMEmpleados.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_ABMEquipoEspecial.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_ABMEquipoSimple.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Frm_Equipos.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.FormasPago.Frm_ABMFormasPago.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Proveedores.Frm_ABMProveedores.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ABMRubros.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Principal.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Properties.Resources.resources
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.GenerateResource.cache
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
-C:\Users\NAFEVI\Desktop\ICONOS PAV\TP VALE\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\PAV I\Proyecto_PAV1_G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Clientes.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ABMArticulos.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ABMCategoria.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Clientes.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ABMEmpleados.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_ABMEquipoEspecial.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_ABMEquipoSimple.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Frm_Equipos.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.FormasPago.Frm_ABMFormasPago.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Proveedores.Frm_ABMProveedores.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ABMRubros.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Principal.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Properties.Resources.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.GenerateResource.cache
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ABMArticulos.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ABMCategoria.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Clientes.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ABMEmpleados.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_ABMEquipoEspecial.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_ABMEquipoSimple.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Frm_Equipos.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.FormasPago.Frm_ABMFormasPago.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Proveedores.Frm_ABMProveedores.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ABMRubros.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Principal.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Properties.Resources.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.GenerateResource.cache
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Frm_Login.resources
-C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Frm_Login.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ABMArticulos.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_AltaArticulo.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_BajaArticulo.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ABMCategoria.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ABMEmpleados.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_ABMEquipoEspecial.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_ABMEquipoSimple.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Frm_Equipos.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.FormasPago.Frm_ABMFormasPago.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Proveedores.Frm_ABMProveedores.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ABMRubros.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Frm_Login.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Principal.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Properties.Resources.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.GenerateResource.cache
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ModificacionArticulo.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ABMArticulos.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_AltaArticulo.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_BajaArticulo.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ModificacionArticulo.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ABMCategoria.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ABMClientes.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_AltaCliente.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ABMEmpleados.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_ABMEquipoEspecial.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_ABMEquipoSimple.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Frm_Equipos.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.FormasPago.Frm_ABMFormasPago.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Proveedores.Frm_ABMProveedores.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ABMRubros.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Frm_Login.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Principal.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Properties.Resources.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.GenerateResource.cache
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_BajaCliente.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ModificacionCliente.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ABMClientes.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_AltaCliente.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_BajaCliente.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ModificacionCliente.resources
-<<<<<<< Updated upstream
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
-=======
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
->>>>>>> Stashed changes
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_AltaRubro.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_BajaRubro.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ModificacionRubro.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_AltaRubro.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_BajaRubro.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ModificacionRubro.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_AltaEmpleado.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_BajaEmpleado.resources
-C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ModificacionEmpleado.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_AltaEmpleado.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_BajaEmpleado.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ModificacionEmpleado.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Alta_Equipo_Simple.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Baja_Equipo_Simple.resources
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Modificacion_Equipo_Simple.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_AltaArticulo.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_BajaArticulo.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ModificacionArticulo.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ABMClientes.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_AltaCliente.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_BajaCliente.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ModificacionCliente.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_AltaEmpleado.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_BajaEmpleado.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ModificacionEmpleado.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Alta_Equipo_Simple.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Baja_Equipo_Simple.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Modificacion_Equipo_Simple.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_AltaRubro.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_BajaRubro.resources
-C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ModificacionRubro.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe.config
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.exe
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\Proyecto_PAV1_G5.pdb
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ABMArticulos.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_AltaArticulo.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_BajaArticulo.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Articulos.Frm_ModificacionArticulo.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ABMCategoria.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ABMClientes.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_AltaCliente.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_BajaCliente.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Clientes.Frm_ModificacionCliente.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ABMEmpleados.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_AltaEmpleado.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_BajaEmpleado.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Empleados.Frm_ModificacionEmpleado.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_ABMEquipoEspecial.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_Alta_Equipo_Especial.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_Baja_Equipo_Especial.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales.Frm_Modificacion_Equipo_Especial.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_ABMEquipoSimple.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Alta_Equipo_Simple.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Baja_Equipo_Simple.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples.Frm_Modificacion_Equipo_Simple.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Equipos.Frm_Equipos.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.FormasPago.Frm_ABMFormasPago.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Proveedores.Frm_ABMProveedores.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ABMRubros.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_AltaRubro.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_BajaRubro.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Rubros.Frm_ModificacionRubro.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Frm_Login.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Principal.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Properties.Resources.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.GenerateResource.cache
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache

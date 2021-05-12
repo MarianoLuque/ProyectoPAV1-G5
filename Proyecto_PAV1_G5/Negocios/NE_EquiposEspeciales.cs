@@ -27,5 +27,84 @@ namespace Proyecto_PAV1_G5.Negocios
             return edc;
 
         }
+
+        // FUNCIONES CONSULTA
+        public DataTable RecuperarTodos()
+        {
+            string sql = @"SELECT * "
+                        + " FROM Equipos_Especiales "; ;
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_Cuit_Cliente(string cuit)
+        {
+            string sql = @"SELECT * FROM Equipos_Especiales "
+                        + "WHERE cuit_cliente like '%" + cuit.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Codigo_Equipo(string codigo)
+        {
+            string sql = @"SELECT * FROM Equipos_Especiales "
+            + "WHERE cuit_cliente like '%" + codigo.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Nombre(string nombre)
+        {
+            string sql = @"SELECT * FROM Equipos_Especiales "
+           + "WHERE cuit_cliente like '%" + nombre.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+
+
+        public string ConstructorSelect(Control.ControlCollection controles, string tabla)
+        {
+            string sql = $"SELECT * FROM {tabla} ";
+            string condiciones = "";
+            foreach (var item in controles)
+            {
+                if (item.GetType().ToString() == "Proyecto_PAV1_G5.TextBox01")
+                {
+                    TextBox01 txt = (TextBox01)item;
+                    if (txt.Text != "")
+                    {
+                        if (condiciones == "")
+                        {
+                            sql += $"WHERE {txt.Pp_campo}={tratamiento.FormatearIntString(txt.Text)}";
+                        }
+                        else
+                        {
+                            sql += $" AND {txt.Pp_campo}={tratamiento.FormatearIntString(txt.Text)}";
+                        }
+                    }
+
+                }
+            }
+            return sql;
+        }
+
+        public void Insertar(Control.ControlCollection controles)
+        {
+            Acceso_Datos _BD = new Acceso_Datos();
+            Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
+            _BD.Insertar(tratamiento.ConstructorInsertar("Equipos_Especiales", controles));
+        }
+
+        public void Modificar(string[] ValorPk, Control.ControlCollection controles)
+        {
+            _BD.Modificar(tratamiento.ConstructorModificar_Sin_PK("Equipos_Especiales", ValorPk, controles));
+        }
+
+        public void Eliminar(string[] ValorPk, Control.ControlCollection controles)
+        {
+            _BD.Borrar(tratamiento.ConstructorEliminar("Equipos_Especiales", ValorPk, controles));
+        }
+        public DataTable Recuperar_x_Codigo_Array(string[] codigo)
+        {
+            string sql = "SELECT e.* FROM Equipos_Especiales e WHERE e.codigo_equipo_especial = " + codigo[0];
+            return _BD.Ejecutar_Select(sql);
+        }
     }
 }
