@@ -208,6 +208,24 @@
     <Compile Include="ABM\Proveedores\Frm_ABMProveedores.Designer.cs">
       <DependentUpon>Frm_ABMProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM\Proveedores\Frm_Alta_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Proveedores\Frm_Alta_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Alta_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Proveedores\Frm_Baja_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Proveedores\Frm_Baja_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Baja_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Proveedores\Frm_Modificacion_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Proveedores\Frm_Modificacion_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Modificacion_Proveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABM\Rubros\Frm_ABMRubros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Proveedores\Frm_ABMProveedores.resx">
       <DependentUpon>Frm_ABMProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Proveedores\Frm_Alta_Proveedor.resx">
+      <DependentUpon>Frm_Alta_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Rubros\Frm_ABMRubros.resx">
       <DependentUpon>Frm_ABMRubros.cs</DependentUpon>
