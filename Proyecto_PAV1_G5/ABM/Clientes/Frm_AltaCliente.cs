@@ -14,6 +14,7 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
 {
     public partial class Frm_AltaCliente : Form
     {
+
         NE_Clientes cli = new NE_Clientes();
         public Frm_AltaCliente()
         {

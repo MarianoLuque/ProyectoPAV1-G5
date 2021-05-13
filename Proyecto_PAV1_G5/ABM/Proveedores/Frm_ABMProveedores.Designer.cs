@@ -30,15 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABMProveedores));
             this.grid_proveedores = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_consultar = new System.Windows.Forms.Button();
             this.cuit_proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razon_social = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.legajo_comprador = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +38,19 @@
             this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nro_calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_agregar = new System.Windows.Forms.Button();
+            this.btn_modificar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_consultar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_patron_cuit = new System.Windows.Forms.TextBox();
+            this.txt_patron_razon_social = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grid_proveedores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -68,11 +72,60 @@
             this.barrio,
             this.calle,
             this.nro_calle});
-            this.grid_proveedores.Location = new System.Drawing.Point(12, 243);
+            this.grid_proveedores.Location = new System.Drawing.Point(12, 210);
             this.grid_proveedores.Name = "grid_proveedores";
             this.grid_proveedores.ReadOnly = true;
-            this.grid_proveedores.Size = new System.Drawing.Size(796, 254);
+            this.grid_proveedores.Size = new System.Drawing.Size(796, 287);
             this.grid_proveedores.TabIndex = 0;
+            // 
+            // cuit_proveedor
+            // 
+            this.cuit_proveedor.HeaderText = "Cuit";
+            this.cuit_proveedor.Name = "cuit_proveedor";
+            this.cuit_proveedor.ReadOnly = true;
+            this.cuit_proveedor.Width = 50;
+            // 
+            // razon_social
+            // 
+            this.razon_social.HeaderText = "Razón Social";
+            this.razon_social.Name = "razon_social";
+            this.razon_social.ReadOnly = true;
+            // 
+            // legajo_comprador
+            // 
+            this.legajo_comprador.HeaderText = "Legajo Comprador";
+            this.legajo_comprador.Name = "legajo_comprador";
+            this.legajo_comprador.ReadOnly = true;
+            // 
+            // fecha_inicio_operacion
+            // 
+            this.fecha_inicio_operacion.HeaderText = "Fecha de inicio de operación";
+            this.fecha_inicio_operacion.Name = "fecha_inicio_operacion";
+            this.fecha_inicio_operacion.ReadOnly = true;
+            // 
+            // telefono
+            // 
+            this.telefono.HeaderText = "Teléfono";
+            this.telefono.Name = "telefono";
+            this.telefono.ReadOnly = true;
+            // 
+            // barrio
+            // 
+            this.barrio.HeaderText = "Barrio";
+            this.barrio.Name = "barrio";
+            this.barrio.ReadOnly = true;
+            // 
+            // calle
+            // 
+            this.calle.HeaderText = "Calle";
+            this.calle.Name = "calle";
+            this.calle.ReadOnly = true;
+            // 
+            // nro_calle
+            // 
+            this.nro_calle.HeaderText = "Número de calle";
+            this.nro_calle.Name = "nro_calle";
+            this.nro_calle.ReadOnly = true;
             // 
             // textBox1
             // 
@@ -85,38 +138,41 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Proveedores";
             // 
-            // button1
+            // btn_agregar
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(119, 519);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 30);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregar.Location = new System.Drawing.Point(119, 519);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(100, 30);
+            this.btn_agregar.TabIndex = 5;
+            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
-            // button2
+            // btn_modificar
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(355, 519);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 30);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modificar.Location = new System.Drawing.Point(355, 519);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(100, 30);
+            this.btn_modificar.TabIndex = 9;
+            this.btn_modificar.Text = "Editar";
+            this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
-            // button3
+            // btn_eliminar
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(591, 519);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 30);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar.Location = new System.Drawing.Point(591, 519);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(100, 30);
+            this.btn_eliminar.TabIndex = 11;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // pictureBox4
             // 
@@ -170,67 +226,58 @@
             this.btn_consultar.UseVisualStyleBackColor = true;
             this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
             // 
-            // cuit_proveedor
+            // label2
             // 
-            this.cuit_proveedor.HeaderText = "Cuit";
-            this.cuit_proveedor.Name = "cuit_proveedor";
-            this.cuit_proveedor.ReadOnly = true;
-            this.cuit_proveedor.Width = 50;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(172, 164);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 20);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "CUIT";
             // 
-            // razon_social
+            // label1
             // 
-            this.razon_social.HeaderText = "Razón Social";
-            this.razon_social.Name = "razon_social";
-            this.razon_social.ReadOnly = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(136, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Razon social";
             // 
-            // legajo_comprador
+            // txt_patron_cuit
             // 
-            this.legajo_comprador.HeaderText = "Legajo Comprador";
-            this.legajo_comprador.Name = "legajo_comprador";
-            this.legajo_comprador.ReadOnly = true;
+            this.txt_patron_cuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patron_cuit.Location = new System.Drawing.Point(242, 161);
+            this.txt_patron_cuit.Name = "txt_patron_cuit";
+            this.txt_patron_cuit.Size = new System.Drawing.Size(192, 26);
+            this.txt_patron_cuit.TabIndex = 17;
             // 
-            // fecha_inicio_operacion
+            // txt_patron_razon_social
             // 
-            this.fecha_inicio_operacion.HeaderText = "Fecha de inicio de operación";
-            this.fecha_inicio_operacion.Name = "fecha_inicio_operacion";
-            this.fecha_inicio_operacion.ReadOnly = true;
-            // 
-            // telefono
-            // 
-            this.telefono.HeaderText = "Teléfono";
-            this.telefono.Name = "telefono";
-            this.telefono.ReadOnly = true;
-            // 
-            // barrio
-            // 
-            this.barrio.HeaderText = "Barrio";
-            this.barrio.Name = "barrio";
-            this.barrio.ReadOnly = true;
-            // 
-            // calle
-            // 
-            this.calle.HeaderText = "Calle";
-            this.calle.Name = "calle";
-            this.calle.ReadOnly = true;
-            // 
-            // nro_calle
-            // 
-            this.nro_calle.HeaderText = "Número de calle";
-            this.nro_calle.Name = "nro_calle";
-            this.nro_calle.ReadOnly = true;
+            this.txt_patron_razon_social.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patron_razon_social.Location = new System.Drawing.Point(242, 122);
+            this.txt_patron_razon_social.Name = "txt_patron_razon_social";
+            this.txt_patron_razon_social.Size = new System.Drawing.Size(192, 26);
+            this.txt_patron_razon_social.TabIndex = 15;
             // 
             // Frm_ABMProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(828, 561);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_patron_cuit);
+            this.Controls.Add(this.txt_patron_razon_social);
             this.Controls.Add(this.btn_consultar);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.grid_proveedores);
@@ -253,12 +300,12 @@
         private System.Windows.Forms.DataGridView grid_proveedores;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_agregar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Button btn_consultar;
         private System.Windows.Forms.DataGridViewTextBoxColumn cuit_proveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn razon_social;
@@ -268,5 +315,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn barrio;
         private System.Windows.Forms.DataGridViewTextBoxColumn calle;
         private System.Windows.Forms.DataGridViewTextBoxColumn nro_calle;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_patron_cuit;
+        private System.Windows.Forms.TextBox txt_patron_razon_social;
     }
 }

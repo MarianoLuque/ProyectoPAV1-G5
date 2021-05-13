@@ -227,6 +227,7 @@
             this.btn_aceptar.TabIndex = 16;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // btn_cancelar
             // 
@@ -263,7 +264,9 @@
             this.Controls.Add(this.txt_razonSocial);
             this.Controls.Add(this.txt_campo);
             this.Name = "Frm_Alta_Proveedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Alta_Proveedores";
+            this.Load += new System.EventHandler(this.Frm_Alta_Proveedor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

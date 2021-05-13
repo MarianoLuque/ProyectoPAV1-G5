@@ -43,5 +43,20 @@ namespace Proyecto_PAV1_G5.ABM.Proveedores
         {
             CargarGrilla(prov.RecuperarTodos());
         }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

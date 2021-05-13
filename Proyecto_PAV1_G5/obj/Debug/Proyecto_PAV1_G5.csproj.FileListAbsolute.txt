@@ -121,3 +121,5 @@ D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Pr
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_BajaCategoria.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Categoria.Frm_ModificacionCategoria.resources
 >>>>>>> Stashed changes
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ABM.Proveedores.Frm_Alta_Proveedor.resources
