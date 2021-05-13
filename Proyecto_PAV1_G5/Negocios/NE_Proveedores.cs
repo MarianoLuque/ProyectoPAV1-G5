@@ -45,9 +45,44 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable RecuperarTodos()
         {
-            string sql = @"SELECT p.*, b.nombre_barrio as barrio"
+            string sql = @"SELECT p.*, b.nombre_barrio as barrio, e.nombre + ' ' + e.apellido as comprador"
                         + " FROM Proveedores p "
-                        + "join Barrios b on p.id_barrio = b.id_barrio ";
+                        + "join Barrios b on p.id_barrio = b.id_barrio "
+                        +"join Empleados e on e.legajo = p.legajo_comprador";
+            return _BD.Ejecutar_Select(sql);
+        }
+        public DataTable Recuperar_x_Cuit(string patron)
+        {
+            string sql = @"SELECT c.*, b.nombre_barrio as barrio, e.nombre + ' ' + e.apellido as comprador FROM Proveedores c "
+                        + "join Barrios b on c.id_barrio = b.id_barrio "
+                        + "join Empleados e on e.legajo = c.legajo_comprador "
+                        + "WHERE c.cuit_proveedor like '%" + patron.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Cuit_Array(string[] cuit)
+        {
+
+            string sql = "SELECT c.* FROM Proveedores c WHERE c.cuit_proveedor = " + cuit[0];
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Razon_Social(string patron)
+        {
+            string sql = @"SELECT c.*, b.nombre_barrio as barrio, e.nombre + ' ' + e.apellido as comprador FROM Proveedores c "
+                        + "join Barrios b on c.id_barrio = b.id_barrio "
+                        + "join Empleados e on e.legajo = c.legajo_comprador "
+                        + "WHERE c.razon_social like '%" + patron.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_Mixto(string patron_cuit, string patron_razon_social)
+        {
+            string sql = @"SELECT c.*, b.nombre_barrio as barrio, e.nombre + ' ' + e.apellido as comprador FROM Proveedores c "
+                        + "join Barrios b on c.id_barrio = b.id_barrio "
+                        + "join Empleados e on e.legajo = c.legajo_comprador "
+                        + "WHERE c.razon_social like '%" + patron_razon_social.Trim() + "%' AND "
+                        + "c.cuit_proveedor like '%" + patron_cuit.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
     }

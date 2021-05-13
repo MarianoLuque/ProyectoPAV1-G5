@@ -28,14 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_campo = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.txt_razonSocial = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.txt_legajoComprador = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.txt_fechaInicioOperacion = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.txt_telefono = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.cmb_barrio = new Proyecto_PAV1_G5.Clases.ComboBox01();
-            this.txt_calle = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.txt_nroCalle = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,97 +38,15 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
+            this.txt_nroCalle = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_calle = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.cmb_barrio = new Proyecto_PAV1_G5.Clases.ComboBox01();
+            this.txt_telefono = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_fechaInicioOperacion = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_legajoComprador = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_razonSocial = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_cuit_proveedor = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.SuspendLayout();
-            // 
-            // txt_campo
-            // 
-            this.txt_campo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_campo.Location = new System.Drawing.Point(255, 45);
-            this.txt_campo.Name = "txt_campo";
-            this.txt_campo.Pp_campo = "cuit_proveedor";
-            this.txt_campo.Pp_MensajeError = null;
-            this.txt_campo.Pp_Validable = true;
-            this.txt_campo.Size = new System.Drawing.Size(121, 26);
-            this.txt_campo.TabIndex = 0;
-            // 
-            // txt_razonSocial
-            // 
-            this.txt_razonSocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_razonSocial.Location = new System.Drawing.Point(255, 88);
-            this.txt_razonSocial.Name = "txt_razonSocial";
-            this.txt_razonSocial.Pp_campo = "razon_social";
-            this.txt_razonSocial.Pp_MensajeError = null;
-            this.txt_razonSocial.Pp_Validable = true;
-            this.txt_razonSocial.Size = new System.Drawing.Size(121, 26);
-            this.txt_razonSocial.TabIndex = 1;
-            // 
-            // txt_legajoComprador
-            // 
-            this.txt_legajoComprador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_legajoComprador.Location = new System.Drawing.Point(255, 131);
-            this.txt_legajoComprador.Name = "txt_legajoComprador";
-            this.txt_legajoComprador.Pp_campo = "legajo_comprador";
-            this.txt_legajoComprador.Pp_MensajeError = null;
-            this.txt_legajoComprador.Pp_Validable = true;
-            this.txt_legajoComprador.Size = new System.Drawing.Size(121, 26);
-            this.txt_legajoComprador.TabIndex = 2;
-            // 
-            // txt_fechaInicioOperacion
-            // 
-            this.txt_fechaInicioOperacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fechaInicioOperacion.Location = new System.Drawing.Point(255, 174);
-            this.txt_fechaInicioOperacion.Name = "txt_fechaInicioOperacion";
-            this.txt_fechaInicioOperacion.Pp_campo = "fecha_inicio_operacion";
-            this.txt_fechaInicioOperacion.Pp_MensajeError = null;
-            this.txt_fechaInicioOperacion.Pp_Validable = true;
-            this.txt_fechaInicioOperacion.Size = new System.Drawing.Size(121, 26);
-            this.txt_fechaInicioOperacion.TabIndex = 3;
-            // 
-            // txt_telefono
-            // 
-            this.txt_telefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_telefono.Location = new System.Drawing.Point(255, 217);
-            this.txt_telefono.Name = "txt_telefono";
-            this.txt_telefono.Pp_campo = "telefono";
-            this.txt_telefono.Pp_MensajeError = null;
-            this.txt_telefono.Pp_Validable = true;
-            this.txt_telefono.Size = new System.Drawing.Size(121, 26);
-            this.txt_telefono.TabIndex = 4;
-            // 
-            // cmb_barrio
-            // 
-            this.cmb_barrio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_barrio.FormattingEnabled = true;
-            this.cmb_barrio.Location = new System.Drawing.Point(255, 260);
-            this.cmb_barrio.Name = "cmb_barrio";
-            this.cmb_barrio.Pp_Conseleccion = false;
-            this.cmb_barrio.Pp_MensajeError = null;
-            this.cmb_barrio.Pp_NombreCampo = "id_barrio";
-            this.cmb_barrio.Pp_Validable = true;
-            this.cmb_barrio.Size = new System.Drawing.Size(121, 28);
-            this.cmb_barrio.TabIndex = 5;
-            // 
-            // txt_calle
-            // 
-            this.txt_calle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_calle.Location = new System.Drawing.Point(255, 303);
-            this.txt_calle.Name = "txt_calle";
-            this.txt_calle.Pp_campo = "calle";
-            this.txt_calle.Pp_MensajeError = null;
-            this.txt_calle.Pp_Validable = true;
-            this.txt_calle.Size = new System.Drawing.Size(121, 26);
-            this.txt_calle.TabIndex = 6;
-            // 
-            // txt_nroCalle
-            // 
-            this.txt_nroCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nroCalle.Location = new System.Drawing.Point(255, 346);
-            this.txt_nroCalle.Name = "txt_nroCalle";
-            this.txt_nroCalle.Pp_campo = "nro_calle";
-            this.txt_nroCalle.Pp_MensajeError = null;
-            this.txt_nroCalle.Pp_Validable = true;
-            this.txt_nroCalle.Size = new System.Drawing.Size(121, 26);
-            this.txt_nroCalle.TabIndex = 7;
             // 
             // label1
             // 
@@ -156,7 +66,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 20);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Razon Social";
+            this.label2.Text = "Razón Social";
             // 
             // label3
             // 
@@ -240,11 +150,101 @@
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
+            // txt_nroCalle
+            // 
+            this.txt_nroCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nroCalle.Location = new System.Drawing.Point(255, 346);
+            this.txt_nroCalle.Name = "txt_nroCalle";
+            this.txt_nroCalle.Pp_campo = "nro_calle";
+            this.txt_nroCalle.Pp_MensajeError = "Falta cargar el número de calle";
+            this.txt_nroCalle.Pp_Validable = true;
+            this.txt_nroCalle.Size = new System.Drawing.Size(230, 26);
+            this.txt_nroCalle.TabIndex = 7;
+            // 
+            // txt_calle
+            // 
+            this.txt_calle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_calle.Location = new System.Drawing.Point(255, 303);
+            this.txt_calle.Name = "txt_calle";
+            this.txt_calle.Pp_campo = "calle";
+            this.txt_calle.Pp_MensajeError = "Falta cargar la calle";
+            this.txt_calle.Pp_Validable = true;
+            this.txt_calle.Size = new System.Drawing.Size(230, 26);
+            this.txt_calle.TabIndex = 6;
+            // 
+            // cmb_barrio
+            // 
+            this.cmb_barrio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_barrio.FormattingEnabled = true;
+            this.cmb_barrio.Location = new System.Drawing.Point(255, 260);
+            this.cmb_barrio.Name = "cmb_barrio";
+            this.cmb_barrio.Pp_Conseleccion = false;
+            this.cmb_barrio.Pp_MensajeError = "Falta seleccionar el barrio";
+            this.cmb_barrio.Pp_NombreCampo = "id_barrio";
+            this.cmb_barrio.Pp_Validable = true;
+            this.cmb_barrio.Size = new System.Drawing.Size(230, 28);
+            this.cmb_barrio.TabIndex = 5;
+            // 
+            // txt_telefono
+            // 
+            this.txt_telefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_telefono.Location = new System.Drawing.Point(255, 217);
+            this.txt_telefono.Name = "txt_telefono";
+            this.txt_telefono.Pp_campo = "telefono";
+            this.txt_telefono.Pp_MensajeError = "Falta cargar el teléfono";
+            this.txt_telefono.Pp_Validable = true;
+            this.txt_telefono.Size = new System.Drawing.Size(230, 26);
+            this.txt_telefono.TabIndex = 4;
+            // 
+            // txt_fechaInicioOperacion
+            // 
+            this.txt_fechaInicioOperacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fechaInicioOperacion.Location = new System.Drawing.Point(255, 174);
+            this.txt_fechaInicioOperacion.Name = "txt_fechaInicioOperacion";
+            this.txt_fechaInicioOperacion.Pp_campo = "fecha_inicio_operacion";
+            this.txt_fechaInicioOperacion.Pp_MensajeError = "Falta cargar la fecha de inicio de la operación";
+            this.txt_fechaInicioOperacion.Pp_Validable = true;
+            this.txt_fechaInicioOperacion.Size = new System.Drawing.Size(230, 26);
+            this.txt_fechaInicioOperacion.TabIndex = 3;
+            // 
+            // txt_legajoComprador
+            // 
+            this.txt_legajoComprador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_legajoComprador.Location = new System.Drawing.Point(255, 131);
+            this.txt_legajoComprador.Name = "txt_legajoComprador";
+            this.txt_legajoComprador.Pp_campo = "legajo_comprador";
+            this.txt_legajoComprador.Pp_MensajeError = "Falta cargar el legajo del comprador";
+            this.txt_legajoComprador.Pp_Validable = true;
+            this.txt_legajoComprador.Size = new System.Drawing.Size(230, 26);
+            this.txt_legajoComprador.TabIndex = 2;
+            // 
+            // txt_razonSocial
+            // 
+            this.txt_razonSocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_razonSocial.Location = new System.Drawing.Point(255, 88);
+            this.txt_razonSocial.Name = "txt_razonSocial";
+            this.txt_razonSocial.Pp_campo = "razon_social";
+            this.txt_razonSocial.Pp_MensajeError = "Falta cargar la razón social";
+            this.txt_razonSocial.Pp_Validable = true;
+            this.txt_razonSocial.Size = new System.Drawing.Size(230, 26);
+            this.txt_razonSocial.TabIndex = 1;
+            // 
+            // txt_cuit_proveedor
+            // 
+            this.txt_cuit_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cuit_proveedor.Location = new System.Drawing.Point(255, 45);
+            this.txt_cuit_proveedor.Name = "txt_cuit_proveedor";
+            this.txt_cuit_proveedor.Pp_campo = "cuit_proveedor";
+            this.txt_cuit_proveedor.Pp_MensajeError = "Falta cargar el cuit del proveedor";
+            this.txt_cuit_proveedor.Pp_Validable = true;
+            this.txt_cuit_proveedor.Size = new System.Drawing.Size(230, 26);
+            this.txt_cuit_proveedor.TabIndex = 0;
+            // 
             // Frm_Alta_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 472);
+            this.ClientSize = new System.Drawing.Size(560, 472);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.label8);
@@ -262,7 +262,7 @@
             this.Controls.Add(this.txt_fechaInicioOperacion);
             this.Controls.Add(this.txt_legajoComprador);
             this.Controls.Add(this.txt_razonSocial);
-            this.Controls.Add(this.txt_campo);
+            this.Controls.Add(this.txt_cuit_proveedor);
             this.Name = "Frm_Alta_Proveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Alta_Proveedores";
@@ -274,7 +274,7 @@
 
         #endregion
 
-        private Clases.TextBox01 txt_campo;
+        private Clases.TextBox01 txt_cuit_proveedor;
         private Clases.TextBox01 txt_razonSocial;
         private Clases.TextBox01 txt_legajoComprador;
         private Clases.TextBox01 txt_fechaInicioOperacion;

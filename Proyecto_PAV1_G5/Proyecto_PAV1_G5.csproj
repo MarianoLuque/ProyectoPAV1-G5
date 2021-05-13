@@ -370,6 +370,12 @@
     <EmbeddedResource Include="ABM\Proveedores\Frm_Alta_Proveedor.resx">
       <DependentUpon>Frm_Alta_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Proveedores\Frm_Baja_Proveedor.resx">
+      <DependentUpon>Frm_Baja_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Proveedores\Frm_Modificacion_Proveedor.resx">
+      <DependentUpon>Frm_Modificacion_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ABM\Rubros\Frm_ABMRubros.resx">
       <DependentUpon>Frm_ABMRubros.cs</DependentUpon>
     </EmbeddedResource>

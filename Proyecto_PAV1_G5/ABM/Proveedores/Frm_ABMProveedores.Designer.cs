@@ -77,6 +77,7 @@
             this.grid_proveedores.ReadOnly = true;
             this.grid_proveedores.Size = new System.Drawing.Size(796, 287);
             this.grid_proveedores.TabIndex = 0;
+            this.grid_proveedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_proveedores_CellClick);
             // 
             // cuit_proveedor
             // 

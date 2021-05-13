@@ -13,7 +13,7 @@ namespace Proyecto_PAV1_G5.ABM.Proveedores
 {
     public partial class Frm_ABMProveedores : Form
     {
-        public string[] Pp_legajo { get; set; }
+        public string[] Pp_cuit_proveedor { get; set; }
         NE_Proveedores prov = new NE_Proveedores();
 
         public Frm_ABMProveedores()
@@ -33,30 +33,63 @@ namespace Proyecto_PAV1_G5.ABM.Proveedores
                 grid_proveedores.Rows[i].Cells[1].Value = tabla.Rows[i]["razon_social"].ToString();
                 grid_proveedores.Rows[i].Cells[2].Value = tabla.Rows[i]["legajo_comprador"].ToString();
                 grid_proveedores.Rows[i].Cells[3].Value = tabla.Rows[i]["fecha_inicio_operacion"].ToString();
-                grid_proveedores.Rows[i].Cells[4].Value = tabla.Rows[i]["barrio"].ToString();
-                grid_proveedores.Rows[i].Cells[5].Value = tabla.Rows[i]["calle"].ToString();
-                grid_proveedores.Rows[i].Cells[6].Value = tabla.Rows[i]["nro_calle"].ToString();
+                grid_proveedores.Rows[i].Cells[4].Value = tabla.Rows[i]["telefono"].ToString();
+                grid_proveedores.Rows[i].Cells[5].Value = tabla.Rows[i]["barrio"].ToString();
+                grid_proveedores.Rows[i].Cells[6].Value = tabla.Rows[i]["calle"].ToString();
+                grid_proveedores.Rows[i].Cells[7].Value = tabla.Rows[i]["nro_calle"].ToString();
             }
         }
 
         private void btn_consultar_Click(object sender, EventArgs e)
         {
-            CargarGrilla(prov.RecuperarTodos());
+
+            if (txt_patron_razon_social.Text == "" && txt_patron_cuit.Text == "")
+            {
+                CargarGrilla(prov.RecuperarTodos());
+            }
+            if (txt_patron_razon_social.Text != "" && txt_patron_cuit.Text != "")
+            {
+                CargarGrilla(prov.Recuperar_Mixto(txt_patron_cuit.Text, txt_patron_razon_social.Text));
+                return;
+            }
+            if (txt_patron_razon_social.Text != "")
+            {
+                CargarGrilla(prov.Recuperar_x_Razon_Social(txt_patron_razon_social.Text));
+            }
+            if (txt_patron_cuit.Text != "")
+            {
+                CargarGrilla(prov.Recuperar_x_Cuit(txt_patron_cuit.Text));
+            }
         }
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-
+            Frm_Alta_Proveedor AltaProv = new Frm_Alta_Proveedor();
+            AltaProv.ShowDialog();
         }
 
         private void btn_modificar_Click(object sender, EventArgs e)
         {
-
+            Frm_Modificacion_Proveedor modifProv = new Frm_Modificacion_Proveedor();
+            string[] Pp_cuit_proveedor = new string[1];
+            Pp_cuit_proveedor[0] = grid_proveedores.CurrentRow.Cells["cuit_proveedor"].Value.ToString();
+            modifProv.Pp_cuit_proveedores = Pp_cuit_proveedor;
+            modifProv.ShowDialog();
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
+            Frm_Baja_Proveedor bajaProv = new Frm_Baja_Proveedor();
+            string[] Pp_cuit_proveedor = new string[1];
+            Pp_cuit_proveedor[0] = grid_proveedores.CurrentRow.Cells["cuit_proveedor"].Value.ToString();
+            bajaProv.Pp_cuit_proveedores = Pp_cuit_proveedor;
+            bajaProv.ShowDialog();
+        }
 
+        private void grid_proveedores_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string[] Pp_cuit_proveedor = new string[1];
+            Pp_cuit_proveedor[0] = grid_proveedores.CurrentRow.Cells["cuit_proveedor"].Value.ToString();
         }
     }
 }
