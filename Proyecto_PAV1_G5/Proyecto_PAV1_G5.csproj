@@ -202,6 +202,24 @@
     <Compile Include="ABM\FormasPago\Frm_ABMFormasPago.Designer.cs">
       <DependentUpon>Frm_ABMFormasPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM\FormasPago\Frm_AltaFormasDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\FormasPago\Frm_AltaFormasDePago.Designer.cs">
+      <DependentUpon>Frm_AltaFormasDePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\FormasPago\Frm_BajaFormaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\FormasPago\Frm_BajaFormaPago.Designer.cs">
+      <DependentUpon>Frm_BajaFormaPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\FormasPago\Frm_ModificacionFormaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\FormasPago\Frm_ModificacionFormaPago.Designer.cs">
+      <DependentUpon>Frm_ModificacionFormaPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABM\Proveedores\Frm_ABMProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,6 +381,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\FormasPago\Frm_ABMFormasPago.resx">
       <DependentUpon>Frm_ABMFormasPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\FormasPago\Frm_AltaFormasDePago.resx">
+      <DependentUpon>Frm_AltaFormasDePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\FormasPago\Frm_BajaFormaPago.resx">
+      <DependentUpon>Frm_BajaFormaPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\FormasPago\Frm_ModificacionFormaPago.resx">
+      <DependentUpon>Frm_ModificacionFormaPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Proveedores\Frm_ABMProveedores.resx">
       <DependentUpon>Frm_ABMProveedores.cs</DependentUpon>

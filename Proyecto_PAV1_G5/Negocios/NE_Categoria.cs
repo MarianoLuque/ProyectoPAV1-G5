@@ -28,17 +28,19 @@ namespace Proyecto_PAV1_G5.Negocios
 
         }
 
-        //Funcion insertar cliente
+        // MODIFICAR
         public void Modificar(string[] ValorPk, Control.ControlCollection controles)
         {
             _BD.Modificar(tratamiento.ConstructorModificar_Sin_PK("Clasificacion_Clientes", ValorPk, controles));
         }
 
+        // INSERTAR
         public void Insertar(Control.ControlCollection controles)
         {
             _BD.Insertar(tratamiento.ConstructorInsertar("Clasificacion_Clientes", controles));
         }
 
+        // ELIMINAR
         public void Eliminar(string[] ValorPk, Control.ControlCollection controles)
         {
             _BD.Borrar(tratamiento.ConstructorEliminar("Clasificacion_Clientes", ValorPk, controles));

@@ -16,6 +16,7 @@ namespace Proyecto_PAV1_G5.ABM.Categoria
     {
         public string[] Pp_id_categoria { get; set; }
         NE_Categoria categoria = new NE_Categoria();
+
         public Frm_BajaCategoria()
         {
             InitializeComponent();
