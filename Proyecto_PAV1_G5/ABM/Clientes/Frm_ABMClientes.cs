@@ -61,14 +61,15 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
                 grid_Clientes.Rows[i].Cells[2].Value = tabla.Rows[i]["nombre_contacto"].ToString();
                 grid_Clientes.Rows[i].Cells[3].Value = tabla.Rows[i]["credito_limite"].ToString();
                 grid_Clientes.Rows[i].Cells[4].Value = tabla.Rows[i]["id_clasificacion"].ToString();
-                grid_Clientes.Rows[i].Cells[5].Value = tabla.Rows[i]["fecha_primera_compra"].ToString();
+                grid_Clientes.Rows[i].Cells[5].Value = tabla.Rows[i]["fecha_primera_compra"].ToString().Split()[0];
                 grid_Clientes.Rows[i].Cells[6].Value = tabla.Rows[i]["cantidad_compras_historicas"].ToString();
                 grid_Clientes.Rows[i].Cells[7].Value = tabla.Rows[i]["barrio"].ToString();
                 grid_Clientes.Rows[i].Cells[8].Value = tabla.Rows[i]["calle"].ToString();
                 grid_Clientes.Rows[i].Cells[9].Value = tabla.Rows[i]["nro_calle"].ToString();
                 grid_Clientes.Rows[i].Cells[10].Value = tabla.Rows[i]["vendedor_asignado"].ToString();
             }
-
+            
+            
         }
 
         private void btn_consultar_Click(object sender, EventArgs e)

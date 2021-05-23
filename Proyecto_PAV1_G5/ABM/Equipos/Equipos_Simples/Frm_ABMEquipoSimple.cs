@@ -54,24 +54,24 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples
 
         private void btn_Consultar_Click(object sender, EventArgs e)
         {
-            NE_Equipos_Simples equipos = new NE_Equipos_Simples();
+            NE_Equipos_Simples equiposSi = new NE_Equipos_Simples();
 
             if (txt_Codigo_Equipo.Text == "" && txt_Nombre_Equipo.Text == "")
             {
-                CargarGrilla(equipos.RecuperarTodos());
+                CargarGrilla(equiposSi.RecuperarTodos());
             }
             if (txt_Codigo_Equipo.Text != "" && txt_Nombre_Equipo.Text != "")
             {
-                CargarGrilla(equipos.Recuperar_Mixto(txt_Codigo_Equipo.Text, txt_Nombre_Equipo.Text));
+                CargarGrilla(equiposSi.Recuperar_Mixto(txt_Codigo_Equipo.Text, txt_Nombre_Equipo.Text));
                 return;
             }
             if (txt_Codigo_Equipo.Text != "" && txt_Nombre_Equipo.Text == "")
             {
-                CargarGrilla(equipos.Recuperar_x_Codigo_Equipo(txt_Codigo_Equipo.Text));
+                CargarGrilla(equiposSi.Recuperar_x_Codigo_Equipo(txt_Codigo_Equipo.Text));
             }
             if (txt_Nombre_Equipo.Text != "" && txt_Codigo_Equipo.Text == "")
             {
-                CargarGrilla(equipos.Recuperar_x_Nombre(txt_Nombre_Equipo.Text));
+                CargarGrilla(equiposSi.Recuperar_x_Nombre(txt_Nombre_Equipo.Text));
             }
         }
 

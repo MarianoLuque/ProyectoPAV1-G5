@@ -14,6 +14,8 @@ namespace Proyecto_PAV1_G5.ABM.Equipos
 {
     public partial class Frm_Equipos : Form
     {
+        Frm_ABMEquipo equipo = new Frm_ABMEquipo();
+
         public Frm_Equipos()
         {
             InitializeComponent();
@@ -21,14 +23,15 @@ namespace Proyecto_PAV1_G5.ABM.Equipos
         
         private void btn_equiposimple_Click(object sender, EventArgs e)
         {
-            Frm_ABMEquipoSimple equiposimple = new Frm_ABMEquipoSimple();
-            equiposimple.ShowDialog();
+            equipo.TipoEquipo = "simple";
+            equipo.ShowDialog();
+            
         }
 
         private void btn_equipoespecial_Click(object sender, EventArgs e)
         {
-            Frm_ABMEquipoEspecial equipoespecial = new Frm_ABMEquipoEspecial();
-            equipoespecial.ShowDialog();
+            equipo.TipoEquipo = "especial";
+            equipo.ShowDialog();
         }
     }
 }

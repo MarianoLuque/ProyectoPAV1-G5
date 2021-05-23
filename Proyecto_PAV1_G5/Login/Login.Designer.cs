@@ -35,13 +35,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_cancelar = new System.Windows.Forms.Button();
-            this.btn_aceptar = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btn_Ver_Contraseña = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_ver_contrasena = new System.Windows.Forms.Button();
+            this.btn_ocultar_contrasena = new System.Windows.Forms.Button();
+            this.btn_aceptar = new System.Windows.Forms.Button();
+            this.btn_cancelar = new System.Windows.Forms.Button();
             this.txt_usuario = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,21 +100,31 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Password";
             // 
-            // btn_cancelar
+            // btn_ver_contrasena
             // 
-            this.btn_cancelar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.BackgroundImage")));
-            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_cancelar.Location = new System.Drawing.Point(128, 289);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(105, 28);
-            this.btn_cancelar.TabIndex = 9;
-            this.toolTip1.SetToolTip(this.btn_cancelar, "Cerrar el formulario de Logueo");
-            this.btn_cancelar.UseVisualStyleBackColor = false;
-            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            this.btn_ver_contrasena.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ver_contrasena.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources.vistoo;
+            this.btn_ver_contrasena.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ver_contrasena.Location = new System.Drawing.Point(240, 224);
+            this.btn_ver_contrasena.Name = "btn_ver_contrasena";
+            this.btn_ver_contrasena.Size = new System.Drawing.Size(34, 26);
+            this.btn_ver_contrasena.TabIndex = 12;
+            this.toolTip1.SetToolTip(this.btn_ver_contrasena, "Ver contraseña");
+            this.btn_ver_contrasena.UseVisualStyleBackColor = false;
+            this.btn_ver_contrasena.Click += new System.EventHandler(this.btn_ver_contrasena_Click);
+            // 
+            // btn_ocultar_contrasena
+            // 
+            this.btn_ocultar_contrasena.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ocultar_contrasena.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources.novistoo;
+            this.btn_ocultar_contrasena.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ocultar_contrasena.Location = new System.Drawing.Point(240, 224);
+            this.btn_ocultar_contrasena.Name = "btn_ocultar_contrasena";
+            this.btn_ocultar_contrasena.Size = new System.Drawing.Size(34, 26);
+            this.btn_ocultar_contrasena.TabIndex = 12;
+            this.toolTip1.SetToolTip(this.btn_ocultar_contrasena, "Ocultar contraseña");
+            this.btn_ocultar_contrasena.UseVisualStyleBackColor = false;
+            this.btn_ocultar_contrasena.Click += new System.EventHandler(this.btn_ocultar_contrasena_Click);
             // 
             // btn_aceptar
             // 
@@ -132,28 +143,21 @@
             this.btn_aceptar.UseVisualStyleBackColor = false;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
-            // btn_Ver_Contraseña
+            // btn_cancelar
             // 
-            this.btn_Ver_Contraseña.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Ver_Contraseña.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Ver_Contraseña.BackgroundImage")));
-            this.btn_Ver_Contraseña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Ver_Contraseña.Location = new System.Drawing.Point(240, 224);
-            this.btn_Ver_Contraseña.Name = "btn_Ver_Contraseña";
-            this.btn_Ver_Contraseña.Size = new System.Drawing.Size(34, 26);
-            this.btn_Ver_Contraseña.TabIndex = 12;
-            this.toolTip1.SetToolTip(this.btn_Ver_Contraseña, "Ver contraseña");
-            this.btn_Ver_Contraseña.UseVisualStyleBackColor = false;
-            this.btn_Ver_Contraseña.Click += new System.EventHandler(this.btn_Ver_Contraeña_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Proyecto_PAV1_G5.Properties.Resources.twitter_profile_image;
-            this.pictureBox1.Location = new System.Drawing.Point(278, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(435, 391);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.btn_cancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.BackgroundImage")));
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_cancelar.Location = new System.Drawing.Point(128, 289);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(105, 28);
+            this.btn_cancelar.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.btn_cancelar, "Cerrar el formulario de Logueo");
+            this.btn_cancelar.UseVisualStyleBackColor = false;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // txt_usuario
             // 
@@ -170,6 +174,16 @@
             this.txt_password.Size = new System.Drawing.Size(211, 26);
             this.txt_password.TabIndex = 14;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_PAV1_G5.Properties.Resources.twitter_profile_image;
+            this.pictureBox1.Location = new System.Drawing.Point(278, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(435, 391);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -178,7 +192,8 @@
             this.ControlBox = false;
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_usuario);
-            this.Controls.Add(this.btn_Ver_Contraseña);
+            this.Controls.Add(this.btn_ver_contrasena);
+            this.Controls.Add(this.btn_ocultar_contrasena);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.label5);
@@ -192,6 +207,7 @@
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Mayortic Minortic";
+            this.Load += new System.EventHandler(this.Frm_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -209,8 +225,9 @@
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button btn_Ver_Contraseña;
+        private System.Windows.Forms.Button btn_ocultar_contrasena;
         private System.Windows.Forms.TextBox txt_usuario;
         private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.Button btn_ver_contrasena;
     }
 }

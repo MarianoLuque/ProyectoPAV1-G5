@@ -40,6 +40,7 @@
             // 
             // btn_Cancelar
             // 
+            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancelar.Location = new System.Drawing.Point(339, 187);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(83, 28);
@@ -50,7 +51,8 @@
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(173, 187);
+            this.btn_Aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Aceptar.Location = new System.Drawing.Point(189, 187);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(75, 28);
             this.btn_Aceptar.TabIndex = 3;
@@ -93,32 +95,35 @@
             // 
             // txt_Precio_Minorista
             // 
-            this.txt_Precio_Minorista.Location = new System.Drawing.Point(189, 77);
+            this.txt_Precio_Minorista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Precio_Minorista.Location = new System.Drawing.Point(189, 74);
             this.txt_Precio_Minorista.Name = "txt_Precio_Minorista";
             this.txt_Precio_Minorista.Pp_campo = "precio_minorista";
             this.txt_Precio_Minorista.Pp_MensajeError = "Falta cargar el precio minorista";
             this.txt_Precio_Minorista.Pp_Validable = true;
-            this.txt_Precio_Minorista.Size = new System.Drawing.Size(233, 20);
+            this.txt_Precio_Minorista.Size = new System.Drawing.Size(233, 26);
             this.txt_Precio_Minorista.TabIndex = 1;
             // 
             // txt_Nombre_Equipo
             // 
-            this.txt_Nombre_Equipo.Location = new System.Drawing.Point(189, 127);
+            this.txt_Nombre_Equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Nombre_Equipo.Location = new System.Drawing.Point(189, 122);
             this.txt_Nombre_Equipo.Name = "txt_Nombre_Equipo";
             this.txt_Nombre_Equipo.Pp_campo = "nombre_equipo";
             this.txt_Nombre_Equipo.Pp_MensajeError = "Falta cargar el nombre del equipo";
             this.txt_Nombre_Equipo.Pp_Validable = true;
-            this.txt_Nombre_Equipo.Size = new System.Drawing.Size(233, 20);
+            this.txt_Nombre_Equipo.Size = new System.Drawing.Size(233, 26);
             this.txt_Nombre_Equipo.TabIndex = 2;
             // 
             // txt_Precio_Mayorista
             // 
-            this.txt_Precio_Mayorista.Location = new System.Drawing.Point(189, 31);
+            this.txt_Precio_Mayorista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Precio_Mayorista.Location = new System.Drawing.Point(189, 26);
             this.txt_Precio_Mayorista.Name = "txt_Precio_Mayorista";
             this.txt_Precio_Mayorista.Pp_campo = "precio_mayorista";
             this.txt_Precio_Mayorista.Pp_MensajeError = "Falta cargar el precio mayorista";
             this.txt_Precio_Mayorista.Pp_Validable = true;
-            this.txt_Precio_Mayorista.Size = new System.Drawing.Size(233, 20);
+            this.txt_Precio_Mayorista.Size = new System.Drawing.Size(233, 26);
             this.txt_Precio_Mayorista.TabIndex = 0;
             // 
             // Frm_Alta_Equipo_Simple

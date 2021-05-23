@@ -147,40 +147,45 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(155, 176);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(138, 173);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 23;
             this.label2.Text = "Codigo Equipo";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(151, 137);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(132, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.Size = new System.Drawing.Size(119, 20);
             this.label1.TabIndex = 22;
             this.label1.Text = "Nombre Equipo";
             // 
             // txt_Codigo_Equipo
             // 
-            this.txt_Codigo_Equipo.Location = new System.Drawing.Point(231, 173);
+            this.txt_Codigo_Equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Codigo_Equipo.Location = new System.Drawing.Point(263, 173);
             this.txt_Codigo_Equipo.Name = "txt_Codigo_Equipo";
-            this.txt_Codigo_Equipo.Size = new System.Drawing.Size(192, 20);
+            this.txt_Codigo_Equipo.Size = new System.Drawing.Size(192, 26);
             this.txt_Codigo_Equipo.TabIndex = 1;
             // 
             // txt_Nombre_Equipo
             // 
-            this.txt_Nombre_Equipo.Location = new System.Drawing.Point(231, 134);
+            this.txt_Nombre_Equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Nombre_Equipo.Location = new System.Drawing.Point(263, 134);
             this.txt_Nombre_Equipo.Name = "txt_Nombre_Equipo";
-            this.txt_Nombre_Equipo.Size = new System.Drawing.Size(192, 20);
+            this.txt_Nombre_Equipo.Size = new System.Drawing.Size(192, 26);
             this.txt_Nombre_Equipo.TabIndex = 0;
             // 
             // btn_Consultar
             // 
-            this.btn_Consultar.Location = new System.Drawing.Point(451, 173);
+            this.btn_Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Consultar.Location = new System.Drawing.Point(490, 173);
             this.btn_Consultar.Name = "btn_Consultar";
-            this.btn_Consultar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Consultar.Size = new System.Drawing.Size(95, 27);
             this.btn_Consultar.TabIndex = 2;
             this.btn_Consultar.Text = "Consultar";
             this.btn_Consultar.UseVisualStyleBackColor = true;

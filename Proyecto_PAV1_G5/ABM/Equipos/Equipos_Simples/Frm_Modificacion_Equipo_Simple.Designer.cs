@@ -42,6 +42,7 @@
             // 
             // btn_Cancelar
             // 
+            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancelar.Location = new System.Drawing.Point(339, 187);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(83, 28);
@@ -52,7 +53,8 @@
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(173, 187);
+            this.btn_Aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Aceptar.Location = new System.Drawing.Point(189, 187);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(75, 28);
             this.btn_Aceptar.TabIndex = 4;
@@ -64,7 +66,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 90);
+            this.label4.Location = new System.Drawing.Point(51, 95);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 20);
@@ -75,7 +77,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 56);
+            this.label3.Location = new System.Drawing.Point(47, 61);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 20);
@@ -86,7 +88,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(39, 125);
+            this.label5.Location = new System.Drawing.Point(53, 130);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 20);
@@ -95,39 +97,42 @@
             // 
             // txt_Precio_Minorista
             // 
+            this.txt_Precio_Minorista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Precio_Minorista.Location = new System.Drawing.Point(189, 92);
             this.txt_Precio_Minorista.Name = "txt_Precio_Minorista";
             this.txt_Precio_Minorista.Pp_campo = "precio_minorista";
             this.txt_Precio_Minorista.Pp_MensajeError = "Falta cargar el precio minorista";
             this.txt_Precio_Minorista.Pp_Validable = true;
-            this.txt_Precio_Minorista.Size = new System.Drawing.Size(233, 20);
+            this.txt_Precio_Minorista.Size = new System.Drawing.Size(233, 26);
             this.txt_Precio_Minorista.TabIndex = 2;
             // 
             // txt_Nombre_Equipo
             // 
+            this.txt_Nombre_Equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Nombre_Equipo.Location = new System.Drawing.Point(189, 127);
             this.txt_Nombre_Equipo.Name = "txt_Nombre_Equipo";
             this.txt_Nombre_Equipo.Pp_campo = "nombre_equipo";
             this.txt_Nombre_Equipo.Pp_MensajeError = "Falta cargar el nombre del equipo";
             this.txt_Nombre_Equipo.Pp_Validable = true;
-            this.txt_Nombre_Equipo.Size = new System.Drawing.Size(233, 20);
+            this.txt_Nombre_Equipo.Size = new System.Drawing.Size(233, 26);
             this.txt_Nombre_Equipo.TabIndex = 3;
             // 
             // txt_Precio_Mayorista
             // 
+            this.txt_Precio_Mayorista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Precio_Mayorista.Location = new System.Drawing.Point(189, 58);
             this.txt_Precio_Mayorista.Name = "txt_Precio_Mayorista";
             this.txt_Precio_Mayorista.Pp_campo = "precio_mayorista";
             this.txt_Precio_Mayorista.Pp_MensajeError = "Falta cargar el precio mayorista";
             this.txt_Precio_Mayorista.Pp_Validable = true;
-            this.txt_Precio_Mayorista.Size = new System.Drawing.Size(233, 20);
+            this.txt_Precio_Mayorista.Size = new System.Drawing.Size(233, 26);
             this.txt_Precio_Mayorista.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 23);
+            this.label1.Location = new System.Drawing.Point(37, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 22;
@@ -135,13 +140,14 @@
             // 
             // txt_codigo_equipo
             // 
+            this.txt_codigo_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_codigo_equipo.Location = new System.Drawing.Point(189, 23);
             this.txt_codigo_equipo.Name = "txt_codigo_equipo";
             this.txt_codigo_equipo.Pp_campo = "codigo_equipo";
             this.txt_codigo_equipo.Pp_MensajeError = "";
             this.txt_codigo_equipo.Pp_Validable = false;
             this.txt_codigo_equipo.ReadOnly = true;
-            this.txt_codigo_equipo.Size = new System.Drawing.Size(233, 20);
+            this.txt_codigo_equipo.Size = new System.Drawing.Size(233, 26);
             this.txt_codigo_equipo.TabIndex = 0;
             // 
             // Frm_Modificacion_Equipo_Simple

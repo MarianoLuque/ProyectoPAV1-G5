@@ -203,9 +203,29 @@ namespace Proyecto_PAV1_G5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap novistoo {
+            get {
+                object obj = ResourceManager.GetObject("novistoo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap twitter_profile_image {
             get {
                 object obj = ResourceManager.GetObject("twitter_profile_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vistoo {
+            get {
+                object obj = ResourceManager.GetObject("vistoo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

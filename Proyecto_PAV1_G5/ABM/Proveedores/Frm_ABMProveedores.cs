@@ -32,7 +32,7 @@ namespace Proyecto_PAV1_G5.ABM.Proveedores
                 grid_proveedores.Rows[i].Cells[0].Value = tabla.Rows[i]["cuit_proveedor"].ToString();
                 grid_proveedores.Rows[i].Cells[1].Value = tabla.Rows[i]["razon_social"].ToString();
                 grid_proveedores.Rows[i].Cells[2].Value = tabla.Rows[i]["legajo_comprador"].ToString();
-                grid_proveedores.Rows[i].Cells[3].Value = tabla.Rows[i]["fecha_inicio_operacion"].ToString();
+                grid_proveedores.Rows[i].Cells[3].Value = tabla.Rows[i]["fecha_inicio_operacion"].ToString().Split()[0];
                 grid_proveedores.Rows[i].Cells[4].Value = tabla.Rows[i]["telefono"].ToString();
                 grid_proveedores.Rows[i].Cells[5].Value = tabla.Rows[i]["barrio"].ToString();
                 grid_proveedores.Rows[i].Cells[6].Value = tabla.Rows[i]["calle"].ToString();

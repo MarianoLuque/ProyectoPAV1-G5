@@ -142,11 +142,11 @@
     <Compile Include="ABM\Empleados\Frm_ModificacionEmpleado.Designer.cs">
       <DependentUpon>Frm_ModificacionEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipoEspecial.cs">
+    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipoEspecial.Designer.cs">
-      <DependentUpon>Frm_ABMEquipoEspecial.cs</DependentUpon>
+    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipo.Designer.cs">
+      <DependentUpon>Frm_ABMEquipo.cs</DependentUpon>
     </Compile>
     <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_Alta_Equipo_Especial.cs">
       <SubType>Form</SubType>
@@ -269,6 +269,7 @@
       <DependentUpon>Frm_ModificacionRubro.cs</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\Acceso_Datos.cs" />
+    <Compile Include="BackEnd\Acceso_Datos_T.cs" />
     <Compile Include="Clases\ComboBox01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -304,6 +305,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transacciones\Compras\Frm_Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transacciones\Compras\Frm_Compras.Designer.cs">
+      <DependentUpon>Frm_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\Ventas\Frm_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transacciones\Ventas\Frm_Ventas.Designer.cs">
+      <DependentUpon>Frm_Ventas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ABM\Articulos\Frm_ABMArticulos.resx">
       <DependentUpon>Frm_ABMArticulos.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,8 +365,8 @@
     <EmbeddedResource Include="ABM\Empleados\Frm_ModificacionEmpleado.resx">
       <DependentUpon>Frm_ModificacionEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipoEspecial.resx">
-      <DependentUpon>Frm_ABMEquipoEspecial.cs</DependentUpon>
+    <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipo.resx">
+      <DependentUpon>Frm_ABMEquipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_Alta_Equipo_Especial.resx">
       <DependentUpon>Frm_Alta_Equipo_Especial.cs</DependentUpon>
@@ -453,8 +466,6 @@
   <ItemGroup>
     <Folder Include="Reportes y Estadísticas\Estadísticas\" />
     <Folder Include="Reportes y Estadísticas\Listados\" />
-    <Folder Include="Transacciones\Compras\" />
-    <Folder Include="Transacciones\Ventas\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\012-medal.png" />
@@ -500,6 +511,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\novistoo.png" />
+    <None Include="Resources\vistoo.png" />
+    <None Include="Resources\novistoo1.png" />
     <Content Include="Resources\visto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

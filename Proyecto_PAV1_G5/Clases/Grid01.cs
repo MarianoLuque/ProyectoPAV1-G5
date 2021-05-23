@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 
 namespace Proyecto_PAV1_G5.Clases
 {
@@ -26,6 +27,19 @@ namespace Proyecto_PAV1_G5.Clases
                 // me obliga a poner el nombre de la columna y el texto del header
                 this.Columns[i].Width = int.Parse(datos[1].ToString());
                 // con esto se cual es el ancho de la columna porque esta en el segundo indice de la matriz datos
+            }
+        }
+
+        public void Cargar(DataTable tabla)
+        {
+            this.Rows.Clear();
+            for (int fila = 0; fila < tabla.Rows.Count; fila++)
+            {
+                this.Rows.Add();
+                for (int columna = 0; columna < tabla.Columns.Count; columna++)
+                {
+                    this.Rows[fila].Cells[columna].Value = tabla.Rows[fila][columna];
+                }
             }
         }
     }

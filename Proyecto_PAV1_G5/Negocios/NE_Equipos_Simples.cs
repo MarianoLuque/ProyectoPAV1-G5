@@ -12,16 +12,18 @@ namespace Proyecto_PAV1_G5.Negocios
 {
     class NE_Equipos_Simples
     {
-        // ZONA DE DECLARACIONES
+        public string Codigo_Equipo { get; set; }
+        public string Cantidad { get; set; }
         Acceso_Datos _BD = new Acceso_Datos();
+        Acceso_Datos_T _BD_T = new Acceso_Datos_T();
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
         public Estructura_ComboBox DatosCombo()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
 
-            edc.Value = "id_tabla";
-            edc.Display = "nombre_a_recuperar";
-            edc.Sql = "SELECT * FROM NombreTabla";
+            edc.Value = "codigo_articulo";
+            edc.Display = "nombre_articulo";
+            edc.Sql = "SELECT * FROM Articulos";
             edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
 
             return edc;
@@ -83,6 +85,29 @@ namespace Proyecto_PAV1_G5.Negocios
 
             string sql = "SELECT e.* FROM Equipos e WHERE e.codigo_equipo = " + codigo[0];
             return _BD.Ejecutar_Select(sql);
+        }
+
+        public void InsertarArticulos_X_Equipo(Grid01 grid_articulos)
+        {
+            string SqlInsertarArt = @"INSERT INTO Articulos_X_Equipo (codigo_equipo, codigo_articulo, cantidad_articulos) VALUES ("
+                                    + Codigo_Equipo;
+            for (int i = 0; i < grid_articulos.Rows.Count; i++)
+            {
+                string miniSql = "";
+
+                miniSql = ", " + grid_articulos.Rows[i].Cells[0].ToString() + ", "
+                         + grid_articulos.Rows[i].Cells[5].ToString();
+
+                _BD_T.Insertar(SqlInsertarArt + miniSql);
+            }
+        }
+
+
+
+        public DataTable RecuperarArticulo(string codigo)
+        {
+            string sql = "SELECT * FROM Articulos WHERE codigo_articulo = " + codigo;
+            return (_BD.Ejecutar_Select(sql));
         }
     }
 }

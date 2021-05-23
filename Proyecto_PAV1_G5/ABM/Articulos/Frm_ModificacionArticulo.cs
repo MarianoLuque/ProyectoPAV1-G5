@@ -31,7 +31,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
 
 
                 articulo.Modificar(Pp_codigo_articulo, this.Controls);
-                if (MessageBox.Show("El cliente se modificó con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
+                if (MessageBox.Show("El artículo se modificó con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
                 {
                     this.Close();
                 }

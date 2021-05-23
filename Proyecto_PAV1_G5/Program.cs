@@ -25,9 +25,9 @@ namespace Proyecto_PAV1_G5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Principal());
-            Application.Run(new Frm_Login()); 
-            //Application.Run(new Frm_ABMFormasPago());
+            Application.Run(new Principal());
+            //Application.Run(new Frm_Login()); 
+            //Application.Run(new Frm_Equipos());
         }
     }
 }

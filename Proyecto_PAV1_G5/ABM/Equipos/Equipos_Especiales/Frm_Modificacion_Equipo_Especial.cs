@@ -15,7 +15,9 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
 {
     public partial class Frm_Modificacion_Equipo_Especial : Form
     {
+        public string TipoEquipo { get; set; }
         public string[] Pp_codigo_y_cuit_equipo_especial;
+        public string[] Pp_codigo_equipo_simple { get; set; }
         NE_EquiposEspeciales equipoEs = new NE_EquiposEspeciales();
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
 
