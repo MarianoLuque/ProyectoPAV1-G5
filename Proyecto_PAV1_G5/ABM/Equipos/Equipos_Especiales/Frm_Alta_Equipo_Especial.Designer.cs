@@ -48,6 +48,7 @@
             this.txt_descripcion_articulo = new System.Windows.Forms.TextBox();
             this.txt_cantidad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.cmb_clientes = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.cmb_nombre_articulo = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.grid_articulos = new Proyecto_PAV1_G5.Clases.Grid01();
             this.txt_Nombre_Equipo_Especial = new Proyecto_PAV1_G5.Clases.TextBox01();
@@ -55,7 +56,6 @@
             this.txt_Precio_Minorista = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_Descripcion_Equipo_Especial = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_Codigo_Equipo_Especial = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.cmb_clientes = new Proyecto_PAV1_G5.Clases.ComboBox01();
             ((System.ComponentModel.ISupportInitialize)(this.grid_articulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -248,6 +248,19 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Cantidad";
             // 
+            // cmb_clientes
+            // 
+            this.cmb_clientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_clientes.FormattingEnabled = true;
+            this.cmb_clientes.Location = new System.Drawing.Point(177, 240);
+            this.cmb_clientes.Name = "cmb_clientes";
+            this.cmb_clientes.Pp_Conseleccion = false;
+            this.cmb_clientes.Pp_MensajeError = null;
+            this.cmb_clientes.Pp_NombreCampo = null;
+            this.cmb_clientes.Pp_Validable = false;
+            this.cmb_clientes.Size = new System.Drawing.Size(233, 28);
+            this.cmb_clientes.TabIndex = 15;
+            // 
             // cmb_nombre_articulo
             // 
             this.cmb_nombre_articulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -292,6 +305,7 @@
             this.txt_Precio_Mayorista.Pp_campo = "precio_mayorista";
             this.txt_Precio_Mayorista.Pp_MensajeError = "Falta cargar el precio mayorista";
             this.txt_Precio_Mayorista.Pp_Validable = false;
+            this.txt_Precio_Mayorista.ReadOnly = true;
             this.txt_Precio_Mayorista.Size = new System.Drawing.Size(233, 26);
             this.txt_Precio_Mayorista.TabIndex = 3;
             // 
@@ -303,6 +317,7 @@
             this.txt_Precio_Minorista.Pp_campo = "precio_minorista";
             this.txt_Precio_Minorista.Pp_MensajeError = "Falta cargar el precio minorista";
             this.txt_Precio_Minorista.Pp_Validable = false;
+            this.txt_Precio_Minorista.ReadOnly = true;
             this.txt_Precio_Minorista.Size = new System.Drawing.Size(233, 26);
             this.txt_Precio_Minorista.TabIndex = 3;
             // 
@@ -327,19 +342,6 @@
             this.txt_Codigo_Equipo_Especial.Pp_Validable = false;
             this.txt_Codigo_Equipo_Especial.Size = new System.Drawing.Size(233, 26);
             this.txt_Codigo_Equipo_Especial.TabIndex = 0;
-            // 
-            // cmb_clientes
-            // 
-            this.cmb_clientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_clientes.FormattingEnabled = true;
-            this.cmb_clientes.Location = new System.Drawing.Point(177, 240);
-            this.cmb_clientes.Name = "cmb_clientes";
-            this.cmb_clientes.Pp_Conseleccion = false;
-            this.cmb_clientes.Pp_MensajeError = null;
-            this.cmb_clientes.Pp_NombreCampo = null;
-            this.cmb_clientes.Pp_Validable = false;
-            this.cmb_clientes.Size = new System.Drawing.Size(233, 28);
-            this.cmb_clientes.TabIndex = 15;
             // 
             // Frm_Alta_Equipo_Especial
             // 
