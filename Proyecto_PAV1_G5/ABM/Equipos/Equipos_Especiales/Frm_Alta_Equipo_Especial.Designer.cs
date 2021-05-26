@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Alta_Equipo_Especial));
             this.label_codigo = new System.Windows.Forms.Label();
-            this.label_cuit_cliente = new System.Windows.Forms.Label();
+            this.label_razon_social = new System.Windows.Forms.Label();
             this.label_descripcion = new System.Windows.Forms.Label();
             this.label_precio_minorista = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -69,15 +69,15 @@
             this.label_codigo.TabIndex = 1;
             this.label_codigo.Text = "Codigo";
             // 
-            // label_cuit_cliente
+            // label_razon_social
             // 
-            this.label_cuit_cliente.AutoSize = true;
-            this.label_cuit_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_cuit_cliente.Location = new System.Drawing.Point(81, 243);
-            this.label_cuit_cliente.Name = "label_cuit_cliente";
-            this.label_cuit_cliente.Size = new System.Drawing.Size(90, 20);
-            this.label_cuit_cliente.TabIndex = 1;
-            this.label_cuit_cliente.Text = "Cuit Cliente";
+            this.label_razon_social.AutoSize = true;
+            this.label_razon_social.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_razon_social.Location = new System.Drawing.Point(68, 243);
+            this.label_razon_social.Name = "label_razon_social";
+            this.label_razon_social.Size = new System.Drawing.Size(103, 20);
+            this.label_razon_social.TabIndex = 1;
+            this.label_razon_social.Text = "Razón Social";
             // 
             // label_descripcion
             // 
@@ -369,7 +369,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label_precio_minorista);
             this.Controls.Add(this.label_descripcion);
-            this.Controls.Add(this.label_cuit_cliente);
+            this.Controls.Add(this.label_razon_social);
             this.Controls.Add(this.label_codigo);
             this.Controls.Add(this.txt_Nombre_Equipo_Especial);
             this.Controls.Add(this.txt_Precio_Mayorista);
@@ -391,7 +391,7 @@
 
         private Clases.TextBox01 txt_Codigo_Equipo_Especial;
         private System.Windows.Forms.Label label_codigo;
-        private System.Windows.Forms.Label label_cuit_cliente;
+        private System.Windows.Forms.Label label_razon_social;
         private System.Windows.Forms.Label label_descripcion;
         private System.Windows.Forms.Label label_precio_minorista;
         private System.Windows.Forms.Label label5;

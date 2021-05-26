@@ -182,5 +182,26 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
                 Pp_codigo_equipo[0] = grid_equipos.CurrentRow.Cells[0].Value.ToString();
             }
         }
+
+        private void grid_equipos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Frm_Mostrar_Equipo mostrar = new Frm_Mostrar_Equipo();
+            if (TipoEquipo == "especial")
+            {
+                string[] Pp_codigo_y_cuit_equipo_especial = new string[2];
+                Pp_codigo_y_cuit_equipo_especial[0] = grid_equipos.CurrentRow.Cells[0].Value.ToString();
+                Pp_codigo_y_cuit_equipo_especial[1] = grid_equipos.CurrentRow.Cells[1].Value.ToString();
+                mostrar.TipoEquipo = TipoEquipo;
+                mostrar.Pp_codigo_y_cuit_equipo_especial = Pp_codigo_y_cuit_equipo_especial;
+            }
+            if (TipoEquipo == "simple")
+            {
+                string[] Pp_codigo_equipo_simple = new string[1];
+                Pp_codigo_equipo_simple[0] = grid_equipos.CurrentRow.Cells[0].Value.ToString();
+                mostrar.TipoEquipo = TipoEquipo;
+                mostrar.Pp_codigo_equipo_simple = Pp_codigo_equipo_simple;
+            }
+            mostrar.ShowDialog();
+        }
     }
 }

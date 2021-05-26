@@ -30,11 +30,12 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
             equipoEs.Precio_Mayorista = txt_Precio_Mayorista.Text;
             equipoEs.Precio_Minorista = txt_Precio_Minorista.Text;
             equipoEs.Nombre_Equipo = txt_Nombre_Equipo_Especial.Text;
-            equipoEs.Cuit_Cliente = cmb_clientes.SelectedValue.ToString();
-            equipoEs.Descripcion = txt_Descripcion_Equipo_Especial.Text;
-            equipoEs.Codigo_Equipo = txt_Codigo_Equipo_Especial.Text;
+
             if (TipoEquipo == "especial")
             {
+                equipoEs.Cuit_Cliente = cmb_clientes.SelectedValue.ToString();
+                equipoEs.Descripcion = txt_Descripcion_Equipo_Especial.Text;
+                equipoEs.Codigo_Equipo = txt_Codigo_Equipo_Especial.Text;
                 equipoEs.InsertarEquipoEspecial(grid_articulos);
                 
             }
@@ -42,6 +43,7 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
             {
                 equipoEs.InsertarEquipoSimple(grid_articulos);
             }
+            this.Close();
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
@@ -60,10 +62,11 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
                 label_precio_minorista.Show();
                 txt_Precio_Minorista.Show();
                 label_descripcion.Hide();
-                label_cuit_cliente.Hide();
+                label_razon_social.Hide();
                 cmb_clientes.Hide();
                 txt_Descripcion_Equipo_Especial.Hide();
-                txt_Codigo_Equipo_Especial.ReadOnly = true;
+                txt_Codigo_Equipo_Especial.Hide();
+                label_codigo.Hide();
                 
             }
             if (TipoEquipo == "especial")
@@ -72,10 +75,11 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
                 label_precio_minorista.Hide();
                 txt_Precio_Minorista.Hide();
                 label_descripcion.Show();
-                label_cuit_cliente.Show();
+                label_razon_social.Show();
                 cmb_clientes.Show();
                 txt_Descripcion_Equipo_Especial.Show();
-                txt_Codigo_Equipo_Especial.ReadOnly = false;
+                txt_Codigo_Equipo_Especial.Show();
+                label_codigo.Show();
                 
             }
         }
@@ -129,7 +133,7 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
             {
                 calculo += int.Parse(grid_articulos.Rows[i].Cells[2].Value.ToString()) * int.Parse(grid_articulos.Rows[i].Cells[4].Value.ToString());
             }
-            return calculo.ToString();
+            return (double.Parse(calculo.ToString()) * 0.9).ToString();
         }
 
         private string CalcularPrecioMinorista(Grid01 grid_articulos)
@@ -139,7 +143,7 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
             {
                 calculo += int.Parse(grid_articulos.Rows[i].Cells[3].Value.ToString()) * int.Parse(grid_articulos.Rows[i].Cells[4].Value.ToString());
             }
-            return calculo.ToString();
+            return (double.Parse(calculo.ToString()) * 0.9 ).ToString();
         }
     }
 }

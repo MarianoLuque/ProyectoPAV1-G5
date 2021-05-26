@@ -203,6 +203,7 @@
             this.grid_equipos.Size = new System.Drawing.Size(748, 260);
             this.grid_equipos.TabIndex = 18;
             this.grid_equipos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_equipos_CellClick);
+            this.grid_equipos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_equipos_CellDoubleClick);
             // 
             // txt_Nombre_Equipo
             // 

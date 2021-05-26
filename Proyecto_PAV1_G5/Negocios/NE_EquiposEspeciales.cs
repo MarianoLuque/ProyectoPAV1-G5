@@ -282,7 +282,121 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD.Ejecutar_Select(sql));
         }
 
+        public DataTable RecuperarArticulo_X_Equipo(string codigo)
+        {
+            string sql = @"SELECT ae.codigo_articulo, a.nombre_articulo, a.costo_mayorista, a.costo_minorista, ae.cantidad_articulos 
+                           FROM Articulos_X_Equipo ae JOIN Articulos a ON ae.codigo_articulo = a.codigo_articulo
+                           WHERE ae.codigo_equipo = " + codigo;
+            return (_BD.Ejecutar_Select(sql));
+        }
 
+        public DataTable RecuperarArticulo_X_Equipo_Especial(string codigo, string cuit)
+        {
+            string sql = @"SELECT aee.codigo_articulo, a.nombre_articulo, a.costo_mayorista, a.costo_minorista, aee.cantidad_articulos 
+                           FROM Articulos_X_Equipo_Especial aee JOIN Articulos a ON aee.codigo_articulo = a.codigo_articulo
+                           WHERE aee.codigo_equipo_especial = " + codigo + " AND cuit_cliente = " + cuit;
+            return (_BD.Ejecutar_Select(sql));
+        }
 
+        public void Modificar_Equipo_Simple (Grid01 grid_articulos)
+        {
+            string SqlUpdate = @"UPDATE Equipos SET precio_mayorista = " + Precio_Mayorista
+                                + " , precio_minorista = " + Precio_Minorista + " , nombre_equipo = '" + Nombre_Equipo
+                                + "' WHERE codigo_equipo = " + Codigo_Equipo;
+
+            string SqlDelete = @"DELETE FROM Articulos_X_Equipo WHERE codigo_equipo = " + Codigo_Equipo ;
+
+            _BD_T.InicioTransaccion();
+            _BD_T.Modificar(SqlUpdate);
+            _BD_T.Borrar(SqlDelete);
+            InsertarArticulos_X_Equipo_Simple(grid_articulos);
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada por un error");
+            }
+        }
+
+        public void InsertarArticulos_X_Equipo_Simple(Grid01 grid_articulos)
+        {
+            string SqlInsertarArt = @"INSERT INTO Articulos_X_Equipo (codigo_equipo, codigo_articulo, cantidad_articulos) VALUES ("
+                                    + Codigo_Equipo;
+            //CUANDO TIENE .Rows[0][0] no hace falta el .Value pero si tenes .Rows[i].Cells[0] si hace falta el .Value
+
+            for (int i = 0; i < grid_articulos.Rows.Count; i++)
+            {
+                string miniSql = "";
+
+                miniSql = ", " + grid_articulos.Rows[i].Cells[0].Value.ToString() + ", "
+                         + grid_articulos.Rows[i].Cells[4].Value.ToString();
+
+                _BD_T.Insertar(SqlInsertarArt + miniSql + ")");
+            }
+        }
+
+        public void Modificar_Equipo_Especial(Grid01 grid_articulos)
+        {
+            string SqlUpdate = @"UPDATE Equipos_Especiales SET precio = " + Precio_Mayorista
+                                + ", codigo_equipo_especial = " + Codigo_Equipo
+                                + " , nombre_equipo_especial = '" + Nombre_Equipo
+                                + "' , descripcion = '" + Descripcion
+                                + "' WHERE codigo_equipo_especial = " + Codigo_Equipo;
+
+            string SqlDelete = @"DELETE FROM Articulos_X_Equipo_Especial WHERE codigo_equipo_especial = " + Codigo_Equipo + " AND cuit_cliente = " + Cuit_Cliente;
+
+            _BD_T.InicioTransaccion();
+            _BD_T.Modificar(SqlUpdate);
+            _BD_T.Borrar(SqlDelete);
+            InsertarArticulos_X_Equipo_Especial(grid_articulos);
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada por un error");
+            }
+        }
+
+        public void Eliminar_Equipo_Simple(Grid01 grid_articulos)
+        {
+            string SqlDeleteArt = "DELETE FROM Articulos_X_Equipo WHERE codigo_equipo = " + Codigo_Equipo;
+
+            string SqlDeleteEquipo = "DELETE FROM Equipos WHERE codigo_equipo = " + Codigo_Equipo;
+
+            _BD_T.InicioTransaccion();
+            _BD_T.Borrar(SqlDeleteArt);
+            _BD_T.Borrar(SqlDeleteEquipo);
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada por un error");
+            }
+        }
+
+        public void Eliminar_Equipo_Especial(Grid01 grid_articulos)
+        {
+            string SqlDeleteArt = "DELETE FROM Articulos_X_Equipo_Especial WHERE codigo_equipo_especial = " + Codigo_Equipo + " AND cuit_cliente = " + Cuit_Cliente;
+
+            string SqlDeleteEquipo = "DELETE FROM Equipos_Especiales WHERE codigo_equipo_especial = " + Codigo_Equipo + " AND cuit_cliente = " + Cuit_Cliente;
+
+            _BD_T.InicioTransaccion();
+            _BD_T.Borrar(SqlDeleteArt);
+            _BD_T.Borrar(SqlDeleteEquipo);
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada por un error");
+            }
+        }
     }
 }
