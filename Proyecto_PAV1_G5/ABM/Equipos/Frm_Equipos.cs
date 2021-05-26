@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Proyecto_PAV1_G5.ABM.Equipos.Equipos_Simples;
 using Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales;
 
 namespace Proyecto_PAV1_G5.ABM.Equipos

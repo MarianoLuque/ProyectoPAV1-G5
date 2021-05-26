@@ -15,6 +15,8 @@ using Proyecto_PAV1_G5.ABM.Equipos;
 using Proyecto_PAV1_G5.ABM.FormasPago;
 using Proyecto_PAV1_G5.ABM.Proveedores;
 using Proyecto_PAV1_G5.ABM.Rubros;
+using Proyecto_PAV1_G5.Transacciones.Compras;
+using Proyecto_PAV1_G5.Transacciones.Ventas;
 
 namespace Proyecto_PAV1_G5
 {
@@ -76,6 +78,18 @@ namespace Proyecto_PAV1_G5
         {
             Frm_ABMRubros rubros = new Frm_ABMRubros();
             rubros.ShowDialog();
+        }
+
+        private void btn_ventas_Click(object sender, EventArgs e)
+        {
+            Frm_Ventas ventas = new Frm_Ventas();
+            ventas.ShowDialog();
+        }
+
+        private void btn_compras_Click(object sender, EventArgs e)
+        {
+            Frm_Compras compras = new Frm_Compras();
+            compras.ShowDialog();
         }
     }
 }

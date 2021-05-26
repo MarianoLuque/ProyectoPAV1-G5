@@ -131,6 +131,7 @@
             this.btn_compras.Text = " ";
             this.btn_compras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_compras.UseVisualStyleBackColor = false;
+            this.btn_compras.Click += new System.EventHandler(this.btn_compras_Click);
             // 
             // btn_ventas
             // 
@@ -148,6 +149,7 @@
             this.btn_ventas.Text = " ";
             this.btn_ventas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ventas.UseVisualStyleBackColor = false;
+            this.btn_ventas.Click += new System.EventHandler(this.btn_ventas_Click);
             // 
             // btn_empleados
             // 

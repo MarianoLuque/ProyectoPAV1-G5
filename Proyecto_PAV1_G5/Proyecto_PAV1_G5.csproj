@@ -142,59 +142,35 @@
     <Compile Include="ABM\Empleados\Frm_ModificacionEmpleado.Designer.cs">
       <DependentUpon>Frm_ModificacionEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipo.cs">
+    <Compile Include="ABM\Equipos\Frm_ABMEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipo.Designer.cs">
+    <Compile Include="ABM\Equipos\Frm_ABMEquipo.Designer.cs">
       <DependentUpon>Frm_ABMEquipo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_Alta_Equipo_Especial.cs">
+    <Compile Include="ABM\Equipos\Frm_Alta_Equipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_Alta_Equipo_Especial.Designer.cs">
-      <DependentUpon>Frm_Alta_Equipo_Especial.cs</DependentUpon>
+    <Compile Include="ABM\Equipos\Frm_Alta_Equipo.Designer.cs">
+      <DependentUpon>Frm_Alta_Equipo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_Baja_Equipo_Especial.cs">
+    <Compile Include="ABM\Equipos\Frm_Baja_Equipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_Baja_Equipo_Especial.Designer.cs">
-      <DependentUpon>Frm_Baja_Equipo_Especial.cs</DependentUpon>
+    <Compile Include="ABM\Equipos\Frm_Baja_Equipo.Designer.cs">
+      <DependentUpon>Frm_Baja_Equipo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_Modificacion_Equipo_Especial.cs">
+    <Compile Include="ABM\Equipos\Frm_Modificacion_Equipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_Modificacion_Equipo_Especial.Designer.cs">
-      <DependentUpon>Frm_Modificacion_Equipo_Especial.cs</DependentUpon>
+    <Compile Include="ABM\Equipos\Frm_Modificacion_Equipo.Designer.cs">
+      <DependentUpon>Frm_Modificacion_Equipo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_Mostrar_Equipo.cs">
+    <Compile Include="ABM\Equipos\Frm_Mostrar_Equipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Especiales\Frm_Mostrar_Equipo.Designer.cs">
+    <Compile Include="ABM\Equipos\Frm_Mostrar_Equipo.Designer.cs">
       <DependentUpon>Frm_Mostrar_Equipo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_ABMEquipoSimple.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_ABMEquipoSimple.Designer.cs">
-      <DependentUpon>Frm_ABMEquipoSimple.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Alta_Equipo_Simple.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Alta_Equipo_Simple.Designer.cs">
-      <DependentUpon>Frm_Alta_Equipo_Simple.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Baja_Equipo_Simple.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Baja_Equipo_Simple.Designer.cs">
-      <DependentUpon>Frm_Baja_Equipo_Simple.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Modificacion_Equipo_Simple.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM\Equipos\Equipos_Simples\Frm_Modificacion_Equipo_Simple.Designer.cs">
-      <DependentUpon>Frm_Modificacion_Equipo_Simple.cs</DependentUpon>
     </Compile>
     <Compile Include="ABM\Equipos\Frm_Equipos.cs">
       <SubType>Form</SubType>
@@ -297,12 +273,14 @@
     <Compile Include="Negocios\NE_Articulos.cs" />
     <Compile Include="Negocios\NE_Categoria.cs" />
     <Compile Include="Negocios\NE_Clientes.cs" />
+    <Compile Include="Negocios\NE_Compras.cs" />
     <Compile Include="Negocios\NE_Empleados.cs" />
     <Compile Include="Negocios\NE_Equipos_Simples.cs" />
     <Compile Include="Negocios\NE_EquiposEspeciales.cs" />
     <Compile Include="Negocios\NE_FormasPago.cs" />
     <Compile Include="Negocios\NE_Proveedores.cs" />
     <Compile Include="Negocios\NE_Rubros.cs" />
+    <Compile Include="Negocios\NE_Ventas.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -371,32 +349,20 @@
     <EmbeddedResource Include="ABM\Empleados\Frm_ModificacionEmpleado.resx">
       <DependentUpon>Frm_ModificacionEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_ABMEquipo.resx">
+    <EmbeddedResource Include="ABM\Equipos\Frm_ABMEquipo.resx">
       <DependentUpon>Frm_ABMEquipo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_Alta_Equipo_Especial.resx">
-      <DependentUpon>Frm_Alta_Equipo_Especial.cs</DependentUpon>
+    <EmbeddedResource Include="ABM\Equipos\Frm_Alta_Equipo.resx">
+      <DependentUpon>Frm_Alta_Equipo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_Baja_Equipo_Especial.resx">
-      <DependentUpon>Frm_Baja_Equipo_Especial.cs</DependentUpon>
+    <EmbeddedResource Include="ABM\Equipos\Frm_Baja_Equipo.resx">
+      <DependentUpon>Frm_Baja_Equipo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_Modificacion_Equipo_Especial.resx">
-      <DependentUpon>Frm_Modificacion_Equipo_Especial.cs</DependentUpon>
+    <EmbeddedResource Include="ABM\Equipos\Frm_Modificacion_Equipo.resx">
+      <DependentUpon>Frm_Modificacion_Equipo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Especiales\Frm_Mostrar_Equipo.resx">
+    <EmbeddedResource Include="ABM\Equipos\Frm_Mostrar_Equipo.resx">
       <DependentUpon>Frm_Mostrar_Equipo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Simples\Frm_ABMEquipoSimple.resx">
-      <DependentUpon>Frm_ABMEquipoSimple.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Simples\Frm_Alta_Equipo_Simple.resx">
-      <DependentUpon>Frm_Alta_Equipo_Simple.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Simples\Frm_Baja_Equipo_Simple.resx">
-      <DependentUpon>Frm_Baja_Equipo_Simple.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ABM\Equipos\Equipos_Simples\Frm_Modificacion_Equipo_Simple.resx">
-      <DependentUpon>Frm_Modificacion_Equipo_Simple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\Equipos\Frm_Equipos.resx">
       <DependentUpon>Frm_Equipos.cs</DependentUpon>
@@ -453,6 +419,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Transacciones\Compras\Frm_Compras.resx">
+      <DependentUpon>Frm_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transacciones\Ventas\Frm_Ventas.resx">
+      <DependentUpon>Frm_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

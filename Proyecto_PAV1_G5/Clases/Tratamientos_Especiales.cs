@@ -301,5 +301,19 @@ namespace Proyecto_PAV1_G5.Clases
                 throw;
             }
         }
+
+        public Resultado ValidarFecha(string fecha)
+        {
+            try
+            {
+                DateTime.Parse(fecha);
+                return Resultado.correcto;
+            }
+            catch (Exception)
+            {
+
+                return Resultado.error;
+            }
+        }
     }
 }
