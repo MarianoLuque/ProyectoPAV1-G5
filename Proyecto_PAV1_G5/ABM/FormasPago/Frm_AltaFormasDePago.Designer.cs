@@ -165,7 +165,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Frm_AltaFormasDePago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_AltaFormasDePago";
+            this.Text = "Alta Forma De Pago";
             this.ResumeLayout(false);
             this.PerformLayout();
 

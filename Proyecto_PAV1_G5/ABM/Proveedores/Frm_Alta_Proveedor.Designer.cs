@@ -265,7 +265,7 @@
             this.Controls.Add(this.txt_cuit_proveedor);
             this.Name = "Frm_Alta_Proveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_Alta_Proveedores";
+            this.Text = "Alta Proveedores";
             this.Load += new System.EventHandler(this.Frm_Alta_Proveedor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
