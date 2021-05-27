@@ -12,10 +12,19 @@ namespace Proyecto_PAV1_G5.Negocios
 {
     class NE_Ventas
     {
-        public string Pp_Nro_Factura { get; set; }
+        // ZONA DE DECLARACIONES
         public string Pp_Id_Tipo_Factura { get; set; }
+        public string Pp_Cliente { get; set; }
+        public string Pp_Nro_Factura { get; set; }
+        public string Pp_Monto { get; set; }
+        public string Pp_Fecha_Venta { get; set; }
+        public string Pp_Vendedor { get; set; }
+        public string Pp_Forma_Pago { get; set; }
+
         Acceso_Datos _BD = new Acceso_Datos();
         Acceso_Datos_T _BD_T = new Acceso_Datos_T();
+
+        // ESTRUCTURA COMBO BOX DE CLIENTES
         public Estructura_ComboBox DatosComboCliente()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
@@ -28,6 +37,7 @@ namespace Proyecto_PAV1_G5.Negocios
             return edc;
         }
 
+        // ESTRUCTURA COMBO BOX DE TIPO DE FACTURA
         public Estructura_ComboBox DatosComboTipoFactura()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
@@ -40,18 +50,20 @@ namespace Proyecto_PAV1_G5.Negocios
             return edc;
         }
 
+        // ESTRUCTURA COMBO BOX DE EMPLEADO
         public Estructura_ComboBox DatosComboEmpleado()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
 
             edc.Value = "legajo";
             edc.Display = "vendedor";
-            edc.Sql = "SELECT (nombre + ' ' + apellido) as vendedor FROM Empleados";
+            edc.Sql = "SELECT *, (nombre + ' ' + apellido) as vendedor FROM Empleados";
             edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
 
             return edc;
         }
 
+        // ESTRUCTURA DE COMBO BOX FORMA DE PAGO
         public Estructura_ComboBox DatosComboFormaDePago()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
@@ -64,6 +76,7 @@ namespace Proyecto_PAV1_G5.Negocios
             return edc;
         }
 
+        // ESTRUCTURA DE DOMBO BOX ARTICULOS
         public Estructura_ComboBox DatosComboArticulos()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
@@ -76,6 +89,7 @@ namespace Proyecto_PAV1_G5.Negocios
             return edc;
         }
 
+        // ESTRUCTURA DE DOMBO BOX EQUIPOS SIMPLES
         public Estructura_ComboBox DatosComboEquipos()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
@@ -88,6 +102,7 @@ namespace Proyecto_PAV1_G5.Negocios
             return edc;
         }
 
+        // // ESTRUCTURA DE DOMBO BOX EQUIPOS ESPECIALES
         public Estructura_ComboBox DatosComboEquiposEspeciales(string cuit)
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
@@ -100,8 +115,8 @@ namespace Proyecto_PAV1_G5.Negocios
             return edc;
         }
 
+        // Z O N A      D E      R E C U P E R A C I O N E S
         //Numero Factura; Tipo Factura; Cuit Cliente; Monto Total; Fecha de Venta; Vendedor Asignado; Forma de Pago
-
         public DataTable RecuperarTodos()
         {
             string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
@@ -113,6 +128,7 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD.Ejecutar_Select(Sql));
         }
 
+        // RECUPERACION DEL NUMERO DE FACTURA
         public int RecuperarNumeroFactura()
         {
             string Sql = "SELECT MAX(nro_factura) FROM Facturas";
@@ -120,18 +136,21 @@ namespace Proyecto_PAV1_G5.Negocios
             return (int.Parse(tabla.Rows[0][0].ToString()) + 1);
         }
 
+        // RECUPERACION DE ARTICULO
         public DataTable RecuperarArticulo(string codigo)
         {
             string sql = "SELECT * FROM Articulos WHERE codigo_articulo = " + codigo;
             return (_BD.Ejecutar_Select(sql));
         }
 
+        // RECUPERACION DE EQUIPO
         public DataTable RecuperarEquipo(string codigo)
         {
             string sql = "SELECT * FROM Equipos WHERE codigo_equipo = " + codigo;
             return (_BD.Ejecutar_Select(sql));
         }
 
+        // RECUPERACION DE EQUIPOS ESPECIALES
         public DataTable RecuperarEquipoEspecial(string codigo, string razon_social)
         {
             string sql = "SELECT * FROM Equipos_Especiales e " +
@@ -140,12 +159,27 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD.Ejecutar_Select(sql));
         }
 
+        // Z O N A     D E     I N S E R S I O N E S 
         public void InsertarVenta(Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
         {
-            string SqlInsertar = @"INSERT INTO ";
+            if (Pp_Cliente == "")
+            {
+                Pp_Cliente = "null";
+            }
+
+            string SqlInsertar = @"INSERT INTO Facturas 
+                                (nro_factura, id_tipo_factura, cuit_cliente, monto_total, fecha_venta, legajo_vendedor, id_forma_pago) VALUES ( "
+                                + Pp_Nro_Factura
+                                + ", " + Pp_Id_Tipo_Factura
+                                + ", " + Pp_Cliente
+                                + ", " + Pp_Monto
+                                + ", Convert(Date, '" + Pp_Fecha_Venta + "', 103)"
+                                + ", " + Pp_Vendedor
+                                + ", " + Pp_Forma_Pago + ")";
 
             _BD_T.InicioTransaccion();
             _BD_T.Insertar(SqlInsertar);
+            InsertarDetalleFactura(grid_equipos, grid_equipos_especiales, grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
                 MessageBox.Show("Se grabó correctamente todo");
@@ -156,9 +190,36 @@ namespace Proyecto_PAV1_G5.Negocios
             }
         }
 
+
         public void InsertarDetalleFactura (Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
         {
-            string Sql = @"INSERT INTO Detalles_Facturas ";
+            string Sql = @"INSERT INTO Detalles_Facturas (nro_factura, id_tipo_factura, codigo_articulo, cantidad, precio_unitario) VALUES ("
+                        + Pp_Nro_Factura 
+                        + ", " + Pp_Id_Tipo_Factura;
+
+            for (int i = 0; i < grid_articulos.Rows.Count; i++)
+            {
+                string miniSql = "";
+
+                if (Pp_Id_Tipo_Factura == "1")
+                {
+                    miniSql = ", " + grid_articulos.Rows[i].Cells[0].Value.ToString()
+                                   + ", " + grid_articulos.Rows[i].Cells[4].Value.ToString()
+                                   + ", " + grid_articulos.Rows[i].Cells[2].Value.ToString();
+                }
+
+                if (Pp_Id_Tipo_Factura == "2")
+                {
+                    miniSql = ", " + grid_articulos.Rows[i].Cells[0].Value.ToString()
+                                   + ", " + grid_articulos.Rows[i].Cells[4].Value.ToString()
+                                   +", " + grid_articulos.Rows[i].Cells[3].Value.ToString();
+                }
+
+                _BD_T.Insertar(Sql + miniSql + ")");
+            }
+
         }
+
+
     }
 }

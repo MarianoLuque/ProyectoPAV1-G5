@@ -19,6 +19,7 @@ namespace Proyecto_PAV1_G5.Negocios
         public string Precio_Mayorista { get; set; }
         public string Precio_Minorista { get; set; }
         public string Descripcion { get; set; }
+
         Acceso_Datos _BD = new Acceso_Datos();
         Acceso_Datos_T _BD_T = new Acceso_Datos_T();
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();

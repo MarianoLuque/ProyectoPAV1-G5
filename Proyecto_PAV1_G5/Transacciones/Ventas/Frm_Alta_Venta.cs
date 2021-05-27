@@ -17,6 +17,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
     {
         NE_Ventas venta = new NE_Ventas();
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
+
         public Frm_Alta_Venta()
         {
             InitializeComponent();
@@ -312,9 +313,28 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             cmb_equipos_especiales.CargarCombo(venta.DatosComboEquiposEspeciales(cmb_cuit_cliente.SelectedValue.ToString()));
         }
 
+        // BOTON ACEPTAR VENTA
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
-            
+            venta.Pp_Id_Tipo_Factura = cmb_id_tipo_factura.SelectedValue.ToString();
+            venta.Pp_Nro_Factura = txt_numero_factura.Text;
+            venta.Pp_Monto = txt_monto.Text;
+            venta.Pp_Fecha_Venta = txt_fecha.Text;
+            venta.Pp_Vendedor = cmb_legajo_vendedor.SelectedValue.ToString();
+            MessageBox.Show(venta.Pp_Vendedor);
+            venta.Pp_Forma_Pago = cmb_id_forma_pago.SelectedValue.ToString();
+
+            if (cmb_id_tipo_factura.Text == "A")
+            {
+                venta.Pp_Cliente = cmb_cuit_cliente.SelectedValue.ToString();
+                venta.InsertarVenta(grid_equipos, grid_equipos_especiales, grid_articulos);
+            }
+
+            if (cmb_id_tipo_factura.Text == "C")
+            {
+                venta.InsertarVenta(grid_equipos, grid_equipos_especiales, grid_articulos);
+            }
+            this.Close();
         }
 
         private void grid_articulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

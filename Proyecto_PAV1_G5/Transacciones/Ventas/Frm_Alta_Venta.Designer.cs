@@ -85,7 +85,7 @@
             // btn_aceptar
             // 
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_aceptar.Location = new System.Drawing.Point(54, 699);
+            this.btn_aceptar.Location = new System.Drawing.Point(359, 17);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(87, 30);
             this.btn_aceptar.TabIndex = 4;
@@ -96,7 +96,7 @@
             // btn_cancelar
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.Location = new System.Drawing.Point(237, 699);
+            this.btn_cancelar.Location = new System.Drawing.Point(542, 17);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(87, 30);
             this.btn_cancelar.TabIndex = 4;
