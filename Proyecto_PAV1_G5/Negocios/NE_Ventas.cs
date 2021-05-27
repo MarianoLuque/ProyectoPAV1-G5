@@ -341,14 +341,6 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD.Ejecutar_Select(sql));
         }
 
-        // RECUPERACION DE CLIENTES CON EQUIPOS ESPECCIALES  :(
-        public DataTable Cliente_Con_Equipos_Especiales()
-        {
-            string sqlConsulta = "SELECT cuit_cliente FROM Equipos_Especiales";
-
-            return _BD.Ejecutar_Select(sqlConsulta);
-        }
-
 
         // Z O N A     D E     I N S E R S I O N E S 
         public void InsertarVenta(Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
