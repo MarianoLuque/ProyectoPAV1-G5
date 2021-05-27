@@ -31,7 +31,12 @@ namespace Proyecto_PAV1_G5.Transacciones.Compras
         {
             string[] subcadenas_fecha_desde = txt_fecha_desde.Text.Split('/');
             string[] subcadenas_fecha_hasta = txt_fecha_hasta.Text.Split('/');
-            if (subcadenas_fecha_desde[0] == "  " || subcadenas_fecha_desde[1] == "  " || subcadenas_fecha_desde[2] == "")
+            bool bandera = false;
+            if(subcadenas_fecha_desde[0] != "  " || subcadenas_fecha_desde[1] != "  " || subcadenas_fecha_desde[2] != "")
+            {
+                bandera = true;
+            }
+            if ((subcadenas_fecha_desde[0] == "  " || subcadenas_fecha_desde[1] == "  " || subcadenas_fecha_desde[2] == "") && bandera)
             {
                 if (tratamiento.ValidarFecha(txt_fecha_desde.Text) == Tratamientos_Especiales.Resultado.error)
                 {
@@ -40,7 +45,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Compras
                     return;
                 }
             }
-            if (subcadenas_fecha_hasta[0] == "  " || subcadenas_fecha_hasta[1] == "  " || subcadenas_fecha_hasta[2] == "")
+            if ((subcadenas_fecha_hasta[0] == "  " || subcadenas_fecha_hasta[1] == "  " || subcadenas_fecha_hasta[2] == "") && bandera)
             {
                 if (tratamiento.ValidarFecha(txt_fecha_hasta.Text) == Tratamientos_Especiales.Resultado.error)
                 {

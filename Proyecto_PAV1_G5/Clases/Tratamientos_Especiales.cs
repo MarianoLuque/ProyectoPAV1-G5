@@ -12,6 +12,7 @@ namespace Proyecto_PAV1_G5.Clases
 {
     class Tratamientos_Especiales
     {
+        
         public enum Resultado { correcto, error }
 
         public Resultado Validar(Control.ControlCollection controles)
@@ -314,6 +315,12 @@ namespace Proyecto_PAV1_G5.Clases
 
                 return Resultado.error;
             }
+        }
+
+        public string RecuperarFecha()
+        {
+            Acceso_Datos_T _BD = new Acceso_Datos_T();
+            return _BD.EjecutarSelect("SELECT CONVERT (CHAR(10), GETDATE(), 103)").Rows[0][0].ToString();
         }
     }
 }
