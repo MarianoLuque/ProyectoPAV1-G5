@@ -46,16 +46,93 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                     return;
                 }
             }
+            // 1 - NINGUNO
             if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
             {
                 grid_ventas.Cargar(venta.RecuperarTodos());
             }
-        }
+            // 2 - SOLO CUIT  
+            if (cmb_cliente.SelectedIndex != -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Solo_Por_Cuit(cmb_cliente.SelectedValue.ToString()));
+            }
+            // 3 - CUIT CLIENTE Y TIPO DE FACTURA
+            if (cmb_cliente.SelectedIndex != -1 && cmb_tipo_factura.SelectedIndex != -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Cuit_Y_Tipo_Factura(cmb_cliente.SelectedValue.ToString(), cmb_tipo_factura.SelectedValue.ToString()));
+            }
+            // 4 - CUIT CLIENTE - TIPO FACTURA - FECHA DESDE
+            if (cmb_cliente.SelectedIndex != -1 && cmb_tipo_factura.SelectedIndex != -1 && txt_fecha_desde.Text.Substring(0, 2) != "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Cuit_Tipo_Factura_Fecha_Desde(cmb_cliente.SelectedValue.ToString(), cmb_tipo_factura.SelectedValue.ToString(), txt_fecha_desde.Text));
+            }
+            // 5 - CUIT CLIENTE - TIPO FACTURA - FECHA DESDE - FECHA HASTA
+            if (cmb_cliente.SelectedIndex != -1 && cmb_tipo_factura.SelectedIndex != -1 && txt_fecha_desde.Text.Substring(0, 2) != "  " && txt_fecha_hasta.Text.Substring(0, 2) != "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Cuit_Tipo_Factura_Fecha_Desde_Fecha_Hasta(cmb_cliente.SelectedValue.ToString(), cmb_tipo_factura.SelectedValue.ToString(), txt_fecha_desde.Text, txt_fecha_hasta.Text));
+            }
+            // 6 - SOLO TIPO DE FACTURA
+            if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex != -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Tipo_Factura(cmb_tipo_factura.SelectedValue.ToString()));
+            }
+            // 7 - TIPO DE FACTURA Y FECHA DESDE 
+            if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex != -1 && txt_fecha_desde.Text.Substring(0, 2) != "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Tipo_Factura_Fecha_Desde(cmb_tipo_factura.SelectedValue.ToString(), txt_fecha_desde.Text));
+            }
+            // 8 - TIPO DE FACTURA Y FECHA HASTA
+            if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex != -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) != "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Tipo_Factura_Fecha_Hasta(cmb_tipo_factura.SelectedValue.ToString(), txt_fecha_hasta.Text));
+            }
+            // 9 - TIPO DE FACTURA - FECHA DESDE Y FECHA HASTA
+            if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex != -1 && txt_fecha_desde.Text.Substring(0, 2) != "  " && txt_fecha_hasta.Text.Substring(0, 2) != "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Tipo_Factura_Fecha_Desde_Fecha_Hasta(cmb_tipo_factura.SelectedValue.ToString(), txt_fecha_desde.Text, txt_fecha_hasta.Text));
+            }
+            // 10 - CUIT CLIENTE Y FECHA DESDE
+            if (cmb_cliente.SelectedIndex != -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) != "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Cuit_Fecha_Desde(cmb_cliente.SelectedValue.ToString(), txt_fecha_desde.Text));
+            }
+            // 11 - CUIT CLIENTE Y FECHA HASTA 
+            if (cmb_cliente.SelectedIndex != -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) != "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Cuit_Fecha_Hasta(cmb_cliente.SelectedValue.ToString(), txt_fecha_hasta.Text));
+            }
+            // 12 - SOLO FECHA DESDE 
+            if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) != "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Fecha_Desde(txt_fecha_desde.Text));
+            }
+            // 13 - SOLO FECHA HASTA
+            if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) != "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Fecha_Hasta(txt_fecha_hasta.Text));
+            }
+            // 14 - FECHA DESDE Y FECHA HASTA 
+            if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) != "  " && txt_fecha_hasta.Text.Substring(0, 2) != "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Fecha_Desde_Fecha_Hasta(txt_fecha_desde.Text, txt_fecha_hasta.Text));
+            }
+            // 15 - CUIT CLIENTE - FECHA DESDE - FECHA HASTA
+            if (cmb_cliente.SelectedIndex != -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) != "  " && txt_fecha_hasta.Text.Substring(0, 2) != "  ")
+            {
+                grid_ventas.Cargar(venta.Recuperar_Por_Cuit_Fecha_Desde_Fecha_Hasta(cmb_cliente.SelectedValue.ToString(), txt_fecha_desde.Text, txt_fecha_hasta.Text));
+            }
+            // 16 ????????????????????????????????????????????????????
+            if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
+            {
 
-        private void btn_Agregar_Equipo_Especial_Click(object sender, EventArgs e)
-        {
-            Frm_Alta_Venta altaVenta = new Frm_Alta_Venta();
-            altaVenta.ShowDialog();
+            }
+
+        }
+            private void btn_Agregar_Equipo_Especial_Click(object sender, EventArgs e)
+            {
+                Frm_Alta_Venta altaVenta = new Frm_Alta_Venta();
+                altaVenta.ShowDialog();
+            
         }
     }
 }

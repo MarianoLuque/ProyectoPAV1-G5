@@ -115,6 +115,7 @@ namespace Proyecto_PAV1_G5.Negocios
             return edc;
         }
 
+
         // Z O N A      D E      R E C U P E R A C I O N E S
         //Numero Factura; Tipo Factura; Cuit Cliente; Monto Total; Fecha de Venta; Vendedor Asignado; Forma de Pago
         public DataTable RecuperarTodos()
@@ -124,6 +125,187 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
                          "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes";
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Solo_Por_Cuit(string cuit)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE c.cuit_clientes = " + cuit;
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Cuit_Y_Tipo_Factura(string cuit, string tipo_Factura)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE c.cuit_clientes = " + cuit
+                         + " AND tf.id_tipo_factura = " + tipo_Factura;
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Cuit_Tipo_Factura_Fecha_Desde(string cuit, string tipo_Factura, string fecha)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE c.cuit_clientes = " + cuit
+                         + " AND tf.id_tipo_factura = " + tipo_Factura
+                         + " AND f.fecha_venta >= Convert (Date, '" + fecha + "', 103)"; 
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Cuit_Tipo_Factura_Fecha_Desde_Fecha_Hasta(string cuit, string tipo_Factura, string fecha_desde, string fecha_hasta)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE c.cuit_clientes = " + cuit
+                         + " AND tf.id_tipo_factura = " + tipo_Factura
+                         + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)"
+                         + " AND f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)";
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Tipo_Factura(string tipo_factura)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE tf.id_tipo_factura = " + tipo_factura;
+                         
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Tipo_Factura_Fecha_Desde(string tipo_factura, string fecha_desde)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE tf.id_tipo_factura = " + tipo_factura
+                         + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Tipo_Factura_Fecha_Hasta(string tipo_factura, string fecha_hasta)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE tf.id_tipo_factura = " + tipo_factura
+                         + " AND f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)";
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Tipo_Factura_Fecha_Desde_Fecha_Hasta(string tipo_factura, string fecha_desde, string fecha_hasta)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE tf.id_tipo_factura = " + tipo_factura
+                         + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)"
+                         + " AND f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)";
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Cuit_Fecha_Desde(string cuit, string fecha_desde)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE c.cuit_clientes = " + cuit
+                         + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Cuit_Fecha_Hasta(string cuit, string fecha_hasta)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE c.cuit_clientes = " + cuit
+                         + " AND f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)";
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Fecha_Desde(string fecha_desde)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Fecha_Hasta(string fecha_hasta)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)";
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Fecha_Desde_Fecha_Hasta(string fecha_desde, string fecha_hasta)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)"
+                         + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_Por_Cuit_Fecha_Desde_Fecha_Hasta(string cuit, string fecha_desde, string fecha_hasta)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE c.cuit_clientes = " + cuit
+                         + " AND f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)"
+                         + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
 
             return (_BD.Ejecutar_Select(Sql));
         }
@@ -159,14 +341,18 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD.Ejecutar_Select(sql));
         }
 
+        // RECUPERACION DE CLIENTES CON EQUIPOS ESPECCIALES  :(
+        public DataTable Cliente_Con_Equipos_Especiales()
+        {
+            string sqlConsulta = "SELECT cuit_cliente FROM Equipos_Especiales";
+
+            return _BD.Ejecutar_Select(sqlConsulta);
+        }
+
+
         // Z O N A     D E     I N S E R S I O N E S 
         public void InsertarVenta(Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
         {
-            if (Pp_Cliente == "")
-            {
-                Pp_Cliente = "null";
-            }
-
             string SqlInsertar = @"INSERT INTO Facturas 
                                 (nro_factura, id_tipo_factura, cuit_cliente, monto_total, fecha_venta, legajo_vendedor, id_forma_pago) VALUES ( "
                                 + Pp_Nro_Factura
@@ -176,6 +362,7 @@ namespace Proyecto_PAV1_G5.Negocios
                                 + ", Convert(Date, '" + Pp_Fecha_Venta + "', 103)"
                                 + ", " + Pp_Vendedor
                                 + ", " + Pp_Forma_Pago + ")";
+
 
             _BD_T.InicioTransaccion();
             _BD_T.Insertar(SqlInsertar);
@@ -189,7 +376,6 @@ namespace Proyecto_PAV1_G5.Negocios
                 MessageBox.Show("No se grabó nada por un error");
             }
         }
-
 
         public void InsertarDetalleFactura (Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
         {

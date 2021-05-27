@@ -73,7 +73,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             if (cmb_id_tipo_factura.Text == "C")
             {
                 cmb_cuit_cliente.SelectedIndex = -1;
-                cmb_cuit_cliente.Enabled = false;
+                cmb_cuit_cliente.Enabled = true;
                 btn_agregar_equipos_especiales.Enabled = false;
                 cmb_equipos_especiales.Enabled = false;
                 txt_cantidad_equipos_especiales.ReadOnly = true;
@@ -306,6 +306,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             cmb_equipos_especiales.Enabled = true;
             txt_cantidad_equipos_especiales.ReadOnly = false;
             btn_agregar_equipos_especiales.Enabled = true;
+
         }
 
         private void cmb_cuit_cliente_SelectionChangeCommitted(object sender, EventArgs e)
@@ -321,7 +322,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             venta.Pp_Monto = txt_monto.Text;
             venta.Pp_Fecha_Venta = txt_fecha.Text;
             venta.Pp_Vendedor = cmb_legajo_vendedor.SelectedValue.ToString();
-            MessageBox.Show(venta.Pp_Vendedor);
+            MessageBox.Show(cmb_cuit_cliente.SelectedValue.ToString());
             venta.Pp_Forma_Pago = cmb_id_forma_pago.SelectedValue.ToString();
 
             if (cmb_id_tipo_factura.Text == "A")
@@ -332,6 +333,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
 
             if (cmb_id_tipo_factura.Text == "C")
             {
+                venta.Pp_Cliente = cmb_cuit_cliente.SelectedValue.ToString();
                 venta.InsertarVenta(grid_equipos, grid_equipos_especiales, grid_articulos);
             }
             this.Close();
