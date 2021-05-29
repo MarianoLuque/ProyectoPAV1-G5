@@ -22,7 +22,8 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
 
         private void Frm_AltaArticulo_Load_1(object sender, EventArgs e)
         {
-            cmb_pais.CargarCombo(articulo.DatosCombo());
+            cmb_pais.CargarCombo(articulo.DatosComboPais());
+            cmb_proveedor.CargarCombo(articulo.DatosComboProveedor());
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)

@@ -132,7 +132,21 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
         {
                 Frm_Alta_Venta altaVenta = new Frm_Alta_Venta();
                 altaVenta.ShowDialog();
-            
+        }
+
+        private void grid_ventas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Frm_Mostrar_Venta mostrar = new Frm_Mostrar_Venta();
+            mostrar.Pp_Nro_Factura = grid_ventas.CurrentRow.Cells[0].Value.ToString();
+            if (grid_ventas.CurrentRow.Cells[1].Value.ToString() == "A")
+            {
+                mostrar.Pp_Tipo_Factura = "1";
+            }
+            if (grid_ventas.CurrentRow.Cells[1].Value.ToString() == "C")
+            {
+                mostrar.Pp_Tipo_Factura = "2";
+            }
+            mostrar.ShowDialog();
         }
     }
 }

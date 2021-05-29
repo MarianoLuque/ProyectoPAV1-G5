@@ -63,7 +63,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
 
         private void Frm_ModificacionArticulo_Load(object sender, EventArgs e)
         {
-            cmb_pais.CargarCombo(art.DatosCombo());
+            cmb_pais.CargarCombo(art.DatosComboPais());
             MostrarDatos(art.RecuperarCodigo(Pp_codigo_articulo));
         }
     }

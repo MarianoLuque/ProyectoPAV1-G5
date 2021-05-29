@@ -184,10 +184,10 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.grid_Clientes.Location = new System.Drawing.Point(23, 213);
+            this.grid_Clientes.Location = new System.Drawing.Point(12, 213);
             this.grid_Clientes.Name = "grid_Clientes";
             this.grid_Clientes.ReadOnly = true;
-            this.grid_Clientes.Size = new System.Drawing.Size(735, 279);
+            this.grid_Clientes.Size = new System.Drawing.Size(956, 279);
             this.grid_Clientes.TabIndex = 16;
             // 
             // Cuit
@@ -288,7 +288,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(981, 561);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grid_Clientes);

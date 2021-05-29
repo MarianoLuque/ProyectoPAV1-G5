@@ -28,7 +28,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
 
         private void Frm_BajaArticulo_Load(object sender, EventArgs e)
         {
-            cmb_pais.CargarCombo(articulo.DatosCombo());
+            cmb_pais.CargarCombo(articulo.DatosComboPais());
             MostrarDatos(articulo.RecuperarCodigo(Pp_codigo_articulo));
         }
 

@@ -41,13 +41,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txt_plazopago = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_envio = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.txt_cuit = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.cmb_pais = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.txt_stock = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_costomin = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_costomay = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_nombre = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_descripcion = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.cmb_proveedor = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.SuspendLayout();
             // 
             // btn_agregar
@@ -136,11 +136,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(30, 326);
+            this.label8.Location = new System.Drawing.Point(71, 323);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 20);
+            this.label8.Size = new System.Drawing.Size(81, 20);
             this.label8.TabIndex = 12;
-            this.label8.Text = "CUIT Proveedor";
+            this.label8.Text = "Proveedor";
             // 
             // label9
             // 
@@ -165,38 +165,26 @@
             // txt_plazopago
             // 
             this.txt_plazopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_plazopago.Location = new System.Drawing.Point(158, 392);
+            this.txt_plazopago.Location = new System.Drawing.Point(159, 392);
             this.txt_plazopago.Margin = new System.Windows.Forms.Padding(5);
             this.txt_plazopago.Name = "txt_plazopago";
             this.txt_plazopago.Pp_campo = "plazo_pago";
             this.txt_plazopago.Pp_MensajeError = null;
             this.txt_plazopago.Pp_Validable = true;
-            this.txt_plazopago.Size = new System.Drawing.Size(100, 26);
+            this.txt_plazopago.Size = new System.Drawing.Size(233, 26);
             this.txt_plazopago.TabIndex = 17;
             // 
             // txt_envio
             // 
             this.txt_envio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_envio.Location = new System.Drawing.Point(158, 356);
+            this.txt_envio.Location = new System.Drawing.Point(159, 356);
             this.txt_envio.Margin = new System.Windows.Forms.Padding(5);
             this.txt_envio.Name = "txt_envio";
             this.txt_envio.Pp_campo = "tiempo_envio";
             this.txt_envio.Pp_MensajeError = null;
             this.txt_envio.Pp_Validable = true;
-            this.txt_envio.Size = new System.Drawing.Size(229, 26);
+            this.txt_envio.Size = new System.Drawing.Size(233, 26);
             this.txt_envio.TabIndex = 15;
-            // 
-            // txt_cuit
-            // 
-            this.txt_cuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_cuit.Location = new System.Drawing.Point(159, 320);
-            this.txt_cuit.Margin = new System.Windows.Forms.Padding(5);
-            this.txt_cuit.Name = "txt_cuit";
-            this.txt_cuit.Pp_campo = "cuit_proveedor";
-            this.txt_cuit.Pp_MensajeError = null;
-            this.txt_cuit.Pp_Validable = true;
-            this.txt_cuit.Size = new System.Drawing.Size(100, 26);
-            this.txt_cuit.TabIndex = 13;
             // 
             // cmb_pais
             // 
@@ -273,14 +261,27 @@
             this.txt_descripcion.Size = new System.Drawing.Size(233, 75);
             this.txt_descripcion.TabIndex = 3;
             // 
+            // cmb_proveedor
+            // 
+            this.cmb_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_proveedor.FormattingEnabled = true;
+            this.cmb_proveedor.Location = new System.Drawing.Point(159, 320);
+            this.cmb_proveedor.Name = "cmb_proveedor";
+            this.cmb_proveedor.Pp_Conseleccion = false;
+            this.cmb_proveedor.Pp_MensajeError = null;
+            this.cmb_proveedor.Pp_NombreCampo = "cuit_proveedor";
+            this.cmb_proveedor.Pp_Validable = true;
+            this.cmb_proveedor.Size = new System.Drawing.Size(233, 28);
+            this.cmb_proveedor.TabIndex = 20;
+            // 
             // Frm_AltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(415, 493);
+            this.Controls.Add(this.cmb_proveedor);
             this.Controls.Add(this.txt_plazopago);
             this.Controls.Add(this.txt_envio);
-            this.Controls.Add(this.txt_cuit);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -326,8 +327,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private Clases.TextBox01 txt_cuit;
         private Clases.TextBox01 txt_envio;
         private Clases.TextBox01 txt_plazopago;
+        private Clases.ComboBox01 cmb_proveedor;
     }
 }

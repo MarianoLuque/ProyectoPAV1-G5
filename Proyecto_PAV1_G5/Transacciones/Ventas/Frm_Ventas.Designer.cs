@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Ventas));
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Eliminar = new System.Windows.Forms.Button();
-            this.btn_Modificar = new System.Windows.Forms.Button();
             this.btn_Agregar = new System.Windows.Forms.Button();
             this.btn_consultar = new System.Windows.Forms.Button();
             this.txt_fecha_hasta = new System.Windows.Forms.MaskedTextBox();
@@ -40,14 +38,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cmb_tipo_factura = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.cmb_cliente = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.grid_ventas = new Proyecto_PAV1_G5.Clases.Grid01();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_ventas)).BeginInit();
             this.SuspendLayout();
@@ -62,33 +56,11 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Ventas";
             // 
-            // btn_Eliminar
-            // 
-            this.btn_Eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_Eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar.Location = new System.Drawing.Point(821, 447);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(100, 30);
-            this.btn_Eliminar.TabIndex = 15;
-            this.btn_Eliminar.Text = "Eliminar";
-            this.btn_Eliminar.UseVisualStyleBackColor = true;
-            // 
-            // btn_Modificar
-            // 
-            this.btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_Modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Modificar.Location = new System.Drawing.Point(518, 447);
-            this.btn_Modificar.Name = "btn_Modificar";
-            this.btn_Modificar.Size = new System.Drawing.Size(100, 30);
-            this.btn_Modificar.TabIndex = 14;
-            this.btn_Modificar.Text = "Editar";
-            this.btn_Modificar.UseVisualStyleBackColor = true;
-            // 
             // btn_Agregar
             // 
             this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_Agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Agregar.Location = new System.Drawing.Point(190, 447);
+            this.btn_Agregar.Location = new System.Drawing.Point(975, 427);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(100, 30);
             this.btn_Agregar.TabIndex = 13;
@@ -167,31 +139,11 @@
             this.label5.TabIndex = 28;
             this.label5.Text = "Tipo de Factura";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources._003_delete;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(785, 447);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources._002_edit;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(482, 447);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources._001__add;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(154, 447);
+            this.pictureBox2.Location = new System.Drawing.Point(939, 427);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.TabIndex = 16;
@@ -233,12 +185,13 @@
             this.grid_ventas.ReadOnly = true;
             this.grid_ventas.Size = new System.Drawing.Size(1031, 241);
             this.grid_ventas.TabIndex = 0;
+            this.grid_ventas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_ventas_CellDoubleClick);
             // 
             // Frm_Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1117, 498);
+            this.ClientSize = new System.Drawing.Size(1117, 467);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmb_tipo_factura);
@@ -248,10 +201,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_consultar);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btn_Eliminar);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.btn_Modificar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_Agregar);
             this.Controls.Add(this.label1);
@@ -261,8 +210,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventas";
             this.Load += new System.EventHandler(this.Frm_Ventas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_ventas)).EndInit();
             this.ResumeLayout(false);
@@ -274,10 +221,6 @@
 
         private Clases.Grid01 grid_ventas;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btn_Eliminar;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btn_Modificar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btn_Agregar;
         private System.Windows.Forms.Button btn_consultar;

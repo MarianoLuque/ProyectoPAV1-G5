@@ -30,6 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABMEmpleados));
             this.grid_empleados = new System.Windows.Forms.DataGridView();
+            this.legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nro_documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_ingreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.btn_editar = new System.Windows.Forms.Button();
@@ -47,14 +55,6 @@
             this.txt_patron_legajo = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_patron_nro_doc = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.cmb_tipo_doc = new Proyecto_PAV1_G5.Clases.ComboBox01();
-            this.legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nro_documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha_ingreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grid_empleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -79,8 +79,56 @@
             this.grid_empleados.Location = new System.Drawing.Point(12, 243);
             this.grid_empleados.Name = "grid_empleados";
             this.grid_empleados.ReadOnly = true;
-            this.grid_empleados.Size = new System.Drawing.Size(760, 254);
+            this.grid_empleados.Size = new System.Drawing.Size(840, 254);
             this.grid_empleados.TabIndex = 0;
+            // 
+            // legajo
+            // 
+            this.legajo.HeaderText = "Legajo";
+            this.legajo.Name = "legajo";
+            this.legajo.ReadOnly = true;
+            // 
+            // tipo_documento
+            // 
+            this.tipo_documento.HeaderText = "Tipo Documento";
+            this.tipo_documento.Name = "tipo_documento";
+            this.tipo_documento.ReadOnly = true;
+            // 
+            // nro_documento
+            // 
+            this.nro_documento.HeaderText = "Número Documento";
+            this.nro_documento.Name = "nro_documento";
+            this.nro_documento.ReadOnly = true;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
+            // apellido
+            // 
+            this.apellido.HeaderText = "Apellido";
+            this.apellido.Name = "apellido";
+            this.apellido.ReadOnly = true;
+            // 
+            // fecha_ingreso
+            // 
+            this.fecha_ingreso.HeaderText = "Fecha de Ingreso";
+            this.fecha_ingreso.Name = "fecha_ingreso";
+            this.fecha_ingreso.ReadOnly = true;
+            // 
+            // telefono
+            // 
+            this.telefono.HeaderText = "Telefono";
+            this.telefono.Name = "telefono";
+            this.telefono.ReadOnly = true;
+            // 
+            // barrio
+            // 
+            this.barrio.HeaderText = "Barrio";
+            this.barrio.Name = "barrio";
+            this.barrio.ReadOnly = true;
             // 
             // textBox1
             // 
@@ -213,7 +261,7 @@
             // 
             this.btn_consultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_consultar.Location = new System.Drawing.Point(591, 209);
+            this.btn_consultar.Location = new System.Drawing.Point(430, 206);
             this.btn_consultar.Name = "btn_consultar";
             this.btn_consultar.Size = new System.Drawing.Size(100, 30);
             this.btn_consultar.TabIndex = 8;
@@ -271,59 +319,11 @@
             this.cmb_tipo_doc.Size = new System.Drawing.Size(178, 28);
             this.cmb_tipo_doc.TabIndex = 1;
             // 
-            // legajo
-            // 
-            this.legajo.HeaderText = "Legajo";
-            this.legajo.Name = "legajo";
-            this.legajo.ReadOnly = true;
-            // 
-            // tipo_documento
-            // 
-            this.tipo_documento.HeaderText = "Tipo Documento";
-            this.tipo_documento.Name = "tipo_documento";
-            this.tipo_documento.ReadOnly = true;
-            // 
-            // nro_documento
-            // 
-            this.nro_documento.HeaderText = "Número Documento";
-            this.nro_documento.Name = "nro_documento";
-            this.nro_documento.ReadOnly = true;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            // 
-            // apellido
-            // 
-            this.apellido.HeaderText = "Apellido";
-            this.apellido.Name = "apellido";
-            this.apellido.ReadOnly = true;
-            // 
-            // fecha_ingreso
-            // 
-            this.fecha_ingreso.HeaderText = "Fecha de Ingreso";
-            this.fecha_ingreso.Name = "fecha_ingreso";
-            this.fecha_ingreso.ReadOnly = true;
-            // 
-            // telefono
-            // 
-            this.telefono.HeaderText = "Telefono";
-            this.telefono.Name = "telefono";
-            this.telefono.ReadOnly = true;
-            // 
-            // barrio
-            // 
-            this.barrio.HeaderText = "Barrio";
-            this.barrio.Name = "barrio";
-            this.barrio.ReadOnly = true;
-            // 
             // Frm_ABMEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(864, 561);
             this.Controls.Add(this.btn_consultar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

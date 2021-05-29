@@ -120,7 +120,7 @@ namespace Proyecto_PAV1_G5.Negocios
         //Numero Factura; Tipo Factura; Cuit Cliente; Monto Total; Fecha de Venta; Vendedor Asignado; Forma de Pago
         public DataTable RecuperarTodos()
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -131,7 +131,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Solo_Por_Cuit(string cuit)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -143,7 +143,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Cuit_Y_Tipo_Factura(string cuit, string tipo_Factura)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -156,7 +156,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Cuit_Tipo_Factura_Fecha_Desde(string cuit, string tipo_Factura, string fecha)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -169,7 +169,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Cuit_Tipo_Factura_Fecha_Desde_Fecha_Hasta(string cuit, string tipo_Factura, string fecha_desde, string fecha_hasta)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -183,7 +183,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Tipo_Factura(string tipo_factura)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -195,7 +195,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Tipo_Factura_Fecha_Desde(string tipo_factura, string fecha_desde)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -208,7 +208,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Tipo_Factura_Fecha_Hasta(string tipo_factura, string fecha_hasta)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -221,7 +221,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Tipo_Factura_Fecha_Desde_Fecha_Hasta(string tipo_factura, string fecha_desde, string fecha_hasta)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -235,7 +235,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Cuit_Fecha_Desde(string cuit, string fecha_desde)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -248,7 +248,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Cuit_Fecha_Hasta(string cuit, string fecha_hasta)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -261,7 +261,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Fecha_Desde(string fecha_desde)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -273,7 +273,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Fecha_Hasta(string fecha_hasta)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -285,7 +285,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Fecha_Desde_Fecha_Hasta(string fecha_desde, string fecha_hasta)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -298,7 +298,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Cuit_Fecha_Desde_Fecha_Hasta(string cuit, string fecha_desde, string fecha_hasta)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -312,7 +312,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public DataTable Recuperar_Por_Cuit_Tipo_Factura_Fecha_Hasta(string cuit, string tipo_Factura, string fecha)
         {
-            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
@@ -323,12 +323,26 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD.Ejecutar_Select(Sql));
         }
 
+        public DataTable Recuperar_Detalle_X_Nro_Y_Tipo_Factura(string nro_factura, string tipo_factura)
+        {
+            string Sql = @"SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, tp.nombre_tipo_producto, df.codigo_articulo, df.codigo_equipo, df.codigo_equipo_especial, df.cantidad, df.precio_unitario, Convert(char(10), f.fecha_venta , 103), (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f" +
+                          " JOIN Detalles_Facturas df ON (f.nro_factura = df.nro_factura and f.id_tipo_factura = df.id_tipo_factura)" +
+                          " JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago" +
+                          " JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura" +
+                          " JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                          " LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes" +
+                          " JOIN Tipos_Productos tp ON df.tipo_producto = tp.id_tipo_producto" +
+                          " WHERE f.nro_factura = " + nro_factura +
+                          " AND f.id_tipo_factura = " + tipo_factura;
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
         // RECUPERACION DEL NUMERO DE FACTURA
         public int RecuperarNumeroFactura()
         {
             string Sql = "SELECT MAX(nro_factura) FROM Facturas WHERE id_tipo_factura = " + Pp_Id_Tipo_Factura;
             DataTable tabla = _BD.Ejecutar_Select(Sql);
-            if (tabla.Rows.Count == 0)
+            if (tabla.Rows.Count == 1)
             {
                 return 1;
             }

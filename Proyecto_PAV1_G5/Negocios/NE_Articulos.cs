@@ -13,13 +13,26 @@ namespace Proyecto_PAV1_G5.Negocios
     class NE_Articulos
     {
         Acceso_Datos _BD = new Acceso_Datos();
-        public Estructura_ComboBox DatosCombo()
+        public Estructura_ComboBox DatosComboPais()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
 
             edc.Value = "id_pais";
             edc.Display = "nombre_pais";
             edc.Sql = "SELECT * FROM Paises";
+            edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
+
+            return edc;
+
+        }
+
+        public Estructura_ComboBox DatosComboProveedor()
+        {
+            Estructura_ComboBox edc = new Estructura_ComboBox();
+
+            edc.Value = "cuit_proveedor";
+            edc.Display = "razon_social";
+            edc.Sql = "SELECT * FROM Proveedores";
             edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
 
             return edc;

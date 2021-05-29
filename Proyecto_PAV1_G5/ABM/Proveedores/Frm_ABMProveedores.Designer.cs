@@ -30,14 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABMProveedores));
             this.grid_proveedores = new System.Windows.Forms.DataGridView();
-            this.cuit_proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.razon_social = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.legajo_comprador = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha_inicio_operacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nro_calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.btn_modificar = new System.Windows.Forms.Button();
@@ -51,6 +43,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_patron_cuit = new System.Windows.Forms.TextBox();
             this.txt_patron_razon_social = new System.Windows.Forms.TextBox();
+            this.cuit_proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razon_social = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.legajo_comprador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre_comprador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_inicio_operacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nro_calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grid_proveedores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -67,6 +68,7 @@
             this.cuit_proveedor,
             this.razon_social,
             this.legajo_comprador,
+            this.nombre_comprador,
             this.fecha_inicio_operacion,
             this.telefono,
             this.barrio,
@@ -75,58 +77,9 @@
             this.grid_proveedores.Location = new System.Drawing.Point(12, 210);
             this.grid_proveedores.Name = "grid_proveedores";
             this.grid_proveedores.ReadOnly = true;
-            this.grid_proveedores.Size = new System.Drawing.Size(796, 287);
+            this.grid_proveedores.Size = new System.Drawing.Size(888, 287);
             this.grid_proveedores.TabIndex = 0;
             this.grid_proveedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_proveedores_CellClick);
-            // 
-            // cuit_proveedor
-            // 
-            this.cuit_proveedor.HeaderText = "Cuit";
-            this.cuit_proveedor.Name = "cuit_proveedor";
-            this.cuit_proveedor.ReadOnly = true;
-            this.cuit_proveedor.Width = 50;
-            // 
-            // razon_social
-            // 
-            this.razon_social.HeaderText = "Razón Social";
-            this.razon_social.Name = "razon_social";
-            this.razon_social.ReadOnly = true;
-            // 
-            // legajo_comprador
-            // 
-            this.legajo_comprador.HeaderText = "Legajo Comprador";
-            this.legajo_comprador.Name = "legajo_comprador";
-            this.legajo_comprador.ReadOnly = true;
-            // 
-            // fecha_inicio_operacion
-            // 
-            this.fecha_inicio_operacion.HeaderText = "Fecha de inicio de operación";
-            this.fecha_inicio_operacion.Name = "fecha_inicio_operacion";
-            this.fecha_inicio_operacion.ReadOnly = true;
-            // 
-            // telefono
-            // 
-            this.telefono.HeaderText = "Teléfono";
-            this.telefono.Name = "telefono";
-            this.telefono.ReadOnly = true;
-            // 
-            // barrio
-            // 
-            this.barrio.HeaderText = "Barrio";
-            this.barrio.Name = "barrio";
-            this.barrio.ReadOnly = true;
-            // 
-            // calle
-            // 
-            this.calle.HeaderText = "Calle";
-            this.calle.Name = "calle";
-            this.calle.ReadOnly = true;
-            // 
-            // nro_calle
-            // 
-            this.nro_calle.HeaderText = "Número de calle";
-            this.nro_calle.Name = "nro_calle";
-            this.nro_calle.ReadOnly = true;
             // 
             // textBox1
             // 
@@ -263,11 +216,66 @@
             this.txt_patron_razon_social.Size = new System.Drawing.Size(192, 26);
             this.txt_patron_razon_social.TabIndex = 15;
             // 
+            // cuit_proveedor
+            // 
+            this.cuit_proveedor.HeaderText = "Cuit";
+            this.cuit_proveedor.Name = "cuit_proveedor";
+            this.cuit_proveedor.ReadOnly = true;
+            this.cuit_proveedor.Width = 50;
+            // 
+            // razon_social
+            // 
+            this.razon_social.HeaderText = "Razón Social";
+            this.razon_social.Name = "razon_social";
+            this.razon_social.ReadOnly = true;
+            // 
+            // legajo_comprador
+            // 
+            this.legajo_comprador.HeaderText = "Legajo Comprador";
+            this.legajo_comprador.Name = "legajo_comprador";
+            this.legajo_comprador.ReadOnly = true;
+            // 
+            // nombre_comprador
+            // 
+            this.nombre_comprador.HeaderText = "Nombre Comprador";
+            this.nombre_comprador.Name = "nombre_comprador";
+            this.nombre_comprador.ReadOnly = true;
+            // 
+            // fecha_inicio_operacion
+            // 
+            this.fecha_inicio_operacion.HeaderText = "Fecha de inicio de operación";
+            this.fecha_inicio_operacion.Name = "fecha_inicio_operacion";
+            this.fecha_inicio_operacion.ReadOnly = true;
+            // 
+            // telefono
+            // 
+            this.telefono.HeaderText = "Teléfono";
+            this.telefono.Name = "telefono";
+            this.telefono.ReadOnly = true;
+            // 
+            // barrio
+            // 
+            this.barrio.HeaderText = "Barrio";
+            this.barrio.Name = "barrio";
+            this.barrio.ReadOnly = true;
+            // 
+            // calle
+            // 
+            this.calle.HeaderText = "Calle";
+            this.calle.Name = "calle";
+            this.calle.ReadOnly = true;
+            // 
+            // nro_calle
+            // 
+            this.nro_calle.HeaderText = "Número de calle";
+            this.nro_calle.Name = "nro_calle";
+            this.nro_calle.ReadOnly = true;
+            // 
             // Frm_ABMProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 561);
+            this.ClientSize = new System.Drawing.Size(912, 561);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_patron_cuit);
@@ -309,17 +317,18 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Button btn_consultar;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_patron_cuit;
+        private System.Windows.Forms.TextBox txt_patron_razon_social;
         private System.Windows.Forms.DataGridViewTextBoxColumn cuit_proveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn razon_social;
         private System.Windows.Forms.DataGridViewTextBoxColumn legajo_comprador;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre_comprador;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_inicio_operacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn barrio;
         private System.Windows.Forms.DataGridViewTextBoxColumn calle;
         private System.Windows.Forms.DataGridViewTextBoxColumn nro_calle;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_patron_cuit;
-        private System.Windows.Forms.TextBox txt_patron_razon_social;
     }
 }
