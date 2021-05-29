@@ -124,7 +124,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes";
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes";
 
             return (_BD.Ejecutar_Select(Sql));
         }
@@ -135,7 +135,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE c.cuit_clientes = " + cuit;
 
             return (_BD.Ejecutar_Select(Sql));
@@ -147,7 +147,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE c.cuit_clientes = " + cuit
                          + " AND tf.id_tipo_factura = " + tipo_Factura;
 
@@ -160,7 +160,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE c.cuit_clientes = " + cuit
                          + " AND tf.id_tipo_factura = " + tipo_Factura
                          + " AND f.fecha_venta >= Convert (Date, '" + fecha + "', 103)"; 
@@ -173,7 +173,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE c.cuit_clientes = " + cuit
                          + " AND tf.id_tipo_factura = " + tipo_Factura
                          + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)"
@@ -187,7 +187,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE tf.id_tipo_factura = " + tipo_factura;
                          
             return (_BD.Ejecutar_Select(Sql));
@@ -199,7 +199,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE tf.id_tipo_factura = " + tipo_factura
                          + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
 
@@ -212,7 +212,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE tf.id_tipo_factura = " + tipo_factura
                          + " AND f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)";
 
@@ -225,7 +225,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE tf.id_tipo_factura = " + tipo_factura
                          + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)"
                          + " AND f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)";
@@ -239,7 +239,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE c.cuit_clientes = " + cuit
                          + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
 
@@ -252,7 +252,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE c.cuit_clientes = " + cuit
                          + " AND f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)";
 
@@ -265,7 +265,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
 
             return (_BD.Ejecutar_Select(Sql));
@@ -277,7 +277,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)";
 
             return (_BD.Ejecutar_Select(Sql));
@@ -289,7 +289,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)"
                          + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
 
@@ -302,7 +302,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE c.cuit_clientes = " + cuit
                          + " AND f.fecha_venta <= Convert (Date, '" + fecha_hasta + "', 103)"
                          + " AND f.fecha_venta >= Convert (Date, '" + fecha_desde + "', 103)";
@@ -316,7 +316,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
                          "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
-                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE c.cuit_clientes = " + cuit
                          + " AND tf.id_tipo_factura = " + tipo_Factura
                          + " AND f.fecha_venta <= Convert (Date, '" + fecha + "', 103)";
@@ -338,6 +338,22 @@ namespace Proyecto_PAV1_G5.Negocios
             }
         }
 
+        //RECUPERACION DEL ORDEN DE DETALLE FACTURA
+        public string RecuperarOrdenDetalleFactura(string tipo_producto)
+        {
+            string Sql = @"SELECT MAX(orden_producto) FROM Detalles_Facturas WHERE id_tipo_factura = " + Pp_Id_Tipo_Factura
+                        +" AND nro_factura = " + Pp_Nro_Factura + " AND tipo_producto = " + tipo_producto;
+            DataTable tabla = _BD.Ejecutar_Select(Sql);
+            if (tabla.Rows.Count == 1)
+            {
+                return "1";
+            }
+            else
+            {
+                return ((int.Parse(tabla.Rows[0][0].ToString()) + 1).ToString());
+            }
+        }
+
         // RECUPERACION DE ARTICULO
         public DataTable RecuperarArticulo(string codigo)
         {
@@ -353,11 +369,10 @@ namespace Proyecto_PAV1_G5.Negocios
         }
 
         // RECUPERACION DE EQUIPOS ESPECIALES
-        public DataTable RecuperarEquipoEspecial(string codigo, string razon_social)
+        public DataTable RecuperarEquipoEspecial(string codigo)
         {
-            string sql = "SELECT * FROM Equipos_Especiales e " +
-                         "JOIN Clientes c ON e.cuit_cliente = c.cuit_clientes " +
-                         "WHERE e.codigo_equipo_especial = " + codigo + " AND c.razon_social = '" + razon_social + "'";
+            string sql = "SELECT * FROM Equipos_Especiales " +
+                         "WHERE codigo_equipo_especial = " + codigo;
             return (_BD.Ejecutar_Select(sql));
         }
 
@@ -403,7 +418,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
             _BD_T.InicioTransaccion();
             _BD_T.Insertar(SqlInsertar);
-            //InsertarDetalleFactura(grid_equipos, grid_equipos_especiales, grid_articulos);
+            InsertarDetalleFactura(grid_equipos, grid_equipos_especiales, grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
                 MessageBox.Show("Se grabó correctamente todo");
@@ -416,9 +431,20 @@ namespace Proyecto_PAV1_G5.Negocios
 
         public void InsertarDetalleFactura (Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
         {
-            string Sql = @"INSERT INTO Detalles_Facturas (nro_factura, id_tipo_factura, codigo_articulo, cantidad, precio_unitario) VALUES ("
+            string SqlArticulo = @"INSERT INTO Detalles_Facturas (nro_factura, id_tipo_factura, tipo_producto, codigo_articulo, cantidad, precio_unitario, orden_producto) VALUES ("
                         + Pp_Nro_Factura 
-                        + ", " + Pp_Id_Tipo_Factura;
+                        + ", " + Pp_Id_Tipo_Factura
+                        + ", 1";
+
+            string SqlEquipo = @"INSERT INTO Detalles_Facturas (nro_factura, id_tipo_factura, tipo_producto, codigo_equipo, cantidad, precio_unitario, orden_producto) VALUES ("
+                        + Pp_Nro_Factura
+                        + ", " + Pp_Id_Tipo_Factura
+                        + ", 2";
+
+            string SqlEquipoEspecial = @"INSERT INTO Detalles_Facturas (nro_factura, id_tipo_factura, tipo_producto, codigo_equipo_especial, cantidad, precio_unitario, orden_producto) VALUES ("
+                        + Pp_Nro_Factura
+                        + ", " + Pp_Id_Tipo_Factura
+                        + ", 3";
 
             for (int i = 0; i < grid_articulos.Rows.Count; i++)
             {
@@ -438,11 +464,57 @@ namespace Proyecto_PAV1_G5.Negocios
                                    +", " + grid_articulos.Rows[i].Cells[3].Value.ToString();
                 }
 
-                _BD_T.Insertar(Sql + miniSql + ")");
+                string ordenArticulo = RecuperarOrdenDetalleFactura("1");
+
+                _BD_T.Insertar(SqlArticulo + miniSql + ", " + ordenArticulo + ")");
+            }
+
+            for (int i = 0; i < grid_equipos.Rows.Count; i++)
+            {
+                string miniSql = "";
+
+                if (Pp_Id_Tipo_Factura == "1")
+                {
+                    miniSql = ", " + grid_equipos.Rows[i].Cells[0].Value.ToString()
+                                   + ", " + grid_equipos.Rows[i].Cells[4].Value.ToString()
+                                   + ", " + grid_equipos.Rows[i].Cells[2].Value.ToString();
+                }
+
+                if (Pp_Id_Tipo_Factura == "2")
+                {
+                    miniSql = ", " + grid_equipos.Rows[i].Cells[0].Value.ToString()
+                                   + ", " + grid_equipos.Rows[i].Cells[4].Value.ToString()
+                                   + ", " + grid_equipos.Rows[i].Cells[3].Value.ToString();
+                }
+
+                string ordenEquipo = RecuperarOrdenDetalleFactura("2");
+
+                _BD_T.Insertar(SqlEquipo + miniSql + ", " + ordenEquipo + ")");
+            }
+
+            for (int i = 0; i < grid_equipos_especiales.Rows.Count; i++)
+            {
+                string miniSql = "";
+
+                if (Pp_Id_Tipo_Factura == "1")
+                {
+                    miniSql = ", " + grid_equipos_especiales.Rows[i].Cells[0].Value.ToString()
+                                   + ", " + grid_equipos_especiales.Rows[i].Cells[4].Value.ToString()
+                                   + ", " + grid_equipos_especiales.Rows[i].Cells[2].Value.ToString();
+                }
+
+                if (Pp_Id_Tipo_Factura == "2")
+                {
+                    miniSql = ", " + grid_equipos_especiales.Rows[i].Cells[0].Value.ToString()
+                                   + ", " + grid_equipos_especiales.Rows[i].Cells[4].Value.ToString()
+                                   + ", " + grid_equipos_especiales.Rows[i].Cells[3].Value.ToString();
+                }
+
+                string ordenEquipoEspecial = RecuperarOrdenDetalleFactura("3");
+
+                _BD_T.Insertar(SqlEquipoEspecial + miniSql + ", " + ordenEquipoEspecial + ")");
             }
 
         }
-
-
     }
 }

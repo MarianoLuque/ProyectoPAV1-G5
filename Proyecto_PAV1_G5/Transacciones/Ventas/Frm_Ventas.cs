@@ -122,14 +122,14 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                 grid_ventas.Cargar(venta.Recuperar_Por_Cuit_Fecha_Desde_Fecha_Hasta(cmb_cliente.SelectedValue.ToString(), txt_fecha_desde.Text, txt_fecha_hasta.Text));
             }
             // 16 - TIPO FACTURA - CUIT CLIENTE - FECHA HASTA
-            if (cmb_cliente.SelectedIndex == -1 && cmb_tipo_factura.SelectedIndex == -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) == "  ")
+            if (cmb_cliente.SelectedIndex != -1 && cmb_tipo_factura.SelectedIndex != -1 && txt_fecha_desde.Text.Substring(0, 2) == "  " && txt_fecha_hasta.Text.Substring(0, 2) != "  ")
             {
                 grid_ventas.Cargar(venta.Recuperar_Por_Cuit_Tipo_Factura_Fecha_Hasta(cmb_cliente.SelectedValue.ToString(), cmb_tipo_factura.SelectedValue.ToString(), txt_fecha_hasta.Text));
             }
 
         }
-            private void btn_Agregar_Equipo_Especial_Click(object sender, EventArgs e)
-            {
+        private void btn_Agregar_Equipo_Especial_Click(object sender, EventArgs e)
+        {
                 Frm_Alta_Venta altaVenta = new Frm_Alta_Venta();
                 altaVenta.ShowDialog();
             

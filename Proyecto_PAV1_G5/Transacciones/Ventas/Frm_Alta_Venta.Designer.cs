@@ -569,7 +569,7 @@
             this.cmb_id_tipo_factura.Pp_Validable = false;
             this.cmb_id_tipo_factura.Size = new System.Drawing.Size(169, 28);
             this.cmb_id_tipo_factura.TabIndex = 1;
-            this.cmb_id_tipo_factura.TextUpdate += new System.EventHandler(this.cmb_id_tipo_factura_TextUpdate);
+            this.cmb_id_tipo_factura.SelectionChangeCommitted += new System.EventHandler(this.cmb_id_tipo_factura_SelectionChangeCommitted);
             this.cmb_id_tipo_factura.SelectedValueChanged += new System.EventHandler(this.cmb_id_tipo_factura_SelectedValueChanged);
             // 
             // grid_equipos_especiales

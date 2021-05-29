@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_PAV1_G5.Clases;
 using Proyecto_PAV1_G5.Negocios;
-using Proyecto_PAV1_G5.Clases;
 
 namespace Proyecto_PAV1_G5.Transacciones.Ventas
 {
@@ -33,6 +32,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             grid_articulos.Formatear("Codigo,75; Nombre,200; Precio Mayorista,100; Precio Minorista,100; Cantidad,50");
             grid_equipos.Formatear("Codigo,100; Nombre,200; Precio Mayorista,100; Precio Minorista,100; Cantidad,50");
             grid_equipos_especiales.Formatear("Codigo,100; Cuit del Cliente,125; Precio,125; Nombre,100; Cantidad,50");
+            cmb_id_tipo_factura.SelectedIndex = -1;
             cmb_id_forma_pago.CargarCombo(venta.DatosComboFormaDePago());
             cmb_id_tipo_factura.CargarCombo(venta.DatosComboTipoFactura());
             cmb_legajo_vendedor.CargarCombo(venta.DatosComboEmpleado());
@@ -296,7 +296,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
 
         private void cmb_equipos_especiales_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            DataTable tabla = venta.RecuperarEquipoEspecial(cmb_equipos_especiales.SelectedValue.ToString(), cmb_cuit_cliente.Text.ToString());
+            DataTable tabla = venta.RecuperarEquipoEspecial(cmb_equipos_especiales.SelectedValue.ToString());
             txt_precio_mayorista_equipos_especiales.Text = tabla.Rows[0][3].ToString();
             txt_descripcion_equipo_especial.Text = tabla.Rows[0][2].ToString();
         }
@@ -386,11 +386,9 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             }
         }
 
-
-
-        private void cmb_id_tipo_factura_TextUpdate(object sender, EventArgs e)
+        private void cmb_id_tipo_factura_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            venta.Pp_Id_Tipo_Factura = cmb_id_forma_pago.SelectedValue.ToString();
+            venta.Pp_Id_Tipo_Factura = cmb_id_tipo_factura.SelectedValue.ToString();
             txt_numero_factura.Text = venta.RecuperarNumeroFactura().ToString();
         }
     }
