@@ -310,12 +310,32 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD.Ejecutar_Select(Sql));
         }
 
+        public DataTable Recuperar_Por_Cuit_Tipo_Factura_Fecha_Hasta(string cuit, string tipo_Factura, string fecha)
+        {
+            string Sql = "SELECT f.nro_factura, tf.nombre_tipo_factura, c.razon_social, f.monto_total, f.fecha_venta, (e.nombre + ' ' + e.apellido) as Vendedor_Asignado, fp.nombre_forma_pago FROM Facturas f " +
+                         "JOIN Tipos_Facturas tf ON f.id_tipo_factura = tf.id_tipo_factura " +
+                         "JOIN Empleados e ON f.legajo_vendedor = e.legajo " +
+                         "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
+                         "JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
+                         + " WHERE c.cuit_clientes = " + cuit
+                         + " AND tf.id_tipo_factura = " + tipo_Factura
+                         + " AND f.fecha_venta <= Convert (Date, '" + fecha + "', 103)";
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
         // RECUPERACION DEL NUMERO DE FACTURA
         public int RecuperarNumeroFactura()
         {
-            string Sql = "SELECT MAX(nro_factura) FROM Facturas";
+            string Sql = "SELECT MAX(nro_factura) FROM Facturas WHERE id_tipo_factura = " + Pp_Id_Tipo_Factura;
             DataTable tabla = _BD.Ejecutar_Select(Sql);
-            return (int.Parse(tabla.Rows[0][0].ToString()) + 1);
+            if (tabla.Rows.Count == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                return (int.Parse(tabla.Rows[0][0].ToString()) + 1);
+            }
         }
 
         // RECUPERACION DE ARTICULO
@@ -343,7 +363,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
 
         // Z O N A     D E     I N S E R S I O N E S 
-        public void InsertarVenta(Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
+        public void InsertarVentaMayorista(Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
         {
             string SqlInsertar = @"INSERT INTO Facturas 
                                 (nro_factura, id_tipo_factura, cuit_cliente, monto_total, fecha_venta, legajo_vendedor, id_forma_pago) VALUES ( "
@@ -359,6 +379,31 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD_T.InicioTransaccion();
             _BD_T.Insertar(SqlInsertar);
             InsertarDetalleFactura(grid_equipos, grid_equipos_especiales, grid_articulos);
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada por un error");
+            }
+        }
+
+        public void InsertarVentaMinorista(Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
+        {
+            string SqlInsertar = @"INSERT INTO Facturas 
+                                (nro_factura, id_tipo_factura, monto_total, fecha_venta, legajo_vendedor, id_forma_pago) VALUES ( "
+                                + Pp_Nro_Factura
+                                + ", " + Pp_Id_Tipo_Factura
+                                + ", " + Pp_Monto
+                                + ", Convert(Date, '" + Pp_Fecha_Venta + "', 103)"
+                                + ", " + Pp_Vendedor
+                                + ", " + Pp_Forma_Pago + ")";
+
+
+            _BD_T.InicioTransaccion();
+            _BD_T.Insertar(SqlInsertar);
+            //InsertarDetalleFactura(grid_equipos, grid_equipos_especiales, grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
                 MessageBox.Show("Se grabó correctamente todo");

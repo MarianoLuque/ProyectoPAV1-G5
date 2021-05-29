@@ -33,7 +33,6 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             grid_articulos.Formatear("Codigo,75; Nombre,200; Precio Mayorista,100; Precio Minorista,100; Cantidad,50");
             grid_equipos.Formatear("Codigo,100; Nombre,200; Precio Mayorista,100; Precio Minorista,100; Cantidad,50");
             grid_equipos_especiales.Formatear("Codigo,100; Cuit del Cliente,125; Precio,125; Nombre,100; Cantidad,50");
-            txt_numero_factura.Text = venta.RecuperarNumeroFactura().ToString();
             cmb_id_forma_pago.CargarCombo(venta.DatosComboFormaDePago());
             cmb_id_tipo_factura.CargarCombo(venta.DatosComboTipoFactura());
             cmb_legajo_vendedor.CargarCombo(venta.DatosComboEmpleado());
@@ -73,7 +72,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             if (cmb_id_tipo_factura.Text == "C")
             {
                 cmb_cuit_cliente.SelectedIndex = -1;
-                cmb_cuit_cliente.Enabled = true;
+                cmb_cuit_cliente.Enabled = false;
                 btn_agregar_equipos_especiales.Enabled = false;
                 cmb_equipos_especiales.Enabled = false;
                 txt_cantidad_equipos_especiales.ReadOnly = true;
@@ -85,6 +84,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                 btn_agregar_equipos.Enabled = true;
                 grid_equipos_especiales.Rows.Clear();
                 txt_monto.Text = CalcularPrecioMinorista(grid_equipos, grid_articulos);
+
             }
         }
 
@@ -317,24 +317,23 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
         // BOTON ACEPTAR VENTA
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
+            venta.Pp_Forma_Pago = cmb_id_forma_pago.SelectedValue.ToString();
             venta.Pp_Id_Tipo_Factura = cmb_id_tipo_factura.SelectedValue.ToString();
             venta.Pp_Nro_Factura = txt_numero_factura.Text;
             venta.Pp_Monto = txt_monto.Text;
             venta.Pp_Fecha_Venta = txt_fecha.Text;
             venta.Pp_Vendedor = cmb_legajo_vendedor.SelectedValue.ToString();
-            MessageBox.Show(cmb_cuit_cliente.SelectedValue.ToString());
-            venta.Pp_Forma_Pago = cmb_id_forma_pago.SelectedValue.ToString();
+
 
             if (cmb_id_tipo_factura.Text == "A")
             {
                 venta.Pp_Cliente = cmb_cuit_cliente.SelectedValue.ToString();
-                venta.InsertarVenta(grid_equipos, grid_equipos_especiales, grid_articulos);
+                venta.InsertarVentaMayorista(grid_equipos, grid_equipos_especiales, grid_articulos);
             }
 
             if (cmb_id_tipo_factura.Text == "C")
             {
-                venta.Pp_Cliente = cmb_cuit_cliente.SelectedValue.ToString();
-                venta.InsertarVenta(grid_equipos, grid_equipos_especiales, grid_articulos);
+                venta.InsertarVentaMinorista(grid_equipos, grid_equipos_especiales, grid_articulos);
             }
             this.Close();
         }
@@ -385,6 +384,14 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                     txt_monto.Text = CalcularPrecioMinorista(grid_equipos, grid_articulos);
                 }
             }
+        }
+
+
+
+        private void cmb_id_tipo_factura_TextUpdate(object sender, EventArgs e)
+        {
+            venta.Pp_Id_Tipo_Factura = cmb_id_forma_pago.SelectedValue.ToString();
+            txt_numero_factura.Text = venta.RecuperarNumeroFactura().ToString();
         }
     }
 }

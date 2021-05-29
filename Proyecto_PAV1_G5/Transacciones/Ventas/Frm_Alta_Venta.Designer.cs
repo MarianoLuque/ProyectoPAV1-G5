@@ -63,6 +63,8 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.txt_descripcion_equipo_especial = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.cmb_equipos_especiales = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.cmb_equipos = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.cmb_nombre_articulo = new Proyecto_PAV1_G5.Clases.ComboBox01();
@@ -75,8 +77,6 @@
             this.grid_equipos_especiales = new Proyecto_PAV1_G5.Clases.Grid01();
             this.grid_equipos = new Proyecto_PAV1_G5.Clases.Grid01();
             this.grid_articulos = new Proyecto_PAV1_G5.Clases.Grid01();
-            this.txt_descripcion_equipo_especial = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_equipos_especiales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_equipos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_articulos)).BeginInit();
@@ -85,7 +85,7 @@
             // btn_aceptar
             // 
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_aceptar.Location = new System.Drawing.Point(359, 17);
+            this.btn_aceptar.Location = new System.Drawing.Point(113, 699);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(87, 30);
             this.btn_aceptar.TabIndex = 4;
@@ -96,7 +96,7 @@
             // btn_cancelar
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.Location = new System.Drawing.Point(542, 17);
+            this.btn_cancelar.Location = new System.Drawing.Point(296, 699);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(87, 30);
             this.btn_cancelar.TabIndex = 4;
@@ -306,7 +306,7 @@
             // btn_agregar_equipos
             // 
             this.btn_agregar_equipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar_equipos.Location = new System.Drawing.Point(867, 473);
+            this.btn_agregar_equipos.Location = new System.Drawing.Point(867, 497);
             this.btn_agregar_equipos.Name = "btn_agregar_equipos";
             this.btn_agregar_equipos.Size = new System.Drawing.Size(87, 30);
             this.btn_agregar_equipos.TabIndex = 4;
@@ -318,7 +318,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(559, 407);
+            this.label12.Location = new System.Drawing.Point(559, 431);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 20);
             this.label12.TabIndex = 16;
@@ -327,7 +327,7 @@
             // txt_precio_mayorista_equipos
             // 
             this.txt_precio_mayorista_equipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precio_mayorista_equipos.Location = new System.Drawing.Point(624, 445);
+            this.txt_precio_mayorista_equipos.Location = new System.Drawing.Point(624, 469);
             this.txt_precio_mayorista_equipos.Name = "txt_precio_mayorista_equipos";
             this.txt_precio_mayorista_equipos.ReadOnly = true;
             this.txt_precio_mayorista_equipos.Size = new System.Drawing.Size(100, 26);
@@ -337,7 +337,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(493, 448);
+            this.label14.Location = new System.Drawing.Point(493, 472);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(125, 20);
             this.label14.TabIndex = 23;
@@ -347,7 +347,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(788, 445);
+            this.label15.Location = new System.Drawing.Point(788, 469);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(73, 20);
             this.label15.TabIndex = 22;
@@ -356,7 +356,7 @@
             // txt_precio_minorista_equipos
             // 
             this.txt_precio_minorista_equipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precio_minorista_equipos.Location = new System.Drawing.Point(624, 477);
+            this.txt_precio_minorista_equipos.Location = new System.Drawing.Point(624, 501);
             this.txt_precio_minorista_equipos.Name = "txt_precio_minorista_equipos";
             this.txt_precio_minorista_equipos.ReadOnly = true;
             this.txt_precio_minorista_equipos.Size = new System.Drawing.Size(100, 26);
@@ -366,7 +366,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(493, 480);
+            this.label13.Location = new System.Drawing.Point(493, 504);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(121, 20);
             this.label13.TabIndex = 24;
@@ -375,7 +375,7 @@
             // btn_agregar_equipos_especiales
             // 
             this.btn_agregar_equipos_especiales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar_equipos_especiales.Location = new System.Drawing.Point(391, 507);
+            this.btn_agregar_equipos_especiales.Location = new System.Drawing.Point(382, 497);
             this.btn_agregar_equipos_especiales.Name = "btn_agregar_equipos_especiales";
             this.btn_agregar_equipos_especiales.Size = new System.Drawing.Size(87, 30);
             this.btn_agregar_equipos_especiales.TabIndex = 4;
@@ -387,7 +387,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(19, 386);
+            this.label16.Location = new System.Drawing.Point(10, 376);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(123, 20);
             this.label16.TabIndex = 16;
@@ -396,7 +396,7 @@
             // txt_precio_mayorista_equipos_especiales
             // 
             this.txt_precio_mayorista_equipos_especiales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precio_mayorista_equipos_especiales.Location = new System.Drawing.Point(148, 476);
+            this.txt_precio_mayorista_equipos_especiales.Location = new System.Drawing.Point(139, 466);
             this.txt_precio_mayorista_equipos_especiales.Name = "txt_precio_mayorista_equipos_especiales";
             this.txt_precio_mayorista_equipos_especiales.ReadOnly = true;
             this.txt_precio_mayorista_equipos_especiales.Size = new System.Drawing.Size(100, 26);
@@ -406,7 +406,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(17, 479);
+            this.label18.Location = new System.Drawing.Point(8, 469);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(125, 20);
             this.label18.TabIndex = 23;
@@ -416,7 +416,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(312, 480);
+            this.label19.Location = new System.Drawing.Point(303, 470);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(73, 20);
             this.label19.TabIndex = 22;
@@ -432,11 +432,31 @@
             this.label17.TabIndex = 26;
             this.label17.Text = "Registrar Venta";
             // 
+            // txt_descripcion_equipo_especial
+            // 
+            this.txt_descripcion_equipo_especial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_descripcion_equipo_especial.Location = new System.Drawing.Point(139, 407);
+            this.txt_descripcion_equipo_especial.Multiline = true;
+            this.txt_descripcion_equipo_especial.Name = "txt_descripcion_equipo_especial";
+            this.txt_descripcion_equipo_especial.ReadOnly = true;
+            this.txt_descripcion_equipo_especial.Size = new System.Drawing.Size(330, 53);
+            this.txt_descripcion_equipo_especial.TabIndex = 20;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(40, 410);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(92, 20);
+            this.label20.TabIndex = 25;
+            this.label20.Text = "Descripción";
+            // 
             // cmb_equipos_especiales
             // 
             this.cmb_equipos_especiales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_equipos_especiales.FormattingEnabled = true;
-            this.cmb_equipos_especiales.Location = new System.Drawing.Point(148, 383);
+            this.cmb_equipos_especiales.Location = new System.Drawing.Point(139, 373);
             this.cmb_equipos_especiales.Name = "cmb_equipos_especiales";
             this.cmb_equipos_especiales.Pp_Conseleccion = false;
             this.cmb_equipos_especiales.Pp_MensajeError = "";
@@ -450,7 +470,7 @@
             // 
             this.cmb_equipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_equipos.FormattingEnabled = true;
-            this.cmb_equipos.Location = new System.Drawing.Point(624, 404);
+            this.cmb_equipos.Location = new System.Drawing.Point(624, 428);
             this.cmb_equipos.Name = "cmb_equipos";
             this.cmb_equipos.Pp_Conseleccion = false;
             this.cmb_equipos.Pp_MensajeError = "";
@@ -477,7 +497,7 @@
             // txt_cantidad_equipos_especiales
             // 
             this.txt_cantidad_equipos_especiales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cantidad_equipos_especiales.Location = new System.Drawing.Point(391, 476);
+            this.txt_cantidad_equipos_especiales.Location = new System.Drawing.Point(382, 466);
             this.txt_cantidad_equipos_especiales.Name = "txt_cantidad_equipos_especiales";
             this.txt_cantidad_equipos_especiales.Pp_campo = null;
             this.txt_cantidad_equipos_especiales.Pp_MensajeError = null;
@@ -488,7 +508,7 @@
             // txt_cantidad_equipos
             // 
             this.txt_cantidad_equipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cantidad_equipos.Location = new System.Drawing.Point(867, 441);
+            this.txt_cantidad_equipos.Location = new System.Drawing.Point(867, 465);
             this.txt_cantidad_equipos.Name = "txt_cantidad_equipos";
             this.txt_cantidad_equipos.Pp_campo = null;
             this.txt_cantidad_equipos.Pp_MensajeError = null;
@@ -549,6 +569,7 @@
             this.cmb_id_tipo_factura.Pp_Validable = false;
             this.cmb_id_tipo_factura.Size = new System.Drawing.Size(169, 28);
             this.cmb_id_tipo_factura.TabIndex = 1;
+            this.cmb_id_tipo_factura.TextUpdate += new System.EventHandler(this.cmb_id_tipo_factura_TextUpdate);
             this.cmb_id_tipo_factura.SelectedValueChanged += new System.EventHandler(this.cmb_id_tipo_factura_SelectedValueChanged);
             // 
             // grid_equipos_especiales
@@ -556,7 +577,7 @@
             this.grid_equipos_especiales.AllowUserToAddRows = false;
             this.grid_equipos_especiales.AllowUserToDeleteRows = false;
             this.grid_equipos_especiales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_equipos_especiales.Location = new System.Drawing.Point(21, 543);
+            this.grid_equipos_especiales.Location = new System.Drawing.Point(12, 533);
             this.grid_equipos_especiales.Name = "grid_equipos_especiales";
             this.grid_equipos_especiales.ReadOnly = true;
             this.grid_equipos_especiales.Size = new System.Drawing.Size(457, 150);
@@ -568,7 +589,7 @@
             this.grid_equipos.AllowUserToAddRows = false;
             this.grid_equipos.AllowUserToDeleteRows = false;
             this.grid_equipos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_equipos.Location = new System.Drawing.Point(497, 509);
+            this.grid_equipos.Location = new System.Drawing.Point(497, 533);
             this.grid_equipos.Name = "grid_equipos";
             this.grid_equipos.ReadOnly = true;
             this.grid_equipos.Size = new System.Drawing.Size(457, 150);
@@ -586,26 +607,6 @@
             this.grid_articulos.Size = new System.Drawing.Size(457, 150);
             this.grid_articulos.TabIndex = 0;
             this.grid_articulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_articulos_CellDoubleClick);
-            // 
-            // txt_descripcion_equipo_especial
-            // 
-            this.txt_descripcion_equipo_especial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_descripcion_equipo_especial.Location = new System.Drawing.Point(148, 417);
-            this.txt_descripcion_equipo_especial.Multiline = true;
-            this.txt_descripcion_equipo_especial.Name = "txt_descripcion_equipo_especial";
-            this.txt_descripcion_equipo_especial.ReadOnly = true;
-            this.txt_descripcion_equipo_especial.Size = new System.Drawing.Size(330, 53);
-            this.txt_descripcion_equipo_especial.TabIndex = 20;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(49, 420);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(92, 20);
-            this.label20.TabIndex = 25;
-            this.label20.Text = "Descripción";
             // 
             // Frm_Alta_Venta
             // 
