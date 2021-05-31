@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using Proyecto_PAV1_G5.BackEnd;
+using Proyecto_PAV1_G5.Negocios;
 
 
 namespace Proyecto_PAV1_G5.Clases
 {
     class Tratamientos_Especiales
     {
-        
+        NE_Ventas venta = new NE_Ventas();
+
         public enum Resultado { correcto, error }
 
         public Resultado Validar(Control.ControlCollection controles)
@@ -322,5 +324,52 @@ namespace Proyecto_PAV1_G5.Clases
             Acceso_Datos_T _BD = new Acceso_Datos_T();
             return _BD.EjecutarSelect("SELECT CONVERT (CHAR(10), GETDATE(), 103)").Rows[0][0].ToString();
         }
+
+
+        public Resultado ValidarCantidadStock(string cantidad, string codigo)
+        {
+            Acceso_Datos _BD = new Acceso_Datos();
+            string sql = "SELECT cantidad_stock FROM Articulos WHERE codigo_articulo = " + codigo;
+            DataTable tabla = _BD.Ejecutar_Select(sql);
+            if (int.Parse(cantidad) > int.Parse(tabla.Rows[0][0].ToString()))
+            {
+                return Resultado.error;
+            }
+            return Resultado.correcto;
+        }
+
+        public Resultado ValidarCantidadStockEnEquipo(string cantidad, string codigo, string tipo_Equipo)
+        {
+            Resultado variable = Resultado.correcto;
+            Acceso_Datos _BD = new Acceso_Datos();
+            if (tipo_Equipo == "Simple" )
+            {
+                DataTable tablaSimple = venta.ActualizarCantidadStockEquipo(codigo);
+                for (int i = 0; i < tablaSimple.Rows.Count; i++)
+                {
+                    string sql = "SELECT cantidad_stock FROM Articulos WHERE codigo_articulo = " + tablaSimple.Rows[0][0].ToString() ;
+                    DataTable tabla = _BD.Ejecutar_Select(sql);
+                    if (int.Parse(cantidad) > int.Parse(tabla.Rows[0][0].ToString()))
+                    {
+                        variable = Resultado.error;
+                    }            
+                }
+            }
+            if (tipo_Equipo == "Especial")
+            {
+                DataTable tablaEspecial = venta.ActualizarCantidadStockEquipoEspecial(codigo);
+                for (int i = 0; i < tablaEspecial.Rows.Count; i++)
+                {
+                    string sql = "SELECT cantidad_stock FROM Articulos WHERE codigo_articulo = " + tablaEspecial.Rows[0][0].ToString();
+                    DataTable tabla = _BD.Ejecutar_Select(sql);
+                    if (int.Parse(cantidad) > int.Parse(tabla.Rows[0][0].ToString()))
+                    {
+                        variable = Resultado.error;
+                    }
+                }
+            }
+            return variable;
+        }
+
     }
 }

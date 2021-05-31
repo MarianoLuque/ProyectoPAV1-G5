@@ -163,7 +163,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE c.cuit_clientes = " + cuit
                          + " AND tf.id_tipo_factura = " + tipo_Factura
-                         + " AND f.fecha_venta >= Convert (Date, '" + fecha + "', 103)"; 
+                         + " AND f.fecha_venta >= Convert (Date, '" + fecha + "', 103)";
             return (_BD.Ejecutar_Select(Sql));
         }
 
@@ -189,7 +189,7 @@ namespace Proyecto_PAV1_G5.Negocios
                          "JOIN Formas_De_Pago fp ON f.id_forma_pago = fp.id_forma_pago " +
                          "LEFT JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes"
                          + " WHERE tf.id_tipo_factura = " + tipo_factura;
-                         
+
             return (_BD.Ejecutar_Select(Sql));
         }
 
@@ -342,7 +342,7 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string Sql = "SELECT MAX(nro_factura) FROM Facturas WHERE id_tipo_factura = " + Pp_Id_Tipo_Factura;
             DataTable tabla = _BD.Ejecutar_Select(Sql);
-            if (tabla.Rows.Count == 1)
+            if (tabla.Rows.Count == 0)
             {
                 return 1;
             }
@@ -356,7 +356,7 @@ namespace Proyecto_PAV1_G5.Negocios
         public string RecuperarOrdenDetalleFactura(string tipo_producto)
         {
             string Sql = @"SELECT MAX(orden_producto) FROM Detalles_Facturas WHERE id_tipo_factura = " + Pp_Id_Tipo_Factura
-                        +" AND nro_factura = " + Pp_Nro_Factura + " AND tipo_producto = " + tipo_producto;
+                        + " AND nro_factura = " + Pp_Nro_Factura + " AND tipo_producto = " + tipo_producto;
             DataTable tabla = _BD.Ejecutar_Select(Sql);
             if (tabla.Rows.Count == 1)
             {
@@ -411,6 +411,8 @@ namespace Proyecto_PAV1_G5.Negocios
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
                 MessageBox.Show("Se grabó correctamente todo");
+
+                ActualizarCantidadStockArt(grid_equipos, grid_equipos_especiales, grid_articulos);
             }
             else
             {
@@ -436,6 +438,8 @@ namespace Proyecto_PAV1_G5.Negocios
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
                 MessageBox.Show("Se grabó correctamente todo");
+                ActualizarCantidadStockArt(grid_equipos, grid_equipos_especiales, grid_articulos);
+
             }
             else
             {
@@ -443,10 +447,10 @@ namespace Proyecto_PAV1_G5.Negocios
             }
         }
 
-        public void InsertarDetalleFactura (Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
+        public void InsertarDetalleFactura(Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
         {
             string SqlArticulo = @"INSERT INTO Detalles_Facturas (nro_factura, id_tipo_factura, tipo_producto, codigo_articulo, cantidad, precio_unitario, orden_producto) VALUES ("
-                        + Pp_Nro_Factura 
+                        + Pp_Nro_Factura
                         + ", " + Pp_Id_Tipo_Factura
                         + ", 1";
 
@@ -475,12 +479,13 @@ namespace Proyecto_PAV1_G5.Negocios
                 {
                     miniSql = ", " + grid_articulos.Rows[i].Cells[0].Value.ToString()
                                    + ", " + grid_articulos.Rows[i].Cells[4].Value.ToString()
-                                   +", " + grid_articulos.Rows[i].Cells[3].Value.ToString();
+                                   + ", " + grid_articulos.Rows[i].Cells[3].Value.ToString();
                 }
 
                 string ordenArticulo = RecuperarOrdenDetalleFactura("1");
 
                 _BD_T.Insertar(SqlArticulo + miniSql + ", " + ordenArticulo + ")");
+
             }
 
             for (int i = 0; i < grid_equipos.Rows.Count; i++)
@@ -530,5 +535,84 @@ namespace Proyecto_PAV1_G5.Negocios
             }
 
         }
+        //METODOS AUXILIARES
+        public void ActualizarCantidadStockArt(Grid01 grid_equipos, Grid01 grid_equipos_especiales, Grid01 grid_articulos)
+        {
+            string sql = "";
+            for (int i = 0; i < grid_articulos.Rows.Count; i++)
+            {
+                sql = "UPDATE Articulos SET cantidad_stock -= " + grid_articulos.Rows[i].Cells[4].Value.ToString() + " WHERE codigo_articulo = " + grid_articulos.Rows[i].Cells[0].Value.ToString();
+                _BD.Modificar(sql);
+            }
+
+            for (int i = 0; i < grid_equipos.Rows.Count; i++)
+            {
+                DataTable tabla = ActualizarCantidadStockEquipo(grid_equipos.Rows[i].Cells[0].Value.ToString());
+                for (int j = 0; j < tabla.Rows.Count; j++)
+                {
+                    sql = "UPDATE Articulos SET cantidad_stock -= " + (int.Parse(grid_equipos.Rows[i].Cells[4].Value.ToString()) * int.Parse(tabla.Rows[j][2].ToString())).ToString() + " WHERE codigo_articulo = " + tabla.Rows[j][0].ToString();
+                    _BD.Modificar(sql);
+                }
+            }
+
+            for (int i = 0; i < grid_equipos_especiales.Rows.Count; i++)
+            {
+                DataTable tabla = ActualizarCantidadStockEquipoEspecial(grid_equipos_especiales.Rows[i].Cells[0].Value.ToString());
+                for (int j = 0; j < tabla.Rows.Count; j++)
+                {
+                    sql = "UPDATE Articulos SET cantidad_stock -= " + (int.Parse(grid_equipos_especiales.Rows[i].Cells[4].Value.ToString()) * int.Parse(tabla.Rows[j][3].ToString())).ToString() + " WHERE codigo_articulo = " + tabla.Rows[j][0].ToString();
+                    _BD.Modificar(sql);
+                }
+            }
+
+        }
+
+        public DataTable ActualizarCantidadStockEquipo(string codigo_equipo)
+        {
+            string minisql = "SELECT* FROM Articulos_X_Equipo WHERE codigo_equipo = " + codigo_equipo;
+            return _BD.Ejecutar_Select(minisql);
+        }
+
+        public DataTable ActualizarCantidadStockEquipoEspecial(string codigo_equipo_especial)
+        {
+            string minisql = "SELECT* FROM Articulos_X_Equipo_Especial WHERE codigo_equipo_especial = " + codigo_equipo_especial;
+            return _BD.Ejecutar_Select(minisql);
+        }
+
+        public void ActualizarClasificacionCliente(string cuit_cliente, string id_clasificacion)
+        {
+            string sql = "UPDATE Clientes SET id_clasificacion = " + id_clasificacion + "WHERE cuit_clientes = " + cuit_cliente;
+            _BD.Modificar(sql);
+        }
+
+        //esta devuelve la fecha de la ultima compra hecha hace 2 años, o NULL si no se hicieron compras
+        public DataTable FechaUltimaCompra (string cuit_cliente)
+        {
+            string sql = "SELECT MAX(fecha_venta) FROM Facturas f WHERE cuit_cliente = " + cuit_cliente + " AND YEAR(fecha_venta) = (YEAR(GETDATE()) - 2)";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public void ActualizarClasificacionCliente(string cuit_cliente)
+        {
+            string sqlFechaUltimaCompra = "SELECT MAX(fecha_venta) FROM Facturas f WHERE cuit_cliente = " + cuit_cliente + " AND YEAR(fecha_venta) = (YEAR(GETDATE()) - 2)";
+            string sqlCantComprasHistoricas = "SELECT cantidad_compras_historicas FROM Clientes WHERE cuit_clientes = " + cuit_cliente;
+            string sqlClasificacion = "SELECT id_clasificacion FROM Clientes WHERE cuit_clientes = " + cuit_cliente;
+            string sqlAntiguedad = "SELECT (YEAR(GETDATE()) - YEAR(fecha_primera_compra)) FROM clientes WHERE cuit_clientes = " + cuit_cliente;
+
+
+
+
+            if (int.Parse(sqlCantComprasHistoricas.ToString()) > 50 && int.Parse(sqlAntiguedad.ToString()) > 0)
+            {
+                
+            }
+            if (sqlFechaUltimaCompra.ToString() == "NULL")
+            {
+                string sqlBorrarClasificacion = "UPDATE Clientes SET id_clasificacion = 1 WHERE cuit_clientes = " + cuit_cliente;
+            }
+        }
+
+
+
     }
 }

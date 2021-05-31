@@ -104,12 +104,21 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                 return;
             }
 
-            grid_articulos.Rows.Add(
-                                    cmb_nombre_articulo.SelectedValue.ToString()
-                                    , cmb_nombre_articulo.Text
-                                    , txt_precio_mayorista_articulo.Text
-                                    , txt_precio_minorista_articulo.Text
-                                    , txt_cantidad_articulo.Text);
+            if (tratamiento.ValidarCantidadStock(txt_cantidad_articulo.Text, cmb_nombre_articulo.SelectedValue.ToString()) == Tratamientos_Especiales.Resultado.error)
+            {
+                MessageBox.Show("La cantidad ingresada excede la cantidad de stock");
+                txt_cantidad_articulo.Focus();
+            }
+            else
+            {
+                grid_articulos.Rows.Add(
+                                   cmb_nombre_articulo.SelectedValue.ToString()
+                                   , cmb_nombre_articulo.Text
+                                   , txt_precio_mayorista_articulo.Text
+                                   , txt_precio_minorista_articulo.Text
+                                   , txt_cantidad_articulo.Text);
+            }
+
 
             cmb_nombre_articulo.SelectedIndex = -1;
             txt_descripcion_articulo.Text = "";
@@ -142,16 +151,26 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                 cmb_equipos_especiales.Focus();
                 return;
             }
-            grid_equipos_especiales.Rows.Add(
+            if (tratamiento.ValidarCantidadStockEnEquipo(txt_cantidad_equipos_especiales.Text, cmb_equipos_especiales.SelectedValue.ToString(), "Especial") == Tratamientos_Especiales.Resultado.error)
+            {
+                MessageBox.Show("La cantidad de uno de los articulos que componen al equipo especial ingresado excede la cantidad de stock");
+                txt_cantidad_equipos_especiales.Focus();
+            }
+            else
+            {
+                grid_equipos_especiales.Rows.Add(
                                     cmb_equipos_especiales.SelectedValue.ToString()
                                     , cmb_cuit_cliente.SelectedValue.ToString()
                                     , txt_precio_mayorista_equipos_especiales.Text
                                     , cmb_equipos_especiales.Text
                                     , txt_cantidad_equipos_especiales.Text);
+            }
+                
 
             cmb_equipos_especiales.SelectedIndex = -1;
             txt_precio_mayorista_equipos_especiales.Text = "";
             txt_cantidad_equipos_especiales.Text = "";
+            txt_descripcion_equipo_especial.Text = "";
 
             if (cmb_id_tipo_factura.Text == "A")
             {
@@ -179,12 +198,21 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                 return;
             }
 
-            grid_equipos.Rows.Add(
+            if (tratamiento.ValidarCantidadStockEnEquipo(txt_cantidad_equipos.Text, cmb_equipos.SelectedValue.ToString() , "Simple") == Tratamientos_Especiales.Resultado.error)
+            {
+                MessageBox.Show("La cantidad de uno de los articulos que componen al equipo ingresado excede la cantidad de stock");
+                txt_cantidad_equipos.Focus();
+            }
+            else
+            {
+                grid_equipos.Rows.Add(
                                     cmb_equipos.SelectedValue.ToString()
                                     , cmb_equipos.Text
                                     , txt_precio_mayorista_equipos.Text
                                     , txt_precio_minorista_equipos.Text
                                     , txt_cantidad_equipos.Text);
+            }
+                
 
             cmb_equipos.SelectedIndex = -1;
             txt_precio_mayorista_equipos.Text = "";
@@ -311,7 +339,9 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
 
         private void cmb_cuit_cliente_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            grid_equipos_especiales.Rows.Clear();
             cmb_equipos_especiales.CargarCombo(venta.DatosComboEquiposEspeciales(cmb_cuit_cliente.SelectedValue.ToString()));
+
         }
 
         // BOTON ACEPTAR VENTA
@@ -336,6 +366,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                 venta.InsertarVentaMinorista(grid_equipos, grid_equipos_especiales, grid_articulos);
             }
             this.Close();
+
         }
 
         private void grid_articulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
