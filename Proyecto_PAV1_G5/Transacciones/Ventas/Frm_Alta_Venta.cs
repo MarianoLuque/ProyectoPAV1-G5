@@ -16,7 +16,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
     {
         NE_Ventas venta = new NE_Ventas();
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
-
+        public string Pp_id_clasificacion { get; set; }
         public Frm_Alta_Venta()
         {
             InitializeComponent();
@@ -68,6 +68,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                 btn_agregar_articulos.Enabled = true;
                 btn_agregar_equipos.Enabled = true;
                 txt_monto.Text = CalcularPrecioMayorista(grid_equipos, grid_equipos_especiales, grid_articulos);
+                Pp_id_clasificacion = "a";
             }
             if (cmb_id_tipo_factura.Text == "C")
             {
@@ -271,7 +272,21 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
                     calculo += int.Parse(grid_equipos_especiales.Rows[i].Cells[2].Value.ToString()) * int.Parse(grid_equipos_especiales.Rows[i].Cells[4].Value.ToString());
                 }
             }
-            return (int.Parse(calculo.ToString())).ToString();
+            double descuento = 0.01;
+            if (cmb_cuit_cliente.SelectedIndex != -1)
+            {
+                descuento = descuento * venta.DescuentoClasificacion(int.Parse(cmb_cuit_cliente.SelectedValue.ToString()));
+            }
+            if (descuento == 0)
+            {
+                descuento = 1.00;
+            }
+            else
+            {
+                descuento = 1.00 - descuento;
+            }
+            string calculoFinal = (Math.Truncate(double.Parse(calculo.ToString()) * descuento)).ToString();
+            return (int.Parse(calculoFinal)).ToString();
         }
 
         private string CalcularPrecioMinorista(Grid01 grid_equipos, Grid01 grid_articulos)
@@ -334,14 +349,14 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             cmb_equipos_especiales.Enabled = true;
             txt_cantidad_equipos_especiales.ReadOnly = false;
             btn_agregar_equipos_especiales.Enabled = true;
-
+            
         }
 
         private void cmb_cuit_cliente_SelectionChangeCommitted(object sender, EventArgs e)
         {
             grid_equipos_especiales.Rows.Clear();
             cmb_equipos_especiales.CargarCombo(venta.DatosComboEquiposEspeciales(cmb_cuit_cliente.SelectedValue.ToString()));
-
+            //Pp_id_clasificacion = cmb_cuit_cliente.SelectedValue.ToString();
         }
 
         // BOTON ACEPTAR VENTA
