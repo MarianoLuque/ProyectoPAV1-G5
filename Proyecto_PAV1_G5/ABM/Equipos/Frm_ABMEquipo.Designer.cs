@@ -59,7 +59,7 @@
             this.Titulo.BackColor = System.Drawing.SystemColors.MenuBar;
             this.Titulo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Titulo.Font = new System.Drawing.Font("Lucida Fax", 20.25F);
-            this.Titulo.Location = new System.Drawing.Point(192, 39);
+            this.Titulo.Location = new System.Drawing.Point(193, 36);
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(266, 32);
             this.Titulo.TabIndex = 1;

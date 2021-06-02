@@ -527,6 +527,8 @@
     <None Include="Resources\Visualizar Contraseña.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\020-indicator.png" />
+    <None Include="Resources\019-box.png" />
     <Content Include="Resources\novistoo.png" />
     <None Include="Resources\vistoo.png" />
     <None Include="Resources\novistoo1.png" />

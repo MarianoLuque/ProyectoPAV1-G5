@@ -153,6 +153,26 @@ namespace Proyecto_PAV1_G5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _019_box {
+            get {
+                object obj = ResourceManager.GetObject("019-box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _020_indicator {
+            get {
+                object obj = ResourceManager.GetObject("020-indicator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _022_illustration {
             get {
                 object obj = ResourceManager.GetObject("022-illustration", resourceCulture);

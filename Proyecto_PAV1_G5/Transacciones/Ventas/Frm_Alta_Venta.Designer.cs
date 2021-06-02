@@ -425,12 +425,12 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(51, 31);
+            this.label17.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(37, 33);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(258, 39);
+            this.label17.Size = new System.Drawing.Size(375, 37);
             this.label17.TabIndex = 26;
-            this.label17.Text = "Registrar Venta";
+            this.label17.Text = "Registrar Nueva Venta";
             // 
             // txt_descripcion_equipo_especial
             // 
@@ -662,6 +662,7 @@
             this.Controls.Add(this.grid_equipos_especiales);
             this.Controls.Add(this.grid_equipos);
             this.Controls.Add(this.grid_articulos);
+            this.MaximizeBox = false;
             this.Name = "Frm_Alta_Venta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Venta";

@@ -85,6 +85,7 @@
             this.Controls.Add(this.grid_articulos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_volver);
+            this.MaximizeBox = false;
             this.Name = "Frm_Mostrar_Compra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mostrar Compra";

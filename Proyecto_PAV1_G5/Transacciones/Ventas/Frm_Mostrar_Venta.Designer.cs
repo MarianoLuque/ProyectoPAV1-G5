@@ -171,10 +171,10 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(21, 18);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(235, 39);
+            this.label17.Size = new System.Drawing.Size(243, 37);
             this.label17.TabIndex = 26;
             this.label17.Text = "Mostrar Venta";
             // 
@@ -308,6 +308,7 @@
             this.Controls.Add(this.grid_equipos_especiales);
             this.Controls.Add(this.grid_equipos);
             this.Controls.Add(this.grid_articulos);
+            this.MaximizeBox = false;
             this.Name = "Frm_Mostrar_Venta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mostrar Venta";

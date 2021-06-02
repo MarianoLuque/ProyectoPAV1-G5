@@ -40,24 +40,26 @@
             this.txt_fecha_hasta = new System.Windows.Forms.MaskedTextBox();
             this.cmb_proveedor = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.grid_compras = new Proyecto_PAV1_G5.Clases.Grid01();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_compras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(295, 9);
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(296, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 55);
+            this.label1.Size = new System.Drawing.Size(161, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "Compras";
             // 
             // btn_consultar
             // 
             this.btn_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_consultar.Location = new System.Drawing.Point(614, 140);
+            this.btn_consultar.Location = new System.Drawing.Point(645, 140);
             this.btn_consultar.Name = "btn_consultar";
             this.btn_consultar.Size = new System.Drawing.Size(93, 30);
             this.btn_consultar.TabIndex = 3;
@@ -91,7 +93,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(183, 143);
+            this.label2.Location = new System.Drawing.Point(214, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 20);
             this.label2.TabIndex = 21;
@@ -101,7 +103,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(197, 109);
+            this.label3.Location = new System.Drawing.Point(228, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 20);
             this.label3.TabIndex = 21;
@@ -111,7 +113,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(410, 143);
+            this.label4.Location = new System.Drawing.Point(441, 143);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(16, 20);
             this.label4.TabIndex = 21;
@@ -120,7 +122,7 @@
             // txt_fecha_desde
             // 
             this.txt_fecha_desde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fecha_desde.Location = new System.Drawing.Point(284, 140);
+            this.txt_fecha_desde.Location = new System.Drawing.Point(315, 140);
             this.txt_fecha_desde.Mask = "00/00/0000";
             this.txt_fecha_desde.Name = "txt_fecha_desde";
             this.txt_fecha_desde.Size = new System.Drawing.Size(100, 26);
@@ -130,7 +132,7 @@
             // txt_fecha_hasta
             // 
             this.txt_fecha_hasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fecha_hasta.Location = new System.Drawing.Point(451, 140);
+            this.txt_fecha_hasta.Location = new System.Drawing.Point(482, 140);
             this.txt_fecha_hasta.Mask = "00/00/0000";
             this.txt_fecha_hasta.Name = "txt_fecha_hasta";
             this.txt_fecha_hasta.Size = new System.Drawing.Size(100, 26);
@@ -141,7 +143,7 @@
             // 
             this.cmb_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_proveedor.FormattingEnabled = true;
-            this.cmb_proveedor.Location = new System.Drawing.Point(284, 106);
+            this.cmb_proveedor.Location = new System.Drawing.Point(315, 106);
             this.cmb_proveedor.Name = "cmb_proveedor";
             this.cmb_proveedor.Pp_Conseleccion = false;
             this.cmb_proveedor.Pp_MensajeError = null;
@@ -162,11 +164,22 @@
             this.grid_compras.TabIndex = 1;
             this.grid_compras.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_compras_CellDoubleClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources._019_box;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(463, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(114, 94);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // Frm_Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 478);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_fecha_hasta);
             this.Controls.Add(this.txt_fecha_desde);
             this.Controls.Add(this.label3);
@@ -179,12 +192,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grid_compras);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Frm_Compras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compras";
             this.Load += new System.EventHandler(this.Frm_Compras_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_compras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,5 +218,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox txt_fecha_desde;
         private System.Windows.Forms.MaskedTextBox txt_fecha_hasta;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

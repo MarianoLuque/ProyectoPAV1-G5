@@ -120,12 +120,12 @@
             // label_titulo
             // 
             this.label_titulo.AutoSize = true;
-            this.label_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_titulo.Font = new System.Drawing.Font("Lucida Fax", 24F);
             this.label_titulo.Location = new System.Drawing.Point(12, 9);
             this.label_titulo.Name = "label_titulo";
-            this.label_titulo.Size = new System.Drawing.Size(108, 39);
+            this.label_titulo.Size = new System.Drawing.Size(263, 37);
             this.label_titulo.TabIndex = 7;
-            this.label_titulo.Text = "Titulo";
+            this.label_titulo.Text = "Mostrar Equipo";
             // 
             // cmb_clientes
             // 
