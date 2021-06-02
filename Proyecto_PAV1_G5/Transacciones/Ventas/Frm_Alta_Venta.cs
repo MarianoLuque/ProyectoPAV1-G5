@@ -357,6 +357,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             grid_equipos_especiales.Rows.Clear();
             cmb_equipos_especiales.CargarCombo(venta.DatosComboEquiposEspeciales(cmb_cuit_cliente.SelectedValue.ToString()));
             //Pp_id_clasificacion = cmb_cuit_cliente.SelectedValue.ToString();
+            txt_monto.Text = CalcularPrecioMayorista(grid_equipos, grid_equipos_especiales, grid_articulos);
         }
 
         // BOTON ACEPTAR VENTA
@@ -437,5 +438,6 @@ namespace Proyecto_PAV1_G5.Transacciones.Ventas
             venta.Pp_Id_Tipo_Factura = cmb_id_tipo_factura.SelectedValue.ToString();
             txt_numero_factura.Text = venta.RecuperarNumeroFactura().ToString();
         }
+
     }
 }

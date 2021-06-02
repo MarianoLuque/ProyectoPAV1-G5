@@ -31,10 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Compras));
             this.label1 = new System.Windows.Forms.Label();
             this.btn_consultar = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btn_Eliminar_Equipo_Especial = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btn_Modificar_Equipo_Especial = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Agregar_Equipo_Especial = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,8 +40,6 @@
             this.txt_fecha_hasta = new System.Windows.Forms.MaskedTextBox();
             this.cmb_proveedor = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.grid_compras = new Proyecto_PAV1_G5.Clases.Grid01();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_compras)).BeginInit();
             this.SuspendLayout();
@@ -71,53 +65,11 @@
             this.btn_consultar.UseVisualStyleBackColor = true;
             this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources._003_delete;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(597, 455);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btn_Eliminar_Equipo_Especial
-            // 
-            this.btn_Eliminar_Equipo_Especial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_Eliminar_Equipo_Especial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar_Equipo_Especial.Location = new System.Drawing.Point(633, 455);
-            this.btn_Eliminar_Equipo_Especial.Name = "btn_Eliminar_Equipo_Especial";
-            this.btn_Eliminar_Equipo_Especial.Size = new System.Drawing.Size(100, 30);
-            this.btn_Eliminar_Equipo_Especial.TabIndex = 15;
-            this.btn_Eliminar_Equipo_Especial.Text = "Eliminar";
-            this.btn_Eliminar_Equipo_Especial.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources._002_edit;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(361, 455);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btn_Modificar_Equipo_Especial
-            // 
-            this.btn_Modificar_Equipo_Especial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_Modificar_Equipo_Especial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Modificar_Equipo_Especial.Location = new System.Drawing.Point(397, 455);
-            this.btn_Modificar_Equipo_Especial.Name = "btn_Modificar_Equipo_Especial";
-            this.btn_Modificar_Equipo_Especial.Size = new System.Drawing.Size(100, 30);
-            this.btn_Modificar_Equipo_Especial.TabIndex = 14;
-            this.btn_Modificar_Equipo_Especial.Text = "Editar";
-            this.btn_Modificar_Equipo_Especial.UseVisualStyleBackColor = true;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources._001__add;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(125, 455);
+            this.pictureBox2.Location = new System.Drawing.Point(688, 436);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.TabIndex = 16;
@@ -127,7 +79,7 @@
             // 
             this.btn_Agregar_Equipo_Especial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_Agregar_Equipo_Especial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Agregar_Equipo_Especial.Location = new System.Drawing.Point(161, 455);
+            this.btn_Agregar_Equipo_Especial.Location = new System.Drawing.Point(724, 436);
             this.btn_Agregar_Equipo_Especial.Name = "btn_Agregar_Equipo_Especial";
             this.btn_Agregar_Equipo_Especial.Size = new System.Drawing.Size(100, 30);
             this.btn_Agregar_Equipo_Especial.TabIndex = 13;
@@ -212,17 +164,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 510);
+            this.ClientSize = new System.Drawing.Size(869, 478);
             this.Controls.Add(this.txt_fecha_hasta);
             this.Controls.Add(this.txt_fecha_desde);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmb_proveedor);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btn_Eliminar_Equipo_Especial);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.btn_Modificar_Equipo_Especial);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_Agregar_Equipo_Especial);
             this.Controls.Add(this.btn_consultar);
@@ -233,8 +181,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compras";
             this.Load += new System.EventHandler(this.Frm_Compras_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_compras)).EndInit();
             this.ResumeLayout(false);
@@ -247,10 +193,6 @@
         private Clases.Grid01 grid_compras;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_consultar;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btn_Eliminar_Equipo_Especial;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btn_Modificar_Equipo_Especial;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btn_Agregar_Equipo_Especial;
         private Clases.ComboBox01 cmb_proveedor;

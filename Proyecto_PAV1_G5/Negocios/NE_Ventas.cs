@@ -406,7 +406,7 @@ namespace Proyecto_PAV1_G5.Negocios
 
 
             _BD_T.InicioTransaccion();
-
+            ActualizarClasificacionCliente(Pp_Cliente);
             _BD_T.Insertar(SqlInsertar);
             InsertarDetalleFactura(grid_equipos, grid_equipos_especiales, grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
@@ -506,9 +506,9 @@ namespace Proyecto_PAV1_G5.Negocios
                                    + ", " + grid_equipos.Rows[i].Cells[3].Value.ToString();
                 }
 
-                string ordenEquipo = RecuperarOrdenDetalleFactura("2");
+                string orden = (i + 1).ToString();
 
-                _BD_T.Insertar(SqlEquipo + miniSql + ", " + ordenEquipo + ")");
+                _BD_T.Insertar(SqlEquipo + miniSql + ", " + orden + ")");
             }
 
             for (int i = 0; i < grid_equipos_especiales.Rows.Count; i++)
@@ -529,9 +529,9 @@ namespace Proyecto_PAV1_G5.Negocios
                                    + ", " + grid_equipos_especiales.Rows[i].Cells[3].Value.ToString();
                 }
 
-                string ordenEquipoEspecial = RecuperarOrdenDetalleFactura("3");
+                string orden = (i + 1).ToString();
 
-                _BD_T.Insertar(SqlEquipoEspecial + miniSql + ", " + ordenEquipoEspecial + ")");
+                _BD_T.Insertar(SqlEquipoEspecial + miniSql + ", " + orden + ")");
             }
 
         }
@@ -582,57 +582,86 @@ namespace Proyecto_PAV1_G5.Negocios
         public void ActualizarClasificacionCliente(string cuit_cliente, string id_clasificacion)
         {
             string sql = "UPDATE Clientes SET id_clasificacion = " + id_clasificacion + "WHERE cuit_clientes = " + cuit_cliente;
-            _BD.Modificar(sql);
+            _BD_T.Modificar(sql);
         }
 
         //esta devuelve la fecha de la ultima compra hecha hace 2 años, o NULL si no se hicieron compras
         public DataTable FechaUltimaCompra (string cuit_cliente)
         {
             string sql = "SELECT MAX(fecha_venta) FROM Facturas f WHERE cuit_cliente = " + cuit_cliente + " AND YEAR(fecha_venta) >= (YEAR(GETDATE()) - 2)";
-            return _BD.Ejecutar_Select(sql);
+            return _BD_T.EjecutarSelect(sql);
         }
 
         public int CantidadComprasHistoricas(string cuit_cliente)
         {
             string sql = "SELECT cantidad_compras_historicas FROM Clientes WHERE cuit_clientes = " + cuit_cliente;
-            return int.Parse((_BD.Ejecutar_Select(sql)).Rows[0][0].ToString());
+            return int.Parse((_BD_T.EjecutarSelect(sql)).Rows[0][0].ToString());
         }
 
         public int IdClasificacion(string cuit_cliente)
         {
             string sql = "SELECT id_clasificacion FROM Clientes WHERE cuit_clientes = " + cuit_cliente;
-            return int.Parse((_BD.Ejecutar_Select(sql)).Rows[0][0].ToString());
+            return int.Parse((_BD_T.EjecutarSelect(sql)).Rows[0][0].ToString());
         }
 
-        public int DescuentoClasificacion(int id_clasificacion)
+        public int DescuentoClasificacion(int cuit_cliente)
         {
+            string sqlCliente = "SELECT id_clasificacion FROM Clientes WHERE cuit_clientes = " + cuit_cliente;
+            DataTable tabla = _BD_T.EjecutarSelect(sqlCliente);
+            string id_clasificacion = tabla.Rows[0][0].ToString();
             string sql = "SELECT descuento FROM Clasificacion_Clientes WHERE id_clasificacion = " + id_clasificacion;
-            return int.Parse((_BD.Ejecutar_Select(sql)).Rows[0][0].ToString());
+            return int.Parse((_BD_T.EjecutarSelect(sql)).Rows[0][0].ToString());
         }
         public int AntiguedadCliente(string cuit_cliente)
         {
             string sql = "SELECT (YEAR(GETDATE()) - YEAR(fecha_primera_compra)) FROM clientes WHERE cuit_clientes = " + cuit_cliente;
-            return int.Parse((_BD.Ejecutar_Select(sql)).Rows[0][0].ToString());
+            return int.Parse((_BD_T.EjecutarSelect(sql)).Rows[0][0].ToString());
+        }
+
+        public DataTable Clasificaciones_Clientes(int id_clasificacion)
+        {
+            string sql = "SELECT * FROM Clasificacion_Clientes WHERE id_clasificacion = " + id_clasificacion.ToString();
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public void ActualizarClasificacion(int clasificacion, string cuit_cliente)
+        {
+            string sql = "UPDATE Clientes SET id_clasificacion = " + clasificacion.ToString() + " WHERE cuit_clientes = " + cuit_cliente;
+            _BD_T.Modificar(sql);
         }
 
         public void ActualizarClasificacionCliente(string cuit_cliente)
         {
             DataTable tablaFecha = FechaUltimaCompra(cuit_cliente);
             int cantComprasHistoricas = CantidadComprasHistoricas(cuit_cliente);
-            int clasificacion = IdClasificacion(cuit_cliente);
-            string sqlAntiguedad = "SELECT (YEAR(GETDATE()) - YEAR(fecha_primera_compra)) FROM clientes WHERE cuit_clientes = " + cuit_cliente;
-
-            
-            
-
-            if (int.Parse(cantComprasHistoricas.ToString()) > 50 && int.Parse(sqlAntiguedad.ToString()) > 0)
-            {
-                
-            }
+            int id_clasificacion = IdClasificacion(cuit_cliente);
+            int antiguedad = AntiguedadCliente(cuit_cliente);
+            //DataTable tablaClasificaciones = Clasificaciones_Clientes(id_clasificacion);
+            DataTable tablaClasificacionesMasUno = Clasificaciones_Clientes(id_clasificacion + 1);
+            //[0] = "id"
+            //[1] = "años_antiguedad"
+            //[2] = "cantidad_compras"
+            //[3] = "descuento"
             if (tablaFecha.Rows[0][0].ToString() == "")
             {
-                string sqlBorrarClasificacion = "UPDATE Clientes SET id_clasificacion = 1 WHERE cuit_clientes = " + cuit_cliente;
+                string sqlBorrarClasificacion = "UPDATE Clientes SET id_clasificacion = 1, fecha_primera_compra = convert(date, GETDATE(), 103), cantidad_compras_historicas = 0 WHERE cuit_clientes = " + cuit_cliente;
                 _BD_T.Modificar(sqlBorrarClasificacion);
+            }
+
+            bool banderaCantidadCompras = false;
+            bool banderaAntiguedad = false;
+
+            if (cantComprasHistoricas >= int.Parse(tablaClasificacionesMasUno.Rows[0][2].ToString()))
+            {
+                banderaCantidadCompras = true;
+            }
+            if (antiguedad >= int.Parse(tablaClasificacionesMasUno.Rows[0][1].ToString()))
+            {
+                banderaAntiguedad = true;
+            }
+            if (banderaCantidadCompras && banderaAntiguedad)
+            {
+                ActualizarClasificacion(id_clasificacion + 1, Pp_Cliente);
             }
         }
     }
