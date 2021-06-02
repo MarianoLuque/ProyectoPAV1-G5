@@ -87,5 +87,11 @@ namespace Proyecto_PAV1_G5.Transacciones.Compras
                 grid_compras.Cargar(compra.Recuperar_X_Proveedor_Y_Fecha_Desde_Y_Hasta(cmb_proveedor.SelectedValue.ToString(), txt_fecha_desde.Text, txt_fecha_hasta.Text));
             }
         }
+
+        private void btn_Agregar_Equipo_Especial_Click(object sender, EventArgs e)
+        {
+            Frm_Alta_Compra altaCompra = new Frm_Alta_Compra();
+            altaCompra.ShowDialog();
+        }
     }
 }

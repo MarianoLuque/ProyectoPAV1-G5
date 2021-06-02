@@ -23,7 +23,6 @@ namespace Proyecto_PAV1_G5.Negocios
             edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
 
             return edc;
-
         }
 
         public Estructura_ComboBox DatosComboProveedor()
@@ -36,7 +35,18 @@ namespace Proyecto_PAV1_G5.Negocios
             edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
 
             return edc;
+        }
 
+        public Estructura_ComboBox DatosComboRubro(string cuit_proveedor)
+        {
+            Estructura_ComboBox edc = new Estructura_ComboBox();
+
+            edc.Value = "r.id_rubro";
+            edc.Display = "nombre_rubro";
+            edc.Sql = "SELECT * FROM Rubros_X_Proveedor rp JOIN Rubros r ON rp.id_rubro = r.id_rubro WHERE rp.cuit_proveedor = " + cuit_proveedor;
+            edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
+
+            return edc;
         }
 
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();

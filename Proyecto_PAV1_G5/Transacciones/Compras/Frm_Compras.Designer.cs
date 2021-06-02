@@ -85,6 +85,7 @@
             this.btn_Agregar_Equipo_Especial.TabIndex = 13;
             this.btn_Agregar_Equipo_Especial.Text = "Agregar";
             this.btn_Agregar_Equipo_Especial.UseVisualStyleBackColor = true;
+            this.btn_Agregar_Equipo_Especial.Click += new System.EventHandler(this.btn_Agregar_Equipo_Especial_Click);
             // 
             // label2
             // 

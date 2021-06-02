@@ -56,5 +56,12 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         {
             this.Close();
         }
+
+        private void cmb_proveedor_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            cmb_rubros.Enabled = true;
+            MessageBox.Show(cmb_proveedor.SelectedValue.ToString());
+            cmb_rubros.CargarCombo(articulo.DatosComboRubro(cmb_proveedor.SelectedValue.ToString()));
+        }
     }
 }

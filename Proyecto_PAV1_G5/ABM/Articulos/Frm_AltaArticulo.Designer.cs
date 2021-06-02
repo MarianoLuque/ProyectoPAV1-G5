@@ -48,6 +48,8 @@
             this.txt_nombre = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_descripcion = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.cmb_proveedor = new Proyecto_PAV1_G5.Clases.ComboBox01();
+            this.cmb_rubros = new Proyecto_PAV1_G5.Clases.ComboBox01();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_agregar
@@ -136,7 +138,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(71, 323);
+            this.label8.Location = new System.Drawing.Point(72, 292);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 20);
             this.label8.TabIndex = 12;
@@ -146,7 +148,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.Location = new System.Drawing.Point(30, 359);
+            this.label9.Location = new System.Drawing.Point(30, 362);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 20);
             this.label9.TabIndex = 14;
@@ -156,7 +158,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(41, 395);
+            this.label10.Location = new System.Drawing.Point(41, 398);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 20);
             this.label10.TabIndex = 16;
@@ -165,7 +167,7 @@
             // txt_plazopago
             // 
             this.txt_plazopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_plazopago.Location = new System.Drawing.Point(159, 392);
+            this.txt_plazopago.Location = new System.Drawing.Point(159, 394);
             this.txt_plazopago.Margin = new System.Windows.Forms.Padding(5);
             this.txt_plazopago.Name = "txt_plazopago";
             this.txt_plazopago.Pp_campo = "plazo_pago";
@@ -177,7 +179,7 @@
             // txt_envio
             // 
             this.txt_envio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_envio.Location = new System.Drawing.Point(159, 356);
+            this.txt_envio.Location = new System.Drawing.Point(159, 359);
             this.txt_envio.Margin = new System.Windows.Forms.Padding(5);
             this.txt_envio.Name = "txt_envio";
             this.txt_envio.Pp_campo = "tiempo_envio";
@@ -190,7 +192,7 @@
             // 
             this.cmb_pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmb_pais.FormattingEnabled = true;
-            this.cmb_pais.Location = new System.Drawing.Point(159, 253);
+            this.cmb_pais.Location = new System.Drawing.Point(159, 248);
             this.cmb_pais.Margin = new System.Windows.Forms.Padding(5);
             this.cmb_pais.Name = "cmb_pais";
             this.cmb_pais.Pp_Conseleccion = false;
@@ -203,7 +205,7 @@
             // txt_stock
             // 
             this.txt_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_stock.Location = new System.Drawing.Point(159, 145);
+            this.txt_stock.Location = new System.Drawing.Point(159, 143);
             this.txt_stock.Margin = new System.Windows.Forms.Padding(5);
             this.txt_stock.Name = "txt_stock";
             this.txt_stock.Pp_campo = "cantidad_stock";
@@ -215,7 +217,7 @@
             // txt_costomin
             // 
             this.txt_costomin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_costomin.Location = new System.Drawing.Point(159, 217);
+            this.txt_costomin.Location = new System.Drawing.Point(159, 213);
             this.txt_costomin.Margin = new System.Windows.Forms.Padding(5);
             this.txt_costomin.Name = "txt_costomin";
             this.txt_costomin.Pp_campo = "costo_minorista";
@@ -227,7 +229,7 @@
             // txt_costomay
             // 
             this.txt_costomay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_costomay.Location = new System.Drawing.Point(159, 181);
+            this.txt_costomay.Location = new System.Drawing.Point(159, 178);
             this.txt_costomay.Margin = new System.Windows.Forms.Padding(5);
             this.txt_costomay.Name = "txt_costomay";
             this.txt_costomay.Pp_campo = "costo_mayorista";
@@ -251,7 +253,7 @@
             // txt_descripcion
             // 
             this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_descripcion.Location = new System.Drawing.Point(159, 60);
+            this.txt_descripcion.Location = new System.Drawing.Point(159, 59);
             this.txt_descripcion.Margin = new System.Windows.Forms.Padding(5);
             this.txt_descripcion.Multiline = true;
             this.txt_descripcion.Name = "txt_descripcion";
@@ -265,7 +267,7 @@
             // 
             this.cmb_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_proveedor.FormattingEnabled = true;
-            this.cmb_proveedor.Location = new System.Drawing.Point(159, 320);
+            this.cmb_proveedor.Location = new System.Drawing.Point(160, 285);
             this.cmb_proveedor.Name = "cmb_proveedor";
             this.cmb_proveedor.Pp_Conseleccion = false;
             this.cmb_proveedor.Pp_MensajeError = null;
@@ -273,17 +275,44 @@
             this.cmb_proveedor.Pp_Validable = true;
             this.cmb_proveedor.Size = new System.Drawing.Size(233, 28);
             this.cmb_proveedor.TabIndex = 20;
+            this.cmb_proveedor.SelectionChangeCommitted += new System.EventHandler(this.cmb_proveedor_SelectionChangeCommitted);
+            // 
+            // cmb_rubros
+            // 
+            this.cmb_rubros.Enabled = false;
+            this.cmb_rubros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_rubros.FormattingEnabled = true;
+            this.cmb_rubros.Location = new System.Drawing.Point(160, 322);
+            this.cmb_rubros.Name = "cmb_rubros";
+            this.cmb_rubros.Pp_Conseleccion = false;
+            this.cmb_rubros.Pp_MensajeError = null;
+            this.cmb_rubros.Pp_NombreCampo = "cuit_proveedor";
+            this.cmb_rubros.Pp_Validable = true;
+            this.cmb_rubros.Size = new System.Drawing.Size(233, 28);
+            this.cmb_rubros.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(99, 325);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Rubro";
             // 
             // Frm_AltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(415, 493);
+            this.Controls.Add(this.cmb_rubros);
             this.Controls.Add(this.cmb_proveedor);
             this.Controls.Add(this.txt_plazopago);
             this.Controls.Add(this.txt_envio);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -330,5 +359,7 @@
         private Clases.TextBox01 txt_envio;
         private Clases.TextBox01 txt_plazopago;
         private Clases.ComboBox01 cmb_proveedor;
+        private Clases.ComboBox01 cmb_rubros;
+        private System.Windows.Forms.Label label2;
     }
 }
