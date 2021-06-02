@@ -13,6 +13,7 @@ namespace Proyecto_PAV1_G5.Negocios
     class NE_Proveedores
     {
         Acceso_Datos _BD = new Acceso_Datos();
+        Acceso_Datos_T _BD_T = new Acceso_Datos_T();
 
         public Estructura_ComboBox DatosComboBarrio()
         {
@@ -25,18 +26,38 @@ namespace Proyecto_PAV1_G5.Negocios
 
             return edc;
         }
+
+        public Estructura_ComboBox DatosComboEmpleado()
+        {
+            Estructura_ComboBox edc = new Estructura_ComboBox();
+
+            edc.Value = "legajo";
+            edc.Display = "vendedor";
+            edc.Sql = "SELECT *, (nombre + ' ' + apellido) as vendedor FROM Empleados";
+            edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
+
+            return edc;
+        }
+
+        public Estructura_ComboBox DatosComboRubros()
+        {
+            Estructura_ComboBox edc = new Estructura_ComboBox();
+
+            edc.Value = "id_rubro";
+            edc.Display = "nombre_rubro";
+            edc.Sql = "SELECT * FROM Rubros ";
+            edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
+
+            return edc;
+        }
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
-        
+
         //Funcion insertar proveedor
         public void Modificar(string[] ValorPk, Control.ControlCollection controles)
         {
             _BD.Modificar(tratamiento.ConstructorModificar_Sin_PK("Proveedores", ValorPk, controles));
         }
 
-        public void Insertar(Control.ControlCollection controles)
-        {
-            _BD.Insertar(tratamiento.ConstructorInsertar("Proveedores", controles));
-        }
 
         public void Eliminar(string[] ValorPk, Control.ControlCollection controles)
         {
@@ -48,7 +69,7 @@ namespace Proyecto_PAV1_G5.Negocios
             string sql = @"SELECT p.*, b.nombre_barrio as barrio, e.nombre + ' ' + e.apellido as comprador"
                         + " FROM Proveedores p "
                         + "join Barrios b on p.id_barrio = b.id_barrio "
-                        +"join Empleados e on e.legajo = p.legajo_comprador";
+                        + "join Empleados e on e.legajo = p.legajo_comprador";
             return _BD.Ejecutar_Select(sql);
         }
         public DataTable Recuperar_x_Cuit(string patron)
@@ -85,5 +106,58 @@ namespace Proyecto_PAV1_G5.Negocios
                         + "c.cuit_proveedor like '%" + patron_cuit.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
         }
+
+        public void InsertarRubros(Control.ControlCollection controles)
+        {
+            _BD_T.Insertar(tratamiento.ConstructorInsertar("Rubros", controles));
+        }
+
+        public void InsertarProveedor(Grid01 grid_rubros, string cuit_proveedor, string razon_social, string legajo_comprador, string fecha_inicio_operacion, string telefono, string id_barrio, string calle, string nro_calle)
+        {
+            string SqlInsertar = @"INSERT INTO Proveedores ( cuit_proveedor, razon_social, legajo_comprador, fecha_inicio_operacion, telefono, id_barrio, calle, nro_calle) VALUES ("
+               + cuit_proveedor + ", '" + razon_social + "' , " + legajo_comprador + ", '" + fecha_inicio_operacion + "', " + telefono + " , " + id_barrio + " , '" + calle + "' , " + nro_calle + " )";
+
+            _BD_T.InicioTransaccion();
+            _BD_T.Insertar(SqlInsertar);
+            InsertarRubros_X_Proveedor(grid_rubros, cuit_proveedor);
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada por un error");
+            }
+
+        }
+        public void InsertarRubros_X_Proveedor(Grid01 grid_rubros, string cuit_proveedor)
+        {
+
+            string sqlRubro = "INSERT INTO Rubros_X_Proveedor (cuit_proveedor, id_rubro) VALUES (" + cuit_proveedor;
+            for (int i = 0; i < grid_rubros.Rows.Count; i++)
+            {
+                string sql = ", " + grid_rubros.Rows[i].Cells[0].Value.ToString();
+                _BD_T.Insertar(sqlRubro + sql + ")");
+            }
+        }
+
+        public void EliminarProveedor(string cuit)
+        {
+            string sqlProveedor = "DELETE FROM Proveedores WHERE cuit_proveedor = " + cuit;
+            string sqlRubro = "DELETE FROM Rubros_X_Proveedor WHERE cuit_proveedor = " + cuit;
+
+            _BD_T.InicioTransaccion();
+            _BD_T.Borrar(sqlRubro);
+            _BD_T.Borrar(sqlProveedor);
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada por un error");
+            }
+        }
+
     }
 }

@@ -13,6 +13,7 @@ namespace Proyecto_PAV1_G5.Negocios
     class NE_Articulos
     {
         Acceso_Datos _BD = new Acceso_Datos();
+        Acceso_Datos_T _BD_T = new Acceso_Datos_T();
         public Estructura_ComboBox DatosComboPais()
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
@@ -108,5 +109,49 @@ namespace Proyecto_PAV1_G5.Negocios
             return _BD.Ejecutar_Select(sql);
         }
 
+        public void InsertarArticulo(string nombre, string descripcion, string cantidad_stock, string costo_mayorista, string costo_minorista, string id_pais, string cuit_proveedor, string id_rubro, string tiempo_envio, string plazo_pago)
+        {
+            string sql = @"INSERT INTO Articulos (nombre_articulo, descripcion, cuit_proveedor, tiempo_envio, plazo_pago, costo_mayorista, costo_minorista, id_pais, cantidad_stock) "
+                        + " VALUES ('" + nombre + "', '" + descripcion + "', " + cuit_proveedor + ", " + tiempo_envio + ", " + plazo_pago + ", " + costo_mayorista + ", " + costo_minorista + ", " + id_pais + ", " + cantidad_stock + ")";
+            _BD_T.InicioTransaccion();
+            _BD_T.Insertar(sql);
+            InsertarRubros_X_Articulo(id_rubro);
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada por un error");
+            }
+        }
+
+        public void InsertarRubros_X_Articulo(string id_rubro)
+        {
+            string sqlCodigo = "SELECT MAX(codigo_articulo) FROM Articulos";
+            string sql = "INSERT INTO Rubros_X_Articulo (id_rubro, codigo_articulo) VALUES (" + id_rubro + ",";
+
+            DataTable tabla = _BD_T.EjecutarSelect(sqlCodigo);
+            sql += tabla.Rows[0][0].ToString() + ")";
+            _BD_T.Insertar(sql);
+        }
+
+        public void EliminarArticulo (string codigo_articulo)
+        {
+            string sqlArticulo = "DELETE FROM Articulos WHERE codigo_articulo = " + codigo_articulo;
+            string sqlRubro = "DELETE FROM Rubros_X_Articulo WHERE codigo_articulo = " + codigo_articulo;
+
+            _BD_T.InicioTransaccion();
+            _BD_T.Borrar(sqlRubro);
+            _BD_T.Borrar(sqlArticulo);
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada por un error");
+            }
+        }
     }
 }

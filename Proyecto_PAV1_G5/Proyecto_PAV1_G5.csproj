@@ -301,6 +301,12 @@
     <Compile Include="Transacciones\Compras\Frm_Compras.Designer.cs">
       <DependentUpon>Frm_Compras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transacciones\Compras\Frm_Mostrar_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transacciones\Compras\Frm_Mostrar_Compra.Designer.cs">
+      <DependentUpon>Frm_Mostrar_Compra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transacciones\Ventas\Frm_Alta_Venta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -442,6 +448,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Transacciones\Compras\Frm_Compras.resx">
       <DependentUpon>Frm_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transacciones\Compras\Frm_Mostrar_Compra.resx">
+      <DependentUpon>Frm_Mostrar_Compra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transacciones\Ventas\Frm_Alta_Venta.resx">
       <DependentUpon>Frm_Alta_Venta.cs</DependentUpon>

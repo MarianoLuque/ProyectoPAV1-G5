@@ -55,11 +55,8 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
                 NE_Articulos art = new NE_Articulos();
                 if (MessageBox.Show("¿Está seguro que desea eliminar el artículo?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
                 {
-                    art.Eliminar(Pp_codigo_articulo, this.Controls);
-                    if (MessageBox.Show("El artículo se eliminó correctamente", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
-                    {
-                        this.Close();
-                    }
+                    art.EliminarArticulo(txt_codigo_articulo.Text);
+                    this.Close();
                 }
 
             }

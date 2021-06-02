@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_consultar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btn_Agregar_Equipo_Especial = new System.Windows.Forms.Button();
+            this.btn_Agregar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -75,17 +75,17 @@
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
-            // btn_Agregar_Equipo_Especial
+            // btn_Agregar
             // 
-            this.btn_Agregar_Equipo_Especial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_Agregar_Equipo_Especial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Agregar_Equipo_Especial.Location = new System.Drawing.Point(724, 436);
-            this.btn_Agregar_Equipo_Especial.Name = "btn_Agregar_Equipo_Especial";
-            this.btn_Agregar_Equipo_Especial.Size = new System.Drawing.Size(100, 30);
-            this.btn_Agregar_Equipo_Especial.TabIndex = 13;
-            this.btn_Agregar_Equipo_Especial.Text = "Agregar";
-            this.btn_Agregar_Equipo_Especial.UseVisualStyleBackColor = true;
-            this.btn_Agregar_Equipo_Especial.Click += new System.EventHandler(this.btn_Agregar_Equipo_Especial_Click);
+            this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Agregar.Location = new System.Drawing.Point(724, 436);
+            this.btn_Agregar.Name = "btn_Agregar";
+            this.btn_Agregar.Size = new System.Drawing.Size(100, 30);
+            this.btn_Agregar.TabIndex = 13;
+            this.btn_Agregar.Text = "Agregar";
+            this.btn_Agregar.UseVisualStyleBackColor = true;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // label2
             // 
@@ -160,6 +160,7 @@
             this.grid_compras.ReadOnly = true;
             this.grid_compras.Size = new System.Drawing.Size(776, 241);
             this.grid_compras.TabIndex = 1;
+            this.grid_compras.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_compras_CellDoubleClick);
             // 
             // Frm_Compras
             // 
@@ -173,7 +174,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmb_proveedor);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btn_Agregar_Equipo_Especial);
+            this.Controls.Add(this.btn_Agregar);
             this.Controls.Add(this.btn_consultar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grid_compras);
@@ -195,7 +196,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_consultar;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btn_Agregar_Equipo_Especial;
+        private System.Windows.Forms.Button btn_Agregar;
         private Clases.ComboBox01 cmb_proveedor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

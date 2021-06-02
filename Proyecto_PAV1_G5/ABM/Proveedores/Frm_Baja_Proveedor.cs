@@ -43,10 +43,7 @@ namespace Proyecto_PAV1_G5.ABM.Proveedores
 
                 if (MessageBox.Show("¿Esta seguro de borrar?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    prov.Eliminar(Pp_cuit_proveedores, this.Controls);
-                }
-                if (MessageBox.Show("El proveedor se eliminó con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
-                {
+                    prov.EliminarProveedor(txt_cuit_proveedor.Text);
                     this.Close();
                 }
             }

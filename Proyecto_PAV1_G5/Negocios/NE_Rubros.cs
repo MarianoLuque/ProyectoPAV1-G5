@@ -49,5 +49,11 @@ namespace Proyecto_PAV1_G5.Negocios
             string sql = @"SELECT r.* FROM Rubros r ";
             return _BD.Ejecutar_Select(sql);
         }
+
+        public DataTable RecuperarRubro(string id_rubro)
+        {
+            string sql = "SELECT * FROM Rubros WHERE id_rubro = " + id_rubro;
+            return (_BD.Ejecutar_Select(sql));
+        }
     }
 }

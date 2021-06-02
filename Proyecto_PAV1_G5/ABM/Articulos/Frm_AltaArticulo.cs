@@ -38,13 +38,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
             if (tratamiento.Validar(this.Controls) == Tratamientos_Especiales.Resultado.correcto)
             {
                 NE_Articulos articulo = new NE_Articulos();
-
-
-                articulo.Insertar(this.Controls);
-                if (MessageBox.Show("El artículo se registró con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
-                {
-                    this.Close();
-                }
+                articulo.InsertarArticulo(txt_nombre.Text, txt_descripcion.Text, txt_stock.Text, txt_costomay.Text, txt_costomin.Text, cmb_pais.SelectedValue.ToString(), cmb_proveedor.SelectedValue.ToString(), cmb_rubros.SelectedValue.ToString(), txt_envio.Text, txt_plazopago.Text);
             }
             else
             {
@@ -60,7 +54,6 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         private void cmb_proveedor_SelectionChangeCommitted(object sender, EventArgs e)
         {
             cmb_rubros.Enabled = true;
-            MessageBox.Show(cmb_proveedor.SelectedValue.ToString());
             cmb_rubros.CargarCombo(articulo.DatosComboRubro(cmb_proveedor.SelectedValue.ToString()));
         }
     }

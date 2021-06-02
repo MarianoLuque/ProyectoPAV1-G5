@@ -23,7 +23,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Compras
 
         private void Frm_Compras_Load(object sender, EventArgs e)
         {
-            cmb_proveedor.CargarCombo(compra.DatosCombo());
+            cmb_proveedor.CargarCombo(compra.DatosComboProveedor());
             grid_compras.Formatear("Numero de Remito,150; Cuit Proveedor,180; Razon Social Proveedor,200; Fecha Recepción,200");
         }
 
@@ -88,10 +88,19 @@ namespace Proyecto_PAV1_G5.Transacciones.Compras
             }
         }
 
-        private void btn_Agregar_Equipo_Especial_Click(object sender, EventArgs e)
+
+        private void btn_Agregar_Click(object sender, EventArgs e)
         {
             Frm_Alta_Compra altaCompra = new Frm_Alta_Compra();
             altaCompra.ShowDialog();
+        }
+
+        private void grid_compras_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Frm_Mostrar_Compra mostrarCompra = new Frm_Mostrar_Compra();
+            mostrarCompra.Pp_Cuit_Proveedor = grid_compras.CurrentRow.Cells[1].Value.ToString();
+            mostrarCompra.Pp_Nro_Remito = grid_compras.CurrentRow.Cells[0].Value.ToString();
+            mostrarCompra.ShowDialog();
         }
     }
 }
