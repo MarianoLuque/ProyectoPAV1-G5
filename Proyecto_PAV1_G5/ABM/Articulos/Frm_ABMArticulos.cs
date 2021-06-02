@@ -40,6 +40,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
                 grid_articulos.Rows[i].Cells[4].Value = tabla.Rows[i]["costo_mayorista"].ToString();
                 grid_articulos.Rows[i].Cells[5].Value = tabla.Rows[i]["costo_minorista"].ToString();
                 grid_articulos.Rows[i].Cells[6].Value = tabla.Rows[i]["razon_social"].ToString();
+                grid_articulos.Rows[i].Cells[7].Value = tabla.Rows[i]["nombre_rubro"].ToString();
             }
 
         }

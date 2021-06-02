@@ -41,9 +41,10 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
             txt_stock.Text = tabla.Rows[0]["cantidad_stock"].ToString();
             txt_costomay.Text = tabla.Rows[0]["costo_mayorista"].ToString();
             txt_costomin.Text = tabla.Rows[0]["costo_minorista"].ToString();
-            txt_cuit.Text = tabla.Rows[0]["cuit_proveedor"].ToString();
+            txt_cuit.Text = tabla.Rows[0]["razon_social"].ToString();
             txt_envio.Text = tabla.Rows[0]["tiempo_envio"].ToString();
             txt_plazopago.Text = tabla.Rows[0]["plazo_pago"].ToString();
+            txt_rubro.Text = tabla.Rows[0]["nombre_rubro"].ToString();
         }
 
         private void btn_aceptar_Click(object sender, EventArgs e)

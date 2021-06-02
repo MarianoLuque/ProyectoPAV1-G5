@@ -250,11 +250,11 @@ namespace Proyecto_PAV1_G5.Negocios
             InsertarArticulos_X_Equipo(grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se registró el equipo correctamente");
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se registró el equipo por un error");
             }
         }
 
@@ -268,11 +268,11 @@ namespace Proyecto_PAV1_G5.Negocios
             InsertarArticulos_X_Equipo_Especial(grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se registró el equipo correctamente");
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se registró el equipo por un error");
             }
         }
 
@@ -313,11 +313,11 @@ namespace Proyecto_PAV1_G5.Negocios
             InsertarArticulos_X_Equipo_Simple(grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se modificó el equipo correctamente");
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se modificó el equipo por un error");
             }
         }
 
@@ -354,11 +354,11 @@ namespace Proyecto_PAV1_G5.Negocios
             InsertarArticulos_X_Equipo_Especial(grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se modificó el equipo correctamente");
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se modificó el equipo por un error");
             }
         }
 
@@ -373,11 +373,11 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD_T.Borrar(SqlDeleteEquipo);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se eliminó el equipo correctamente");
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se eliminó el equipo por un error");
             }
         }
 
@@ -392,11 +392,11 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD_T.Borrar(SqlDeleteEquipo);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se eliminó el equipo correctamente");
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se eliminó el equipo por un error");
             }
         }
     }

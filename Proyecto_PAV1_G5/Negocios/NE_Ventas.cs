@@ -411,13 +411,13 @@ namespace Proyecto_PAV1_G5.Negocios
             InsertarDetalleFactura(grid_equipos, grid_equipos_especiales, grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se registró la venta correctamente");
 
                 ActualizarCantidadStockArt(grid_equipos, grid_equipos_especiales, grid_articulos);
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se registró la venta por un error");
             }
         }
 
@@ -438,13 +438,13 @@ namespace Proyecto_PAV1_G5.Negocios
             InsertarDetalleFactura(grid_equipos, grid_equipos_especiales, grid_articulos);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se registró la venta correctamente");
                 ActualizarCantidadStockArt(grid_equipos, grid_equipos_especiales, grid_articulos);
 
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se registró la venta por un error");
             }
         }
 

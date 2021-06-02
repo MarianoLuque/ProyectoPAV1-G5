@@ -30,13 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABMArticulos));
             this.grid_articulos = new System.Windows.Forms.DataGridView();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_bajaarticulo = new System.Windows.Forms.Button();
@@ -50,6 +43,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_codigo = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grid_articulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -69,54 +70,13 @@
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column7});
-            this.grid_articulos.Location = new System.Drawing.Point(12, 243);
+            this.Column7,
+            this.Column1});
+            this.grid_articulos.Location = new System.Drawing.Point(13, 185);
             this.grid_articulos.Name = "grid_articulos";
             this.grid_articulos.ReadOnly = true;
-            this.grid_articulos.Size = new System.Drawing.Size(760, 254);
+            this.grid_articulos.Size = new System.Drawing.Size(830, 254);
             this.grid_articulos.TabIndex = 0;
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.Name = "Codigo";
-            this.Codigo.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Nombre";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Descripción";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Stock";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Costo Mayorista";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Costo Minorista";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Proveedor";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
             // 
             // textBox1
             // 
@@ -133,7 +93,7 @@
             // 
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(555, 519);
+            this.pictureBox4.Location = new System.Drawing.Point(571, 461);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 30);
             this.pictureBox4.TabIndex = 12;
@@ -144,7 +104,7 @@
             this.btn_bajaarticulo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_bajaarticulo.BackgroundImage")));
             this.btn_bajaarticulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_bajaarticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bajaarticulo.Location = new System.Drawing.Point(591, 519);
+            this.btn_bajaarticulo.Location = new System.Drawing.Point(607, 461);
             this.btn_bajaarticulo.Name = "btn_bajaarticulo";
             this.btn_bajaarticulo.Size = new System.Drawing.Size(100, 30);
             this.btn_bajaarticulo.TabIndex = 7;
@@ -156,7 +116,7 @@
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(319, 519);
+            this.pictureBox3.Location = new System.Drawing.Point(335, 461);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(30, 30);
             this.pictureBox3.TabIndex = 10;
@@ -167,7 +127,7 @@
             this.btn_modificararticulo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_modificararticulo.BackgroundImage")));
             this.btn_modificararticulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_modificararticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_modificararticulo.Location = new System.Drawing.Point(355, 519);
+            this.btn_modificararticulo.Location = new System.Drawing.Point(371, 461);
             this.btn_modificararticulo.Name = "btn_modificararticulo";
             this.btn_modificararticulo.Size = new System.Drawing.Size(100, 30);
             this.btn_modificararticulo.TabIndex = 6;
@@ -179,7 +139,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(83, 519);
+            this.pictureBox2.Location = new System.Drawing.Point(99, 461);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.TabIndex = 8;
@@ -190,7 +150,7 @@
             this.btn_altaarticulo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_altaarticulo.BackgroundImage")));
             this.btn_altaarticulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_altaarticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_altaarticulo.Location = new System.Drawing.Point(119, 519);
+            this.btn_altaarticulo.Location = new System.Drawing.Point(135, 461);
             this.btn_altaarticulo.Name = "btn_altaarticulo";
             this.btn_altaarticulo.Size = new System.Drawing.Size(100, 30);
             this.btn_altaarticulo.TabIndex = 5;
@@ -213,7 +173,7 @@
             this.btn_consultar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_consultar.BackgroundImage")));
             this.btn_consultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_consultar.Location = new System.Drawing.Point(591, 207);
+            this.btn_consultar.Location = new System.Drawing.Point(607, 149);
             this.btn_consultar.Name = "btn_consultar";
             this.btn_consultar.Size = new System.Drawing.Size(100, 30);
             this.btn_consultar.TabIndex = 4;
@@ -257,11 +217,59 @@
             this.txt_nombre.Size = new System.Drawing.Size(203, 26);
             this.txt_nombre.TabIndex = 3;
             // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Nombre";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Descripción";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Stock";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Costo Mayorista";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Costo Minorista";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Proveedor";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Rubro";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
             // Frm_ABMArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(855, 503);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.txt_codigo);
             this.Controls.Add(this.label2);
@@ -314,5 +322,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

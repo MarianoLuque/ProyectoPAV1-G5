@@ -14,13 +14,13 @@ namespace Proyecto_PAV1_G5.Negocios
     {
         Acceso_Datos _BD = new Acceso_Datos();
         Acceso_Datos_T _BD_T = new Acceso_Datos_T();
-        public Estructura_ComboBox DatosComboArticulo(string id_rubro)
+        public Estructura_ComboBox DatosComboArticulo(string id_rubro, string cuit_proveedor)
         {
             Estructura_ComboBox edc = new Estructura_ComboBox();
 
             edc.Value = "codigo_articulo";
             edc.Display = "nombre_articulo";
-            edc.Sql = "SELECT * FROM Articulos a JOIN Rubros_X_Articulo ra ON a.codigo_articulo = ra.codigo_articulo WHERE ra.id_rubro = " + id_rubro;
+            edc.Sql = "SELECT * FROM Articulos WHERE id_rubro = " + id_rubro + " AND cuit_proveedor = " + cuit_proveedor;
             edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
 
             return edc;
@@ -195,13 +195,13 @@ namespace Proyecto_PAV1_G5.Negocios
             }
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se registró la compra correctamente");
                 ActualizarCantidadStockArt(grid_articulos);
 
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se registró la compra por un error");
             }
 
         }

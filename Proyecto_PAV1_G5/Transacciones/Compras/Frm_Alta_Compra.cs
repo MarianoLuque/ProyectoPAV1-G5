@@ -75,7 +75,7 @@ namespace Proyecto_PAV1_G5.Transacciones.Compras
         private void cmb_rubro_SelectionChangeCommitted(object sender, EventArgs e)
         {
             cmb_nombre_articulo.Enabled = true;
-            cmb_nombre_articulo.CargarCombo(compra.DatosComboArticulo(cmb_rubro.SelectedValue.ToString()));
+            cmb_nombre_articulo.CargarCombo(compra.DatosComboArticulo(cmb_rubro.SelectedValue.ToString(), cmb_proveedor.SelectedValue.ToString()));
         }
 
         private void cmb_nombre_articulo_SelectionChangeCommitted(object sender, EventArgs e)

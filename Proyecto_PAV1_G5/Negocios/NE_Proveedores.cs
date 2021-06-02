@@ -122,11 +122,11 @@ namespace Proyecto_PAV1_G5.Negocios
             InsertarRubros_X_Proveedor(grid_rubros, cuit_proveedor);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se registró el proveedor correctamente");
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se registró el proveedor por un error");
             }
 
         }
@@ -151,11 +151,11 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD_T.Borrar(sqlProveedor);
             if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
             {
-                MessageBox.Show("Se grabó correctamente todo");
+                MessageBox.Show("Se eliminó el proveedor correctamente");
             }
             else
             {
-                MessageBox.Show("No se grabó nada por un error");
+                MessageBox.Show("No se eliminó el proveedor por un error");
             }
         }
 

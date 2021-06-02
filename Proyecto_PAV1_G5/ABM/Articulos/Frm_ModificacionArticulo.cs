@@ -51,7 +51,7 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
             txt_stock.Text = tabla.Rows[0]["cantidad_stock"].ToString();
             txt_costomay.Text = tabla.Rows[0]["costo_mayorista"].ToString();
             txt_costomin.Text = tabla.Rows[0]["costo_minorista"].ToString();
-            txt_cuit.Text = tabla.Rows[0]["cuit_proveedor"].ToString();
+            cmb_proveedor.SelectedValue = int.Parse(tabla.Rows[0]["cuit_proveedor"].ToString());
             txt_envio.Text = tabla.Rows[0]["tiempo_envio"].ToString();
             txt_plazopago.Text = tabla.Rows[0]["plazo_pago"].ToString();
         }
@@ -64,7 +64,15 @@ namespace Proyecto_PAV1_G5.ABM.Articulos
         private void Frm_ModificacionArticulo_Load(object sender, EventArgs e)
         {
             cmb_pais.CargarCombo(art.DatosComboPais());
+            cmb_proveedor.CargarCombo(art.DatosComboProveedor());
             MostrarDatos(art.RecuperarCodigo(Pp_codigo_articulo));
+            cmb_rubros.CargarCombo(art.DatosComboRubro(cmb_proveedor.SelectedValue.ToString()));
+            cmb_rubros.SelectedValue = art.RecuperarRubroArticulo(Pp_codigo_articulo[0]);
+        }
+
+        private void cmb_proveedor_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            cmb_rubros.CargarCombo(art.DatosComboRubro(cmb_proveedor.SelectedValue.ToString()));
         }
     }
 }

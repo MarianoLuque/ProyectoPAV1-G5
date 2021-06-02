@@ -36,12 +36,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_plazopago = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_envio = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.txt_cuit = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.cmb_pais = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.txt_stock = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_costomin = new Proyecto_PAV1_G5.Clases.TextBox01();
@@ -50,12 +48,16 @@
             this.txt_descripcion = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_codigo_articulo = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.label2 = new System.Windows.Forms.Label();
+            this.cmb_rubros = new Proyecto_PAV1_G5.Clases.ComboBox01();
+            this.cmb_proveedor = new Proyecto_PAV1_G5.Clases.ComboBox01();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_aceptar
             // 
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
-            this.btn_aceptar.Location = new System.Drawing.Point(160, 448);
+            this.btn_aceptar.Location = new System.Drawing.Point(160, 461);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(99, 30);
             this.btn_aceptar.TabIndex = 20;
@@ -66,7 +68,7 @@
             // btn_cancelar
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
-            this.btn_cancelar.Location = new System.Drawing.Point(286, 448);
+            this.btn_cancelar.Location = new System.Drawing.Point(286, 461);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(101, 30);
             this.btn_cancelar.TabIndex = 21;
@@ -78,7 +80,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(85, 54);
+            this.label1.Location = new System.Drawing.Point(82, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 2;
@@ -88,7 +90,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(59, 90);
+            this.label3.Location = new System.Drawing.Point(55, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 4;
@@ -98,7 +100,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(11, 175);
+            this.label4.Location = new System.Drawing.Point(7, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 20);
             this.label4.TabIndex = 6;
@@ -108,7 +110,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(24, 211);
+            this.label5.Location = new System.Drawing.Point(24, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 20);
             this.label5.TabIndex = 8;
@@ -118,7 +120,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(28, 247);
+            this.label6.Location = new System.Drawing.Point(28, 244);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 20);
             this.label6.TabIndex = 10;
@@ -128,27 +130,17 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(108, 283);
+            this.label7.Location = new System.Drawing.Point(108, 279);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 20);
             this.label7.TabIndex = 12;
             this.label7.Text = "País";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(30, 326);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 20);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "CUIT Proveedor";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.Location = new System.Drawing.Point(30, 359);
+            this.label9.Location = new System.Drawing.Point(21, 390);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 20);
             this.label9.TabIndex = 16;
@@ -158,7 +150,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(41, 395);
+            this.label10.Location = new System.Drawing.Point(36, 425);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 20);
             this.label10.TabIndex = 18;
@@ -167,44 +159,32 @@
             // txt_plazopago
             // 
             this.txt_plazopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_plazopago.Location = new System.Drawing.Point(158, 392);
+            this.txt_plazopago.Location = new System.Drawing.Point(160, 422);
             this.txt_plazopago.Margin = new System.Windows.Forms.Padding(5);
             this.txt_plazopago.Name = "txt_plazopago";
             this.txt_plazopago.Pp_campo = "plazo_pago";
             this.txt_plazopago.Pp_MensajeError = null;
             this.txt_plazopago.Pp_Validable = true;
-            this.txt_plazopago.Size = new System.Drawing.Size(100, 26);
+            this.txt_plazopago.Size = new System.Drawing.Size(232, 26);
             this.txt_plazopago.TabIndex = 19;
             // 
             // txt_envio
             // 
             this.txt_envio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_envio.Location = new System.Drawing.Point(158, 356);
+            this.txt_envio.Location = new System.Drawing.Point(160, 387);
             this.txt_envio.Margin = new System.Windows.Forms.Padding(5);
             this.txt_envio.Name = "txt_envio";
             this.txt_envio.Pp_campo = "tiempo_envio";
             this.txt_envio.Pp_MensajeError = null;
             this.txt_envio.Pp_Validable = true;
-            this.txt_envio.Size = new System.Drawing.Size(229, 26);
+            this.txt_envio.Size = new System.Drawing.Size(232, 26);
             this.txt_envio.TabIndex = 17;
-            // 
-            // txt_cuit
-            // 
-            this.txt_cuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_cuit.Location = new System.Drawing.Point(159, 320);
-            this.txt_cuit.Margin = new System.Windows.Forms.Padding(5);
-            this.txt_cuit.Name = "txt_cuit";
-            this.txt_cuit.Pp_campo = "cuit_proveedor";
-            this.txt_cuit.Pp_MensajeError = null;
-            this.txt_cuit.Pp_Validable = true;
-            this.txt_cuit.Size = new System.Drawing.Size(100, 26);
-            this.txt_cuit.TabIndex = 15;
             // 
             // cmb_pais
             // 
             this.cmb_pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmb_pais.FormattingEnabled = true;
-            this.cmb_pais.Location = new System.Drawing.Point(158, 280);
+            this.cmb_pais.Location = new System.Drawing.Point(158, 276);
             this.cmb_pais.Margin = new System.Windows.Forms.Padding(5);
             this.cmb_pais.Name = "cmb_pais";
             this.cmb_pais.Pp_Conseleccion = false;
@@ -217,7 +197,7 @@
             // txt_stock
             // 
             this.txt_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_stock.Location = new System.Drawing.Point(158, 172);
+            this.txt_stock.Location = new System.Drawing.Point(158, 171);
             this.txt_stock.Margin = new System.Windows.Forms.Padding(5);
             this.txt_stock.Name = "txt_stock";
             this.txt_stock.Pp_campo = "cantidad_stock";
@@ -229,7 +209,7 @@
             // txt_costomin
             // 
             this.txt_costomin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_costomin.Location = new System.Drawing.Point(158, 244);
+            this.txt_costomin.Location = new System.Drawing.Point(158, 241);
             this.txt_costomin.Margin = new System.Windows.Forms.Padding(5);
             this.txt_costomin.Name = "txt_costomin";
             this.txt_costomin.Pp_campo = "costo_minorista";
@@ -241,7 +221,7 @@
             // txt_costomay
             // 
             this.txt_costomay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_costomay.Location = new System.Drawing.Point(158, 208);
+            this.txt_costomay.Location = new System.Drawing.Point(158, 206);
             this.txt_costomay.Margin = new System.Windows.Forms.Padding(5);
             this.txt_costomay.Name = "txt_costomay";
             this.txt_costomay.Pp_campo = "costo_mayorista";
@@ -253,7 +233,7 @@
             // txt_nombre
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_nombre.Location = new System.Drawing.Point(158, 51);
+            this.txt_nombre.Location = new System.Drawing.Point(158, 52);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(5);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Pp_campo = "nombre_articulo";
@@ -291,25 +271,74 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(39, 20);
+            this.label2.Location = new System.Drawing.Point(33, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Codigo articulo";
             // 
+            // cmb_rubros
+            // 
+            this.cmb_rubros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_rubros.FormattingEnabled = true;
+            this.cmb_rubros.Location = new System.Drawing.Point(158, 350);
+            this.cmb_rubros.Name = "cmb_rubros";
+            this.cmb_rubros.Pp_Conseleccion = false;
+            this.cmb_rubros.Pp_MensajeError = null;
+            this.cmb_rubros.Pp_NombreCampo = "id_rubro";
+            this.cmb_rubros.Pp_Validable = true;
+            this.cmb_rubros.Size = new System.Drawing.Size(234, 28);
+            this.cmb_rubros.TabIndex = 24;
+            // 
+            // cmb_proveedor
+            // 
+            this.cmb_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_proveedor.FormattingEnabled = true;
+            this.cmb_proveedor.Location = new System.Drawing.Point(158, 313);
+            this.cmb_proveedor.Name = "cmb_proveedor";
+            this.cmb_proveedor.Pp_Conseleccion = false;
+            this.cmb_proveedor.Pp_MensajeError = null;
+            this.cmb_proveedor.Pp_NombreCampo = "cuit_proveedor";
+            this.cmb_proveedor.Pp_Validable = true;
+            this.cmb_proveedor.Size = new System.Drawing.Size(233, 28);
+            this.cmb_proveedor.TabIndex = 25;
+            this.cmb_proveedor.SelectionChangeCommitted += new System.EventHandler(this.cmb_proveedor_SelectionChangeCommitted);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label11.Location = new System.Drawing.Point(94, 353);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 20);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Rubro";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label12.Location = new System.Drawing.Point(66, 316);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(81, 20);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Proveedor";
+            // 
             // Frm_ModificacionArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 493);
+            this.ClientSize = new System.Drawing.Size(415, 503);
+            this.Controls.Add(this.cmb_rubros);
+            this.Controls.Add(this.cmb_proveedor);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.txt_codigo_articulo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_plazopago);
             this.Controls.Add(this.txt_envio);
-            this.Controls.Add(this.txt_cuit);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -349,13 +378,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private Clases.TextBox01 txt_cuit;
         private Clases.TextBox01 txt_envio;
         private Clases.TextBox01 txt_plazopago;
         private Clases.TextBox01 txt_codigo_articulo;
         private System.Windows.Forms.Label label2;
+        private Clases.ComboBox01 cmb_rubros;
+        private Clases.ComboBox01 cmb_proveedor;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

@@ -50,12 +50,14 @@
             this.txt_descripcion = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_codigo_articulo = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.label2 = new System.Windows.Forms.Label();
+            this.txt_rubro = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_aceptar
             // 
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
-            this.btn_aceptar.Location = new System.Drawing.Point(160, 448);
+            this.btn_aceptar.Location = new System.Drawing.Point(158, 468);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(99, 30);
             this.btn_aceptar.TabIndex = 20;
@@ -66,7 +68,7 @@
             // btn_cancelar
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
-            this.btn_cancelar.Location = new System.Drawing.Point(286, 448);
+            this.btn_cancelar.Location = new System.Drawing.Point(290, 468);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(101, 30);
             this.btn_cancelar.TabIndex = 21;
@@ -88,7 +90,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(59, 90);
+            this.label3.Location = new System.Drawing.Point(55, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 4;
@@ -98,7 +100,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(11, 175);
+            this.label4.Location = new System.Drawing.Point(7, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 20);
             this.label4.TabIndex = 6;
@@ -138,7 +140,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(30, 326);
+            this.label8.Location = new System.Drawing.Point(25, 323);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 20);
             this.label8.TabIndex = 14;
@@ -148,7 +150,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.Location = new System.Drawing.Point(30, 359);
+            this.label9.Location = new System.Drawing.Point(21, 401);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 20);
             this.label9.TabIndex = 16;
@@ -158,7 +160,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(41, 395);
+            this.label10.Location = new System.Drawing.Point(36, 437);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 20);
             this.label10.TabIndex = 18;
@@ -167,27 +169,27 @@
             // txt_plazopago
             // 
             this.txt_plazopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_plazopago.Location = new System.Drawing.Point(158, 392);
+            this.txt_plazopago.Location = new System.Drawing.Point(159, 434);
             this.txt_plazopago.Margin = new System.Windows.Forms.Padding(5);
             this.txt_plazopago.Name = "txt_plazopago";
             this.txt_plazopago.Pp_campo = "plazo_pago";
             this.txt_plazopago.Pp_MensajeError = null;
             this.txt_plazopago.Pp_Validable = true;
             this.txt_plazopago.ReadOnly = true;
-            this.txt_plazopago.Size = new System.Drawing.Size(100, 26);
+            this.txt_plazopago.Size = new System.Drawing.Size(233, 26);
             this.txt_plazopago.TabIndex = 19;
             // 
             // txt_envio
             // 
             this.txt_envio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_envio.Location = new System.Drawing.Point(158, 356);
+            this.txt_envio.Location = new System.Drawing.Point(159, 398);
             this.txt_envio.Margin = new System.Windows.Forms.Padding(5);
             this.txt_envio.Name = "txt_envio";
             this.txt_envio.Pp_campo = "tiempo_envio";
             this.txt_envio.Pp_MensajeError = null;
             this.txt_envio.Pp_Validable = true;
             this.txt_envio.ReadOnly = true;
-            this.txt_envio.Size = new System.Drawing.Size(229, 26);
+            this.txt_envio.Size = new System.Drawing.Size(233, 26);
             this.txt_envio.TabIndex = 17;
             // 
             // txt_cuit
@@ -200,7 +202,7 @@
             this.txt_cuit.Pp_MensajeError = null;
             this.txt_cuit.Pp_Validable = true;
             this.txt_cuit.ReadOnly = true;
-            this.txt_cuit.Size = new System.Drawing.Size(100, 26);
+            this.txt_cuit.Size = new System.Drawing.Size(232, 26);
             this.txt_cuit.TabIndex = 15;
             // 
             // cmb_pais
@@ -300,23 +302,48 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(38, 15);
+            this.label2.Location = new System.Drawing.Point(33, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Codigo articulo";
             // 
+            // txt_rubro
+            // 
+            this.txt_rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_rubro.Location = new System.Drawing.Point(160, 359);
+            this.txt_rubro.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_rubro.Name = "txt_rubro";
+            this.txt_rubro.Pp_campo = "id_rubro";
+            this.txt_rubro.Pp_MensajeError = null;
+            this.txt_rubro.Pp_Validable = true;
+            this.txt_rubro.ReadOnly = true;
+            this.txt_rubro.Size = new System.Drawing.Size(232, 26);
+            this.txt_rubro.TabIndex = 15;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label11.Location = new System.Drawing.Point(94, 362);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 20);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Rubro";
+            // 
             // Frm_BajaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 493);
+            this.ClientSize = new System.Drawing.Size(415, 510);
             this.Controls.Add(this.txt_codigo_articulo);
             this.Controls.Add(this.txt_plazopago);
             this.Controls.Add(this.txt_envio);
+            this.Controls.Add(this.txt_rubro);
             this.Controls.Add(this.txt_cuit);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -366,5 +393,7 @@
         private Clases.TextBox01 txt_plazopago;
         private Clases.TextBox01 txt_codigo_articulo;
         private System.Windows.Forms.Label label2;
+        private Clases.TextBox01 txt_rubro;
+        private System.Windows.Forms.Label label11;
     }
 }

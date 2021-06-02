@@ -57,7 +57,7 @@
             this.txt_cuit_proveedor.Pp_MensajeError = "Falta cargar el cuit del proveedor";
             this.txt_cuit_proveedor.Pp_Validable = true;
             this.txt_cuit_proveedor.ReadOnly = true;
-            this.txt_cuit_proveedor.Size = new System.Drawing.Size(226, 26);
+            this.txt_cuit_proveedor.Size = new System.Drawing.Size(241, 26);
             this.txt_cuit_proveedor.TabIndex = 0;
             // 
             // txt_razonSocial
@@ -69,7 +69,7 @@
             this.txt_razonSocial.Pp_MensajeError = "Falta cargar la razón social";
             this.txt_razonSocial.Pp_Validable = true;
             this.txt_razonSocial.ReadOnly = true;
-            this.txt_razonSocial.Size = new System.Drawing.Size(226, 26);
+            this.txt_razonSocial.Size = new System.Drawing.Size(241, 26);
             this.txt_razonSocial.TabIndex = 1;
             // 
             // txt_legajoComprador
@@ -81,7 +81,7 @@
             this.txt_legajoComprador.Pp_MensajeError = "Falta cargar el legajo del comprador";
             this.txt_legajoComprador.Pp_Validable = true;
             this.txt_legajoComprador.ReadOnly = true;
-            this.txt_legajoComprador.Size = new System.Drawing.Size(226, 26);
+            this.txt_legajoComprador.Size = new System.Drawing.Size(241, 26);
             this.txt_legajoComprador.TabIndex = 2;
             // 
             // txt_fechaInicioOperacion
@@ -93,7 +93,7 @@
             this.txt_fechaInicioOperacion.Pp_MensajeError = "Falta cargar la fecha de inicio de la operación";
             this.txt_fechaInicioOperacion.Pp_Validable = true;
             this.txt_fechaInicioOperacion.ReadOnly = true;
-            this.txt_fechaInicioOperacion.Size = new System.Drawing.Size(226, 26);
+            this.txt_fechaInicioOperacion.Size = new System.Drawing.Size(241, 26);
             this.txt_fechaInicioOperacion.TabIndex = 3;
             // 
             // txt_telefono
@@ -105,7 +105,7 @@
             this.txt_telefono.Pp_MensajeError = "Falta cargar el teléfono";
             this.txt_telefono.Pp_Validable = true;
             this.txt_telefono.ReadOnly = true;
-            this.txt_telefono.Size = new System.Drawing.Size(226, 26);
+            this.txt_telefono.Size = new System.Drawing.Size(241, 26);
             this.txt_telefono.TabIndex = 4;
             // 
             // cmb_barrio
@@ -119,7 +119,7 @@
             this.cmb_barrio.Pp_MensajeError = "Falta seleccionar el barrio";
             this.cmb_barrio.Pp_NombreCampo = "id_barrio";
             this.cmb_barrio.Pp_Validable = true;
-            this.cmb_barrio.Size = new System.Drawing.Size(226, 28);
+            this.cmb_barrio.Size = new System.Drawing.Size(241, 28);
             this.cmb_barrio.TabIndex = 5;
             // 
             // txt_calle
@@ -131,7 +131,7 @@
             this.txt_calle.Pp_MensajeError = "Falta cargar la calle";
             this.txt_calle.Pp_Validable = true;
             this.txt_calle.ReadOnly = true;
-            this.txt_calle.Size = new System.Drawing.Size(226, 26);
+            this.txt_calle.Size = new System.Drawing.Size(241, 26);
             this.txt_calle.TabIndex = 6;
             // 
             // txt_nroCalle
@@ -143,7 +143,7 @@
             this.txt_nroCalle.Pp_MensajeError = "Falta cargar el número de calle";
             this.txt_nroCalle.Pp_Validable = true;
             this.txt_nroCalle.ReadOnly = true;
-            this.txt_nroCalle.Size = new System.Drawing.Size(226, 26);
+            this.txt_nroCalle.Size = new System.Drawing.Size(241, 26);
             this.txt_nroCalle.TabIndex = 7;
             // 
             // label1
@@ -252,7 +252,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 472);
+            this.ClientSize = new System.Drawing.Size(545, 472);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.label8);
