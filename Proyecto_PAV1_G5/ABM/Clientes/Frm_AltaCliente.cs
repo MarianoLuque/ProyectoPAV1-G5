@@ -24,6 +24,7 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
         private void Frm_AltaCliente_Load(object sender, EventArgs e)
         {
             cmb_barrios.CargarCombo(cli.DatosCombo());
+            cmb_legajo_vendedor.CargarCombo(cli.DatosComboEmpleado());
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)

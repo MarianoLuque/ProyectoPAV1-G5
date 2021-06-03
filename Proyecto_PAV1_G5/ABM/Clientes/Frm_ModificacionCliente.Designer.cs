@@ -38,7 +38,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
-            this.txt_legajo_vendedor = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_credito_limite = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_numero_calle = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_calle = new Proyecto_PAV1_G5.Clases.TextBox01();
@@ -46,6 +45,7 @@
             this.txt_razon_social = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_cuit = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.cmb_barrios = new Proyecto_PAV1_G5.Clases.ComboBox01();
+            this.cmb_legajo_vendedor = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.SuspendLayout();
             // 
             // label1
@@ -156,16 +156,6 @@
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
-            // txt_legajo_vendedor
-            // 
-            this.txt_legajo_vendedor.Location = new System.Drawing.Point(309, 386);
-            this.txt_legajo_vendedor.Name = "txt_legajo_vendedor";
-            this.txt_legajo_vendedor.Pp_campo = "legajo_vendedor_asignado";
-            this.txt_legajo_vendedor.Pp_MensajeError = "Falta cargar el legajo del vendedor asignado al cliente";
-            this.txt_legajo_vendedor.Pp_Validable = true;
-            this.txt_legajo_vendedor.Size = new System.Drawing.Size(233, 26);
-            this.txt_legajo_vendedor.TabIndex = 15;
-            // 
             // txt_credito_limite
             // 
             this.txt_credito_limite.Location = new System.Drawing.Point(309, 337);
@@ -238,12 +228,24 @@
             this.cmb_barrios.Size = new System.Drawing.Size(233, 28);
             this.cmb_barrios.TabIndex = 7;
             // 
+            // cmb_legajo_vendedor
+            // 
+            this.cmb_legajo_vendedor.FormattingEnabled = true;
+            this.cmb_legajo_vendedor.Location = new System.Drawing.Point(309, 392);
+            this.cmb_legajo_vendedor.Name = "cmb_legajo_vendedor";
+            this.cmb_legajo_vendedor.Pp_Conseleccion = false;
+            this.cmb_legajo_vendedor.Pp_MensajeError = "Falta cargar el legajo del vendedor asignado al cliente";
+            this.cmb_legajo_vendedor.Pp_NombreCampo = "legajo_vendedor_asignado";
+            this.cmb_legajo_vendedor.Pp_Validable = true;
+            this.cmb_legajo_vendedor.Size = new System.Drawing.Size(233, 28);
+            this.cmb_legajo_vendedor.TabIndex = 19;
+            // 
             // Frm_ModificacionCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 534);
-            this.Controls.Add(this.txt_legajo_vendedor);
+            this.Controls.Add(this.cmb_legajo_vendedor);
             this.Controls.Add(this.txt_credito_limite);
             this.Controls.Add(this.txt_numero_calle);
             this.Controls.Add(this.txt_calle);
@@ -292,6 +294,6 @@
         private Clases.TextBox01 txt_calle;
         private Clases.TextBox01 txt_numero_calle;
         private Clases.TextBox01 txt_credito_limite;
-        private Clases.TextBox01 txt_legajo_vendedor;
+        private Clases.ComboBox01 cmb_legajo_vendedor;
     }
 }

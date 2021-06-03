@@ -64,6 +64,13 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD.Borrar(tratamiento.ConstructorEliminar("Proveedores", ValorPk, controles));
         }
 
+        public DataTable RecuperarRubrosProveedor(string cuit_proveedor)
+        {
+            string sql = "SELECT rp.id_rubro, r.nombre_rubro, r.descripcion FROM Rubros_X_Proveedor rp " +
+                         "JOIN Rubros r ON rp.id_rubro = r.id_rubro WHERE cuit_proveedor = " + cuit_proveedor;
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
         public DataTable RecuperarTodos()
         {
             string sql = @"SELECT p.*, b.nombre_barrio as barrio, e.nombre + ' ' + e.apellido as comprador"
@@ -156,6 +163,28 @@ namespace Proyecto_PAV1_G5.Negocios
             else
             {
                 MessageBox.Show("No se eliminó el proveedor por un error");
+            }
+        }
+
+        public void ModificarProveedor(Grid01 grid_rubros, string cuit_proveedor, string razon_social, string legajo_comprador, string fecha_inicio_operacion, string telefono, string id_barrio, string calle, string nro_calle)
+        {
+            string sql = "UPDATE Proveedores SET cuit_proveedor = " + cuit_proveedor + ", razon_social = '" + razon_social + "', legajo_comprador = " + legajo_comprador + ", fecha_inicio_operacion = CONVERT(DATE, '" + fecha_inicio_operacion + "', 103), telefono = " + telefono + ", id_barrio = " + id_barrio + ", calle = '" + calle + "', nro_calle = " + nro_calle;
+            _BD_T.InicioTransaccion();
+            _BD_T.Modificar(sql);
+            for (int i = 0; i < grid_rubros.Rows.Count; i++)
+            {
+                string sqlRubros_X_Proveedor = "UPDATE Rubros_X_Proveedor SET " +
+                                      " id_rubro = " + grid_rubros.Rows[i].Cells[0].Value.ToString() +
+                                      " cuit_proveedor = " + cuit_proveedor;
+                _BD_T.Modificar(sqlRubros_X_Proveedor);
+            }
+            if (_BD_T.FinalTransaccion() == Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se modificó el proveedor correctamente");
+            }
+            else
+            {
+                MessageBox.Show("No se modificó el proveedor por un error");
             }
         }
 

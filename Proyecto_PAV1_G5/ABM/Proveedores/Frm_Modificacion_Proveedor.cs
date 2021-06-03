@@ -36,32 +36,55 @@ namespace Proyecto_PAV1_G5.ABM.Proveedores
             txt_calle.Text = tabla.Rows[0]["calle"].ToString();
             txt_nroCalle.Text = tabla.Rows[0]["nro_calle"].ToString();
             txt_telefono.Text = tabla.Rows[0]["telefono"].ToString();
-            txt_legajoComprador.Text = tabla.Rows[0]["legajo_comprador"].ToString();
+            cmb_empleado.SelectedValue = tabla.Rows[0]["legajo_comprador"].ToString();
         }
 
         private void Frm_Modificacion_Proveedor_Load(object sender, EventArgs e)
         {
             cmb_barrio.CargarCombo(prov.DatosComboBarrio());
+            cmb_empleado.CargarCombo(prov.DatosComboEmpleado());
             MostrarDatos(prov.Recuperar_x_Cuit_Array(Pp_cuit_proveedores));
+            cmb_rubro.CargarCombo(prov.DatosComboRubros());
+            grid_rubros.Formatear("Id rubro,50; Nombre,100; Descripcion,100");
+            grid_rubros.Cargar(prov.RecuperarRubrosProveedor(txt_cuit_proveedor.Text));
         }
 
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
             Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
 
-            if (tratamiento.Validar(this.Controls) == Tratamientos_Especiales.Resultado.correcto)
-            {
+            prov.ModificarProveedor(grid_rubros, txt_cuit_proveedor.Text, txt_razonSocial.Text, cmb_empleado.SelectedValue.ToString(), txt_fechaInicioOperacion.Text, txt_fechaInicioOperacion.Text, cmb_barrio.SelectedValue.ToString(), txt_calle.Text, txt_nroCalle.Text);
 
-                prov.Modificar(Pp_cuit_proveedores, this.Controls);
-                if (MessageBox.Show("El proveedor se modificó con éxito", "Aviso", MessageBoxButtons.OK) == DialogResult.OK)
-                {
-                    this.Close();
-                }
-            }
-            else
+        }
+
+        private void grid_rubros_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (MessageBox.Show("¿Desea borrar el rubro seleccionado?", "Importante", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                grid_rubros.Rows.Remove(grid_rubros.CurrentRow);
+
+            }
+        }
+
+        private void btn_Agregar_rubro_Click(object sender, EventArgs e)
+        {
+            if (cmb_rubro.SelectedIndex == -1)
+            {
+                MessageBox.Show("Falta seleccionar el rubro", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                cmb_rubro.Focus();
                 return;
             }
+
+            grid_rubros.Rows.Add(
+                                    cmb_rubro.SelectedValue.ToString()
+                                    , cmb_rubro.Text
+                                    , txt_descripcion_rubro.Text);
+        }
+
+        private void cmb_rubro_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            DataTable tabla = prov.RecuperarRubrosProveedor(cmb_rubro.SelectedValue.ToString());
+            txt_descripcion_rubro.Text = tabla.Rows[0][2].ToString();
         }
     }
 }

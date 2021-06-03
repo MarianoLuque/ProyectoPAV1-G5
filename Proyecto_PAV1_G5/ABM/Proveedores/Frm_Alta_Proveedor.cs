@@ -34,7 +34,6 @@ namespace Proyecto_PAV1_G5.ABM.Proveedores
             {
 
                 prov.InsertarProveedor(grid_rubros, txt_cuit_proveedor.Text, txt_razonSocial.Text, cmb_LegajoComprador.SelectedValue.ToString(), txt_fechaInicioOperacion.Text, txt_telefono.Text, cmb_barrio.SelectedValue.ToString(), txt_calle.Text, txt_nroCalle.Text);
-
             }
             else
             {
@@ -71,6 +70,15 @@ namespace Proyecto_PAV1_G5.ABM.Proveedores
         {
             DataTable tabla = rub.RecuperarRubro(cmb_rubro.SelectedValue.ToString());
             txt_descripcion_rubro.Text = tabla.Rows[0][2].ToString();
+        }
+
+        private void grid_rubros_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (MessageBox.Show("¿Desea borrar el rubro seleccionado?", "Importante", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                grid_rubros.Rows.Remove(grid_rubros.CurrentRow);
+
+            }
         }
     }
 }

@@ -145,5 +145,22 @@ namespace Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales
             }
             return (double.Parse(calculo.ToString()) * 0.9 ).ToString();
         }
+
+        private void grid_articulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (MessageBox.Show("¿Desea borrar el articulo seleccionado?", "Importante", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (TipoEquipo == "especial")
+                {
+                    txt_precio_mayorista_articulo.Text = CalcularPrecioMayorista(grid_articulos);
+                }
+                if (TipoEquipo == "simple")
+                {
+                    txt_Precio_Mayorista.Text = CalcularPrecioMayorista(grid_articulos);
+                    txt_Precio_Minorista.Text = CalcularPrecioMinorista(grid_articulos);
+                }
+                grid_articulos.Rows.Remove(grid_articulos.CurrentRow);
+            }
+        }
     }
 }

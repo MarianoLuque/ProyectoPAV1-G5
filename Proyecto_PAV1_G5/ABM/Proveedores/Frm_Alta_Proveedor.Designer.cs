@@ -38,6 +38,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_Agregar_rubro = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_descripcion_rubro = new System.Windows.Forms.TextBox();
+            this.cmb_LegajoComprador = new Proyecto_PAV1_G5.Clases.ComboBox01();
+            this.cmb_rubro = new Proyecto_PAV1_G5.Clases.ComboBox01();
+            this.grid_rubros = new Proyecto_PAV1_G5.Clases.Grid01();
             this.txt_nroCalle = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_calle = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.cmb_barrio = new Proyecto_PAV1_G5.Clases.ComboBox01();
@@ -45,13 +52,6 @@
             this.txt_fechaInicioOperacion = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_razonSocial = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.txt_cuit_proveedor = new Proyecto_PAV1_G5.Clases.TextBox01();
-            this.grid_rubros = new Proyecto_PAV1_G5.Clases.Grid01();
-            this.cmb_rubro = new Proyecto_PAV1_G5.Clases.ComboBox01();
-            this.btn_Agregar_rubro = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txt_descripcion_rubro = new System.Windows.Forms.TextBox();
-            this.cmb_LegajoComprador = new Proyecto_PAV1_G5.Clases.ComboBox01();
             ((System.ComponentModel.ISupportInitialize)(this.grid_rubros)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,7 +138,7 @@
             // btn_aceptar
             // 
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_aceptar.Location = new System.Drawing.Point(575, 362);
+            this.btn_aceptar.Location = new System.Drawing.Point(601, 360);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(92, 28);
             this.btn_aceptar.TabIndex = 16;
@@ -149,13 +149,93 @@
             // btn_cancelar
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_cancelar.Location = new System.Drawing.Point(692, 362);
+            this.btn_cancelar.Location = new System.Drawing.Point(718, 360);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(92, 28);
             this.btn_cancelar.TabIndex = 17;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            // 
+            // btn_Agregar_rubro
+            // 
+            this.btn_Agregar_rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_Agregar_rubro.Location = new System.Drawing.Point(790, 20);
+            this.btn_Agregar_rubro.Name = "btn_Agregar_rubro";
+            this.btn_Agregar_rubro.Size = new System.Drawing.Size(75, 28);
+            this.btn_Agregar_rubro.TabIndex = 16;
+            this.btn_Agregar_rubro.Text = "Agregar";
+            this.btn_Agregar_rubro.UseVisualStyleBackColor = true;
+            this.btn_Agregar_rubro.Click += new System.EventHandler(this.btn_Agregar_rubro_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(571, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 20);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Rubro";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(532, 67);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(92, 20);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Descripción";
+            // 
+            // txt_descripcion_rubro
+            // 
+            this.txt_descripcion_rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_descripcion_rubro.Location = new System.Drawing.Point(536, 90);
+            this.txt_descripcion_rubro.Multiline = true;
+            this.txt_descripcion_rubro.Name = "txt_descripcion_rubro";
+            this.txt_descripcion_rubro.ReadOnly = true;
+            this.txt_descripcion_rubro.Size = new System.Drawing.Size(330, 53);
+            this.txt_descripcion_rubro.TabIndex = 20;
+            // 
+            // cmb_LegajoComprador
+            // 
+            this.cmb_LegajoComprador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_LegajoComprador.FormattingEnabled = true;
+            this.cmb_LegajoComprador.Location = new System.Drawing.Point(256, 107);
+            this.cmb_LegajoComprador.Name = "cmb_LegajoComprador";
+            this.cmb_LegajoComprador.Pp_Conseleccion = false;
+            this.cmb_LegajoComprador.Pp_MensajeError = null;
+            this.cmb_LegajoComprador.Pp_NombreCampo = null;
+            this.cmb_LegajoComprador.Pp_Validable = false;
+            this.cmb_LegajoComprador.Size = new System.Drawing.Size(230, 28);
+            this.cmb_LegajoComprador.TabIndex = 19;
+            // 
+            // cmb_rubro
+            // 
+            this.cmb_rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_rubro.FormattingEnabled = true;
+            this.cmb_rubro.Location = new System.Drawing.Point(630, 21);
+            this.cmb_rubro.Name = "cmb_rubro";
+            this.cmb_rubro.Pp_Conseleccion = false;
+            this.cmb_rubro.Pp_MensajeError = null;
+            this.cmb_rubro.Pp_NombreCampo = null;
+            this.cmb_rubro.Pp_Validable = false;
+            this.cmb_rubro.Size = new System.Drawing.Size(141, 28);
+            this.cmb_rubro.TabIndex = 19;
+            this.cmb_rubro.SelectionChangeCommitted += new System.EventHandler(this.cmb_rubros_SelectionChangeCommitted);
+            // 
+            // grid_rubros
+            // 
+            this.grid_rubros.AllowUserToAddRows = false;
+            this.grid_rubros.AllowUserToDeleteRows = false;
+            this.grid_rubros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_rubros.Location = new System.Drawing.Point(536, 149);
+            this.grid_rubros.Name = "grid_rubros";
+            this.grid_rubros.ReadOnly = true;
+            this.grid_rubros.Size = new System.Drawing.Size(329, 196);
+            this.grid_rubros.TabIndex = 18;
+            this.grid_rubros.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_rubros_CellDoubleClick);
             // 
             // txt_nroCalle
             // 
@@ -235,85 +315,6 @@
             this.txt_cuit_proveedor.Pp_Validable = true;
             this.txt_cuit_proveedor.Size = new System.Drawing.Size(230, 26);
             this.txt_cuit_proveedor.TabIndex = 0;
-            // 
-            // grid_rubros
-            // 
-            this.grid_rubros.AllowUserToAddRows = false;
-            this.grid_rubros.AllowUserToDeleteRows = false;
-            this.grid_rubros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_rubros.Location = new System.Drawing.Point(536, 149);
-            this.grid_rubros.Name = "grid_rubros";
-            this.grid_rubros.ReadOnly = true;
-            this.grid_rubros.Size = new System.Drawing.Size(329, 196);
-            this.grid_rubros.TabIndex = 18;
-            // 
-            // cmb_rubro
-            // 
-            this.cmb_rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_rubro.FormattingEnabled = true;
-            this.cmb_rubro.Location = new System.Drawing.Point(630, 21);
-            this.cmb_rubro.Name = "cmb_rubro";
-            this.cmb_rubro.Pp_Conseleccion = false;
-            this.cmb_rubro.Pp_MensajeError = null;
-            this.cmb_rubro.Pp_NombreCampo = null;
-            this.cmb_rubro.Pp_Validable = false;
-            this.cmb_rubro.Size = new System.Drawing.Size(141, 28);
-            this.cmb_rubro.TabIndex = 19;
-            this.cmb_rubro.SelectionChangeCommitted += new System.EventHandler(this.cmb_rubros_SelectionChangeCommitted);
-            // 
-            // btn_Agregar_rubro
-            // 
-            this.btn_Agregar_rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_Agregar_rubro.Location = new System.Drawing.Point(790, 20);
-            this.btn_Agregar_rubro.Name = "btn_Agregar_rubro";
-            this.btn_Agregar_rubro.Size = new System.Drawing.Size(75, 28);
-            this.btn_Agregar_rubro.TabIndex = 16;
-            this.btn_Agregar_rubro.Text = "Agregar";
-            this.btn_Agregar_rubro.UseVisualStyleBackColor = true;
-            this.btn_Agregar_rubro.Click += new System.EventHandler(this.btn_Agregar_rubro_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(571, 24);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 20);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Rubro";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(532, 67);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(92, 20);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Descripción";
-            // 
-            // txt_descripcion_rubro
-            // 
-            this.txt_descripcion_rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_descripcion_rubro.Location = new System.Drawing.Point(536, 90);
-            this.txt_descripcion_rubro.Multiline = true;
-            this.txt_descripcion_rubro.Name = "txt_descripcion_rubro";
-            this.txt_descripcion_rubro.ReadOnly = true;
-            this.txt_descripcion_rubro.Size = new System.Drawing.Size(330, 53);
-            this.txt_descripcion_rubro.TabIndex = 20;
-            // 
-            // cmb_LegajoComprador
-            // 
-            this.cmb_LegajoComprador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_LegajoComprador.FormattingEnabled = true;
-            this.cmb_LegajoComprador.Location = new System.Drawing.Point(256, 107);
-            this.cmb_LegajoComprador.Name = "cmb_LegajoComprador";
-            this.cmb_LegajoComprador.Pp_Conseleccion = false;
-            this.cmb_LegajoComprador.Pp_MensajeError = null;
-            this.cmb_LegajoComprador.Pp_NombreCampo = null;
-            this.cmb_LegajoComprador.Pp_Validable = false;
-            this.cmb_LegajoComprador.Size = new System.Drawing.Size(230, 28);
-            this.cmb_LegajoComprador.TabIndex = 19;
             // 
             // Frm_Alta_Proveedor
             // 

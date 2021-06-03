@@ -41,7 +41,18 @@ namespace Proyecto_PAV1_G5.Negocios
             edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
 
             return edc;
+        }
 
+        public Estructura_ComboBox DatosComboEmpleado()
+        {
+            Estructura_ComboBox edc = new Estructura_ComboBox();
+
+            edc.Value = "legajo";
+            edc.Display = "vendedor";
+            edc.Sql = "SELECT *, (nombre + ' ' + apellido) as vendedor FROM Empleados";
+            edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
+
+            return edc;
         }
 
         public DataTable RecuperarTodos()
@@ -65,7 +76,7 @@ namespace Proyecto_PAV1_G5.Negocios
         public DataTable Recuperar_x_Cuit_Array(string[] cuit)
         {
 
-            string sql = "SELECT c.* FROM Clientes c WHERE c.cuit_clientes = " + cuit[0];
+            string sql = "SELECT c.*, (e.nombre + ' ' + e.apellido) as vendedor FROM Clientes c JOIN Empleados e ON c.legajo_vendedor_asignado=e.legajo WHERE c.cuit_clientes = " + cuit[0];
             return _BD.Ejecutar_Select(sql);
         }
 

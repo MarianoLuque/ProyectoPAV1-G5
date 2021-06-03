@@ -36,7 +36,7 @@ namespace Proyecto_PAV1_G5.ABM.Clientes
             txt_calle.Text = tabla.Rows[0]["calle"].ToString();
             txt_numero_calle.Text = tabla.Rows[0]["nro_calle"].ToString();
             txt_credito_limite.Text = tabla.Rows[0]["credito_limite"].ToString();
-            txt_legajo_vendedor.Text = tabla.Rows[0]["legajo_vendedor_asignado"].ToString();
+            txt_legajo_vendedor.Text = tabla.Rows[0]["vendedor"].ToString();
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)

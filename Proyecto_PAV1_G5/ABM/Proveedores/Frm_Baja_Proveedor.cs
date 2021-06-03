@@ -32,6 +32,8 @@ namespace Proyecto_PAV1_G5.ABM.Proveedores
         {
             cmb_barrio.CargarCombo(prov.DatosComboBarrio());
             MostrarDatos(prov.Recuperar_x_Cuit_Array(Pp_cuit_proveedores));
+            grid_rubros.Formatear("Id rubro,50; Nombre,100; Descripcion,100");
+            grid_rubros.Cargar(prov.RecuperarRubrosProveedor(txt_cuit_proveedor.Text));
         }
 
         private void btn_aceptar_Click(object sender, EventArgs e)

@@ -285,6 +285,7 @@
             this.grid_articulos.ReadOnly = true;
             this.grid_articulos.Size = new System.Drawing.Size(570, 198);
             this.grid_articulos.TabIndex = 8;
+            this.grid_articulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_articulos_CellDoubleClick);
             // 
             // txt_Nombre_Equipo_Especial
             // 

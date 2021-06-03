@@ -46,6 +46,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
+            this.grid_rubros = new Proyecto_PAV1_G5.Clases.Grid01();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_rubros)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_cuit_proveedor
@@ -229,7 +231,7 @@
             // btn_aceptar
             // 
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_aceptar.Location = new System.Drawing.Point(138, 412);
+            this.btn_aceptar.Location = new System.Drawing.Point(610, 346);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(92, 28);
             this.btn_aceptar.TabIndex = 16;
@@ -240,7 +242,7 @@
             // btn_cancelar
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_cancelar.Location = new System.Drawing.Point(255, 412);
+            this.btn_cancelar.Location = new System.Drawing.Point(727, 346);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(92, 28);
             this.btn_cancelar.TabIndex = 17;
@@ -248,11 +250,23 @@
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
+            // grid_rubros
+            // 
+            this.grid_rubros.AllowUserToAddRows = false;
+            this.grid_rubros.AllowUserToDeleteRows = false;
+            this.grid_rubros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_rubros.Location = new System.Drawing.Point(547, 92);
+            this.grid_rubros.Name = "grid_rubros";
+            this.grid_rubros.ReadOnly = true;
+            this.grid_rubros.Size = new System.Drawing.Size(329, 196);
+            this.grid_rubros.TabIndex = 20;
+            // 
             // Frm_Baja_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 472);
+            this.ClientSize = new System.Drawing.Size(925, 395);
+            this.Controls.Add(this.grid_rubros);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.label8);
@@ -275,6 +289,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Baja Proveedores";
             this.Load += new System.EventHandler(this.Frm_Baja_Proveedor_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grid_rubros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,5 +315,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Button btn_cancelar;
+        private Clases.Grid01 grid_rubros;
     }
 }
