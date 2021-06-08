@@ -664,5 +664,11 @@ namespace Proyecto_PAV1_G5.Negocios
                 ActualizarClasificacion(id_clasificacion + 1, Pp_Cliente);
             }
         }
+
+        //Recuperar ventas para reporte
+        private void BuscarVentas(string fechaDesde, string fechaHasta, string cliente)
+        {
+
+        }
     }
 }

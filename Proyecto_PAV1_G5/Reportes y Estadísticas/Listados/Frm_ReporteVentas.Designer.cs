@@ -30,12 +30,14 @@
         {
             this.reporte_ventas = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmb_clientes = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_fechaDesde = new System.Windows.Forms.MaskedTextBox();
             this.txt_fechaHasta = new System.Windows.Forms.MaskedTextBox();
             this.btn_buscar = new System.Windows.Forms.Button();
+            this.check_Mayorista = new System.Windows.Forms.CheckBox();
+            this.check_minorista = new System.Windows.Forms.CheckBox();
+            this.cmb_clientes = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.SuspendLayout();
             // 
             // reporte_ventas
@@ -56,20 +58,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Cliente";
             // 
-            // cmb_clientes
-            // 
-            this.cmb_clientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_clientes.FormattingEnabled = true;
-            this.cmb_clientes.Location = new System.Drawing.Point(109, 19);
-            this.cmb_clientes.Name = "cmb_clientes";
-            this.cmb_clientes.Pp_Conseleccion = false;
-            this.cmb_clientes.Pp_MensajeError = null;
-            this.cmb_clientes.Pp_NombreCampo = null;
-            this.cmb_clientes.Pp_Validable = false;
-            this.cmb_clientes.Size = new System.Drawing.Size(173, 28);
-            this.cmb_clientes.TabIndex = 3;
-            this.cmb_clientes.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -84,7 +72,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(346, 69);
+            this.label3.Location = new System.Drawing.Point(521, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 20);
             this.label3.TabIndex = 5;
@@ -103,7 +91,7 @@
             // txt_fechaHasta
             // 
             this.txt_fechaHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_fechaHasta.Location = new System.Drawing.Point(409, 66);
+            this.txt_fechaHasta.Location = new System.Drawing.Point(584, 19);
             this.txt_fechaHasta.Mask = "00/00/0000";
             this.txt_fechaHasta.Name = "txt_fechaHasta";
             this.txt_fechaHasta.Size = new System.Drawing.Size(87, 26);
@@ -113,7 +101,7 @@
             // btn_buscar
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_buscar.Location = new System.Drawing.Point(638, 60);
+            this.btn_buscar.Location = new System.Drawing.Point(713, 60);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(75, 32);
             this.btn_buscar.TabIndex = 8;
@@ -121,11 +109,49 @@
             this.btn_buscar.UseVisualStyleBackColor = true;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
+            // check_Mayorista
+            // 
+            this.check_Mayorista.AutoSize = true;
+            this.check_Mayorista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.check_Mayorista.Location = new System.Drawing.Point(49, 65);
+            this.check_Mayorista.Name = "check_Mayorista";
+            this.check_Mayorista.Size = new System.Drawing.Size(104, 24);
+            this.check_Mayorista.TabIndex = 9;
+            this.check_Mayorista.Text = "Mayoristas";
+            this.check_Mayorista.UseVisualStyleBackColor = true;
+            // 
+            // check_minorista
+            // 
+            this.check_minorista.AutoSize = true;
+            this.check_minorista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.check_minorista.Location = new System.Drawing.Point(182, 65);
+            this.check_minorista.Name = "check_minorista";
+            this.check_minorista.Size = new System.Drawing.Size(100, 24);
+            this.check_minorista.TabIndex = 10;
+            this.check_minorista.Text = "Minoristas";
+            this.check_minorista.UseVisualStyleBackColor = true;
+            // 
+            // cmb_clientes
+            // 
+            this.cmb_clientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_clientes.FormattingEnabled = true;
+            this.cmb_clientes.Location = new System.Drawing.Point(109, 19);
+            this.cmb_clientes.Name = "cmb_clientes";
+            this.cmb_clientes.Pp_Conseleccion = false;
+            this.cmb_clientes.Pp_MensajeError = null;
+            this.cmb_clientes.Pp_NombreCampo = null;
+            this.cmb_clientes.Pp_Validable = false;
+            this.cmb_clientes.Size = new System.Drawing.Size(173, 28);
+            this.cmb_clientes.TabIndex = 3;
+            this.cmb_clientes.TabStop = false;
+            // 
             // Frm_ReporteVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.check_minorista);
+            this.Controls.Add(this.check_Mayorista);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_fechaHasta);
             this.Controls.Add(this.txt_fechaDesde);
@@ -136,7 +162,7 @@
             this.Controls.Add(this.reporte_ventas);
             this.Name = "Frm_ReporteVentas";
             this.Text = "Frm_ReporteVentas";
-            this.Load += new System.EventHandler(this.Frm_ReporteArticulos_Load);
+            this.Load += new System.EventHandler(this.Frm_ReporteVentas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +178,7 @@
         private System.Windows.Forms.MaskedTextBox txt_fechaDesde;
         private System.Windows.Forms.MaskedTextBox txt_fechaHasta;
         private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.CheckBox check_Mayorista;
+        private System.Windows.Forms.CheckBox check_minorista;
     }
 }

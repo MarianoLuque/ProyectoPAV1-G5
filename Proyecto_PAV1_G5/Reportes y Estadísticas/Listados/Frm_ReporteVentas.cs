@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_PAV1_G5.Clases;
+using Proyecto_PAV1_G5.Negocios;
 
 namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 {
@@ -15,58 +16,69 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
     {
         Tratamientos_Especiales TratEsp = new Tratamientos_Especiales();
         DataTable tabla = new DataTable();
+        NE_Ventas venta = new NE_Ventas();
         public Frm_ReporteVentas()
         {
             InitializeComponent();
         }
 
-  
-        private void Frm_ReporteArticulos_Load(object sender, EventArgs e)
+        private void Frm_ReporteVentas_Load(object sender, EventArgs e)
         {
-
             this.reporte_ventas.RefreshReport();
+            cmb_clientes.CargarCombo(venta.DatosComboCliente());
+            
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            //RecuperarVentas();
+            RecuperarVentas();
             //ArmarReporte();
         }
 
         private void RecuperarVentas()
         {
-            if (cmb_clientes.SelectedValue.ToString() == "" && txt_fechaDesde.Text == "" && txt_fechaHasta.Text == "")
+            if (cmb_clientes.SelectedIndex == -1 && txt_fechaDesde.MaskFull == false && txt_fechaHasta.MaskFull == false)
             {
-                MessageBox.Show("No se realizó selección para la búsqueda");
+                MessageBox.Show("Aca se mostrarían todas las ventas mayoristas o minoristas de cualquier fecha");
                 return;
+
             }
 
-            if (cmb_clientes.SelectedValue.ToString() != "" && txt_fechaDesde.Text == "" && txt_fechaHasta.Text == "")
+            if (cmb_clientes.SelectedIndex != -1 && txt_fechaDesde.MaskFull == false && txt_fechaHasta.MaskFull == false)
             {
-                if ((TratEsp.ValidarFecha(txt_fechaDesde.Text) == Tratamientos_Especiales.Resultado.correcto) && (TratEsp.ValidarFecha(txt_fechaHasta.Text) == Tratamientos_Especiales.Resultado.correcto))
+                MessageBox.Show("Aca se devolverían todas las ventas del cliente en cualquier fecha");
+            }
+
+            if (cmb_clientes.SelectedIndex == -1 && txt_fechaDesde.MaskFull == true && txt_fechaHasta.MaskFull == true)
+            {
+                if (check_Mayorista.Checked==false && check_minorista.Checked==false)
                 {
-                    //tabla = venta.BuscarVentas(txt.fechaDesde.Text, txt_fechaHasta.Text, cmb_clientes.SelectedValue.ToString())
+                    MessageBox.Show("Mostrar todas las ventas mayoristas y minoristas en ese periodo");
                 }
+                if (check_Mayorista.Checked == true)
+                {
+                    MessageBox.Show("Aca se devolverian todas las ventas mayoristas en ese rango de fechas");
+                }
+                if (check_minorista.Checked == true)
+                {
+                    MessageBox.Show("Aca se devolverían todas las ventas minoristas en ese rango de fechas");
+                }
+               
             }
 
-            if (cmb_clientes.SelectedValue.ToString() == "" && txt_fechaDesde.Text != "" && txt_fechaHasta.Text != "")
+            if (cmb_clientes.SelectedIndex != -1 && txt_fechaDesde.MaskFull == true && txt_fechaHasta.MaskFull == true)
             {
-                //buscar por el rango de fecha
+                MessageBox.Show("Aca se mostrarian todas las ventas de ese cliente mayorista en ese rango de fechas");
             }
 
-            if (cmb_clientes.SelectedValue.ToString() != "" && txt_fechaDesde.Text != "" && txt_fechaHasta.Text != "")
-            {
-                //buscar por cliente y rango de fecha
-            }
-
-            if (cmb_clientes.SelectedValue.ToString() == "" && txt_fechaDesde.Text == "" && txt_fechaHasta.Text != "")
+            if (cmb_clientes.SelectedIndex == -1 && txt_fechaDesde.MaskFull == false && txt_fechaHasta.MaskFull == true)
             {
                 MessageBox.Show("Por favor ingrese una fecha desde");
             }
 
-            if (cmb_clientes.SelectedValue.ToString() == "" && txt_fechaDesde.Text != "" && txt_fechaHasta.Text == "")
+            if (cmb_clientes.SelectedIndex == -1 && txt_fechaDesde.MaskFull == true && txt_fechaHasta.MaskFull == false)
             {
-                //Aca deberia mostrar los que sean de la fecha desde ingresada hasta la fecha actual.
+                MessageBox.Show("Aca deberian mostrarse todas las ventas desde la fecha ingresada hasta la actual");
             }
         }
     }

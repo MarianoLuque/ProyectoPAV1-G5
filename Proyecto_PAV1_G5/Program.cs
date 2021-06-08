@@ -12,6 +12,7 @@ using Proyecto_PAV1_G5.ABM.Equipos.Equipos_Especiales;
 using Proyecto_PAV1_G5.ABM.FormasPago;
 using Proyecto_PAV1_G5.ABM.Proveedores;
 using Proyecto_PAV1_G5.ABM.Rubros;
+using Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados;
 
 namespace Proyecto_PAV1_G5
 {
@@ -25,9 +26,10 @@ namespace Proyecto_PAV1_G5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            //Application.Run(new Principal());
             //Application.Run(new Frm_Login()); 
             //Application.Run(new Frm_Equipos());
+            Application.Run(new Frm_ReporteVentas());
         }
     }
 }
