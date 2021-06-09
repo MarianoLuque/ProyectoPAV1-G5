@@ -164,6 +164,146 @@ namespace Proyecto_PAV1_G5.Negocios
             }
         }
 
+        //ZONA DE REPORTE
 
+        public DataTable RecuperarArticulosSinStock()
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosConStock(string cantDesde, string cantHasta)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cantidad_stock BETWEEN " + cantDesde + " AND " + cantHasta;
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosConStockDesde(string cantDesde)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cantidad_stock >= " + cantDesde;
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosConStockHasta(string cantHasta)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cantidad_stock <= " + cantHasta;
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosPorProveedor(string cuit_proveedor)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cuit_proveedor = " + cuit_proveedor;
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosPorProveedoryStock(string cuit_proveedor, string cantDesde, string cantHasta)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cuit_proveedor = " + cuit_proveedor
+                          + " AND (cantidad_stock BETWEEN " + cantDesde + " AND " + cantHasta + ")";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosPorProveedoryStockDesde(string cuit_proveedor, string cantDesde)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cuit_proveedor = " + cuit_proveedor
+                          + " AND (cantidad_stock >= " + cantDesde + ")";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosPorProveedoryStockHasta(string cuit_proveedor, string cantHasta)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cuit_proveedor = " + cuit_proveedor
+                          + " AND (cantidad_stock <= " + cantHasta + ")";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosProveedorPatronyStock(string cuit_proveedor, string patron, string cantDesde, string cantHasta)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cuit_proveedor = " + cuit_proveedor
+                          + " AND (cantidad_stock BETWEEN " + cantDesde + " AND " + cantHasta + ")"
+                          + " AND (nombre_articulo LIKE '%" + patron + "%')";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosProveedorPatronyStockDesde(string cuit_proveedor, string patron, string cantDesde)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cuit_proveedor = " + cuit_proveedor
+                          + " AND (cantidad_stock >= " + cantDesde + ")"
+                          + " AND (nombre_articulo LIKE '%" + patron + "%')";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosProveedorPatronyStockHasta(string cuit_proveedor, string patron, string cantHasta)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cuit_proveedor = " + cuit_proveedor
+                          + " AND (cantidad_stock <= " + cantHasta + ")"
+                          + " AND (nombre_articulo LIKE '%" + patron + "%')";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosProveedorPatron(string cuit_proveedor, string patron)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE cuit_proveedor = " + cuit_proveedor
+                          + " AND (nombre_articulo LIKE '%" + patron + "%')";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosPatron(string patron)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE nombre_articulo LIKE '%" + patron + "%'";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosPatronStock(string patron, string cantDesde, string cantHasta)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE nombre_articulo LIKE '%" + patron + "%'"
+                           + " AND (cantidad_stock BETWEEN " + cantDesde + " AND " + cantHasta + ")";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosPatronStockDesde(string patron, string cantDesde)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE nombre_articulo LIKE '%" + patron + "%'"
+                          + " AND (cantidad_stock >= " + cantDesde + ")";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarArticulosPatronStockHasta(string patron, string cantHasta)
+        {
+            string sql = @"SELECT a.*
+                          FROM Articulos a
+                          WHERE nombre_articulo LIKE '%" + patron + "%'"
+                          + " AND (cantidad_stock <= " + cantHasta + ")";
+            return (_BD_T.EjecutarSelect(sql));
+        }
     }
 }

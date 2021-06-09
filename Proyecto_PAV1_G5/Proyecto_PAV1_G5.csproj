@@ -307,6 +307,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportesyEstadísticas\Listados\Articulos\DataSetArticulosxsd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetArticulosxsd.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ReportesyEstadísticas\Listados\Articulos\Frm_ReporteArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -563,6 +568,7 @@
     <EmbeddedResource Include="ReportesyEstadísticas\Listados\Articulos\Frm_ReporteArticulos.resx">
       <DependentUpon>Frm_ReporteArticulos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Articulos\ListadoArticulos.rdlc" />
     <EmbeddedResource Include="ReportesyEstadísticas\Listados\Clientes\Frm_ReporteClientes.resx">
       <DependentUpon>Frm_ReporteClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -632,6 +638,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ReportesyEstadísticas\Listados\Articulos\DataSetArticulosxsd.xsc">
+      <DependentUpon>DataSetArticulosxsd.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadísticas\Listados\Articulos\DataSetArticulosxsd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetArticulosxsd.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportesyEstadísticas\Listados\Articulos\DataSetArticulosxsd.xss">
+      <DependentUpon>DataSetArticulosxsd.xsd</DependentUpon>
+    </None>
     <None Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\DataSetClasificacion.xsc">
       <DependentUpon>DataSetClasificacion.xsd</DependentUpon>
     </None>
