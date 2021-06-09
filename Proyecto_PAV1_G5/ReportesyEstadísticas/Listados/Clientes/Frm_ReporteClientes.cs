@@ -60,22 +60,22 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
             }
             if(rv_fechas.Checked == true)
             {
-                    if (txt_fechaDesde.MaskFull == true && txt_fechaHasta.MaskFull == false)
+                    if (txt_fechaDesde.MaskFull == true && txt_fechaHasta.MaskFull == true)
                     {
                         tabla = cliente.BuscarClienteConFechas(txt_fechaDesde.Text, txt_fechaHasta.Text);
                         ArmarReporte(tabla);
                     }
-                    if (txt_fechaDesde.Text != "" && txt_fechaHasta.Text == "")
+                    if (txt_fechaDesde.MaskFull == true && txt_fechaHasta.MaskFull == false)
                     {
                         tabla = cliente.BuscarClientesConFechaDesde(txt_fechaDesde.Text);
                         ArmarReporte(tabla);
                     }
-                    if (txt_fechaDesde.Text == "" && txt_fechaHasta.Text != "")
+                    if (txt_fechaDesde.MaskFull == false && txt_fechaHasta.MaskFull == true)
                     {
                         tabla = cliente.BuscarClientesConFechaHasta(txt_fechaHasta.Text);
                         ArmarReporte(tabla);
                     }
-                    if(txt_fechaDesde.Text == "" && txt_fechaHasta.Text == "")
+                    if(txt_fechaDesde.MaskFull == false && txt_fechaHasta.MaskFull == false)
                     {
                         MessageBox.Show("Debe ingresar por lo menos una de las 2 fechas para poder usar este filtro");
                     }
