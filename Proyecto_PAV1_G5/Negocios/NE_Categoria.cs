@@ -78,5 +78,6 @@ namespace Proyecto_PAV1_G5.Negocios
             string sql = "SELECT cc.* FROM Clasificacion_Clientes cc WHERE cc.id_clasificacion = " + id_categoria[0];
             return _BD.Ejecutar_Select(sql);
         }
+
     }
 }

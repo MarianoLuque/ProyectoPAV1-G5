@@ -113,6 +113,32 @@ namespace Proyecto_PAV1_G5.Negocios
             return _BD.Ejecutar_Select(sql);
         }
 
+        //FUNCIONES DE CONSULTA LISTADOS
+
+        public DataTable Recuperar_X_Precio_Min(string precio)
+        {
+            string sql = @"SELECT *
+                               FROM Equipos_Especiales
+                                WHERE precio <" + precio;
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_X_Precio_Max(string precio)
+        {
+            string sql = @"SELECT *
+                               FROM Equipos_Especiales
+                                WHERE precio >" + precio;
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_X_Limites_Precios(string precio_min, string precio_max)
+        {
+            string sql = @"SELECT*
+                                FROM Equipos_Especiales
+                                WHERE precio BETWEEN " + precio_min + " AND " + precio_max;
+            return _BD.Ejecutar_Select(sql);
+        }
+        //FIN DE LOS LISTADOS
 
         public string ConstructorSelect(Control.ControlCollection controles, string tabla)
         {
@@ -399,5 +425,6 @@ namespace Proyecto_PAV1_G5.Negocios
                 MessageBox.Show("No se eliminó el equipo por un error");
             }
         }
+
     }
 }

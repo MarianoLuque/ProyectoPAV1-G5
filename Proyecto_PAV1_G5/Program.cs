@@ -29,7 +29,7 @@ namespace Proyecto_PAV1_G5
             //Application.Run(new Principal());
             //Application.Run(new Frm_Login()); 
             //Application.Run(new Frm_Equipos());
-            Application.Run(new Frm_ReporteVentas());
+            Application.Run(new Frm_ReporteEquiposEspeciales());
         }
     }
 }
