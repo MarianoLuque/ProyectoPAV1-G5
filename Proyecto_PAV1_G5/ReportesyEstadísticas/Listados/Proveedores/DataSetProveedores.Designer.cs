@@ -285,7 +285,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Proveedores {
             
             private global::System.Data.DataColumn columnfecha_inicio_operacion;
             
-            private global::System.Data.DataColumn columnTelefono;
+            private global::System.Data.DataColumn columntelefono;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -346,9 +346,9 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Proveedores {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn TelefonoColumn {
+            public global::System.Data.DataColumn telefonoColumn {
                 get {
-                    return this.columnTelefono;
+                    return this.columntelefono;
                 }
             }
             
@@ -389,13 +389,13 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Proveedores {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public RepProveedoresRow AddRepProveedoresRow(int cuit_proveedor, string razon_social, System.DateTime fecha_inicio_operacion, string Telefono) {
+            public RepProveedoresRow AddRepProveedoresRow(int cuit_proveedor, string razon_social, System.DateTime fecha_inicio_operacion, string telefono) {
                 RepProveedoresRow rowRepProveedoresRow = ((RepProveedoresRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         cuit_proveedor,
                         razon_social,
                         fecha_inicio_operacion,
-                        Telefono};
+                        telefono};
                 rowRepProveedoresRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowRepProveedoresRow);
                 return rowRepProveedoresRow;
@@ -421,7 +421,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Proveedores {
                 this.columncuit_proveedor = base.Columns["cuit_proveedor"];
                 this.columnrazon_social = base.Columns["razon_social"];
                 this.columnfecha_inicio_operacion = base.Columns["fecha_inicio_operacion"];
-                this.columnTelefono = base.Columns["Telefono"];
+                this.columntelefono = base.Columns["telefono"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -433,8 +433,8 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Proveedores {
                 base.Columns.Add(this.columnrazon_social);
                 this.columnfecha_inicio_operacion = new global::System.Data.DataColumn("fecha_inicio_operacion", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnfecha_inicio_operacion);
-                this.columnTelefono = new global::System.Data.DataColumn("Telefono", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTelefono);
+                this.columntelefono = new global::System.Data.DataColumn("telefono", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntelefono);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -626,17 +626,17 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Proveedores {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Telefono {
+            public string telefono {
                 get {
                     try {
-                        return ((string)(this[this.tableRepProveedores.TelefonoColumn]));
+                        return ((string)(this[this.tableRepProveedores.telefonoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Telefono\' de la tabla \'RepProveedores\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'telefono\' de la tabla \'RepProveedores\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRepProveedores.TelefonoColumn] = value;
+                    this[this.tableRepProveedores.telefonoColumn] = value;
                 }
             }
             
@@ -678,14 +678,14 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Proveedores {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsTelefonoNull() {
-                return this.IsNull(this.tableRepProveedores.TelefonoColumn);
+            public bool IstelefonoNull() {
+                return this.IsNull(this.tableRepProveedores.telefonoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetTelefonoNull() {
-                this[this.tableRepProveedores.TelefonoColumn] = global::System.Convert.DBNull;
+            public void SettelefonoNull() {
+                this[this.tableRepProveedores.telefonoColumn] = global::System.Convert.DBNull;
             }
         }
         

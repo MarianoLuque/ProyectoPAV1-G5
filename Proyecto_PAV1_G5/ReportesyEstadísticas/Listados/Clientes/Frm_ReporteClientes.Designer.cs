@@ -154,7 +154,7 @@
             // rv_cuit
             // 
             this.rv_cuit.AutoSize = true;
-            this.rv_cuit.Location = new System.Drawing.Point(7, 53);
+            this.rv_cuit.Location = new System.Drawing.Point(7, 55);
             this.rv_cuit.Name = "rv_cuit";
             this.rv_cuit.Size = new System.Drawing.Size(158, 24);
             this.rv_cuit.TabIndex = 1;

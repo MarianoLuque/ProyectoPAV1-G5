@@ -50,6 +50,18 @@ namespace Proyecto_PAV1_G5.Negocios
 
             return edc;
         }
+
+        public Estructura_ComboBox DatosComboProveedor()
+        {
+            Estructura_ComboBox edc = new Estructura_ComboBox();
+
+            edc.Value = "cuit_proveedor";
+            edc.Display = "razon_social";
+            edc.Sql = "SELECT * FROM Proveedores";
+            edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
+
+            return edc;
+        }
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
 
         //Funcion insertar proveedor
@@ -187,6 +199,47 @@ namespace Proyecto_PAV1_G5.Negocios
                 MessageBox.Show("No se modificó el proveedor por un error");
             }
         }
+
+        // ZONA DE REPORTE
+
+        public DataTable BuscarTodosProveedores()
+        {
+            string sql = @"SELECT cuit_proveedor, razon_social, fecha_inicio_operacion, telefono
+                          FROM Proveedores " ;
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable BuscarProveedorConFechas(string fechaDesde, string fechaHasta)
+        {
+            string sql = @"SELECT  cuit_proveedor, razon_social, fecha_inicio_operacion, telefono
+                          FROM Proveedores
+                          WHERE (fecha_inicio_operacion BETWEEN '" + fechaDesde + "' AND '" + fechaHasta + "')";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarProveedorConFechaDesde(string fechaDesde)
+        {
+            string sql = @"SELECT  cuit_proveedor, razon_social, fecha_inicio_operacion, telefono
+                          FROM Proveedores
+                          WHERE fecha_inicio_operacion >= '" + fechaDesde + "'";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable BuscarProveedorConFechaHasta(string fechaHasta)
+        {
+            string sql = @"SELECT  cuit_proveedor, razon_social, fecha_inicio_operacion, telefono
+                          FROM Proveedores
+                          WHERE fecha_inicio_operacion <= '" + fechaHasta + "'";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable BuscarProveedorPorCuit(string cuit)
+        {
+            string sql = @"SELECT  cuit_proveedor, razon_social, fecha_inicio_operacion, telefono
+                          FROM Proveedores  
+                          WHERE cuit_proveedor = " + cuit;
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
 
     }
 }
