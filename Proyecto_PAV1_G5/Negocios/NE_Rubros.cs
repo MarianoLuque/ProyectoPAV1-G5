@@ -55,5 +55,37 @@ namespace Proyecto_PAV1_G5.Negocios
             string sql = "SELECT * FROM Rubros WHERE id_rubro = " + id_rubro;
             return (_BD.Ejecutar_Select(sql));
         }
+
+        public DataTable ReporteRubros(bool banderaRB1, bool banderaRB2, bool IDdesde, bool IDhasta, bool patron, bool ambosID, string patron_nombre, string id_desde, string id_hasta)
+        {
+            string sql = "SELECT * FROM Rubros WHERE 1 = 1 ";
+
+            if (patron)
+            {
+                if (banderaRB1)
+                {
+                    sql += " AND nombre_rubro like '" + patron_nombre + "%' ";
+                }
+                if (banderaRB2)
+                {
+                    sql += " AND nombre_rubro like '%" + patron_nombre + "%' ";
+                }
+            }
+
+            if (IDdesde)
+            {
+                sql += (" AND id_rubro > " + id_desde);
+            }
+            if (IDhasta)
+            {
+                sql += (" AND id_rubro < " + id_hasta);
+            }
+            if (ambosID)
+            {
+                sql += (" AND id_rubro between " + id_desde + " AND " + id_hasta);
+            }
+
+            return (_BD.Ejecutar_Select(sql));
+        }
     }
 }

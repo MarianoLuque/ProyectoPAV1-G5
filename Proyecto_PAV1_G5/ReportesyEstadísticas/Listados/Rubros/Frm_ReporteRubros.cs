@@ -134,5 +134,14 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
                 CargarReporte(Tabla);
             }
         }
+
+        private void btn_limpiar_Click(object sender, EventArgs e)
+        {
+            txt_patron_nombre.Text = "";
+            rb01.Checked = false;
+            rb02.Checked = false;
+            txt_IdDesde.Text = "";
+            txt_IdHasta.Text = "";
+        }
     }
 }

@@ -39,6 +39,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rb02 = new System.Windows.Forms.RadioButton();
             this.rb01 = new System.Windows.Forms.RadioButton();
+            this.btn_limpiar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,7 +94,7 @@
             // btn_buscar
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_buscar.Location = new System.Drawing.Point(713, 60);
+            this.btn_buscar.Location = new System.Drawing.Point(713, 51);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(75, 32);
             this.btn_buscar.TabIndex = 8;
@@ -155,6 +156,17 @@
             this.rb01.Text = "Que empiece con";
             this.rb01.UseVisualStyleBackColor = true;
             // 
+            // btn_limpiar
+            // 
+            this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_limpiar.Location = new System.Drawing.Point(673, 13);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(115, 32);
+            this.btn_limpiar.TabIndex = 8;
+            this.btn_limpiar.Text = "Limpiar Filtros";
+            this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
+            // 
             // Frm_ReporteRubros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,6 +174,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txt_patron_nombre);
+            this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_IdHasta);
             this.Controls.Add(this.txt_IdDesde);
@@ -193,5 +206,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rb02;
         private System.Windows.Forms.RadioButton rb01;
+        private System.Windows.Forms.Button btn_limpiar;
     }
 }

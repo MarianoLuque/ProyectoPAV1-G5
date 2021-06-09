@@ -20,17 +20,17 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DataSetRubros")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DataSet1 : global::System.Data.DataSet {
+    public partial class DataSetRubros : global::System.Data.DataSet {
         
-        private DataTableRubrosDataTable tableDataTableRubros;
+        private DataTable1DataTable tableDataTable1;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public DataSet1() {
+        public DataSetRubros() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DataSetRubros(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["DataTableRubros"] != null)) {
-                    base.Tables.Add(new DataTableRubrosDataTable(ds.Tables["DataTableRubros"]));
+                if ((ds.Tables["DataTable1"] != null)) {
+                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DataTableRubrosDataTable DataTableRubros {
+        public DataTable1DataTable DataTable1 {
             get {
-                return this.tableDataTableRubros;
+                return this.tableDataTable1;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DataSet1 cln = ((DataSet1)(base.Clone()));
+            DataSetRubros cln = ((DataSetRubros)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["DataTableRubros"] != null)) {
-                    base.Tables.Add(new DataTableRubrosDataTable(ds.Tables["DataTableRubros"]));
+                if ((ds.Tables["DataTable1"] != null)) {
+                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableDataTableRubros = ((DataTableRubrosDataTable)(base.Tables["DataTableRubros"]));
+            this.tableDataTable1 = ((DataTable1DataTable)(base.Tables["DataTable1"]));
             if ((initTable == true)) {
-                if ((this.tableDataTableRubros != null)) {
-                    this.tableDataTableRubros.InitVars();
+                if ((this.tableDataTable1 != null)) {
+                    this.tableDataTable1.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DataSet1";
+            this.DataSetName = "DataSetRubros";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/DataSetRubros.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableDataTableRubros = new DataTableRubrosDataTable();
-            base.Tables.Add(this.tableDataTableRubros);
+            this.tableDataTable1 = new DataTable1DataTable();
+            base.Tables.Add(this.tableDataTable1);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeDataTableRubros() {
+        private bool ShouldSerializeDataTable1() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DataSet1 ds = new DataSet1();
+            DataSetRubros ds = new DataSetRubros();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,14 +270,14 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void DataTableRubrosRowChangeEventHandler(object sender, DataTableRubrosRowChangeEvent e);
+        public delegate void DataTable1RowChangeEventHandler(object sender, DataTable1RowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DataTableRubrosDataTable : global::System.Data.TypedTableBase<DataTableRubrosRow> {
+        public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
             
             private global::System.Data.DataColumn columnid_rubro;
             
@@ -287,8 +287,8 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTableRubrosDataTable() {
-                this.TableName = "DataTableRubros";
+            public DataTable1DataTable() {
+                this.TableName = "DataTable1";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +296,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal DataTableRubrosDataTable(global::System.Data.DataTable table) {
+            internal DataTable1DataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,7 +313,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected DataTableRubrosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected DataTable1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -353,47 +353,47 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTableRubrosRow this[int index] {
+            public DataTable1Row this[int index] {
                 get {
-                    return ((DataTableRubrosRow)(this.Rows[index]));
+                    return ((DataTable1Row)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event DataTableRubrosRowChangeEventHandler DataTableRubrosRowChanging;
+            public event DataTable1RowChangeEventHandler DataTable1RowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event DataTableRubrosRowChangeEventHandler DataTableRubrosRowChanged;
+            public event DataTable1RowChangeEventHandler DataTable1RowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event DataTableRubrosRowChangeEventHandler DataTableRubrosRowDeleting;
+            public event DataTable1RowChangeEventHandler DataTable1RowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event DataTableRubrosRowChangeEventHandler DataTableRubrosRowDeleted;
+            public event DataTable1RowChangeEventHandler DataTable1RowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddDataTableRubrosRow(DataTableRubrosRow row) {
+            public void AddDataTable1Row(DataTable1Row row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTableRubrosRow AddDataTableRubrosRow(int id_rubro, string nombre_rubro, string descripcion) {
-                DataTableRubrosRow rowDataTableRubrosRow = ((DataTableRubrosRow)(this.NewRow()));
+            public DataTable1Row AddDataTable1Row(int id_rubro, string nombre_rubro, string descripcion) {
+                DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id_rubro,
                         nombre_rubro,
                         descripcion};
-                rowDataTableRubrosRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDataTableRubrosRow);
-                return rowDataTableRubrosRow;
+                rowDataTable1Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDataTable1Row);
+                return rowDataTable1Row;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DataTableRubrosDataTable cln = ((DataTableRubrosDataTable)(base.Clone()));
+                DataTable1DataTable cln = ((DataTable1DataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -401,7 +401,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DataTableRubrosDataTable();
+                return new DataTable1DataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -425,28 +425,28 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTableRubrosRow NewDataTableRubrosRow() {
-                return ((DataTableRubrosRow)(this.NewRow()));
+            public DataTable1Row NewDataTable1Row() {
+                return ((DataTable1Row)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DataTableRubrosRow(builder);
+                return new DataTable1Row(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DataTableRubrosRow);
+                return typeof(DataTable1Row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DataTableRubrosRowChanged != null)) {
-                    this.DataTableRubrosRowChanged(this, new DataTableRubrosRowChangeEvent(((DataTableRubrosRow)(e.Row)), e.Action));
+                if ((this.DataTable1RowChanged != null)) {
+                    this.DataTable1RowChanged(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -454,8 +454,8 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DataTableRubrosRowChanging != null)) {
-                    this.DataTableRubrosRowChanging(this, new DataTableRubrosRowChangeEvent(((DataTableRubrosRow)(e.Row)), e.Action));
+                if ((this.DataTable1RowChanging != null)) {
+                    this.DataTable1RowChanging(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -463,8 +463,8 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DataTableRubrosRowDeleted != null)) {
-                    this.DataTableRubrosRowDeleted(this, new DataTableRubrosRowChangeEvent(((DataTableRubrosRow)(e.Row)), e.Action));
+                if ((this.DataTable1RowDeleted != null)) {
+                    this.DataTable1RowDeleted(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -472,14 +472,14 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DataTableRubrosRowDeleting != null)) {
-                    this.DataTableRubrosRowDeleting(this, new DataTableRubrosRowChangeEvent(((DataTableRubrosRow)(e.Row)), e.Action));
+                if ((this.DataTable1RowDeleting != null)) {
+                    this.DataTable1RowDeleting(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveDataTableRubrosRow(DataTableRubrosRow row) {
+            public void RemoveDataTable1Row(DataTable1Row row) {
                 this.Rows.Remove(row);
             }
             
@@ -488,7 +488,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet1 ds = new DataSet1();
+                DataSetRubros ds = new DataSetRubros();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -506,7 +506,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DataTableRubrosDataTable";
+                attribute2.FixedValue = "DataTable1DataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -550,15 +550,15 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DataTableRubrosRow : global::System.Data.DataRow {
+        public partial class DataTable1Row : global::System.Data.DataRow {
             
-            private DataTableRubrosDataTable tableDataTableRubros;
+            private DataTable1DataTable tableDataTable1;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal DataTableRubrosRow(global::System.Data.DataRowBuilder rb) : 
+            internal DataTable1Row(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDataTableRubros = ((DataTableRubrosDataTable)(this.Table));
+                this.tableDataTable1 = ((DataTable1DataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -566,14 +566,14 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             public int id_rubro {
                 get {
                     try {
-                        return ((int)(this[this.tableDataTableRubros.id_rubroColumn]));
+                        return ((int)(this[this.tableDataTable1.id_rubroColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_rubro\' de la tabla \'DataTableRubros\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_rubro\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTableRubros.id_rubroColumn] = value;
+                    this[this.tableDataTable1.id_rubroColumn] = value;
                 }
             }
             
@@ -582,14 +582,14 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             public string nombre_rubro {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTableRubros.nombre_rubroColumn]));
+                        return ((string)(this[this.tableDataTable1.nombre_rubroColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_rubro\' de la tabla \'DataTableRubros\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_rubro\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTableRubros.nombre_rubroColumn] = value;
+                    this[this.tableDataTable1.nombre_rubroColumn] = value;
                 }
             }
             
@@ -598,51 +598,51 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
             public string descripcion {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTableRubros.descripcionColumn]));
+                        return ((string)(this[this.tableDataTable1.descripcionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion\' de la tabla \'DataTableRubros\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTableRubros.descripcionColumn] = value;
+                    this[this.tableDataTable1.descripcionColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Isid_rubroNull() {
-                return this.IsNull(this.tableDataTableRubros.id_rubroColumn);
+                return this.IsNull(this.tableDataTable1.id_rubroColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Setid_rubroNull() {
-                this[this.tableDataTableRubros.id_rubroColumn] = global::System.Convert.DBNull;
+                this[this.tableDataTable1.id_rubroColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Isnombre_rubroNull() {
-                return this.IsNull(this.tableDataTableRubros.nombre_rubroColumn);
+                return this.IsNull(this.tableDataTable1.nombre_rubroColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Setnombre_rubroNull() {
-                this[this.tableDataTableRubros.nombre_rubroColumn] = global::System.Convert.DBNull;
+                this[this.tableDataTable1.nombre_rubroColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsdescripcionNull() {
-                return this.IsNull(this.tableDataTableRubros.descripcionColumn);
+                return this.IsNull(this.tableDataTable1.descripcionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetdescripcionNull() {
-                this[this.tableDataTableRubros.descripcionColumn] = global::System.Convert.DBNull;
+                this[this.tableDataTable1.descripcionColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -650,22 +650,22 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Rubros {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class DataTableRubrosRowChangeEvent : global::System.EventArgs {
+        public class DataTable1RowChangeEvent : global::System.EventArgs {
             
-            private DataTableRubrosRow eventRow;
+            private DataTable1Row eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTableRubrosRowChangeEvent(DataTableRubrosRow row, global::System.Data.DataRowAction action) {
+            public DataTable1RowChangeEvent(DataTable1Row row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTableRubrosRow Row {
+            public DataTable1Row Row {
                 get {
                     return this.eventRow;
                 }

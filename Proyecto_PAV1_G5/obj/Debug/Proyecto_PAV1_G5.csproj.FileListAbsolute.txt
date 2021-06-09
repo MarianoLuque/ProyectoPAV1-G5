@@ -316,7 +316,6 @@ D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Pr
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteVentas.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CopyComplete
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_Listados.resources
@@ -464,3 +463,6 @@ C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyec
 C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CopyComplete
 C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.exe
 C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.pdb
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\RdlCompile.cache
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\RdlCompile.compiled
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csprojAssemblyReference.cache
