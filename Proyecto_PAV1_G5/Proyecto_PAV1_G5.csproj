@@ -307,6 +307,66 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_Listados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_Listados.Designer.cs">
+      <DependentUpon>Frm_Listados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteArticulos.Designer.cs">
+      <DependentUpon>Frm_ReporteArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteClasificacionesClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteClasificacionesClientes.Designer.cs">
+      <DependentUpon>Frm_ReporteClasificacionesClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteClientes.Designer.cs">
+      <DependentUpon>Frm_ReporteClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteCompras.Designer.cs">
+      <DependentUpon>Frm_ReporteCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteEmpleados.Designer.cs">
+      <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteEquiposEspeciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteEquiposEspeciales.Designer.cs">
+      <DependentUpon>Frm_ReporteEquiposEspeciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteEquiposSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteEquiposSimples.Designer.cs">
+      <DependentUpon>Frm_ReporteEquiposSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteProveedores.Designer.cs">
+      <DependentUpon>Frm_ReporteProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteRubros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteRubros.Designer.cs">
+      <DependentUpon>Frm_ReporteRubros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes y Estadísticas\Listados\Frm_ReporteVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -468,6 +528,36 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_Listados.resx">
+      <DependentUpon>Frm_Listados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteArticulos.resx">
+      <DependentUpon>Frm_ReporteArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteClasificacionesClientes.resx">
+      <DependentUpon>Frm_ReporteClasificacionesClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteClientes.resx">
+      <DependentUpon>Frm_ReporteClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteCompras.resx">
+      <DependentUpon>Frm_ReporteCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteEmpleados.resx">
+      <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteEquiposEspeciales.resx">
+      <DependentUpon>Frm_ReporteEquiposEspeciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteEquiposSimples.resx">
+      <DependentUpon>Frm_ReporteEquiposSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteProveedores.resx">
+      <DependentUpon>Frm_ReporteProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteRubros.resx">
+      <DependentUpon>Frm_ReporteRubros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes y Estadísticas\Listados\Frm_ReporteVentas.resx">
       <DependentUpon>Frm_ReporteVentas.cs</DependentUpon>
     </EmbeddedResource>
@@ -555,6 +645,8 @@
     <None Include="Resources\Visualizar Contraseña.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\azul.png" />
+    <None Include="Resources\celestecielo.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

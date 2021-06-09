@@ -256,6 +256,7 @@
             this.btn_listados.Text = " ";
             this.btn_listados.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_listados.UseVisualStyleBackColor = false;
+            this.btn_listados.Click += new System.EventHandler(this.btn_listados_Click);
             // 
             // Principal
             // 

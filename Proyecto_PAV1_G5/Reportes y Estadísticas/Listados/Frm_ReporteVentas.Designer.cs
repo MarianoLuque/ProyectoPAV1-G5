@@ -161,6 +161,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.reporte_ventas);
             this.Name = "Frm_ReporteVentas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_ReporteVentas";
             this.Load += new System.EventHandler(this.Frm_ReporteVentas_Load);
             this.ResumeLayout(false);
