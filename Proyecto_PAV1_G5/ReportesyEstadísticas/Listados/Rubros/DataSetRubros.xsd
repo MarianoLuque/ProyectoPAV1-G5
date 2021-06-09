@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableRubros" msprop:Generator_TableClassName="DataTableRubrosDataTable" msprop:Generator_TableVarName="tableDataTableRubros" msprop:Generator_TablePropName="DataTableRubros" msprop:Generator_RowDeletingName="DataTableRubrosRowDeleting" msprop:Generator_RowChangingName="DataTableRubrosRowChanging" msprop:Generator_RowEvHandlerName="DataTableRubrosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableRubrosRowDeleted" msprop:Generator_UserTableName="DataTableRubros" msprop:Generator_RowChangedName="DataTableRubrosRowChanged" msprop:Generator_RowEvArgName="DataTableRubrosRowChangeEvent" msprop:Generator_RowClassName="DataTableRubrosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_rubro" msprop:Generator_ColumnVarNameInTable="columnid_rubro" msprop:Generator_ColumnPropNameInRow="id_rubro" msprop:Generator_ColumnPropNameInTable="id_rubroColumn" msprop:Generator_UserColumnName="id_rubro" type="xs:int" minOccurs="0" />
+              <xs:element name="nombre_rubro" msprop:Generator_ColumnVarNameInTable="columnnombre_rubro" msprop:Generator_ColumnPropNameInRow="nombre_rubro" msprop:Generator_ColumnPropNameInTable="nombre_rubroColumn" msprop:Generator_UserColumnName="nombre_rubro" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
