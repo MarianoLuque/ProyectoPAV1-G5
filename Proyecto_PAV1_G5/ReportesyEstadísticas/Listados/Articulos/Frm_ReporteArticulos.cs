@@ -71,7 +71,7 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
         {
             if (btn_filtros.Checked == true)
             {
-                if (txt_NombreArticulo.Text == "" || txt_cantHasta.MaskFull == true || txt_cantHasta.MaskFull == true || cmb_proveedores.SelectedIndex != -1)
+                if (txt_NombreArticulo.Text == "" || txt_cantDesde.Text != "" || txt_cantHasta.Text != "" || cmb_proveedores.SelectedIndex != -1)
                 {
                     btn_buscar.Enabled = true;
                 }
@@ -90,26 +90,21 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
         private void RecuperarArticulos()
         {
-            if (btn_todos.Checked = true)
-            {
-                tabla = articulo.RecuperarArticulosSinStock();
-                return;
-            }
             if (cmb_proveedores.SelectedIndex == -1 && txt_NombreArticulo.Text == "")
             {
-                if (txt_cantDesde.MaskFull == false && txt_cantHasta.MaskFull == false)
+                if (txt_cantDesde.Text == "" && txt_cantHasta.Text == "")
                 {
                     tabla = articulo.RecuperarArticulosSinStock();
                 }
-                if (txt_cantDesde.MaskFull == true && txt_cantHasta.MaskFull == false)
+                if (txt_cantDesde.Text != "" && txt_cantHasta.Text == "")
                 {
                     tabla = articulo.RecuperarArticulosConStockDesde(txt_cantDesde.Text);
                 }
-                if (txt_cantDesde.MaskFull == false && txt_cantHasta.MaskFull == true)
+                if (txt_cantDesde.Text == "" && txt_cantHasta.Text != "")
                 {
                     tabla = articulo.RecuperarArticulosConStockHasta(txt_cantHasta.Text);
                 }
-                if (txt_cantDesde.MaskFull == true && txt_cantHasta.MaskFull == true)
+                if (txt_cantDesde.Text != "" && txt_cantHasta.Text != "")
                 {
                     tabla = articulo.RecuperarArticulosConStock(txt_cantDesde.Text, txt_cantHasta.Text);
                 }
@@ -118,19 +113,19 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
             if (cmb_proveedores.SelectedIndex != -1 && txt_NombreArticulo.Text == "")
             {
-                if (txt_cantDesde.MaskFull == false && txt_cantHasta.MaskFull == false)
+                if (txt_cantDesde.Text == "" && txt_cantHasta.Text == "")
                 {
                     tabla = articulo.RecuperarArticulosPorProveedor(cmb_proveedores.SelectedValue.ToString());
                 }
-                if (txt_cantDesde.MaskFull == true && txt_cantHasta.MaskFull == false)
+                if (txt_cantDesde.Text != "" && txt_cantHasta.Text == "")
                 {
                     tabla = articulo.RecuperarArticulosPorProveedoryStockDesde(cmb_proveedores.SelectedValue.ToString(), txt_cantDesde.Text);
                 }
-                if (txt_cantDesde.MaskFull == false && txt_cantHasta.MaskFull == true)
+                if (txt_cantDesde.Text == "" && txt_cantHasta.Text != "")
                 {
                     tabla = articulo.RecuperarArticulosPorProveedoryStockHasta(cmb_proveedores.SelectedValue.ToString(), txt_cantHasta.Text);
                 }
-                if (txt_cantDesde.MaskFull == true && txt_cantHasta.MaskFull == true)
+                if (txt_cantDesde.Text != "" && txt_cantHasta.Text != "")
                 {
                     tabla = articulo.RecuperarArticulosPorProveedoryStock(cmb_proveedores.SelectedValue.ToString(), txt_cantDesde.Text, txt_cantHasta.Text);
                 }
@@ -139,19 +134,19 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
             if (cmb_proveedores.SelectedIndex != -1 && txt_NombreArticulo.Text != "")
             {
-                if (txt_cantDesde.MaskFull == false && txt_cantHasta.MaskFull == false)
+                if (txt_cantDesde.Text == "" && txt_cantHasta.Text == "")
                 {
-                    tabla = articulo.RecuperarArticulosProveedorPatronyStock(cmb_proveedores.SelectedValue.ToString(), txt_NombreArticulo.Text, txt_cantDesde.Text, txt_cantHasta.Text);
+                    tabla = articulo.RecuperarArticulosProveedorPatron(cmb_proveedores.SelectedValue.ToString(), txt_NombreArticulo.Text);
                 }
-                if (txt_cantDesde.MaskFull == true && txt_cantHasta.MaskFull == false)
+                if (txt_cantDesde.Text != "" && txt_cantHasta.Text == "")
                 {
                     tabla = articulo.RecuperarArticulosProveedorPatronyStockDesde(cmb_proveedores.SelectedValue.ToString(), txt_NombreArticulo.Text, txt_cantDesde.Text);
                 }
-                if (txt_cantDesde.MaskFull == false && txt_cantHasta.MaskFull == true)
+                if (txt_cantDesde.Text == "" && txt_cantHasta.Text != "")
                 {
-                    tabla = articulo.RecuperarArticulosProveedorPatronyStockHasta(cmb_proveedores.SelectedValue.ToString(), txt_NombreArticulo.Text, txt_cantHasta.Text);
+                    tabla = articulo.RecuperarArticulosProveedorPatron(cmb_proveedores.SelectedValue.ToString(), txt_NombreArticulo.Text);
                 }
-                if (txt_cantDesde.MaskFull == true && txt_cantHasta.MaskFull == true)
+                if (txt_cantDesde.Text != "" && txt_cantHasta.Text != "")
                 {
                     tabla = articulo.RecuperarArticulosPorProveedoryStock(cmb_proveedores.SelectedValue.ToString(), txt_cantDesde.Text, txt_cantHasta.Text);
                 }
@@ -160,25 +155,24 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
             if (cmb_proveedores.SelectedIndex == -1 && txt_NombreArticulo.Text != "")
             {
-                if (txt_cantDesde.MaskFull == false && txt_cantHasta.MaskFull == false)
+                if (txt_cantDesde.Text != "" && txt_cantHasta.Text != "")
                 {
-                    tabla = articulo.RecuperarArticulosPatron(txt_NombreArticulo.Text);
+                    tabla = articulo.RecuperarArticulosPatronStock(txt_NombreArticulo.Text, txt_cantDesde.Text, txt_cantHasta.Text);
                 }
-                if (txt_cantDesde.MaskFull == true && txt_cantHasta.MaskFull == false)
+                if (txt_cantDesde.Text != "" && txt_cantHasta.Text == "")
                 {
                     tabla = articulo.RecuperarArticulosPatronStockDesde(txt_NombreArticulo.Text, txt_cantDesde.Text);
                 }
-                if (txt_cantDesde.MaskFull == false && txt_cantHasta.MaskFull == true)
+                if (txt_cantDesde.Text == "" && txt_cantHasta.Text != "")
                 {
                     tabla = articulo.RecuperarArticulosPatronStockHasta(txt_NombreArticulo.Text, txt_cantHasta.Text);
                 }
-                if (txt_cantDesde.MaskFull == true && txt_cantHasta.MaskFull == true)
+                if (txt_cantDesde.Text == "" && txt_cantHasta.Text == "")
                 {
-                    tabla = articulo.RecuperarArticulosPorProveedoryStock(cmb_proveedores.SelectedValue.ToString(), txt_cantDesde.Text, txt_cantHasta.Text);
+                    tabla = articulo.RecuperarArticulosPatron(txt_NombreArticulo.Text);
                 }
                 return;
             }
-
 
         }
 

@@ -32,8 +32,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_cantHasta = new System.Windows.Forms.MaskedTextBox();
-            this.txt_cantDesde = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_limpiar = new System.Windows.Forms.Button();
@@ -43,6 +41,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmb_proveedores = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.txt_NombreArticulo = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_cantDesde = new Proyecto_PAV1_G5.Clases.TextBox01();
+            this.txt_cantHasta = new Proyecto_PAV1_G5.Clases.TextBox01();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -80,10 +80,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_cantHasta);
-            this.groupBox1.Controls.Add(this.txt_cantDesde);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txt_cantHasta);
+            this.groupBox1.Controls.Add(this.txt_cantDesde);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox1.Location = new System.Drawing.Point(175, 12);
             this.groupBox1.Name = "groupBox1";
@@ -91,22 +91,6 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cantidad en Stock";
-            // 
-            // txt_cantHasta
-            // 
-            this.txt_cantHasta.Location = new System.Drawing.Point(74, 62);
-            this.txt_cantHasta.Mask = "9999999";
-            this.txt_cantHasta.Name = "txt_cantHasta";
-            this.txt_cantHasta.Size = new System.Drawing.Size(70, 26);
-            this.txt_cantHasta.TabIndex = 7;
-            // 
-            // txt_cantDesde
-            // 
-            this.txt_cantDesde.Location = new System.Drawing.Point(74, 32);
-            this.txt_cantDesde.Mask = "9999999";
-            this.txt_cantDesde.Name = "txt_cantDesde";
-            this.txt_cantDesde.Size = new System.Drawing.Size(70, 26);
-            this.txt_cantDesde.TabIndex = 6;
             // 
             // label1
             // 
@@ -209,6 +193,28 @@
             this.txt_NombreArticulo.Size = new System.Drawing.Size(180, 26);
             this.txt_NombreArticulo.TabIndex = 13;
             // 
+            // txt_cantDesde
+            // 
+            this.txt_cantDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_cantDesde.Location = new System.Drawing.Point(74, 31);
+            this.txt_cantDesde.Name = "txt_cantDesde";
+            this.txt_cantDesde.Pp_campo = null;
+            this.txt_cantDesde.Pp_MensajeError = null;
+            this.txt_cantDesde.Pp_Validable = false;
+            this.txt_cantDesde.Size = new System.Drawing.Size(70, 26);
+            this.txt_cantDesde.TabIndex = 13;
+            // 
+            // txt_cantHasta
+            // 
+            this.txt_cantHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_cantHasta.Location = new System.Drawing.Point(74, 63);
+            this.txt_cantHasta.Name = "txt_cantHasta";
+            this.txt_cantHasta.Pp_campo = null;
+            this.txt_cantHasta.Pp_MensajeError = null;
+            this.txt_cantHasta.Pp_Validable = false;
+            this.txt_cantHasta.Size = new System.Drawing.Size(70, 26);
+            this.txt_cantHasta.TabIndex = 13;
+            // 
             // Frm_ReporteArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,8 +247,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.MaskedTextBox txt_cantHasta;
-        private System.Windows.Forms.MaskedTextBox txt_cantDesde;
         private System.Windows.Forms.Label label1;
         private Clases.TextBox01 txt_NombreArticulo;
         private System.Windows.Forms.Label label4;
@@ -252,5 +256,7 @@
         private System.Windows.Forms.RadioButton btn_todos;
         private System.Windows.Forms.RadioButton btn_filtros;
         private System.Windows.Forms.GroupBox groupBox2;
+        private Clases.TextBox01 txt_cantHasta;
+        private Clases.TextBox01 txt_cantDesde;
     }
 }

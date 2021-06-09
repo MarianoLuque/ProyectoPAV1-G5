@@ -109,5 +109,34 @@ namespace Proyecto_PAV1_G5.Negocios
             string sql = "SELECT * FROM Articulos WHERE codigo_articulo = " + codigo;
             return (_BD.Ejecutar_Select(sql));
         }
+
+        public DataTable RecuperarTodos2()
+        {
+            string sql = @"  SELECT a.codigo_articulo, nombre_articulo, e.codigo_equipo, nombre_equipo, cantidad_articulos
+                            FROM Articulos a JOIN Articulos_X_Equipo axe ON a.codigo_articulo = axe.codigo_articulo
+                            JOIN Equipos e ON axe.codigo_equipo = e.codigo_equipo ";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_x_Nombre2(string nombre)
+        {
+            string sql = @"  SELECT a.codigo_articulo, nombre_articulo, e.codigo_equipo, nombre_equipo, cantidad_articulos
+                            FROM Articulos a JOIN Articulos_X_Equipo axe ON a.codigo_articulo = axe.codigo_articulo
+                            JOIN Equipos e ON axe.codigo_equipo = e.codigo_equipo "
+                        + "WHERE nombre_equipo like '%" + nombre.Trim() + "%'";
+            return _BD.Ejecutar_Select(sql);
+        }
+        public DataTable RecuperarPorRango(string codigoDesde, string codigoHasta)
+        {
+            string sql = "SELECT * FROM Equipos  " + " WHERE codigo_equipo >= " + codigoDesde + "AND codigo_equipo <= " + codigoHasta;
+            return (_BD.Ejecutar_Select(sql));
+        }
+        public DataTable RecuperarPorRango2(string codigoDesde, string codigoHasta)
+        {
+            string sql = @"  SELECT a.codigo_articulo, nombre_articulo, e.codigo_equipo, nombre_equipo, cantidad_articulos
+                            FROM Articulos a JOIN Articulos_X_Equipo axe ON a.codigo_articulo = axe.codigo_articulo
+                            JOIN Equipos e ON axe.codigo_equipo = e.codigo_equipo " + " WHERE e.codigo_equipo >= " + codigoDesde + "AND e.codigo_equipo <= " + codigoHasta + " ORDER BY e.codigo_equipo, a.codigo_articulo ";
+            return (_BD.Ejecutar_Select(sql));
+        }
     }
 }

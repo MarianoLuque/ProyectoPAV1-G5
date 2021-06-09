@@ -238,5 +238,54 @@ namespace Proyecto_PAV1_G5.Negocios
             string sql = "SELECT e.* FROM Empleados e WHERE e.legajo = " + legajo[0];
             return _BD.Ejecutar_Select(sql);
         }
+
+        public DataTable ReporteEmpleados(bool banderaRB1, bool banderaRB2, bool banderaRB3, bool banderaRB4, bool tipo_doc, bool fechaDesde, bool fechaHasta, bool nombre, bool apellido, bool ambasFechas, string patron_nombre, string patron_apellido, string fecha_desde, string fecha_hasta, string id_tipo_documento)
+        {
+            string sql = "SELECT e.legajo, td.nombre_tipo_documento, e.nro_documento, e.apellido, e.nombre, CONVERT(CHAR(10), e.fecha_ingreso, 103) as fecha_ingreso FROM Empleados e JOIN Tipo_Documento td on e.id_tipo_documento = td.id_tipo_documento WHERE 1 = 1 ";
+
+            if (nombre)
+            {
+                if (banderaRB1)
+                {
+                    sql += " AND e.nombre like '" + patron_nombre + "%' ";
+                }
+                if (banderaRB2)
+                {
+                    sql += " AND e.nombre like '%" + patron_nombre + "%' ";
+                }
+            }
+
+            if (apellido)
+            {
+                if (banderaRB3)
+                {
+                    sql += " AND e.apellido like '" + patron_apellido + "%' ";
+                }
+                if (banderaRB4)
+                {
+                    sql += " AND e.apellido like '%" + patron_apellido + "%' ";
+                }
+            }
+
+            if (fechaDesde)
+            {
+                sql += (" AND e.fecha_ingreso > '" + fecha_desde + "'");
+            }
+            if (fechaHasta)
+            {
+                sql += (" AND e.fecha_ingreso < '" + fecha_hasta + "'");
+            }
+            if (ambasFechas)
+            {
+                sql += (" AND e.fecha_ingreso between '" + fecha_desde + "' AND '" + fecha_hasta + "'");
+            }
+
+            if (tipo_doc)
+            {
+                sql += " AND e.id_tipo_documento = " + id_tipo_documento;
+            }
+
+            return (_BD.Ejecutar_Select(sql));
+        }
     }
 }

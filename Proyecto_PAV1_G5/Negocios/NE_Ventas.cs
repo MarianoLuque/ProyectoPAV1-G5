@@ -723,14 +723,14 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT f.*
                           FROM Facturas f
-                          WHERE f.fecha_venta BETWEEN '" + fechaDesde + "' AND '" + fechaHasta + "')";
+                          WHERE (f.fecha_venta BETWEEN '" + fechaDesde + "' AND '" + fechaHasta + "')";
             return (_BD_T.EjecutarSelect(sql));
         }
         public DataTable BuscarVentasConFechaDesde(string fechaDesde)
         {
             string sql = @"SELECT f.*
                           FROM Facturas f
-                          WHERE f.fecha_venta BETWEEN '" + fechaDesde + "' AND GETDATE())";
+                          WHERE (f.fecha_venta BETWEEN '" + fechaDesde + "' AND GETDATE())";
             return (_BD_T.EjecutarSelect(sql));
         }
         public DataTable BuscarVentasMayoristasSinFecha()

@@ -233,5 +233,97 @@ namespace Proyecto_PAV1_G5.Negocios
                         +" WHERE rp.nro_remito = " + nro_remito;
             return(_BD_T.EjecutarSelect(sql));
         }
+
+
+        //reporte, aca empiezo yo jeje
+
+        public DataTable RecuperarTodosReporte1()
+        {
+            string sql = " SELECT r.*, p.razon_social"
+                         + " FROM Remitos_Proveedores r JOIN Proveedores p ON r.cuit_proveedor = p.cuit_proveedor";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable RecuperarTodosReporte2()
+        {
+            string sql = "SELECT rp.*, p.razon_social, a.codigo_articulo, nombre_articulo, ar.cantidad "
+                         + "FROM Remitos_Proveedores rp JOIN Proveedores p ON rp.cuit_proveedor = p.cuit_proveedor "
+                         + "JOIN Articulos_X_Remito ar ON rp.nro_remito = ar.nro_remito "
+                         + "JOIN Articulos a ON ar.codigo_articulo = a.codigo_articulo ";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable Recuperar_X_Proveedor2(string cuit)
+        {
+            string Sql = "SELECT rp.*, p.razon_social, a.codigo_articulo, nombre_articulo, ar.cantidad "
+                         + "FROM Remitos_Proveedores rp JOIN Proveedores p ON rp.cuit_proveedor = p.cuit_proveedor "
+                         + "JOIN Articulos_X_Remito ar ON rp.nro_remito = ar.nro_remito "
+                         + "JOIN Articulos a ON ar.codigo_articulo = a.codigo_articulo "
+                         + "WHERE rp.cuit_proveedor = " + cuit;
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_X_Fecha_Desde2(string fecha)
+        {
+            string Sql = "SELECT rp.*, p.razon_social, a.codigo_articulo, nombre_articulo, ar.cantidad "
+                         + "FROM Remitos_Proveedores rp JOIN Proveedores p ON rp.cuit_proveedor = p.cuit_proveedor "
+                         + "JOIN Articulos_X_Remito ar ON rp.nro_remito = ar.nro_remito "
+                         + "JOIN Articulos a ON ar.codigo_articulo = a.codigo_articulo "
+                         + "WHERE rp.fecha_recepcion >= Convert(Date, '" + fecha + "', 103)";
+
+
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_X_Fecha_Hasta2(string fecha)
+        {
+            string Sql = "SELECT rp.*, p.razon_social, a.codigo_articulo, nombre_articulo, ar.cantidad "
+                         + "FROM Remitos_Proveedores rp JOIN Proveedores p ON rp.cuit_proveedor = p.cuit_proveedor "
+                         + "JOIN Articulos_X_Remito ar ON rp.nro_remito = ar.nro_remito "
+                         + "JOIN Articulos a ON ar.codigo_articulo = a.codigo_articulo "
+                         + "WHERE rp.fecha_recepcion <= Convert (Date, '" + fecha + "', 103)";
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_X_Proveedor_Y_Fecha_Desde2(string cuit, string fecha)
+        {
+            string Sql = "SELECT rp.*, p.razon_social, a.codigo_articulo, nombre_articulo, ar.cantidad "
+                         + "FROM Remitos_Proveedores rp JOIN Proveedores p ON rp.cuit_proveedor = p.cuit_proveedor "
+                         + "JOIN Articulos_X_Remito ar ON rp.nro_remito = ar.nro_remito "
+                         + "JOIN Articulos a ON ar.codigo_articulo = a.codigo_articulo "
+                         + " WHERE rp.fecha_recepcion >= Convert (Date, '" + fecha + "', 103) AND rp.cuit_proveedor = " + cuit;
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_X_Proveedor_Y_Fecha_Hasta2(string cuit, string fecha)
+        {
+            string Sql = "SELECT rp.*, p.razon_social, a.codigo_articulo, nombre_articulo, ar.cantidad "
+                         + "FROM Remitos_Proveedores rp JOIN Proveedores p ON rp.cuit_proveedor = p.cuit_proveedor "
+                         + "JOIN Articulos_X_Remito ar ON rp.nro_remito = ar.nro_remito "
+                         + "JOIN Articulos a ON ar.codigo_articulo = a.codigo_articulo "
+                         + " WHERE rp.fecha_recepcion <= Convert (Date, '" + fecha + "', 103) AND rp.cuit_proveedor = " + cuit;
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_X_Fecha_Desde_Y_Hasta2(string fecha_desde, string fecha_hasta)
+        {
+            string Sql = "SELECT rp.*, p.razon_social, a.codigo_articulo, nombre_articulo, ar.cantidad "
+                         + "FROM Remitos_Proveedores rp JOIN Proveedores p ON rp.cuit_proveedor = p.cuit_proveedor "
+                         + "JOIN Articulos_X_Remito ar ON rp.nro_remito = ar.nro_remito "
+                         + "JOIN Articulos a ON ar.codigo_articulo = a.codigo_articulo "
+                         + " WHERE rp.fecha_recepcion >= Convert(Date, '" + fecha_desde + "', 103) AND rp.fecha_recepcion <= Convert (Date, '" + fecha_hasta + "', 103)";
+            return (_BD.Ejecutar_Select(Sql));
+        }
+
+        public DataTable Recuperar_X_Proveedor_Y_Fecha_Desde_Y_Hasta2(string cuit, string fecha_desde, string fecha_hasta)
+        {
+            string Sql = "SELECT rp.*, p.razon_social, a.codigo_articulo, nombre_articulo, ar.cantidad "
+                         + "FROM Remitos_Proveedores rp JOIN Proveedores p ON rp.cuit_proveedor = p.cuit_proveedor "
+                         + "JOIN Articulos_X_Remito ar ON rp.nro_remito = ar.nro_remito "
+                         + "JOIN Articulos a ON ar.codigo_articulo = a.codigo_articulo "
+                         + "WHERE rp.fecha_recepcion >=  Convert(Date, '" + fecha_desde + "', 103) AND rp.fecha_recepcion <= Convert (Date, '" + fecha_hasta + "', 103) AND rp.cuit_proveedor = " + cuit;
+            return (_BD.Ejecutar_Select(Sql));
+        }
     }
 }
+

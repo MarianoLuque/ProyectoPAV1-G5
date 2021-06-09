@@ -34,32 +34,32 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
             bool IDhasta = false;
             bool patron = false;
             bool ambosID = false;
-            if(txt_patron_nombre.Text != "")
+            if (txt_patron_nombre.Text != "")
             {
                 patron = true;
-                if(rb01.Checked == true)
+                if (rb01.Checked == true)
                 {
                     banderaRB1 = true;
                 }
-                if(rb02.Checked == true)
+                if (rb02.Checked == true)
                 {
                     banderaRB2 = true;
                 }
-                if(rb01.Checked == false && rb02.Checked == false)
+                if (rb01.Checked == false && rb02.Checked == false)
                 {
                     MessageBox.Show("Falta elegir el tipo de patron a aplicar para el nombre de rubro");
                     return false;
                 }
             }
-            if(txt_IdDesde.Text != "")
+            if (txt_IdDesde.Text.Trim() != "")
             {
                 IDdesde = true;
             }
-            if(txt_IdHasta.Text != "")
+            if (txt_IdHasta.Text.Trim() != "")
             {
                 IDhasta = true;
             }
-            if(txt_IdDesde.Text != "" && txt_IdHasta.Text != "")
+            if (txt_IdDesde.Text.Trim() != "" && txt_IdHasta.Text.Trim() != "")
             {
                 IDdesde = false;
                 IDhasta = false;
@@ -72,49 +72,42 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
         private void CargarReporte(DataTable tabla)
         {
-            bool patron = false;
-            bool id1 = false;
-            bool id2 = false;
-            string restriccion = "";
 
-            if(txt_patron_nombre.Text != "")
+            bool id = false;
+            string restriccion = "Restricciones: \n";
+
+            if (txt_patron_nombre.Text != "")
             {
-                patron = true;
-                if(rb01.Checked == true)
+                if (rb01.Checked == true)
                 {
-                    restriccion = "Nombre empezado con " + txt_patron_nombre.Text;
+                    restriccion += " Nombre empezado con " + txt_patron_nombre.Text + "\n";
                 }
-                if(rb02.Checked == true)
+                if (rb02.Checked == true)
                 {
-                    restriccion = "Nombre que contiene " + txt_patron_nombre.Text;
-                }
-                if(txt_IdDesde.Text != "")
-                {
-                    restriccion += " y el ID mayor que " + txt_IdDesde.Text;
-                }
-                if (txt_IdHasta.Text != "")
-                {
-                    restriccion += " y el ID menor que " + txt_IdHasta.Text;
+                    restriccion += " Nombre que contiene " + txt_patron_nombre.Text + "\n";
                 }
             }
-            if(txt_IdDesde.Text != "" && patron == false)
+
+            if (txt_IdDesde.Text.Trim() != "" && txt_IdHasta.Text.Trim() != "")
             {
-                restriccion = "ID desde " + txt_IdDesde.Text;
-                id1 = true;
+                restriccion += " ID entre " + txt_IdDesde.Text + " y " + txt_IdHasta.Text + "\n";
+                id = true;
             }
-            if (txt_IdHasta.Text != "" && patron == false)
+
+            if (txt_IdDesde.Text.Trim() != "" && id == false)
             {
-                restriccion = "ID hasta " + txt_IdHasta.Text;
-                id2 = true;
+                restriccion += " ID mayor que " + txt_IdDesde.Text + "\n";
             }
-            if(id1 && id2)
+            if (txt_IdHasta.Text.Trim() != "" && id == false)
             {
-                restriccion = "ID entre " + txt_IdDesde.Text + " y " + txt_IdHasta.Text;
+                restriccion += " ID menor que " + txt_IdHasta.Text + "\n";
             }
+
             if (txt_patron_nombre.Text == "" && txt_IdDesde.Text == "" && txt_IdHasta.Text == "")
             {
-                restriccion = "Todos los usuarios";
+                restriccion = "Restricciones: Todos los rubros";
             }
+
 
             ReportDataSource datos = new ReportDataSource("DataSet1", Tabla);
 
