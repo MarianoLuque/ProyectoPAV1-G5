@@ -103,13 +103,13 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
         private void ArmarReporteRemito1(DataTable tabla)
         {
             ReportDataSource paqueteDatos = new ReportDataSource("DataSetEquip", tabla);
-            ReportDataSource paqueteDatos2 = new ReportDataSource("DataSetEquipArt", tabla);
+            ReportDataSource paqueteDatos2 = new ReportDataSource("DataSetArt", tabla);
 
 
             if (Rb03.Checked == true)
-                reporte_ventas.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.ReporteEquipos.rdlc";
+                reporte_ventas.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Report1.rdlc";
             else
-                reporte_ventas.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.ReporteEquiposArtic.rdlc";
+                reporte_ventas.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Report2.rdlc";
             reporte_ventas.LocalReport.DataSources.Clear();
             reporte_ventas.LocalReport.DataSources.Add(paqueteDatos);
             reporte_ventas.LocalReport.DataSources.Add(paqueteDatos2);

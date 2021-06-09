@@ -593,7 +593,8 @@
     <EmbeddedResource Include="ReportesyEstadísticas\Listados\Compras\Frm_ReporteCompras.resx">
       <DependentUpon>Frm_ReporteCompras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Compras\Report1.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Compras\ReporteCompras2.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Compras\ReporteCompras.rdlc" />
     <EmbeddedResource Include="ReportesyEstadísticas\Listados\Empleados\Frm_ReporteEmpleados.resx">
       <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
     </EmbeddedResource>
