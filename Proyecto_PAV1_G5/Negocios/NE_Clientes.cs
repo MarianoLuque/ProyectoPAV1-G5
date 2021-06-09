@@ -13,6 +13,8 @@ namespace Proyecto_PAV1_G5.Negocios
     class NE_Clientes
     {
         Tratamientos_Especiales tratamiento = new Tratamientos_Especiales();
+        Acceso_Datos_T _BD_T = new Acceso_Datos_T();
+
         //Funcion insertar cliente
         public void Modificar(string[] ValorPk, Control.ControlCollection controles)
         {
@@ -97,6 +99,43 @@ namespace Proyecto_PAV1_G5.Negocios
                         + "WHERE c.razon_social like '%" + patron_razon_social.Trim() + "%' AND "
                         + "c.cuit_clientes like '%" + patron_cuit.Trim() + "%'";
             return _BD.Ejecutar_Select(sql);
+        }
+
+        public Estructura_ComboBox DatosComboCliente()
+        {
+            Estructura_ComboBox edc = new Estructura_ComboBox();
+
+            edc.Value = "cuit_clientes";
+            edc.Display = "razon_social";
+            edc.Sql = "SELECT * FROM Clientes";
+            edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
+
+            return edc;
+        }
+
+        // ZONA DE REPORTE
+
+        public DataTable BuscarClienteConFechas(string fechaDesde, string fechaHasta)
+        {
+            string sql = @"SELECT cuit_clientes, razon_social, credito_limite, nombre_contador, convert(char(10), fecha_primera_compra, 103)
+                          FROM Clientes 
+                          WHERE (fecha_primera_compra BETWEEN '" + fechaDesde + "' AND '" + fechaHasta + "')";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarClientesConFechaDesde(string fechaDesde)
+        {
+            string sql = @"SELECT cuit_clientes, razon_social, credito_limite, nombre_contador, convert(char(10), fecha_primera_compra, 103)
+                          FROM Clientes c
+                          WHERE fecha_primera_compra >= '" + fechaDesde + "'";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+        public DataTable BuscarClientesConFechaHasta(string fechaHasta)
+        {
+            string sql = @"SELECT cuit_clientes, razon_social, credito_limite, nombre_contador, convert(char(10), fecha_primera_compra, 103)
+                          FROM Clientes 
+                          WHERE fecha_primera_compra <= '" + fechaHasta+"'" ;
+            return (_BD_T.EjecutarSelect(sql));
         }
 
     }

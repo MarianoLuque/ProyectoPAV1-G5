@@ -18,6 +18,7 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
         Tratamientos_Especiales TratEsp = new Tratamientos_Especiales();
         DataTable tabla = new DataTable();
         NE_Ventas venta = new NE_Ventas();
+
         public Frm_ReporteVentas()
         {
             InitializeComponent();

@@ -58,7 +58,7 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
         private void ArmarReporteClasificacion(DataTable tabla)
         {
             ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
-            reporte_clasificacion.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.ReportesyEstadísticas.Listados..ClasificacionesClientes.ListadoClasificacion.rdlc";
+            reporte_clasificacion.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.ClasificacionesClientes.ListadoClasificacion.rdlc";
             reporte_clasificacion.LocalReport.DataSources.Clear();
             reporte_clasificacion.LocalReport.DataSources.Add(PaqueteDatos);
             reporte_clasificacion.RefreshReport();

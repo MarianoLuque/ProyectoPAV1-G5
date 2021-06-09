@@ -368,6 +368,19 @@
     <Compile Include="ReportesyEstadísticas\Listados\EquiposEspeciales\Frm_ReporteEquiposEspeciales.Designer.cs">
       <DependentUpon>Frm_ReporteEquiposEspeciales.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.cs">
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadísticas\Listados\Proveedores\DataSetProveedores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProveedores.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ReportesyEstadísticas\Listados\Proveedores\Frm_ReporteProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -576,6 +589,8 @@
     <EmbeddedResource Include="ReportesyEstadísticas\Listados\Proveedores\Frm_ReporteProveedores.resx">
       <DependentUpon>Frm_ReporteProveedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Clientes\ListadoCliente.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Proveedores\ListadoProveedor.rdlc" />
     <EmbeddedResource Include="ReportesyEstadísticas\Listados\Rubros\Frm_ReporteRubros.resx">
       <DependentUpon>Frm_ReporteRubros.cs</DependentUpon>
     </EmbeddedResource>
@@ -638,6 +653,28 @@
     </None>
     <None Include="ReportesyEstadísticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.xss">
       <DependentUpon>DataSetEquiposEspeciales.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.xsc">
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.xss">
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadísticas\Listados\Proveedores\DataSetProveedores.xsc">
+      <DependentUpon>DataSetProveedores.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadísticas\Listados\Proveedores\DataSetProveedores.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProveedores.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportesyEstadísticas\Listados\Proveedores\DataSetProveedores.xss">
+      <DependentUpon>DataSetProveedores.xsd</DependentUpon>
     </None>
     <None Include="ReportesyEstadísticas\Listados\Rubros\DataSetRubros.xsc">
       <DependentUpon>DataSetRubros.xsd</DependentUpon>
