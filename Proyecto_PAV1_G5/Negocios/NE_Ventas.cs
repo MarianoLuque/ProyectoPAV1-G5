@@ -665,10 +665,98 @@ namespace Proyecto_PAV1_G5.Negocios
             }
         }
 
-        //Recuperar ventas para reporte
-        private void BuscarVentas(string fechaDesde, string fechaHasta, string cliente)
+        //ZONA DE REPORTE
+        public DataTable BuscarVentasClienteFechas(string fechaDesde, string fechaHasta, string cuit_cliente)
         {
-
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes
+                          WHERE (f.fecha_venta BETWEEN '" + fechaDesde + "' AND '" + fechaHasta + "') AND f.cuit_cliente =" + cuit_cliente;
+            return (_BD_T.EjecutarSelect(sql));
         }
+        public DataTable BuscarVentasClienteFechaDesde(string fechaDesde, string cuit_cliente)
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes
+                          WHERE (f.fecha_venta BETWEEN '" + fechaDesde + "' AND GETDATE()) AND f.cuit_cliente =" + cuit_cliente;
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasClienteSinFechas( string cuit_cliente)
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          JOIN Clientes c ON f.cuit_cliente = c.cuit_clientes
+                          WHERE f.cuit_cliente =" + cuit_cliente;
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasMinoristasSinFechas()
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          WHERE f.id_tipo_factura = 2";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasMinoristasConFechas(string fechaDesde, string fechaHasta)
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          WHERE f.id_tipo_factura = 2 
+                          AND (f.fecha_venta BETWEEN '"+ fechaDesde + "' AND '" + fechaHasta + "')";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasMinoristasConFechaDesde(string fechaDesde)
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          WHERE f.id_tipo_factura = 2 
+                          AND (f.fecha_venta BETWEEN '" + fechaDesde + "' AND GETDATE())";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasSinFechas()
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasConFechas(string fechaDesde, string fechaHasta)
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          WHERE f.fecha_venta BETWEEN '" + fechaDesde + "' AND '" + fechaHasta + "')";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasConFechaDesde(string fechaDesde)
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          WHERE f.fecha_venta BETWEEN '" + fechaDesde + "' AND GETDATE())";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasMayoristasSinFecha()
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          WHERE f.id_tipo_factura = 1";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasMayoristasConFechas(string fechaDesde, string fechaHasta)
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          WHERE f.id_tipo_factura = 1
+                          AND (f.fecha_venta BETWEEN '" + fechaDesde + "' AND '" + fechaHasta + "')";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+        public DataTable BuscarVentasMayoristasConFechaDesde(string fechaDesde)
+        {
+            string sql = @"SELECT f.*
+                          FROM Facturas f
+                          WHERE f.id_tipo_factura = 1 
+                          AND (f.fecha_venta BETWEEN '" + fechaDesde + "' AND GETDATE())";
+            return (_BD_T.EjecutarSelect(sql));
+        }
+
+
     }
 }

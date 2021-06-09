@@ -329,3 +329,15 @@ D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Pr
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteEquiposSimples.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteProveedores.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteRubros.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_Listados.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteArticulos.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteClasificacionesClientes.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteClientes.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteCompras.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteEmpleados.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteEquiposEspeciales.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteEquiposSimples.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteProveedores.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.Frm_ReporteRubros.resources
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\RdlCompile.cache
+C:\Users\valun\OneDrive\Documents\UTN\TERCER AÑO\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\RdlCompile.compiled
