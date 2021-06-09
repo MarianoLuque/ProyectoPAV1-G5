@@ -138,5 +138,12 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD_T.EjecutarSelect(sql));
         }
 
+        public DataTable BuscarClientesPorCuit(string cuit)
+        {
+            string sql = @"SELECT cuit_clientes, razon_social, credito_limite, nombre_contacto, fecha_primera_compra
+                          FROM Clientes 
+                          WHERE cuit_clientes = " + cuit;
+            return (_BD_T.EjecutarSelect(sql));
+        }
     }
 }
