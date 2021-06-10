@@ -160,9 +160,9 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
 
             if (Rb01.Checked == true)
-                reporte_ventas.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.ReporteCompras.rdlc";
+                reporte_ventas.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Compras.ReporteCompras.rdlc";
             else
-                reporte_ventas.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados.ReporteCompras2.rdlc";
+                reporte_ventas.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.Compras.ReporteCompras2.rdlc";
             reporte_ventas.LocalReport.DataSources.Clear();
             reporte_ventas.LocalReport.DataSources.Add(paqueteDatos);
             reporte_ventas.LocalReport.DataSources.Add(paqueteDatos2);

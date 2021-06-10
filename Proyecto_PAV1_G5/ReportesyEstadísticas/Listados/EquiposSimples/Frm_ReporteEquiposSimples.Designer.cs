@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reporte_ventas = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.reporte_equipos_simples = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,13 +47,13 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // reporte_ventas
+            // reporte_equipos_simples
             // 
-            this.reporte_ventas.Location = new System.Drawing.Point(25, 136);
-            this.reporte_ventas.Name = "reporte_ventas";
-            this.reporte_ventas.ServerReport.BearerToken = null;
-            this.reporte_ventas.Size = new System.Drawing.Size(776, 294);
-            this.reporte_ventas.TabIndex = 0;
+            this.reporte_equipos_simples.Location = new System.Drawing.Point(25, 136);
+            this.reporte_equipos_simples.Name = "reporte_equipos_simples";
+            this.reporte_equipos_simples.ServerReport.BearerToken = null;
+            this.reporte_equipos_simples.Size = new System.Drawing.Size(776, 294);
+            this.reporte_equipos_simples.TabIndex = 0;
             // 
             // label1
             // 
@@ -91,6 +91,7 @@
             // 
             this.groupBox1.Controls.Add(this.Rb02);
             this.groupBox1.Controls.Add(this.Rb01);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(288, 19);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(216, 63);
@@ -127,6 +128,7 @@
             // 
             this.groupBox2.Controls.Add(this.Rb04);
             this.groupBox2.Controls.Add(this.Rb03);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(513, 19);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(203, 73);
@@ -229,7 +231,7 @@
             this.Controls.Add(this.txt_codigo_equipoDesde);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.reporte_ventas);
+            this.Controls.Add(this.reporte_equipos_simples);
             this.Name = "Frm_ReporteEquiposSimples";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte Equipos Simples";
@@ -245,7 +247,7 @@
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reporte_ventas;
+        private Microsoft.Reporting.WinForms.ReportViewer reporte_equipos_simples;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_buscar;
         private Clases.TextBox01 txt_codigo_equipoDesde;

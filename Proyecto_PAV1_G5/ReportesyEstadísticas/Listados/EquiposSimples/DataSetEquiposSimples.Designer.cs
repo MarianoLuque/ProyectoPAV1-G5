@@ -225,7 +225,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
         private void InitClass() {
             this.DataSetName = "DataSetEquiposSimples";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSetEquiposSimples.xsd";
+            this.Namespace = "http://tempuri.org/DataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableDataTable1 = new DataTable1DataTable();
@@ -424,7 +424,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTable1Row AddDataTable1Row(long codigo_equipo, int precio_mayorista, int precio_minorista, string nombre_equipo) {
+            public DataTable1Row AddDataTable1Row(string codigo_equipo, string precio_mayorista, string precio_minorista, string nombre_equipo) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         codigo_equipo,
@@ -462,11 +462,11 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columncodigo_equipo = new global::System.Data.DataColumn("codigo_equipo", typeof(long), null, global::System.Data.MappingType.Element);
+                this.columncodigo_equipo = new global::System.Data.DataColumn("codigo_equipo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncodigo_equipo);
-                this.columnprecio_mayorista = new global::System.Data.DataColumn("precio_mayorista", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnprecio_mayorista = new global::System.Data.DataColumn("precio_mayorista", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnprecio_mayorista);
-                this.columnprecio_minorista = new global::System.Data.DataColumn("precio_minorista", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnprecio_minorista = new global::System.Data.DataColumn("precio_minorista", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnprecio_minorista);
                 this.columnnombre_equipo = new global::System.Data.DataColumn("nombre_equipo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnombre_equipo);
@@ -723,7 +723,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTable2Row AddDataTable2Row(long codigo_articulo, string nombre_articulo, long codigo_equipo, string nombre_equipo, long cantidad_articulos) {
+            public DataTable2Row AddDataTable2Row(string codigo_articulo, string nombre_articulo, string codigo_equipo, string nombre_equipo, string cantidad_articulos) {
                 DataTable2Row rowDataTable2Row = ((DataTable2Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         codigo_articulo,
@@ -763,15 +763,15 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columncodigo_articulo = new global::System.Data.DataColumn("codigo_articulo", typeof(long), null, global::System.Data.MappingType.Element);
+                this.columncodigo_articulo = new global::System.Data.DataColumn("codigo_articulo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncodigo_articulo);
                 this.columnnombre_articulo = new global::System.Data.DataColumn("nombre_articulo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnombre_articulo);
-                this.columncodigo_equipo = new global::System.Data.DataColumn("codigo_equipo", typeof(long), null, global::System.Data.MappingType.Element);
+                this.columncodigo_equipo = new global::System.Data.DataColumn("codigo_equipo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncodigo_equipo);
                 this.columnnombre_equipo = new global::System.Data.DataColumn("nombre_equipo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnombre_equipo);
-                this.columncantidad_articulos = new global::System.Data.DataColumn("cantidad_articulos", typeof(long), null, global::System.Data.MappingType.Element);
+                this.columncantidad_articulos = new global::System.Data.DataColumn("cantidad_articulos", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncantidad_articulos);
             }
             
@@ -915,10 +915,10 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public long codigo_equipo {
+            public string codigo_equipo {
                 get {
                     try {
-                        return ((long)(this[this.tableDataTable1.codigo_equipoColumn]));
+                        return ((string)(this[this.tableDataTable1.codigo_equipoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'codigo_equipo\' de la tabla \'DataTable1\' es DBNull.", e);
@@ -931,10 +931,10 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int precio_mayorista {
+            public string precio_mayorista {
                 get {
                     try {
-                        return ((int)(this[this.tableDataTable1.precio_mayoristaColumn]));
+                        return ((string)(this[this.tableDataTable1.precio_mayoristaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'precio_mayorista\' de la tabla \'DataTable1\' es DBNull.", e);
@@ -947,10 +947,10 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int precio_minorista {
+            public string precio_minorista {
                 get {
                     try {
-                        return ((int)(this[this.tableDataTable1.precio_minoristaColumn]));
+                        return ((string)(this[this.tableDataTable1.precio_minoristaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'precio_minorista\' de la tabla \'DataTable1\' es DBNull.", e);
@@ -1042,10 +1042,10 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public long codigo_articulo {
+            public string codigo_articulo {
                 get {
                     try {
-                        return ((long)(this[this.tableDataTable2.codigo_articuloColumn]));
+                        return ((string)(this[this.tableDataTable2.codigo_articuloColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'codigo_articulo\' de la tabla \'DataTable2\' es DBNull.", e);
@@ -1074,10 +1074,10 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public long codigo_equipo {
+            public string codigo_equipo {
                 get {
                     try {
-                        return ((long)(this[this.tableDataTable2.codigo_equipoColumn]));
+                        return ((string)(this[this.tableDataTable2.codigo_equipoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'codigo_equipo\' de la tabla \'DataTable2\' es DBNull.", e);
@@ -1106,10 +1106,10 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Listados.EquiposSimples {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public long cantidad_articulos {
+            public string cantidad_articulos {
                 get {
                     try {
-                        return ((long)(this[this.tableDataTable2.cantidad_articulosColumn]));
+                        return ((string)(this[this.tableDataTable2.cantidad_articulosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'cantidad_articulos\' de la tabla \'DataTable2\' es DBNull.", e);

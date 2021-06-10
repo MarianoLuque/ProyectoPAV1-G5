@@ -28,6 +28,10 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
             this.reporte_articulos.RefreshReport();
             cmb_proveedores.CargarCombo(articulo.DatosComboProveedor());
             btn_buscar.Enabled = false;
+            txt_cantDesde.Enabled = false;
+            txt_cantHasta.Enabled = false;
+            cmb_proveedores.Enabled = false;
+            txt_NombreArticulo.Enabled = false;
         }
 
         private void btn_limpiar_Click(object sender, EventArgs e)
@@ -41,45 +45,29 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
         private void btn_todos_CheckedChanged(object sender, EventArgs e)
         {
-            if (btn_todos.Checked == true)
-            {
-                cmb_proveedores.SelectedIndex = -1;
-                cmb_proveedores.Enabled = false;
-                btn_buscar.Enabled = true;
-                txt_cantHasta.Text = "";
-                txt_cantHasta.Enabled = false;
-                txt_cantDesde.Text = "";
-                txt_cantDesde.Enabled = false;
-                txt_NombreArticulo.Text = "";
-                txt_NombreArticulo.Enabled = false;
-            }
-            else
-            {
-                cmb_proveedores.SelectedIndex = -1;
-                cmb_proveedores.Enabled = true;
-                btn_buscar.Enabled = false;
-                txt_cantHasta.Text = "";
-                txt_cantHasta.Enabled = true;
-                txt_cantDesde.Text = "";
-                txt_cantDesde.Enabled = true;
-                txt_NombreArticulo.Text = "";
-                txt_NombreArticulo.Enabled = true;
-            }
+            cmb_proveedores.SelectedIndex = -1;
+            cmb_proveedores.Enabled = false;
+            btn_buscar.Enabled = true;
+            txt_cantHasta.Text = "";
+            txt_cantHasta.Enabled = false;
+            txt_cantDesde.Text = "";
+            txt_cantDesde.Enabled = false;
+            txt_NombreArticulo.Text = "";
+            txt_NombreArticulo.Enabled = false;
         }
 
         private void btn_filtros_CheckedChanged(object sender, EventArgs e)
         {
-            if (btn_filtros.Checked == true)
-            {
-                if (txt_NombreArticulo.Text == "" || txt_cantDesde.Text != "" || txt_cantHasta.Text != "" || cmb_proveedores.SelectedIndex != -1)
-                {
-                    btn_buscar.Enabled = true;
-                }
-                else
-                {
-                    btn_buscar.Enabled = false;
-                }
-            }
+            cmb_proveedores.SelectedIndex = -1;
+            cmb_proveedores.Enabled = true;
+            btn_buscar.Enabled = false;
+            txt_cantHasta.Text = "";
+            txt_cantHasta.Enabled = true;
+            txt_cantDesde.Text = "";
+            txt_cantDesde.Enabled = true;
+            txt_NombreArticulo.Text = "";
+            txt_NombreArticulo.Enabled = true;
+            btn_buscar.Enabled = true;
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)
