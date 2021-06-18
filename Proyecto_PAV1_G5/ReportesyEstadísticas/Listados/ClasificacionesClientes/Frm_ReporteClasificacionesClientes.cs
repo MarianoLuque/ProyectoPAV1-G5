@@ -19,8 +19,14 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
             InitializeComponent();
         }
 
+        private void Frm_ReporteEquiposEspeciales_Load(object sender, EventArgs e)
+        {
+            this.reporte_clasificacion.RefreshReport();
+        }
+
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
+            this.reporte_clasificacion.Clear();
             txt_antiguedad.Text = "";
             txt_cantidad_compras.Text = "";
             rb_todos.Checked = false;
@@ -62,6 +68,49 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
             reporte_clasificacion.LocalReport.DataSources.Clear();
             reporte_clasificacion.LocalReport.DataSources.Add(PaqueteDatos);
             reporte_clasificacion.RefreshReport();
+        }
+
+        private void rb_todos_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rb_todos.Checked)
+            {
+                txt_antiguedad.Enabled = false;
+                txt_cantidad_compras.Enabled = false;
+            }
+
+            else
+            {
+                txt_antiguedad.Enabled = true;
+                txt_cantidad_compras.Enabled = true;
+            }
+        }
+
+        private void txt_antiguedad_TextChanged(object sender, EventArgs e)
+        {
+            if(txt_antiguedad.Text != "")
+            {
+                txt_cantidad_compras.Enabled = false;
+                rb_todos.Enabled = false;
+            }
+            else
+            {
+                txt_cantidad_compras.Enabled = true;
+                rb_todos.Enabled = true;
+            }
+        }
+
+        private void txt_cantidad_compras_TextChanged(object sender, EventArgs e)
+        {
+            if(txt_cantidad_compras.Text != "")
+            {
+                txt_antiguedad.Enabled = false;
+                rb_todos.Enabled = false;
+            }
+            else
+            {
+                txt_antiguedad.Enabled = true;
+                rb_todos.Enabled = true;
+            }
         }
     }
 }

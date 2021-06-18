@@ -113,13 +113,23 @@ namespace Proyecto_PAV1_G5.Negocios
             return _BD.Ejecutar_Select(sql);
         }
 
+        public DataTable Recuperar_X_Cantidad_Articulos(string cant_art)
+        {
+            string sql = @"SELECT SUM(axee.cantidad_articulos)
+                            FROM Equipos_Especiales ee
+                            JOIN Articulos_X_Equipo_Especial axee ON ee.codigo_equipo_especial = axee.codigo_equipo_especial
+                            GROUP BY ee.codigo_equipo_especial
+                            HAVING SUM(axee.cantidad_articulos) =" + cant_art;
+            return _BD.Ejecutar_Select(sql);
+        }
+
         //FUNCIONES DE CONSULTA LISTADOS
 
         public DataTable Recuperar_X_Precio_Min(string precio)
         {
             string sql = @"SELECT *
-                               FROM Equipos_Especiales
-                                WHERE precio <" + precio;
+                               FROM Equipos_Especiales ee
+                                WHERE ee.precio >=" + precio;
             return _BD.Ejecutar_Select(sql);
         }
 
@@ -127,7 +137,7 @@ namespace Proyecto_PAV1_G5.Negocios
         {
             string sql = @"SELECT *
                                FROM Equipos_Especiales
-                                WHERE precio >" + precio;
+                                WHERE precio <=" + precio;
             return _BD.Ejecutar_Select(sql);
         }
 

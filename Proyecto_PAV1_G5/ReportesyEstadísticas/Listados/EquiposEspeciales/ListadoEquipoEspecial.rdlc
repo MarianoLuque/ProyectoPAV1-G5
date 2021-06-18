@@ -129,7 +129,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>2.27528cm</Top>
-        <Left>5.49483cm</Left>
+        <Left>5.81233cm</Left>
         <Height>0.6cm</Height>
         <Width>7.81789cm</Width>
         <Style>
@@ -158,7 +158,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox43</rd:DefaultName>
         <Top>1.60472cm</Top>
-        <Left>5.49483cm</Left>
+        <Left>5.81233cm</Left>
         <Height>0.6cm</Height>
         <Width>1.21275cm</Width>
         <ZIndex>1</ZIndex>
@@ -193,7 +193,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox43</rd:DefaultName>
         <Top>1.60472cm</Top>
-        <Left>6.74285cm</Left>
+        <Left>7.06035cm</Left>
         <Height>0.6cm</Height>
         <Width>3.21438cm</Width>
         <ZIndex>2</ZIndex>
@@ -228,7 +228,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox43</rd:DefaultName>
         <Top>1.60472cm</Top>
-        <Left>9.99251cm</Left>
+        <Left>10.31001cm</Left>
         <Height>0.6cm</Height>
         <Width>3.32021cm</Width>
         <ZIndex>3</ZIndex>
@@ -483,14 +483,14 @@
           <DataField>precio</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="cantidad_articulos">
-          <DataField>cantidad_articulos</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="cantidad_articulo">
+          <DataField>cantidad_articulo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSetEquiposEspeciales</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\ReportesyEstadísticas\Listados\DataSetEquiposEspeciales.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\ReportesyEstadísticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.xsd</rd:SchemaPath>
         <rd:TableName>RepEq_Esp01</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />

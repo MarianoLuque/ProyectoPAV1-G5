@@ -74,6 +74,7 @@
             this.txt_cantidad_compras.Name = "txt_cantidad_compras";
             this.txt_cantidad_compras.Size = new System.Drawing.Size(181, 26);
             this.txt_cantidad_compras.TabIndex = 17;
+            this.txt_cantidad_compras.TextChanged += new System.EventHandler(this.txt_cantidad_compras_TextChanged);
             // 
             // label5
             // 
@@ -92,6 +93,7 @@
             this.txt_antiguedad.Name = "txt_antiguedad";
             this.txt_antiguedad.Size = new System.Drawing.Size(181, 26);
             this.txt_antiguedad.TabIndex = 18;
+            this.txt_antiguedad.TextChanged += new System.EventHandler(this.txt_antiguedad_TextChanged);
             // 
             // rb_todos
             // 
@@ -104,6 +106,7 @@
             this.rb_todos.TabStop = true;
             this.rb_todos.Text = "Todos";
             this.rb_todos.UseVisualStyleBackColor = true;
+            this.rb_todos.CheckedChanged += new System.EventHandler(this.rb_todos_CheckedChanged);
             // 
             // btn_limpiar
             // 

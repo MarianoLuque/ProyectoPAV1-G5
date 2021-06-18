@@ -111,6 +111,7 @@
             this.rb_todos.TabStop = true;
             this.rb_todos.Text = "Todos";
             this.rb_todos.UseVisualStyleBackColor = true;
+            this.rb_todos.CheckedChanged += new System.EventHandler(this.rb_todos_CheckedChanged);
             // 
             // txt_precio_max
             // 
@@ -122,6 +123,7 @@
             this.txt_precio_max.Pp_Validable = false;
             this.txt_precio_max.Size = new System.Drawing.Size(87, 26);
             this.txt_precio_max.TabIndex = 12;
+            this.txt_precio_max.TextChanged += new System.EventHandler(this.txt_precio_max_TextChanged);
             // 
             // txt_precio_min
             // 
@@ -133,6 +135,7 @@
             this.txt_precio_min.Pp_Validable = false;
             this.txt_precio_min.Size = new System.Drawing.Size(87, 26);
             this.txt_precio_min.TabIndex = 11;
+            this.txt_precio_min.TextChanged += new System.EventHandler(this.txt_precio_min_TextChanged);
             // 
             // cmb_clientes
             // 
@@ -147,6 +150,7 @@
             this.cmb_clientes.Size = new System.Drawing.Size(173, 28);
             this.cmb_clientes.TabIndex = 3;
             this.cmb_clientes.TabStop = false;
+            this.cmb_clientes.SelectedIndexChanged += new System.EventHandler(this.cmb_clientes_SelectedIndexChanged);
             // 
             // Frm_ReporteEquiposEspeciales
             // 
