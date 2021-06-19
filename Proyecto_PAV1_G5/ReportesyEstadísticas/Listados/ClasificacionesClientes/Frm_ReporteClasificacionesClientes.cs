@@ -112,5 +112,10 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
                 rb_todos.Enabled = true;
             }
         }
+
+        private void Frm_ReporteClasificacionesClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

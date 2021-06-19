@@ -135,6 +135,7 @@
             this.Name = "Frm_ReporteClasificacionesClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte Clasificaciones Clientes";
+            this.Load += new System.EventHandler(this.Frm_ReporteClasificacionesClientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

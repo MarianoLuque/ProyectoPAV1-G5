@@ -757,6 +757,28 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD_T.EjecutarSelect(sql));
         }
 
+        public DataTable Recuperar_por_mes(string mes)
+        {
+            string sql = @"SELECT tp.nombre_tipo_producto as denominacion, count(df.tipo_producto) as valor 
+                        FROM Detalles_Facturas df 
+                            JOIN Tipos_Productos tp ON tp.id_tipo_producto = df.tipo_producto
+                            JOIN Facturas f ON (df.nro_factura = f.nro_factura AND df.id_tipo_factura = f.id_tipo_factura)
+                        WHERE MONTH(f.fecha_venta) = " + mes + @"
+                        GROUP BY tp.nombre_tipo_producto";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Recuperar_por_tipo_factura(string tipo)
+        {
+            string sql = @"SELECT tp.nombre_tipo_producto as denominacion, count(df.tipo_producto) as valor 
+                        FROM Detalles_Facturas df 
+                            JOIN Tipos_Productos tp ON tp.id_tipo_producto = df.tipo_producto
+                            JOIN Facturas f ON (df.nro_factura = f.nro_factura AND df.id_tipo_factura = f.id_tipo_factura)
+                        WHERE df.id_tipo_factura = " + tipo + @"
+                        GROUP BY tp.nombre_tipo_producto";
+            return _BD.Ejecutar_Select(sql);
+        }
+
 
     }
 }

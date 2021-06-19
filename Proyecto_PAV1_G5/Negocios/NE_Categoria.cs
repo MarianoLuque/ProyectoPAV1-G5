@@ -79,5 +79,21 @@ namespace Proyecto_PAV1_G5.Negocios
             return _BD.Ejecutar_Select(sql);
         }
 
+        public DataTable Calcular_Cantidades()
+        {
+            string sql = @"SELECT cc.id_clasificacion as denominacion, count(cc.id_clasificacion) as valor
+                        FROM Clasificacion_Clientes cc JOIN Clientes c ON c.id_clasificacion = cc.id_clasificacion 
+                        GROUP BY cc.id_clasificacion";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable Calcular_Cantidades2()
+        {
+            string sql = @"SELECT cc.id_clasificacion as denominacion, count(c.cuit_clientes) as valor
+                        FROM Clasificacion_Clientes cc LEFT JOIN Clientes c ON c.id_clasificacion = cc.id_clasificacion 
+                        GROUP BY cc.id_clasificacion";
+            return _BD.Ejecutar_Select(sql);
+        }
+
     }
 }

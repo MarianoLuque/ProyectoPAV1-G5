@@ -36,9 +36,9 @@
             this.txt_fechaHasta = new System.Windows.Forms.MaskedTextBox();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_mayorista = new System.Windows.Forms.RadioButton();
-            this.btn_minorista = new System.Windows.Forms.RadioButton();
             this.btn_todas = new System.Windows.Forms.RadioButton();
+            this.btn_minorista = new System.Windows.Forms.RadioButton();
+            this.btn_mayorista = new System.Windows.Forms.RadioButton();
             this.btn_limpiar = new System.Windows.Forms.Button();
             this.cmb_clientes = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.groupBox1.SuspendLayout();
@@ -105,7 +105,7 @@
             // btn_buscar
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_buscar.Location = new System.Drawing.Point(650, 104);
+            this.btn_buscar.Location = new System.Drawing.Point(691, 116);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(97, 32);
             this.btn_buscar.TabIndex = 8;
@@ -126,18 +126,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo de Factura";
             // 
-            // btn_mayorista
+            // btn_todas
             // 
-            this.btn_mayorista.AutoSize = true;
-            this.btn_mayorista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_mayorista.Location = new System.Drawing.Point(6, 41);
-            this.btn_mayorista.Name = "btn_mayorista";
-            this.btn_mayorista.Size = new System.Drawing.Size(103, 24);
-            this.btn_mayorista.TabIndex = 12;
-            this.btn_mayorista.TabStop = true;
-            this.btn_mayorista.Text = "Mayoristas";
-            this.btn_mayorista.UseVisualStyleBackColor = true;
-            this.btn_mayorista.CheckedChanged += new System.EventHandler(this.btn_mayorista_CheckedChanged_1);
+            this.btn_todas.AutoSize = true;
+            this.btn_todas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_todas.Location = new System.Drawing.Point(6, 100);
+            this.btn_todas.Name = "btn_todas";
+            this.btn_todas.Size = new System.Drawing.Size(71, 24);
+            this.btn_todas.TabIndex = 14;
+            this.btn_todas.TabStop = true;
+            this.btn_todas.Text = "Todas";
+            this.btn_todas.UseVisualStyleBackColor = true;
+            this.btn_todas.CheckedChanged += new System.EventHandler(this.btn_todas_CheckedChanged_1);
             // 
             // btn_minorista
             // 
@@ -152,23 +152,23 @@
             this.btn_minorista.UseVisualStyleBackColor = true;
             this.btn_minorista.CheckedChanged += new System.EventHandler(this.btn_minorista_CheckedChanged);
             // 
-            // btn_todas
+            // btn_mayorista
             // 
-            this.btn_todas.AutoSize = true;
-            this.btn_todas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_todas.Location = new System.Drawing.Point(6, 100);
-            this.btn_todas.Name = "btn_todas";
-            this.btn_todas.Size = new System.Drawing.Size(71, 24);
-            this.btn_todas.TabIndex = 14;
-            this.btn_todas.TabStop = true;
-            this.btn_todas.Text = "Todas";
-            this.btn_todas.UseVisualStyleBackColor = true;
-            this.btn_todas.CheckedChanged += new System.EventHandler(this.btn_todas_CheckedChanged_1);
+            this.btn_mayorista.AutoSize = true;
+            this.btn_mayorista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_mayorista.Location = new System.Drawing.Point(6, 41);
+            this.btn_mayorista.Name = "btn_mayorista";
+            this.btn_mayorista.Size = new System.Drawing.Size(103, 24);
+            this.btn_mayorista.TabIndex = 12;
+            this.btn_mayorista.TabStop = true;
+            this.btn_mayorista.Text = "Mayoristas";
+            this.btn_mayorista.UseVisualStyleBackColor = true;
+            this.btn_mayorista.CheckedChanged += new System.EventHandler(this.btn_mayorista_CheckedChanged_1);
             // 
             // btn_limpiar
             // 
             this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_limpiar.Location = new System.Drawing.Point(650, 66);
+            this.btn_limpiar.Location = new System.Drawing.Point(576, 116);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(97, 32);
             this.btn_limpiar.TabIndex = 14;

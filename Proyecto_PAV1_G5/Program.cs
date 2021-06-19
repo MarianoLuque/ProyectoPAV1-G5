@@ -13,6 +13,7 @@ using Proyecto_PAV1_G5.ABM.FormasPago;
 using Proyecto_PAV1_G5.ABM.Proveedores;
 using Proyecto_PAV1_G5.ABM.Rubros;
 using Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados;
+using Proyecto_PAV1_G5.ReportesyEstadísticas.Estadísticas;
 
 namespace Proyecto_PAV1_G5
 {
@@ -29,7 +30,8 @@ namespace Proyecto_PAV1_G5
             //Application.Run(new Principal());
             //Application.Run(new Frm_Login()); 
             //Application.Run(new Frm_Equipos());
-            Application.Run(new Frm_ReporteClasificacionesClientes());
+            Application.Run(new Frm_Estadistica_Tipo_Producto());
+            
         }
     }
 }
