@@ -240,6 +240,26 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD_T.EjecutarSelect(sql));
         }
 
+        public DataTable ReporteComprasXProveedor(bool rb1, string fecha)
+        {
+            string condicion = "";
+
+            if (rb1)
+            {
+                string[] subcadenasFecha = fecha.Split('/');
+                string mes = subcadenasFecha[1];
+                string anio = subcadenasFecha[2];
+                condicion = " AND (MONTH(l.fecha_compra) = " + mes + " AND YEAR(l.fecha_compra) = " + anio + ")";
+            }
+
+            string sql = "SELECT p.razon_social, COUNT(*) as cantidad FROM Remitos_Proveedores rp " +
+                         "JOIN Proveedores p on p.cuit_proveedor = rp.cuit_proveedor " +
+                         "JOIN Lotes l on l.nro_remito = rp.nro_remito " +
+                         "WHERE 1 = 1 " + condicion +
+                         " GROUP BY p.razon_social";
+
+            return _BD.Ejecutar_Select(sql);
+        }
 
     }
 }

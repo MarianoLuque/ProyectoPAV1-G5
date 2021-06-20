@@ -283,10 +283,13 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
+                        <X>=Fields!nombre_forma_pago.Value</X>
                         <Y>=Count(Fields!cantidad.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
+                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
                       <ChartMarker>
@@ -567,7 +570,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Título del gráfico</Caption>
+                <Caption>Formas de pago mas utilizadas</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>

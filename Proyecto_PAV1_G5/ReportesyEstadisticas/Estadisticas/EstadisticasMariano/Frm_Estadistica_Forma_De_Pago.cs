@@ -26,6 +26,8 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMaria
         {
             cmb_tipo_factura.CargarCombo(forma_pago.DatosComboTipoFactura());
             cmb_tipo_factura.SelectedIndex = -1;
+            cmb_tipo_factura.Enabled = false;
+            txt_fecha.ReadOnly = true;
             this.reporte_forma_pago.RefreshReport();
         }
 
@@ -65,6 +67,7 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMaria
             rb_fecha.Checked = false;
             rb_tipo_factura.Checked = false;
             rb_ambos.Checked = false;
+            rb_todos.Checked = false;
             txt_fecha.Text = "";
             cmb_tipo_factura.SelectedIndex = -1;
             txt_fecha.ReadOnly = true;
