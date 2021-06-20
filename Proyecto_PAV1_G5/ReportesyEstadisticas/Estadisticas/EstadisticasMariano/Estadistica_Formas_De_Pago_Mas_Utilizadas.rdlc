@@ -48,7 +48,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!RPRestriccion.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -627,7 +629,7 @@
       <Width>11.28633in</Width>
       <Page>
         <PageHeader>
-          <Height>2.91938cm</Height>
+          <Height>1.54355cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -672,7 +674,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>2.54cm</Height>
+          <Height>1.57cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -684,7 +686,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Globals!ExecutionTime</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -693,10 +697,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
-              <Top>0.97cm</Top>
+              <Top>0.30854cm</Top>
               <Left>1.12541cm</Left>
-              <Height>0.6cm</Height>
-              <Width>3.21438cm</Width>
+              <Height>0.8cm</Height>
+              <Width>3.84938cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -716,7 +720,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Globals!PageNumber</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -725,10 +731,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>0.97cm</Top>
-              <Left>25.80916cm</Left>
-              <Height>0.6cm</Height>
-              <Width>1.73271cm</Width>
+              <Top>0.30854cm</Top>
+              <Left>24.75083cm</Left>
+              <Height>0.8cm</Height>
+              <Width>3.24083cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -749,7 +755,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Pag.</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -758,9 +766,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox16</rd:DefaultName>
-              <Top>0.97cm</Top>
-              <Left>24.37631cm</Left>
-              <Height>0.6cm</Height>
+              <Top>0.30854cm</Top>
+              <Left>23.10631cm</Left>
+              <Height>0.8cm</Height>
               <Width>1.25646cm</Width>
               <ZIndex>2</ZIndex>
               <Style>

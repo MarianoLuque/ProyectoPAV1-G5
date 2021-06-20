@@ -341,6 +341,32 @@
     <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Forma_De_Pago.Designer.cs">
       <DependentUpon>Frm_Estadistica_Forma_De_Pago.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\DataSet_VentasyArticulos.cs">
+      <DependentUpon>DataSet_VentasyArticulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\DataSet_VentasyArticulos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_VentasyArticulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Frm_Estadistica_Articulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Frm_Estadistica_Articulos.Designer.cs">
+      <DependentUpon>Frm_Estadistica_Articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Frm_Estadistica_Rubros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Frm_Estadistica_Rubros.Designer.cs">
+      <DependentUpon>Frm_Estadistica_Rubros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\Frm_Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\Frm_Estadisticas.Designer.cs">
+      <DependentUpon>Frm_Estadisticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportesyEstadisticas\Listados\Articulos\DataSetArticulosxsd.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -633,6 +659,17 @@
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Forma_De_Pago.resx">
       <DependentUpon>Frm_Estadistica_Forma_De_Pago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Estadistica_ArticulosMasVendidos.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Estadistica_Rubros.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Frm_Estadistica_Articulos.resx">
+      <DependentUpon>Frm_Estadistica_Articulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Frm_Estadistica_Rubros.resx">
+      <DependentUpon>Frm_Estadistica_Rubros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\Frm_Estadisticas.resx">
+      <DependentUpon>Frm_Estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportesyEstadisticas\Listados\Articulos\Frm_ReporteArticulos.resx">
       <DependentUpon>Frm_ReporteArticulos.cs</DependentUpon>
     </EmbeddedResource>
@@ -732,6 +769,17 @@
     </None>
     <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\DataSetFormaDePagoYComprasPorProveedor.xss">
       <DependentUpon>DataSetFormaDePagoYComprasPorProveedor.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\DataSet_VentasyArticulos.xsc">
+      <DependentUpon>DataSet_VentasyArticulos.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\DataSet_VentasyArticulos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_VentasyArticulos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\DataSet_VentasyArticulos.xss">
+      <DependentUpon>DataSet_VentasyArticulos.xsd</DependentUpon>
     </None>
     <None Include="ReportesyEstadisticas\Listados\Articulos\DataSetArticulosxsd.xsc">
       <DependentUpon>DataSetArticulosxsd.xsd</DependentUpon>
@@ -847,7 +895,6 @@
   <ItemGroup>
     <Folder Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\" />
     <Folder Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\" />
-    <Folder Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\012-medal.png" />

@@ -621,7 +621,7 @@
       <Width>11.28633in</Width>
       <Page>
         <PageHeader>
-          <Height>3.35167cm</Height>
+          <Height>1.39375cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -678,7 +678,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>2.54cm</Height>
+          <Height>1.67cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -690,7 +690,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Globals!ExecutionTime</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -699,10 +701,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
-              <Top>0.97cm</Top>
-              <Left>1.12541cm</Left>
-              <Height>0.6cm</Height>
-              <Width>3.21438cm</Width>
+              <Top>0.36729cm</Top>
+              <Left>0.90051cm</Left>
+              <Height>0.8cm</Height>
+              <Width>3.84938cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -722,7 +724,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Globals!PageNumber</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -731,10 +735,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>0.97cm</Top>
-              <Left>25.80916cm</Left>
-              <Height>0.6cm</Height>
-              <Width>1.73271cm</Width>
+              <Top>0.36729cm</Top>
+              <Left>24.52594cm</Left>
+              <Height>0.8cm</Height>
+              <Width>3.24083cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -755,7 +759,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Pag.</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -764,9 +770,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox16</rd:DefaultName>
-              <Top>0.97cm</Top>
-              <Left>24.37631cm</Left>
-              <Height>0.6cm</Height>
+              <Top>0.36729cm</Top>
+              <Left>22.88141cm</Left>
+              <Height>0.8cm</Height>
               <Width>1.25646cm</Width>
               <ZIndex>2</ZIndex>
               <Style>

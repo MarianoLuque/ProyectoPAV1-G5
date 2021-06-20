@@ -783,6 +783,74 @@ namespace Proyecto_PAV1_G5.Negocios
             return _BD.Ejecutar_Select(sql);
         }
 
+        public DataTable EstadisticaArticulos(bool rb1, bool rb2, bool rb3, string fecha, string tipo_factura)
+        {
+            string condicion = "";
+            if (rb1)
+            {
+                string[] subcadenasFecha = fecha.Split('/');
+                string mes = subcadenasFecha[1];
+                string anio = subcadenasFecha[2];
+                condicion = " AND (MONTH(f.fecha_venta) = " + mes + " AND YEAR(f.fecha_venta) = " + anio + ")";
+            }
+
+            if (rb2)
+            {
+                condicion = " AND f.id_tipo_factura = " + tipo_factura;
+            }
+
+            if (rb3)
+            {
+                string[] subcadenasFecha = fecha.Split('/');
+                string mes = subcadenasFecha[1];
+                string anio = subcadenasFecha[2];
+
+                condicion = " AND (MONTH(f.fecha_venta) = " + mes + " AND YEAR(f.fecha_venta) = " + anio + ") AND f.id_tipo_factura = " + tipo_factura;
+            }
+
+            string sql = @"SELECT a.nombre_articulo, SUM(cantidad) as Total 
+                           FROM Detalles_Facturas df 
+                           JOIN Articulos a ON df.codigo_articulo = a.codigo_articulo
+                           JOIN Facturas f ON (f.nro_factura = df.nro_factura) AND (f.id_tipo_factura = df.id_tipo_factura)
+                           WHERE df.codigo_articulo IS NOT NULL " + condicion + 
+                           " GROUP BY a.nombre_articulo";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable EstadisticaRubros(bool rb1, bool rb2, bool rb3, string fecha, string tipo_factura)
+        {
+            string condicion = "";
+            if (rb1)
+            {
+                string[] subcadenasFecha = fecha.Split('/');
+                string mes = subcadenasFecha[1];
+                string anio = subcadenasFecha[2];
+                condicion = " AND (MONTH(f.fecha_venta) = " + mes + " AND YEAR(f.fecha_venta) = " + anio + ")";
+            }
+
+            if (rb2)
+            {
+                condicion = " AND f.id_tipo_factura = " + tipo_factura;
+            }
+
+            if (rb3)
+            {
+                string[] subcadenasFecha = fecha.Split('/');
+                string mes = subcadenasFecha[1];
+                string anio = subcadenasFecha[2];
+
+                condicion = " AND (MONTH(f.fecha_venta) = " + mes + " AND YEAR(f.fecha_venta) = " + anio + ") AND f.id_tipo_factura = " + tipo_factura;
+            }
+
+            string sql = @"SELECT r.nombre_rubro, COUNT(*) as Total 
+                           FROM Detalles_Facturas df 
+                           JOIN Articulos a ON df.codigo_articulo = a.codigo_articulo
+                           JOIN Facturas f ON (f.nro_factura = df.nro_factura) AND (f.id_tipo_factura = df.id_tipo_factura)
+                           JOIN Rubros r on a.id_rubro = r.id_rubro
+                           WHERE df.tipo_producto = 1 " + condicion +
+                           " GROUP BY r.nombre_rubro";
+            return _BD.Ejecutar_Select(sql);
+        }
 
     }
 }

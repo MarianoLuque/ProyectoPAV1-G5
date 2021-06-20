@@ -548,3 +548,6 @@ D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Pr
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMariano.Frm_Estadistica_Forma_De_Pago.resources
 C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMariano.Frm_Estadistica_Compras_Por_Proveedor.resources
 C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMariano.Frm_Estadistica_Forma_De_Pago.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasVale.Frm_Estadistica_Articulos.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasVale.Frm_Estadistica_Rubros.resources
+D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.Frm_Estadisticas.resources

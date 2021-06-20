@@ -140,7 +140,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.reporte_compras_proveedor);
             this.Name = "Frm_Estadistica_Compras_Por_Proveedor";
-            this.Text = "Frm_Estadistica_Compras_Por_Proveedor";
+            this.Text = "Cantidad de Compras por Proveedor";
             this.Load += new System.EventHandler(this.Frm_Estadistica_Compras_Por_Proveedor_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
