@@ -56,5 +56,50 @@ namespace Proyecto_PAV1_G5.Negocios
             _BD.Borrar(tratamiento.ConstructorEliminar("Formas_De_Pago", ValorPk, controles));
         }
 
+        public Estructura_ComboBox DatosComboTipoFactura()
+        {
+            Estructura_ComboBox edc = new Estructura_ComboBox();
+
+            edc.Value = "id_tipo_factura";
+            edc.Display = "nombre_tipo_factura";
+            edc.Sql = "SELECT * FROM Tipos_Facturas";
+            edc.Tabla = _BD.Ejecutar_Select(edc.Sql);
+
+            return edc;
+        }
+
+        public DataTable ReporteFormaDePago(bool rb1, bool rb2, bool rb3, string fecha, string tipo_factura)
+        {
+            string condicion = "";
+            if(rb1)
+            {
+                string[] subcadenasFecha = fecha.Split('/');
+                string mes = subcadenasFecha[1];
+                string anio = subcadenasFecha[2];
+                condicion = " AND (MONTH(f.fecha_venta) = " + mes + " AND YEAR(f.fecha_venta) = " + anio + ")";
+            }
+
+            if(rb2)
+            {
+                condicion = " AND f.id_tipo_factura = " + tipo_factura;
+            }
+
+            if (rb3)
+            {
+                string[] subcadenasFecha = fecha.Split('/');
+                string mes = subcadenasFecha[1];
+                string anio = subcadenasFecha[2];
+
+                condicion = " AND (MONTH(f.fecha_venta) = " + mes + " AND YEAR(f.fecha_venta) = " + anio + ") AND f.id_tipo_factura = " + tipo_factura;
+            }
+
+            string sql = "SELECT fp.nombre_forma_pago, COUNT(*) as cantidad FROM Formas_De_Pago fp " +
+                         "JOIN Facturas f on f.id_forma_pago = fp.id_forma_pago " +
+                         "WHERE 1 = 1 " + condicion +
+                         " GROUP BY fp.nombre_forma_pago ";
+
+            return _BD.Ejecutar_Select(sql);
+        }
+
     }
 }

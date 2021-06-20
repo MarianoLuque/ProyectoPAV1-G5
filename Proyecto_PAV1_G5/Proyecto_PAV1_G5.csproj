@@ -307,142 +307,159 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReportesyEstadísticas\Estadísticas\DataSetF.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\DataSetF.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetF.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Estadísticas\Frm_Estadistica_Clasificacion_Clientes.cs">
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Frm_Estadistica_Clasificacion_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Estadísticas\Frm_Estadistica_Clasificacion_Clientes.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Frm_Estadistica_Clasificacion_Clientes.Designer.cs">
       <DependentUpon>Frm_Estadistica_Clasificacion_Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Estadísticas\Frm_Estadistica_Tipo_Producto.cs">
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Frm_Estadistica_Tipo_Producto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Estadísticas\Frm_Estadistica_Tipo_Producto.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Frm_Estadistica_Tipo_Producto.Designer.cs">
       <DependentUpon>Frm_Estadistica_Tipo_Producto.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Articulos\DataSetArticulosxsd.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\DataSetFormaDePagoYComprasPorProveedor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFormaDePagoYComprasPorProveedor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Compras_Por_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Compras_Por_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Estadistica_Compras_Por_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Forma_De_Pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Forma_De_Pago.Designer.cs">
+      <DependentUpon>Frm_Estadistica_Forma_De_Pago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Listados\Articulos\DataSetArticulosxsd.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetArticulosxsd.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Articulos\Frm_ReporteArticulos.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Articulos\Frm_ReporteArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Articulos\Frm_ReporteArticulos.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Articulos\Frm_ReporteArticulos.Designer.cs">
       <DependentUpon>Frm_ReporteArticulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Clientes\Frm_ReporteClientes.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Clientes\Frm_ReporteClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Clientes\Frm_ReporteClientes.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Clientes\Frm_ReporteClientes.Designer.cs">
       <DependentUpon>Frm_ReporteClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Compras\DataSetCompras.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Compras\DataSetCompras.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetCompras.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Compras\Frm_ReporteCompras.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Compras\Frm_ReporteCompras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Compras\Frm_ReporteCompras.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Compras\Frm_ReporteCompras.Designer.cs">
       <DependentUpon>Frm_ReporteCompras.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\DataSetClasificacion.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\ClasificacionesClientes\DataSetClasificacion.cs">
       <DependentUpon>DataSetClasificacion.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\DataSetClasificacion.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\ClasificacionesClientes\DataSetClasificacion.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetClasificacion.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Empleados\DataSetEmpleados.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Empleados\DataSetEmpleados.cs">
       <DependentUpon>DataSetEmpleados.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Empleados\DataSetEmpleados.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Empleados\DataSetEmpleados.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetEmpleados.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetEquiposEspeciales.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Empleados\Frm_ReporteEmpleados.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Empleados\Frm_ReporteEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Empleados\Frm_ReporteEmpleados.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Empleados\Frm_ReporteEmpleados.Designer.cs">
       <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\EquiposSimples\DataSetEquiposSimples.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\EquiposSimples\DataSetEquiposSimples.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetEquiposSimples.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\EquiposSimples\Frm_ReporteEquiposSimples.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\EquiposSimples\Frm_ReporteEquiposSimples.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\EquiposSimples\Frm_ReporteEquiposSimples.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\EquiposSimples\Frm_ReporteEquiposSimples.Designer.cs">
       <DependentUpon>Frm_ReporteEquiposSimples.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Frm_Listados.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Frm_Listados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Frm_Listados.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Frm_Listados.Designer.cs">
       <DependentUpon>Frm_Listados.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\Frm_ReporteClasificacionesClientes.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\ClasificacionesClientes\Frm_ReporteClasificacionesClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\Frm_ReporteClasificacionesClientes.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\ClasificacionesClientes\Frm_ReporteClasificacionesClientes.Designer.cs">
       <DependentUpon>Frm_ReporteClasificacionesClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\EquiposEspeciales\Frm_ReporteEquiposEspeciales.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\EquiposEspeciales\Frm_ReporteEquiposEspeciales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\EquiposEspeciales\Frm_ReporteEquiposEspeciales.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\EquiposEspeciales\Frm_ReporteEquiposEspeciales.Designer.cs">
       <DependentUpon>Frm_ReporteEquiposEspeciales.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Clientes\DataSetClientes.cs">
       <DependentUpon>DataSetClientes.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Clientes\DataSetClientes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetClientes.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Proveedores\DataSetProveedores.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Proveedores\DataSetProveedores.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetProveedores.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Proveedores\Frm_ReporteProveedores.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Proveedores\Frm_ReporteProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Proveedores\Frm_ReporteProveedores.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Proveedores\Frm_ReporteProveedores.Designer.cs">
       <DependentUpon>Frm_ReporteProveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Rubros\DataSetRubros.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Rubros\DataSetRubros.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetRubros.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Rubros\Frm_ReporteRubros.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Rubros\Frm_ReporteRubros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Rubros\Frm_ReporteRubros.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Rubros\Frm_ReporteRubros.Designer.cs">
       <DependentUpon>Frm_ReporteRubros.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Ventas\DataSetVentas.Designer.cs" />
-    <Compile Include="ReportesyEstadísticas\Listados\Ventas\Frm_ReporteVentas.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Ventas\DataSetVentas.Designer.cs" />
+    <Compile Include="ReportesyEstadisticas\Listados\Ventas\Frm_ReporteVentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportesyEstadísticas\Listados\Ventas\Frm_ReporteVentas.Designer.cs">
+    <Compile Include="ReportesyEstadisticas\Listados\Ventas\Frm_ReporteVentas.Designer.cs">
       <DependentUpon>Frm_ReporteVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -600,59 +617,67 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ReportesyEstadísticas\Estadísticas\Estadistica_Clasificaciones.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Estadísticas\Estadistica_Tipo_Productos.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Estadísticas\Frm_Estadistica_Clasificacion_Clientes.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Estadistica_Clasificaciones.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Estadistica_Tipo_Productos.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Frm_Estadistica_Clasificacion_Clientes.resx">
       <DependentUpon>Frm_Estadistica_Clasificacion_Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Estadísticas\Frm_Estadistica_Tipo_Producto.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Frm_Estadistica_Tipo_Producto.resx">
       <DependentUpon>Frm_Estadistica_Tipo_Producto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Articulos\Frm_ReporteArticulos.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Estadistica_Cantidad_De_Compras_Por_Proveedor.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Estadistica_Formas_De_Pago_Mas_Utilizadas.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Compras_Por_Proveedor.resx">
+      <DependentUpon>Frm_Estadistica_Compras_Por_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Forma_De_Pago.resx">
+      <DependentUpon>Frm_Estadistica_Forma_De_Pago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Articulos\Frm_ReporteArticulos.resx">
       <DependentUpon>Frm_ReporteArticulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Articulos\ListadoArticulos.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Clientes\Frm_ReporteClientes.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Articulos\ListadoArticulos.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Clientes\Frm_ReporteClientes.resx">
       <DependentUpon>Frm_ReporteClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Compras\Frm_ReporteCompras.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Compras\Frm_ReporteCompras.resx">
       <DependentUpon>Frm_ReporteCompras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Compras\ReporteCompras2.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Compras\ReporteCompras.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Empleados\Frm_ReporteEmpleados.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Compras\ReporteCompras2.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Compras\ReporteCompras.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Empleados\Frm_ReporteEmpleados.resx">
       <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Empleados\Report1.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\EquiposSimples\Frm_ReporteEquiposSimples.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Empleados\Report1.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\EquiposSimples\Frm_ReporteEquiposSimples.resx">
       <DependentUpon>Frm_ReporteEquiposSimples.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\EquiposSimples\Report1.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\EquiposSimples\Report2.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Frm_Listados.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\EquiposSimples\Report1.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\EquiposSimples\Report2.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Frm_Listados.resx">
       <DependentUpon>Frm_Listados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\Frm_ReporteClasificacionesClientes.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\ClasificacionesClientes\Frm_ReporteClasificacionesClientes.resx">
       <DependentUpon>Frm_ReporteClasificacionesClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\EquiposEspeciales\Frm_ReporteEquiposEspeciales.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\EquiposEspeciales\Frm_ReporteEquiposEspeciales.resx">
       <DependentUpon>Frm_ReporteEquiposEspeciales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\ListadoClasificacion.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\EquiposEspeciales\ListadoEquipoEspecial.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Proveedores\Frm_ReporteProveedores.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\ClasificacionesClientes\ListadoClasificacion.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\EquiposEspeciales\ListadoEquipoEspecial.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Proveedores\Frm_ReporteProveedores.resx">
       <DependentUpon>Frm_ReporteProveedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Clientes\ListadoCliente.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Proveedores\ListadoProveedor.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Rubros\Frm_ReporteRubros.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Clientes\ListadoCliente.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Proveedores\ListadoProveedor.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Rubros\Frm_ReporteRubros.resx">
       <DependentUpon>Frm_ReporteRubros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Rubros\Report1.rdlc" />
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Ventas\Frm_ReporteVentas.resx">
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Rubros\Report1.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Ventas\Frm_ReporteVentas.resx">
       <DependentUpon>Frm_ReporteVentas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportesyEstadísticas\Listados\Ventas\ListadoVenta.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Ventas\ListadoVenta.rdlc" />
     <EmbeddedResource Include="Transacciones\Compras\Frm_Alta_Compra.resx">
       <DependentUpon>Frm_Alta_Compra.cs</DependentUpon>
     </EmbeddedResource>
@@ -686,121 +711,132 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReportesyEstadísticas\Estadísticas\DataSetF.xsc">
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\DataSetF.xsc">
       <DependentUpon>DataSetF.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Estadísticas\DataSetF.xsd">
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\DataSetF.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetF.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Estadísticas\DataSetF.xss">
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\DataSetF.xss">
       <DependentUpon>DataSetF.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Articulos\DataSetArticulosxsd.xsc">
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\DataSetFormaDePagoYComprasPorProveedor.xsc">
+      <DependentUpon>DataSetFormaDePagoYComprasPorProveedor.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\DataSetFormaDePagoYComprasPorProveedor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFormaDePagoYComprasPorProveedor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\DataSetFormaDePagoYComprasPorProveedor.xss">
+      <DependentUpon>DataSetFormaDePagoYComprasPorProveedor.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadisticas\Listados\Articulos\DataSetArticulosxsd.xsc">
       <DependentUpon>DataSetArticulosxsd.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Articulos\DataSetArticulosxsd.xsd">
+    <None Include="ReportesyEstadisticas\Listados\Articulos\DataSetArticulosxsd.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetArticulosxsd.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Articulos\DataSetArticulosxsd.xss">
+    <None Include="ReportesyEstadisticas\Listados\Articulos\DataSetArticulosxsd.xss">
       <DependentUpon>DataSetArticulosxsd.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\DataSetClasificacion.xsc">
+    <None Include="ReportesyEstadisticas\Listados\ClasificacionesClientes\DataSetClasificacion.xsc">
       <DependentUpon>DataSetClasificacion.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\DataSetClasificacion.xsd">
+    <None Include="ReportesyEstadisticas\Listados\ClasificacionesClientes\DataSetClasificacion.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetClasificacion.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\ClasificacionesClientes\DataSetClasificacion.xss">
+    <None Include="ReportesyEstadisticas\Listados\ClasificacionesClientes\DataSetClasificacion.xss">
       <DependentUpon>DataSetClasificacion.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Compras\DataSetCompras.xsc">
+    <None Include="ReportesyEstadisticas\Listados\Compras\DataSetCompras.xsc">
       <DependentUpon>DataSetCompras.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Compras\DataSetCompras.xsd">
+    <None Include="ReportesyEstadisticas\Listados\Compras\DataSetCompras.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetCompras.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Compras\DataSetCompras.xss">
+    <None Include="ReportesyEstadisticas\Listados\Compras\DataSetCompras.xss">
       <DependentUpon>DataSetCompras.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Empleados\DataSetEmpleados.xsc">
+    <None Include="ReportesyEstadisticas\Listados\Empleados\DataSetEmpleados.xsc">
       <DependentUpon>DataSetEmpleados.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Empleados\DataSetEmpleados.xsd">
+    <None Include="ReportesyEstadisticas\Listados\Empleados\DataSetEmpleados.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetEmpleados.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Empleados\DataSetEmpleados.xss">
+    <None Include="ReportesyEstadisticas\Listados\Empleados\DataSetEmpleados.xss">
       <DependentUpon>DataSetEmpleados.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.xsc">
+    <None Include="ReportesyEstadisticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.xsc">
       <DependentUpon>DataSetEquiposEspeciales.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.xsd">
+    <None Include="ReportesyEstadisticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetEquiposEspeciales.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.xss">
+    <None Include="ReportesyEstadisticas\Listados\EquiposEspeciales\DataSetEquiposEspeciales.xss">
       <DependentUpon>DataSetEquiposEspeciales.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.xsc">
+    <None Include="ReportesyEstadisticas\Listados\Clientes\DataSetClientes.xsc">
       <DependentUpon>DataSetClientes.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.xsd">
+    <None Include="ReportesyEstadisticas\Listados\Clientes\DataSetClientes.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetClientes.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Clientes\DataSetClientes.xss">
+    <None Include="ReportesyEstadisticas\Listados\Clientes\DataSetClientes.xss">
       <DependentUpon>DataSetClientes.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\EquiposSimples\DataSetEquiposSimples.xsc">
+    <None Include="ReportesyEstadisticas\Listados\EquiposSimples\DataSetEquiposSimples.xsc">
       <DependentUpon>DataSetEquiposSimples.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\EquiposSimples\DataSetEquiposSimples.xsd">
+    <None Include="ReportesyEstadisticas\Listados\EquiposSimples\DataSetEquiposSimples.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetEquiposSimples.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\EquiposSimples\DataSetEquiposSimples.xss">
+    <None Include="ReportesyEstadisticas\Listados\EquiposSimples\DataSetEquiposSimples.xss">
       <DependentUpon>DataSetEquiposSimples.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Proveedores\DataSetProveedores.xsc">
+    <None Include="ReportesyEstadisticas\Listados\Proveedores\DataSetProveedores.xsc">
       <DependentUpon>DataSetProveedores.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Proveedores\DataSetProveedores.xsd">
+    <None Include="ReportesyEstadisticas\Listados\Proveedores\DataSetProveedores.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetProveedores.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Proveedores\DataSetProveedores.xss">
+    <None Include="ReportesyEstadisticas\Listados\Proveedores\DataSetProveedores.xss">
       <DependentUpon>DataSetProveedores.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Rubros\DataSetRubros.xsc">
+    <None Include="ReportesyEstadisticas\Listados\Rubros\DataSetRubros.xsc">
       <DependentUpon>DataSetRubros.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Rubros\DataSetRubros.xsd">
+    <None Include="ReportesyEstadisticas\Listados\Rubros\DataSetRubros.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetRubros.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Rubros\DataSetRubros.xss">
+    <None Include="ReportesyEstadisticas\Listados\Rubros\DataSetRubros.xss">
       <DependentUpon>DataSetRubros.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Ventas\DataSetVentas.xsc">
+    <None Include="ReportesyEstadisticas\Listados\Ventas\DataSetVentas.xsc">
       <DependentUpon>DataSetVentas.xsd</DependentUpon>
     </None>
-    <None Include="ReportesyEstadísticas\Listados\Ventas\DataSetVentas.xsd" />
-    <None Include="ReportesyEstadísticas\Listados\Ventas\DataSetVentas.xss">
+    <None Include="ReportesyEstadisticas\Listados\Ventas\DataSetVentas.xsd" />
+    <None Include="ReportesyEstadisticas\Listados\Ventas\DataSetVentas.xss">
       <DependentUpon>DataSetVentas.xsd</DependentUpon>
     </None>
     <None Include="Resources\Icono Boton Compras.jpg" />
@@ -808,7 +844,11 @@
   <ItemGroup>
     <None Include="Resources\Icono Boton Factura.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\" />
+    <Folder Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\" />
+    <Folder Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\012-medal.png" />
   </ItemGroup>
