@@ -307,6 +307,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\DataSetEquiposyVentas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEquiposyVentas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Frm_Estadistica_Equipos_Vendidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Frm_Estadistica_Equipos_Vendidos.Designer.cs">
+      <DependentUpon>Frm_Estadistica_Equipos_Vendidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\DataSetF.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -643,6 +654,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Estadistica_Equipos.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Frm_Estadistica_Equipos_Vendidos.resx">
+      <DependentUpon>Frm_Estadistica_Equipos_Vendidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Estadistica_Clasificaciones.rdlc" />
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Estadistica_Tipo_Productos.rdlc" />
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Frm_Estadistica_Clasificacion_Clientes.resx">
@@ -748,6 +763,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\DataSetEquiposyVentas.xsc">
+      <DependentUpon>DataSetEquiposyVentas.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\DataSetEquiposyVentas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEquiposyVentas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\DataSetEquiposyVentas.xss">
+      <DependentUpon>DataSetEquiposyVentas.xsd</DependentUpon>
+    </None>
     <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\DataSetF.xsc">
       <DependentUpon>DataSetF.xsd</DependentUpon>
     </None>
@@ -893,7 +919,6 @@
     <None Include="Resources\Icono Boton Factura.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\" />
     <Folder Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\" />
   </ItemGroup>
   <ItemGroup>

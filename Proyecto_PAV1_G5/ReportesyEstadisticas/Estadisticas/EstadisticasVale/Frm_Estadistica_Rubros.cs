@@ -57,11 +57,11 @@ namespace Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasVale
                 MessageBox.Show("Falta seleccionar un filtro para la estadística");
                 return false;
             }
-            if (banderaRB1 || banderaRB3)
+            if (banderaRB2 || banderaRB3)
             {
                 Tabla = venta.EstadisticaRubros(banderaRB1, banderaRB2, banderaRB3, txt_fecha.Text, cmb_tipo_factura.SelectedValue.ToString());
             }
-            if (banderaRB2 || banderaRB4)
+            if (banderaRB1 || banderaRB4)
             {
                 Tabla = venta.EstadisticaRubros(banderaRB1, banderaRB2, banderaRB3, txt_fecha.Text, "");
             }

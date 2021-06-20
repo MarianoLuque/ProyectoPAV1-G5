@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetEquiposyVentas" targetNamespace="http://tempuri.org/DataSetEquiposyVentas.xsd" xmlns:mstns="http://tempuri.org/DataSetEquiposyVentas.xsd" xmlns="http://tempuri.org/DataSetEquiposyVentas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetEquiposyVentas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetEquiposyVentas" msprop:Generator_UserDSName="DataSetEquiposyVentas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EstadisticaEquipos" msprop:Generator_TableClassName="EstadisticaEquiposDataTable" msprop:Generator_TableVarName="tableEstadisticaEquipos" msprop:Generator_TablePropName="EstadisticaEquipos" msprop:Generator_RowDeletingName="EstadisticaEquiposRowDeleting" msprop:Generator_RowChangingName="EstadisticaEquiposRowChanging" msprop:Generator_RowEvHandlerName="EstadisticaEquiposRowChangeEventHandler" msprop:Generator_RowDeletedName="EstadisticaEquiposRowDeleted" msprop:Generator_UserTableName="EstadisticaEquipos" msprop:Generator_RowChangedName="EstadisticaEquiposRowChanged" msprop:Generator_RowEvArgName="EstadisticaEquiposRowChangeEvent" msprop:Generator_RowClassName="EstadisticaEquiposRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EstadisticaVentas" msprop:Generator_TableClassName="EstadisticaVentasDataTable" msprop:Generator_TableVarName="tableEstadisticaVentas" msprop:Generator_TablePropName="EstadisticaVentas" msprop:Generator_RowDeletingName="EstadisticaVentasRowDeleting" msprop:Generator_RowChangingName="EstadisticaVentasRowChanging" msprop:Generator_RowEvHandlerName="EstadisticaVentasRowChangeEventHandler" msprop:Generator_RowDeletedName="EstadisticaVentasRowDeleted" msprop:Generator_UserTableName="EstadisticaVentas" msprop:Generator_RowChangedName="EstadisticaVentasRowChanged" msprop:Generator_RowEvArgName="EstadisticaVentasRowChangeEvent" msprop:Generator_RowClassName="EstadisticaVentasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

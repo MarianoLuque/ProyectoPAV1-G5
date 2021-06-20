@@ -135,11 +135,11 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMaria
                 MessageBox.Show("Falta elegir el tipo de patron a aplicar para la estadística");
                 return false;
             }
-            if (banderaRB1 || banderaRB3)
+            if (banderaRB2 || banderaRB3)
             {
                 Tabla = forma_pago.ReporteFormaDePago(banderaRB1, banderaRB2, banderaRB3, txt_fecha.Text, cmb_tipo_factura.SelectedValue.ToString());
             }
-            if (banderaRB2 || banderaRB4)
+            if (banderaRB1 || banderaRB4)
             {
                 Tabla = forma_pago.ReporteFormaDePago(banderaRB1, banderaRB2, banderaRB3, txt_fecha.Text, "");
             }
