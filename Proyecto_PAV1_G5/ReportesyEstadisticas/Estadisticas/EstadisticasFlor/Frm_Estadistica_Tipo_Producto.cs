@@ -24,17 +24,21 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Estadísticas
 
         private void Frm_Estadistica_Ventas_Load(object sender, EventArgs e)
         {
+            txt_fecha.ReadOnly = true;
             cmb_tipo_factura.CargarCombo(venta.DatosComboTipoFactura());
             this.rv_tipo_producto.RefreshReport();
-            rb_mes.Checked = false;
+            rb_fecha.Checked = false;
             rb_tipo_factura.Checked = false;
+            cmb_tipo_factura.Enabled = false;
+            txt_fecha.ReadOnly = true;
         }
 
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
-            rb_mes.Checked = false;
+            rb_fecha.Checked = false;
             rb_tipo_factura.Checked = false;
-            txt_mes.Text = "";
+            txt_fecha.Text = "";
+            txt_fecha.ReadOnly = true;
             cmb_tipo_factura.SelectedIndex = -1;
             this.rv_tipo_producto.RefreshReport();
         }
@@ -43,17 +47,17 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Estadísticas
         {
             DataTable tabla = new DataTable();
 
-            if (rb_mes.Checked == true)
+            if (rb_fecha.Checked == true)
             {
-                if(txt_mes.Text != "")
+                if(txt_fecha.Text != "")
                 {
-                    tabla = venta.Recuperar_por_mes(txt_mes.Text);
+                    tabla = venta.Recuperar_por_mes(txt_fecha.Text);
                     ArmarEstadistica(tabla);
                 }
-                if(txt_mes.Text == "")
+                if(txt_fecha.Text == "")
                 {
                     MessageBox.Show("Para poder usar este filtro necesita ingresar un mes del 1 al 12");
-                    txt_mes.Focus();
+                    txt_fecha.Focus();
                 }
             }
             if(rb_tipo_factura.Checked == true)
@@ -73,17 +77,42 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Estadísticas
 
         private void ArmarEstadistica(DataTable tabla)
         {
+            string restriccion = "Restriccion: \n";
+
+            if (rb_fecha.Checked)
+            {
+                string[] subcadenasFecha = txt_fecha.Text.Split('/');
+                restriccion += "  - Para el año " + subcadenasFecha[2] + " y el mes " + subcadenasFecha[1] + "\n";
+            }
+
+            if (rb_tipo_factura.Checked)
+            {
+                restriccion = " - Para el tipo de Factura: " + cmb_tipo_factura.SelectedValue.ToString();
+            }
+
             ReportDataSource datosVenta = new ReportDataSource("DataSet1", tabla);
             rv_tipo_producto.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFlor.Estadistica_Tipo_Productos.rdlc";
 
-            ReportParameter[] parametros = new ReportParameter[2];
-            parametros[0] = new ReportParameter("Parametro1", "Mes que se desea saber: " + txt_mes.Text);
-            parametros[1] = new ReportParameter("Parametro2", "Tipo de Factura que se selecciono:" + cmb_tipo_factura.SelectedValue);
+            ReportParameter[] parametros = new ReportParameter[1];
+            parametros[0] = new ReportParameter("Parametro1", restriccion);
 
             rv_tipo_producto.LocalReport.SetParameters(parametros);
             rv_tipo_producto.LocalReport.DataSources.Clear();
             rv_tipo_producto.LocalReport.DataSources.Add(datosVenta);
             rv_tipo_producto.RefreshReport();
+
+        }
+
+        private void rb_fecha_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_fecha.ReadOnly = false;
+            cmb_tipo_factura.Enabled = false;
+        }
+
+        private void rb_tipo_factura_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_fecha.ReadOnly = true;
+            cmb_tipo_factura.Enabled = true;
         }
     }
 }

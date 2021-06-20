@@ -39,7 +39,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(119, 9);
+            this.label1.Location = new System.Drawing.Point(62, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(521, 29);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             this.rv_clasificacion.Location = new System.Drawing.Point(12, 83);
             this.rv_clasificacion.Name = "rv_clasificacion";
             this.rv_clasificacion.ServerReport.BearerToken = null;
-            this.rv_clasificacion.Size = new System.Drawing.Size(776, 355);
+            this.rv_clasificacion.Size = new System.Drawing.Size(635, 456);
             this.rv_clasificacion.TabIndex = 1;
             // 
             // chk_todos
@@ -67,7 +67,7 @@
             // btn_calcular
             // 
             this.btn_calcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_calcular.Location = new System.Drawing.Point(708, 41);
+            this.btn_calcular.Location = new System.Drawing.Point(567, 41);
             this.btn_calcular.Name = "btn_calcular";
             this.btn_calcular.Size = new System.Drawing.Size(80, 36);
             this.btn_calcular.TabIndex = 3;
@@ -78,7 +78,7 @@
             // btn_limpiar
             // 
             this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_limpiar.Location = new System.Drawing.Point(624, 41);
+            this.btn_limpiar.Location = new System.Drawing.Point(483, 41);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(78, 36);
             this.btn_limpiar.TabIndex = 24;
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(661, 551);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_calcular);
             this.Controls.Add(this.chk_todos);

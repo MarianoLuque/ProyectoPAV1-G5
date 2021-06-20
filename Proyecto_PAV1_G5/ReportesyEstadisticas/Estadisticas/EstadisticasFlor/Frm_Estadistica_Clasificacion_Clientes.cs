@@ -35,12 +35,12 @@ namespace Proyecto_PAV1_G5.ReportesyEstadísticas.Estadísticas
             DataTable tabla = new DataTable();
             NE_Categoria categoria = new NE_Categoria();
 
-            if (chk_todos.Checked == true)
+            if (chk_todos.Checked == false)
             {
                 tabla = categoria.Calcular_Cantidades();
                 ArmarEstadisticaClasificacion(tabla);
             }
-            if (chk_todos.Checked == false)
+            if (chk_todos.Checked == true)
             {
                 tabla = categoria.Calcular_Cantidades2();
                 ArmarEstadisticaClasificacion(tabla);

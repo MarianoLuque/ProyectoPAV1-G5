@@ -757,14 +757,18 @@ namespace Proyecto_PAV1_G5.Negocios
             return (_BD_T.EjecutarSelect(sql));
         }
 
-        public DataTable Recuperar_por_mes(string mes)
+        public DataTable Recuperar_por_mes(string fecha)
         {
+            string[] subcadenasFecha = fecha.Split('/');
+            string mes = subcadenasFecha[1];
+            string anio = subcadenasFecha[2];
+
             string sql = @"SELECT tp.nombre_tipo_producto as denominacion, count(df.tipo_producto) as valor 
                         FROM Detalles_Facturas df 
                             JOIN Tipos_Productos tp ON tp.id_tipo_producto = df.tipo_producto
                             JOIN Facturas f ON (df.nro_factura = f.nro_factura AND df.id_tipo_factura = f.id_tipo_factura)
-                        WHERE MONTH(f.fecha_venta) = " + mes + @"
-                        GROUP BY tp.nombre_tipo_producto";
+                        WHERE MONTH(f.fecha_venta) = " + mes + "AND YEAR(f.fecha_venta) = " + anio
+                        + "GROUP BY tp.nombre_tipo_producto";
             return _BD.Ejecutar_Select(sql);
         }
 
