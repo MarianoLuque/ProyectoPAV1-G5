@@ -919,6 +919,24 @@ namespace Proyecto_PAV1_G5.Negocios
                            " GROUP BY ee.nombre_equipo_especial  ORDER BY 2 DESC";
             return _BD.Ejecutar_Select(sql);
         }
+        public DataTable EstadisticaVentasCantidad(string fecha)
+        {
+           
+            string[] subcadenasFecha = fecha.Split('/');
+            string mes = subcadenasFecha[1];
+            string anio = subcadenasFecha[2];
 
+            string sql = @"SELECT id_tipo_factura as tipo, COUNT(nro_factura) as cantidad
+                           FROM Facturas f WHERE (MONTH(f.fecha_venta) = '" + mes + "' AND YEAR(f.fecha_venta) = '" + anio +
+                           "') GROUP BY id_tipo_factura ";
+            return _BD.Ejecutar_Select(sql);
+        }
+
+        public DataTable EstadisticaVentasCantidadTodos()
+        {
+            string sql = @"SELECT id_tipo_factura as tipo, COUNT(nro_factura) as cantidad
+                           FROM Facturas GROUP BY id_tipo_factura";
+            return _BD.Ejecutar_Select(sql);
+        }
     }
 }

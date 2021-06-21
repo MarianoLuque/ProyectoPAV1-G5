@@ -575,9 +575,9 @@ namespace Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class EstadisticaVentasDataTable : global::System.Data.TypedTableBase<EstadisticaVentasRow> {
             
-            private global::System.Data.DataColumn columnnombre;
+            private global::System.Data.DataColumn columntipo;
             
-            private global::System.Data.DataColumn columntotal;
+            private global::System.Data.DataColumn columncantidad;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -614,17 +614,17 @@ namespace Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn nombreColumn {
+            public global::System.Data.DataColumn tipoColumn {
                 get {
-                    return this.columnnombre;
+                    return this.columntipo;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn totalColumn {
+            public global::System.Data.DataColumn cantidadColumn {
                 get {
-                    return this.columntotal;
+                    return this.columncantidad;
                 }
             }
             
@@ -665,11 +665,11 @@ namespace Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public EstadisticaVentasRow AddEstadisticaVentasRow(string nombre, short total) {
+            public EstadisticaVentasRow AddEstadisticaVentasRow(string tipo, short cantidad) {
                 EstadisticaVentasRow rowEstadisticaVentasRow = ((EstadisticaVentasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        nombre,
-                        total};
+                        tipo,
+                        cantidad};
                 rowEstadisticaVentasRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEstadisticaVentasRow);
                 return rowEstadisticaVentasRow;
@@ -692,17 +692,17 @@ namespace Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
-                this.columnnombre = base.Columns["nombre"];
-                this.columntotal = base.Columns["total"];
+                this.columntipo = base.Columns["tipo"];
+                this.columncantidad = base.Columns["cantidad"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columnnombre = new global::System.Data.DataColumn("nombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnombre);
-                this.columntotal = new global::System.Data.DataColumn("total", typeof(short), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntotal);
+                this.columntipo = new global::System.Data.DataColumn("tipo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntipo);
+                this.columncantidad = new global::System.Data.DataColumn("cantidad", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncantidad);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -916,58 +916,58 @@ namespace Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string nombre {
+            public string tipo {
                 get {
                     try {
-                        return ((string)(this[this.tableEstadisticaVentas.nombreColumn]));
+                        return ((string)(this[this.tableEstadisticaVentas.tipoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre\' de la tabla \'EstadisticaVentas\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'tipo\' de la tabla \'EstadisticaVentas\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableEstadisticaVentas.nombreColumn] = value;
+                    this[this.tableEstadisticaVentas.tipoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public short total {
+            public short cantidad {
                 get {
                     try {
-                        return ((short)(this[this.tableEstadisticaVentas.totalColumn]));
+                        return ((short)(this[this.tableEstadisticaVentas.cantidadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'total\' de la tabla \'EstadisticaVentas\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'cantidad\' de la tabla \'EstadisticaVentas\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableEstadisticaVentas.totalColumn] = value;
+                    this[this.tableEstadisticaVentas.cantidadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsnombreNull() {
-                return this.IsNull(this.tableEstadisticaVentas.nombreColumn);
+            public bool IstipoNull() {
+                return this.IsNull(this.tableEstadisticaVentas.tipoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetnombreNull() {
-                this[this.tableEstadisticaVentas.nombreColumn] = global::System.Convert.DBNull;
+            public void SettipoNull() {
+                this[this.tableEstadisticaVentas.tipoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IstotalNull() {
-                return this.IsNull(this.tableEstadisticaVentas.totalColumn);
+            public bool IscantidadNull() {
+                return this.IsNull(this.tableEstadisticaVentas.cantidadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SettotalNull() {
-                this[this.tableEstadisticaVentas.totalColumn] = global::System.Convert.DBNull;
+            public void SetcantidadNull() {
+                this[this.tableEstadisticaVentas.cantidadColumn] = global::System.Convert.DBNull;
             }
         }
         

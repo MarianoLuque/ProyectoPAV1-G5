@@ -318,6 +318,12 @@
     <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Frm_Estadistica_Equipos_Vendidos.Designer.cs">
       <DependentUpon>Frm_Estadistica_Equipos_Vendidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Frm_Estadistica_Ventas_Cantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Frm_Estadistica_Ventas_Cantidad.Designer.cs">
+      <DependentUpon>Frm_Estadistica_Ventas_Cantidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\DataSetF.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -655,8 +661,12 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Estadistica_Equipos.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Estadistica_VentasCantidad.rdlc" />
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Frm_Estadistica_Equipos_Vendidos.resx">
       <DependentUpon>Frm_Estadistica_Equipos_Vendidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFede\Frm_Estadistica_Ventas_Cantidad.resx">
+      <DependentUpon>Frm_Estadistica_Ventas_Cantidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Estadistica_Clasificaciones.rdlc" />
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasFlor\Estadistica_Tipo_Productos.rdlc" />
