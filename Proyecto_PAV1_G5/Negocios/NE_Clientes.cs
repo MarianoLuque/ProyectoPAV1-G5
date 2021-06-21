@@ -145,5 +145,26 @@ namespace Proyecto_PAV1_G5.Negocios
                           WHERE cuit_clientes = " + cuit;
             return (_BD_T.EjecutarSelect(sql));
         }
+
+        public DataTable ReporteVentasXCliente(bool rb1, string fecha)
+        {
+            string condicion = "";
+
+            if (rb1)
+            {
+                string[] subcadenasFecha = fecha.Split('/');
+                string mes = subcadenasFecha[1];
+                string anio = subcadenasFecha[2];
+                condicion = " AND (MONTH(f.fecha_venta) = " + mes + " AND YEAR(f.fecha_venta) = " + anio + ")";
+            }
+
+
+            string sql = "SELECT count(f.cuit_cliente) AS 'cantidad_compras', c.razon_social FROM Facturas f " +
+                         "JOIN Clientes c on f.cuit_cliente = c.cuit_clientes " +
+                         "WHERE 1=1" + condicion +
+                         "GROUP BY c.cuit_clientes, c.razon_social";
+
+            return _BD.Ejecutar_Select(sql);
+        }
     }
 }

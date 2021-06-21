@@ -358,6 +358,26 @@
     <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Forma_De_Pago.Designer.cs">
       <DependentUpon>Frm_Estadistica_Forma_De_Pago.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\DataSetFacturasYEmpleados.cs">
+      <DependentUpon>DataSetFacturasYEmpleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\DataSetFacturasYEmpleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFacturasYEmpleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\Frm_Estadisticas_Clientes_Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\Frm_Estadisticas_Clientes_Compras.Designer.cs">
+      <DependentUpon>Frm_Estadisticas_Clientes_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\Frm_Estadistica_Empleado_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\Frm_Estadistica_Empleado_Ventas.Designer.cs">
+      <DependentUpon>Frm_Estadistica_Empleado_Ventas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\DataSet_VentasyArticulos.cs">
       <DependentUpon>DataSet_VentasyArticulos.xsd</DependentUpon>
     </Compile>
@@ -684,6 +704,14 @@
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\Frm_Estadistica_Forma_De_Pago.resx">
       <DependentUpon>Frm_Estadistica_Forma_De_Pago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\Estadisticas_Cliente_Compras.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\Estadisticas_Empleados_Ventas.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\Frm_Estadisticas_Clientes_Compras.resx">
+      <DependentUpon>Frm_Estadisticas_Clientes_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\Frm_Estadistica_Empleado_Ventas.resx">
+      <DependentUpon>Frm_Estadistica_Empleado_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Estadistica_ArticulosMasVendidos.rdlc" />
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Estadistica_Rubros.rdlc" />
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Frm_Estadistica_Articulos.resx">
@@ -805,6 +833,17 @@
     </None>
     <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasMariano\DataSetFormaDePagoYComprasPorProveedor.xss">
       <DependentUpon>DataSetFormaDePagoYComprasPorProveedor.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\DataSetFacturasYEmpleados.xsc">
+      <DependentUpon>DataSetFacturasYEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\DataSetFacturasYEmpleados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFacturasYEmpleados.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\DataSetFacturasYEmpleados.xss">
+      <DependentUpon>DataSetFacturasYEmpleados.xsd</DependentUpon>
     </None>
     <None Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\DataSet_VentasyArticulos.xsc">
       <DependentUpon>DataSet_VentasyArticulos.xsd</DependentUpon>
@@ -928,9 +967,7 @@
   <ItemGroup>
     <None Include="Resources\Icono Boton Factura.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ReportesyEstadisticas\Estadisticas\EstadisticasTita\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\012-medal.png" />
   </ItemGroup>

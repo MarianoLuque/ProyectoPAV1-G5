@@ -287,5 +287,25 @@ namespace Proyecto_PAV1_G5.Negocios
 
             return (_BD.Ejecutar_Select(sql));
         }
+
+        public DataTable ReporteVentaXEmpleado(bool rb1, string fecha)
+        {
+            string condicion = "";
+
+            if (rb1)
+            {
+                string[] subcadenasFecha = fecha.Split('/');
+                string mes = subcadenasFecha[1];
+                string anio = subcadenasFecha[2];
+                condicion = " AND (MONTH(f.fecha_venta) = " + mes + " AND YEAR(f.fecha_venta) = " + anio + ")";
+            }
+
+            string sql = "SELECT COUNT(f.legajo_vendedor) AS cantidad_ventas, (e.nombre + ' ' + e.apellido) AS Empleado FROM Facturas f " +
+                         "JOIN Empleados e on f.legajo_vendedor = e.legajo " +
+                         "WHERE 1 = 1 " + condicion +
+                         " GROUP BY e.legajo, e.nombre, e.apellido";
+
+            return _BD.Ejecutar_Select(sql);
+        }
     }
 }

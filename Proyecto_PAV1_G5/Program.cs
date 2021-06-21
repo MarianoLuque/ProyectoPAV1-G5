@@ -15,6 +15,7 @@ using Proyecto_PAV1_G5.ABM.Rubros;
 using Proyecto_PAV1_G5.ReportesyEstadísticas.Estadísticas;
 using Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede;
 using Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMariano;
+using Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasTita;
 using Proyecto_PAV1_G5.ReportesyEstadisticas.Listados;
 
 
@@ -33,7 +34,9 @@ namespace Proyecto_PAV1_G5
             //Application.Run(new Principal());
             //Application.Run(new Frm_Login()); 
             //Application.Run(new Frm_Equipos());
-            Application.Run(new Frm_Estadistica_Ventas_Cantidad());
+            Application.Run(new Frm_Estadistica_Empleado_Ventas());
+            //Application.Run(new Frm_Estadisticas_Clientes_Compras());
+            //Application.Run(new Frm_Estadistica_Compras_Por_Proveedor());
 
 
         }

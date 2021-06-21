@@ -633,3 +633,14 @@ C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\zh-C
 C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.csproj.CopyComplete
 C:\Users\NAFEVI\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede.Frm_Estadistica_Ventas_Cantidad.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede.Frm_Estadistica_Equipos_Vendidos.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede.Frm_Estadistica_Ventas_Cantidad.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadísticas.Estadísticas.Frm_Estadistica_Clasificacion_Clientes.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadísticas.Estadísticas.Frm_Estadistica_Tipo_Producto.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMariano.Frm_Estadistica_Compras_Por_Proveedor.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMariano.Frm_Estadistica_Forma_De_Pago.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasVale.Frm_Estadistica_Articulos.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasVale.Frm_Estadistica_Rubros.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.Frm_Estadisticas.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasTita.Frm_Estadistica_Empleado_Ventas.resources
+C:\Users\Administrador\Desktop\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasTita.Frm_Estadisticas_Clientes_Compras.resources
