@@ -196,6 +196,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.reporte_forma_pago);
             this.Name = "Frm_Estadistica_Forma_De_Pago";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formas de pago mas utilizadas";
             this.Load += new System.EventHandler(this.Frm_Estadistica_Forma_De_Pago_Load);
             this.groupBox1.ResumeLayout(false);

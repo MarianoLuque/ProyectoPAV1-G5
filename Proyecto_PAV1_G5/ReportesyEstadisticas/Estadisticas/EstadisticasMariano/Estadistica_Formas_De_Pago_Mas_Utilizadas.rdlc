@@ -290,7 +290,7 @@
                     <ChartDataPoint>
                       <ChartDataPointValues>
                         <X>=Fields!nombre_forma_pago.Value</X>
-                        <Y>=Count(Fields!cantidad.Value)</Y>
+                        <Y>=Sum(Fields!cantidad.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
