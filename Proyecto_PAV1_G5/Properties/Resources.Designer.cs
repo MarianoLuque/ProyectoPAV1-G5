@@ -113,6 +113,16 @@ namespace Proyecto_PAV1_G5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _004_stats {
+            get {
+                object obj = ResourceManager.GetObject("004-stats", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _005_group {
             get {
                 object obj = ResourceManager.GetObject("005-group", resourceCulture);

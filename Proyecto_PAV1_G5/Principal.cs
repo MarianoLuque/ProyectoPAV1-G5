@@ -17,7 +17,8 @@ using Proyecto_PAV1_G5.ABM.Proveedores;
 using Proyecto_PAV1_G5.ABM.Rubros;
 using Proyecto_PAV1_G5.Transacciones.Compras;
 using Proyecto_PAV1_G5.Transacciones.Ventas;
-using Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados;
+using Proyecto_PAV1_G5.ReportesyEstadisticas.Listados;
+using Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas;
 
 namespace Proyecto_PAV1_G5
 {
@@ -95,8 +96,14 @@ namespace Proyecto_PAV1_G5
 
         private void btn_listados_Click(object sender, EventArgs e)
         {
-            Frm_Listados listados = new Frm_Listados();
+            Frm_Botonera_Listados listados = new Frm_Botonera_Listados();
             listados.ShowDialog();
+        }
+
+        private void btn_estadisticas_Click(object sender, EventArgs e)
+        {
+            Frm_BotoneraEstadisticas estadisticas = new Frm_BotoneraEstadisticas();
+            estadisticas.ShowDialog();
         }
     }
 }

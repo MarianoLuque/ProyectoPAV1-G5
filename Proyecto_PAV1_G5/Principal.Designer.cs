@@ -221,6 +221,7 @@
             this.btn_estadisticas.Text = " ";
             this.btn_estadisticas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_estadisticas.UseVisualStyleBackColor = false;
+            this.btn_estadisticas.Click += new System.EventHandler(this.btn_estadisticas_Click);
             // 
             // btn_rubros
             // 

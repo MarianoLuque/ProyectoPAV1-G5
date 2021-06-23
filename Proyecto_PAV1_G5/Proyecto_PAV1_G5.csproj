@@ -398,6 +398,12 @@
     <Compile Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Frm_Estadistica_Rubros.Designer.cs">
       <DependentUpon>Frm_Estadistica_Rubros.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\Frm_BotoneraEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Estadisticas\Frm_BotoneraEstadisticas.Designer.cs">
+      <DependentUpon>Frm_BotoneraEstadisticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportesyEstadisticas\Estadisticas\Frm_Estadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -469,6 +475,12 @@
     </Compile>
     <Compile Include="ReportesyEstadisticas\Listados\EquiposSimples\Frm_ReporteEquiposSimples.Designer.cs">
       <DependentUpon>Frm_ReporteEquiposSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Listados\Frm_Botonera_Listados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesyEstadisticas\Listados\Frm_Botonera_Listados.Designer.cs">
+      <DependentUpon>Frm_Botonera_Listados.cs</DependentUpon>
     </Compile>
     <Compile Include="ReportesyEstadisticas\Listados\Frm_Listados.cs">
       <SubType>Form</SubType>
@@ -720,6 +732,9 @@
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\EstadisticasVale\Frm_Estadistica_Rubros.resx">
       <DependentUpon>Frm_Estadistica_Rubros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\Frm_BotoneraEstadisticas.resx">
+      <DependentUpon>Frm_BotoneraEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportesyEstadisticas\Estadisticas\Frm_Estadisticas.resx">
       <DependentUpon>Frm_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
@@ -744,6 +759,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportesyEstadisticas\Listados\EquiposSimples\Report1.rdlc" />
     <EmbeddedResource Include="ReportesyEstadisticas\Listados\EquiposSimples\Report2.rdlc" />
+    <EmbeddedResource Include="ReportesyEstadisticas\Listados\Frm_Botonera_Listados.resx">
+      <DependentUpon>Frm_Botonera_Listados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportesyEstadisticas\Listados\Frm_Listados.resx">
       <DependentUpon>Frm_Listados.cs</DependentUpon>
     </EmbeddedResource>
@@ -1013,6 +1031,7 @@
   <ItemGroup>
     <None Include="Resources\azul.png" />
     <None Include="Resources\celestecielo.png" />
+    <None Include="Resources\004-stats.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
