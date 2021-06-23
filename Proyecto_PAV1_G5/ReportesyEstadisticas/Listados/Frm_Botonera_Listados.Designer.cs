@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Botonera_Listados));
             this.btn_articulos = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_eq_simple = new System.Windows.Forms.Button();
@@ -175,11 +176,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Proyecto_PAV1_G5.Properties.Resources._004_stats;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(377, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(113, 75);
+            this.pictureBox1.Size = new System.Drawing.Size(96, 90);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
