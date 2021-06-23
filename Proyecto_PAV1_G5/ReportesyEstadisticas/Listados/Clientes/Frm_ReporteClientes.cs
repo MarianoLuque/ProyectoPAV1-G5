@@ -37,15 +37,51 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
         private void ArmarReporte(DataTable tabla)
         {
+            string restriccion = "RESTRICCION: \n";
+            if(rv_todos.Checked == true)
+            {
+                restriccion = "";
+            }
+
+            if (rv_cuit.Checked == true)
+            {
+                restriccion += "El cuit del cliente es: " + cmb_clientes.SelectedValue.ToString();
+            }
+
+            if (rv_fechas.Checked == true)
+            {
+                if (txt_fechaDesde.Text != "" && txt_fechaHasta.Text != "")
+                {
+                    restriccion += "Fecha de primera compra desde = " + txt_fechaDesde.Text + " hasta = " + txt_fechaHasta.Text;
+                }
+
+                if (txt_fechaDesde.Text != "" && txt_fechaHasta.Text == "")
+                {
+                    restriccion += "Fecha de primera compra desde = " + txt_fechaDesde.Text;
+                }
+                if (txt_fechaDesde.Text == "" && txt_fechaHasta.Text != "")
+                {
+                    restriccion += "Fecha de primera compra hasta = " + txt_fechaHasta.Text;
+                }
+            }
+
             ReportDataSource datos = new ReportDataSource("DataSet1", tabla);
             reporte_clientes.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.ReportesyEstadisticas.Listados.Clientes.ListadoCliente.rdlc";
             reporte_clientes.LocalReport.DataSources.Clear();
             reporte_clientes.LocalReport.DataSources.Add(datos);
+            ReportParameter[] parametro = new ReportParameter[1];
+            parametro[0] = new ReportParameter("Parametro1", restriccion);
+            reporte_clientes.LocalReport.SetParameters(parametro);
             reporte_clientes.RefreshReport();
         }
 
         private void Frm_ReporteClientes_Load(object sender, EventArgs e)
         {
+            cmb_clientes.Enabled = false;
+            txt_fechaDesde.ReadOnly = true;
+            txt_fechaHasta.ReadOnly = true;
+            btn_buscar.Enabled = false;
+
             this.reporte_clientes.RefreshReport();
             cmb_clientes.CargarCombo(cliente.DatosComboCliente());
         }
@@ -95,6 +131,37 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
         {
             RecuperarClientes();
             ArmarReporte(tabla);
+        }
+
+        private void rv_todos_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_clientes.Enabled = false;
+            txt_fechaDesde.ReadOnly = true;
+            txt_fechaHasta.ReadOnly = true;
+            btn_buscar.Enabled = true;
+
+        }
+
+        private void rv_cuit_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_clientes.Enabled = true;
+            txt_fechaDesde.ReadOnly = true;
+            txt_fechaHasta.ReadOnly = true;
+            if(cmb_clientes.Text != "")
+            {
+                btn_buscar.Enabled = true;
+            }
+        }
+
+        private void rv_fechas_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_clientes.Enabled = false;
+            txt_fechaDesde.ReadOnly = false;
+            txt_fechaHasta.ReadOnly = false;
+            if (txt_fechaDesde.Text != "" || txt_fechaHasta.Text != "")
+            {
+                btn_buscar.Enabled = true;
+            }
         }
     }
 }

@@ -46,16 +46,16 @@
             // 
             // reporte_proveedores
             // 
-            this.reporte_proveedores.Location = new System.Drawing.Point(12, 135);
+            this.reporte_proveedores.Location = new System.Drawing.Point(12, 138);
             this.reporte_proveedores.Name = "reporte_proveedores";
             this.reporte_proveedores.ServerReport.BearerToken = null;
-            this.reporte_proveedores.Size = new System.Drawing.Size(799, 303);
+            this.reporte_proveedores.Size = new System.Drawing.Size(857, 363);
             this.reporte_proveedores.TabIndex = 0;
             // 
             // btn_limpiar
             // 
             this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_limpiar.Location = new System.Drawing.Point(714, 57);
+            this.btn_limpiar.Location = new System.Drawing.Point(772, 59);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(97, 32);
             this.btn_limpiar.TabIndex = 24;
@@ -69,7 +69,7 @@
             this.groupBox1.Controls.Add(this.rv_cuit);
             this.groupBox1.Controls.Add(this.rv_todos);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(362, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(336, 117);
             this.groupBox1.TabIndex = 23;
@@ -86,6 +86,7 @@
             this.rv_fechas.TabStop = true;
             this.rv_fechas.Text = "Rango de fechas de su inicio de operacion";
             this.rv_fechas.UseVisualStyleBackColor = true;
+            this.rv_fechas.CheckedChanged += new System.EventHandler(this.rv_fechas_CheckedChanged);
             // 
             // rv_cuit
             // 
@@ -97,6 +98,7 @@
             this.rv_cuit.TabStop = true;
             this.rv_cuit.Text = "Por cuit del Proveedor";
             this.rv_cuit.UseVisualStyleBackColor = true;
+            this.rv_cuit.CheckedChanged += new System.EventHandler(this.rv_cuit_CheckedChanged);
             // 
             // rv_todos
             // 
@@ -108,11 +110,12 @@
             this.rv_todos.TabStop = true;
             this.rv_todos.Text = "Todos los Proveedores";
             this.rv_todos.UseVisualStyleBackColor = true;
+            this.rv_todos.CheckedChanged += new System.EventHandler(this.rv_todos_CheckedChanged);
             // 
             // btn_buscar
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_buscar.Location = new System.Drawing.Point(714, 98);
+            this.btn_buscar.Location = new System.Drawing.Point(772, 100);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(96, 32);
             this.btn_buscar.TabIndex = 22;
@@ -123,7 +126,7 @@
             // txt_fechaHasta
             // 
             this.txt_fechaHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_fechaHasta.Location = new System.Drawing.Point(254, 53);
+            this.txt_fechaHasta.Location = new System.Drawing.Point(455, 90);
             this.txt_fechaHasta.Mask = "00/00/0000";
             this.txt_fechaHasta.Name = "txt_fechaHasta";
             this.txt_fechaHasta.Size = new System.Drawing.Size(87, 26);
@@ -133,7 +136,7 @@
             // txt_fechaDesde
             // 
             this.txt_fechaDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_fechaDesde.Location = new System.Drawing.Point(94, 53);
+            this.txt_fechaDesde.Location = new System.Drawing.Point(455, 55);
             this.txt_fechaDesde.Mask = "00/00/0000";
             this.txt_fechaDesde.Name = "txt_fechaDesde";
             this.txt_fechaDesde.Size = new System.Drawing.Size(88, 26);
@@ -144,7 +147,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(196, 59);
+            this.label3.Location = new System.Drawing.Point(397, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 20);
             this.label3.TabIndex = 19;
@@ -154,7 +157,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 59);
+            this.label2.Location = new System.Drawing.Point(393, 61);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 18;
@@ -164,7 +167,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 22);
+            this.label1.Location = new System.Drawing.Point(368, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 20);
             this.label1.TabIndex = 16;
@@ -174,7 +177,7 @@
             // 
             this.cmb_proveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_proveedores.FormattingEnabled = true;
-            this.cmb_proveedores.Location = new System.Drawing.Point(94, 19);
+            this.cmb_proveedores.Location = new System.Drawing.Point(455, 21);
             this.cmb_proveedores.Name = "cmb_proveedores";
             this.cmb_proveedores.Pp_Conseleccion = false;
             this.cmb_proveedores.Pp_MensajeError = null;
@@ -188,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 450);
+            this.ClientSize = new System.Drawing.Size(881, 510);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_buscar);

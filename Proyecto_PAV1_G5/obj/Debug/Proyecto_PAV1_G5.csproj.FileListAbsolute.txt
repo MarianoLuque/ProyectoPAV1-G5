@@ -648,3 +648,10 @@ D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Pr
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede.Frm_Estadistica_Ventas_Cantidad.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasTita.Frm_Estadisticas_Clientes_Compras.resources
 D:\nano\Facultad\UTN\TERCER AÑO\PAV\Grupo 5\Proyecto_PAV1_G5\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasTita.Frm_Estadistica_Empleado_Ventas.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede.Frm_Estadistica_Equipos_Vendidos.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasFede.Frm_Estadistica_Ventas_Cantidad.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasTita.Frm_Estadisticas_Clientes_Compras.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasTita.Frm_Estadistica_Empleado_Ventas.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasVale.Frm_Estadistica_Articulos.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasVale.Frm_Estadistica_Rubros.resources
+C:\Users\flora\Documents\GitHub\ProyectoPAV1-G5\Proyecto_PAV1_G5\obj\Debug\Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.Frm_Estadisticas.resources

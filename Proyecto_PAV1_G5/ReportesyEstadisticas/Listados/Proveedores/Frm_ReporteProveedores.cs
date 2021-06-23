@@ -26,6 +26,11 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
         private void Frm_ReporteProveedores_Load(object sender, EventArgs e)
         {
+            cmb_proveedores.Enabled = false;
+            txt_fechaDesde.ReadOnly = true;
+            txt_fechaHasta.ReadOnly = true;
+            btn_buscar.Enabled = false;
+
             this.reporte_proveedores.RefreshReport();
             cmb_proveedores.CargarCombo(proveedor.DatosComboProveedor());
         }
@@ -95,11 +100,72 @@ namespace Proyecto_PAV1_G5.Reportes_y_Estadísticas.Listados
 
         private void ArmarReporte(DataTable tabla)
         {
+            string restriccion = "RESTRICCION: \n";
+            if (rv_todos.Checked == true)
+            {
+                restriccion = "";
+            }
+
+            if (rv_cuit.Checked == true)
+            {
+                restriccion += "El cuit del cliente es: " + cmb_proveedores.SelectedValue.ToString();
+            }
+
+            if (rv_fechas.Checked == true)
+            {
+                if (txt_fechaDesde.Text != "" && txt_fechaHasta.Text != "")
+                {
+                    restriccion += "Fecha de primera compra desde = " + txt_fechaDesde.Text + " hasta = " + txt_fechaHasta.Text;
+                }
+
+                if (txt_fechaDesde.Text != "" && txt_fechaHasta.Text == "")
+                {
+                    restriccion += "Fecha de primera compra desde = " + txt_fechaDesde.Text;
+                }
+                if (txt_fechaDesde.Text == "" && txt_fechaHasta.Text != "")
+                {
+                    restriccion += "Fecha de primera compra hasta = " + txt_fechaHasta.Text;
+                }
+            }
+
             ReportDataSource datos = new ReportDataSource("DataSet1", tabla);
             reporte_proveedores.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.ReportesyEstadisticas.Listados.Proveedores.ListadoProveedor.rdlc";
             reporte_proveedores.LocalReport.DataSources.Clear();
             reporte_proveedores.LocalReport.DataSources.Add(datos);
+            ReportParameter[] parametro = new ReportParameter[1];
+            parametro[0] = new ReportParameter("Parametro1", restriccion);
+            reporte_proveedores.LocalReport.SetParameters(parametro);
             reporte_proveedores.RefreshReport();
+        }
+
+        private void rv_todos_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_proveedores.Enabled = false;
+            txt_fechaDesde.ReadOnly = true;
+            txt_fechaHasta.ReadOnly = true;
+            btn_buscar.Enabled = true;
+        }
+
+        private void rv_cuit_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_proveedores.Enabled = true;
+            txt_fechaDesde.ReadOnly = true;
+            txt_fechaHasta.ReadOnly = true;
+            if (cmb_proveedores.Text != "")
+            {
+                btn_buscar.Enabled = true;
+            }
+        }
+
+        private void rv_fechas_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_proveedores.Enabled = false;
+            txt_fechaDesde.ReadOnly = false;
+            txt_fechaHasta.ReadOnly = false;
+            if (txt_fechaDesde.Text != "" || txt_fechaHasta.Text != "")
+            {
+                btn_buscar.Enabled = true;
+            }
         }
     }
 }
