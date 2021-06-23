@@ -60,7 +60,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
-            <Top>2.13416cm</Top>
+            <Top>0.86416cm</Top>
             <Height>0.81167cm</Height>
             <Width>28.66728cm</Width>
             <Style>
@@ -77,10 +77,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>4.53729cm</Width>
+                  <Width>5.01354cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.61125cm</Width>
+                  <Width>4.0875cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -97,7 +97,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cliente</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -130,7 +133,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cantidad Compras</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -168,7 +174,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!razon_social.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -198,7 +206,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!cantidad_compras.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -241,10 +251,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSetFacturasYEmpleados</DataSetName>
-            <Top>5.62391cm</Top>
+            <Top>3.40141cm</Top>
             <Left>15.55433cm</Left>
             <Height>1.2cm</Height>
-            <Width>8.14854cm</Width>
+            <Width>9.10104cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -286,7 +296,12 @@
                         <Y>=Sum(Fields!cantidad_compras.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
-                        <Style />
+                        <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
                       <ChartMarker>
@@ -548,16 +563,15 @@
             </ChartAreas>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Título del gráfico</Caption>
+                <Caption>Grafico de barras de clientes con mas compras</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                   <TextAlign>Left</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
                   <Color>#a6a6a6</Color>
                 </Style>
-                <Position>TopLeft</Position>
               </ChartTitle>
             </ChartTitles>
             <Palette>Pacific</Palette>
@@ -578,10 +592,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSetFacturasYEmpleados</DataSetName>
-            <Top>5.62391cm</Top>
-            <Left>1.9812cm</Left>
-            <Height>8.38667cm</Height>
-            <Width>12.73875cm</Width>
+            <Top>3.40141cm</Top>
+            <Left>0.79057cm</Left>
+            <Height>11.42938cm</Height>
+            <Width>13.92938cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -600,15 +614,17 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!Rp02.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Rp02</rd:DefaultName>
-            <Top>4.67995cm</Top>
-            <Left>1.9812cm</Left>
+            <Top>2.45745cm</Top>
+            <Left>0.79057cm</Left>
             <Height>0.6cm</Height>
             <Width>12.73875cm</Width>
             <ZIndex>3</ZIndex>
@@ -623,11 +639,127 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>6.11458in</Height>
+        <Height>6.04166in</Height>
         <Style />
       </Body>
       <Width>11.28633in</Width>
       <Page>
+        <PageFooter>
+          <Height>1.32292cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox14">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ExecutionTime</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox14</rd:DefaultName>
+              <Top>0.235cm</Top>
+              <Left>0.90051cm</Left>
+              <Height>0.8cm</Height>
+              <Width>3.84938cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox15">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox15</rd:DefaultName>
+              <Top>0.235cm</Top>
+              <Left>24.52594cm</Left>
+              <Height>0.8cm</Height>
+              <Width>3.24083cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox16">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Pag.</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox16</rd:DefaultName>
+              <Top>0.235cm</Top>
+              <Left>22.88141cm</Left>
+              <Height>0.8cm</Height>
+              <Width>1.25646cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>2cm</LeftMargin>

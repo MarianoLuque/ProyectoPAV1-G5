@@ -201,7 +201,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_articulos);
             this.Name = "Frm_BotoneraEstadisticas";
-            this.Text = "Frm_BotoneraEstadisticas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Estadisticas Disponibles";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

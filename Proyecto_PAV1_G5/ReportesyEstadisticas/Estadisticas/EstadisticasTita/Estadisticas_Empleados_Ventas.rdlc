@@ -64,7 +64,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Empleado</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -97,7 +100,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cantidad Ventas</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -135,7 +141,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Empleado.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -165,7 +173,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Cantidad_Ventas.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -254,6 +264,8 @@
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
                           <Format>0%</Format>
                         </Style>
                         <Label>#PERCENT</Label>
@@ -522,7 +534,7 @@
               <ChartLegend Name="Default">
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>8pt</FontSize>
+                  <FontSize>12pt</FontSize>
                 </Style>
                 <ChartLegendTitle>
                   <Caption />
@@ -532,6 +544,7 @@
                     <TextAlign>Center</TextAlign>
                   </Style>
                 </ChartLegendTitle>
+                <AutoFitTextDisabled>true</AutoFitTextDisabled>
                 <HeaderSeparatorColor>Black</HeaderSeparatorColor>
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
@@ -554,10 +567,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSetFacturasYEmpleados</DataSetName>
-            <Top>3.14537cm</Top>
-            <Left>3.87518cm</Left>
-            <Height>5.68792cm</Height>
-            <Width>10cm</Width>
+            <Top>3.19828cm</Top>
+            <Left>1.3881cm</Left>
+            <Height>8.28084cm</Height>
+            <Width>12.24896cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -576,7 +589,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!Rp01.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -584,7 +599,7 @@
             </Paragraphs>
             <rd:DefaultName>Rp01</rd:DefaultName>
             <Top>2.10439cm</Top>
-            <Left>3.87518cm</Left>
+            <Left>1.3881cm</Left>
             <Height>0.6cm</Height>
             <Width>13.46667cm</Width>
             <ZIndex>2</ZIndex>
@@ -605,7 +620,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Estadistica de Empleados con más Ventas.</Value>
+                    <Value>Estadistica de Empleados con más Ventas</Value>
                     <Style>
                       <FontFamily>lucida fax</FontFamily>
                       <FontSize>18pt</FontSize>
@@ -633,11 +648,127 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>3.95684in</Height>
+        <Height>4.65476in</Height>
         <Style />
       </Body>
       <Width>11.28633in</Width>
       <Page>
+        <PageFooter>
+          <Height>1.27cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox14">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ExecutionTime</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox14</rd:DefaultName>
+              <Top>0.235cm</Top>
+              <Left>0.90051cm</Left>
+              <Height>0.8cm</Height>
+              <Width>3.84938cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox15">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox15</rd:DefaultName>
+              <Top>0.235cm</Top>
+              <Left>24.52594cm</Left>
+              <Height>0.8cm</Height>
+              <Width>3.24083cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox16">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Pag.</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox16</rd:DefaultName>
+              <Top>0.235cm</Top>
+              <Left>22.88141cm</Left>
+              <Height>0.8cm</Height>
+              <Width>1.25646cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>2cm</LeftMargin>

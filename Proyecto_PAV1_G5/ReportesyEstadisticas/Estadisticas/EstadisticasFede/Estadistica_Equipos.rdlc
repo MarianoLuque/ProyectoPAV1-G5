@@ -74,7 +74,10 @@
                         <Y>=Sum(Fields!total.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
-                        <Style />
+                        <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
                       </ChartDataLabel>
@@ -336,37 +339,17 @@
                 </Style>
               </ChartArea>
             </ChartAreas>
-            <ChartLegends>
-              <ChartLegend Name="Default">
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>8pt</FontSize>
-                </Style>
-                <Position>TopLeft</Position>
-                <ChartLegendTitle>
-                  <Caption />
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </ChartLegendTitle>
-                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
-                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
-              </ChartLegend>
-            </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
                 <Caption>Equipos más vendidos</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                   <TextAlign>Left</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
                   <Color>#a6a6a6</Color>
                 </Style>
-                <Position>TopLeft</Position>
               </ChartTitle>
             </ChartTitles>
             <Palette>Pacific</Palette>
@@ -387,7 +370,7 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSetEquipos</DataSetName>
-            <Top>1.81818cm</Top>
+            <Top>1.15672cm</Top>
             <Left>0.42175cm</Left>
             <Height>11.56167cm</Height>
             <Width>17.25964cm</Width>
@@ -408,7 +391,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!ReportParameterEquipos.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -603,7 +588,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSetEquipos</DataSetName>
-            <Top>1.81818cm</Top>
+            <Top>1.15672cm</Top>
             <Left>18.23201cm</Left>
             <Height>1.2cm</Height>
             <Width>8.92874cm</Width>
@@ -668,7 +653,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>2.54cm</Height>
+          <Height>1.05833cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -691,7 +676,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
-              <Top>0.97cm</Top>
+              <Top>0.17639cm</Top>
               <Left>2.00278cm</Left>
               <Height>0.6cm</Height>
               <Width>3.21438cm</Width>
@@ -723,7 +708,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.97cm</Top>
+              <Top>0.17639cm</Top>
               <Left>25.00799cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
@@ -755,7 +740,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>0.97cm</Top>
+              <Top>0.17639cm</Top>
               <Left>23.29292cm</Left>
               <Height>0.6cm</Height>
               <Width>1.57396cm</Width>

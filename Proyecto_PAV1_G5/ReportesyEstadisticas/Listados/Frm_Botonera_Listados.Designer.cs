@@ -201,7 +201,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_articulos);
             this.Name = "Frm_Botonera_Listados";
-            this.Text = "Generar Listados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Listados Disponibles";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

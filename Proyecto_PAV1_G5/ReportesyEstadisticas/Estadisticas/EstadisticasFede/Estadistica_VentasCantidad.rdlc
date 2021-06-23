@@ -48,7 +48,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!ReportParameterVentas.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -171,7 +173,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!tipo.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -204,7 +208,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!cantidad.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -248,7 +254,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSetVentasCantidad</DataSetName>
-            <Top>1.81818cm</Top>
+            <Top>0.83786cm</Top>
             <Left>18.23201cm</Left>
             <Height>1.2cm</Height>
             <Width>8.92874cm</Width>
@@ -293,7 +299,10 @@
                         <Y>=Sum(Fields!cantidad.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
-                        <Style />
+                        <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
                       </ChartDataLabel>
@@ -560,7 +569,7 @@
               <ChartLegend Name="Default">
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>8pt</FontSize>
+                  <FontSize>12pt</FontSize>
                 </Style>
                 <ChartLegendTitle>
                   <Caption />
@@ -570,6 +579,7 @@
                     <TextAlign>Center</TextAlign>
                   </Style>
                 </ChartLegendTitle>
+                <AutoFitTextDisabled>true</AutoFitTextDisabled>
                 <HeaderSeparatorColor>Black</HeaderSeparatorColor>
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
@@ -588,7 +598,7 @@
                 <Position>TopLeft</Position>
               </ChartTitle>
             </ChartTitles>
-            <Palette>Pacific</Palette>
+            <Palette>SeaGreen</Palette>
             <ChartBorderSkin>
               <Style>
                 <BackgroundColor>Gray</BackgroundColor>
@@ -606,7 +616,7 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSetVentasCantidad</DataSetName>
-            <Top>1.3462cm</Top>
+            <Top>0.83786cm</Top>
             <Left>0.97578cm</Left>
             <Height>9.23333cm</Height>
             <Width>15.30521cm</Width>
@@ -621,7 +631,7 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>5.26766in</Height>
+        <Height>4.09058in</Height>
         <Style />
       </Body>
       <Width>11.61841in</Width>
@@ -674,7 +684,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>2.54cm</Height>
+          <Height>1.05833cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -697,7 +707,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
-              <Top>0.97cm</Top>
+              <Top>0.17639cm</Top>
               <Left>2.00278cm</Left>
               <Height>0.6cm</Height>
               <Width>3.21438cm</Width>
@@ -729,7 +739,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.97cm</Top>
+              <Top>0.17639cm</Top>
               <Left>25.00799cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
@@ -761,7 +771,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>0.97cm</Top>
+              <Top>0.17639cm</Top>
               <Left>23.29292cm</Left>
               <Height>0.6cm</Height>
               <Width>1.57396cm</Width>

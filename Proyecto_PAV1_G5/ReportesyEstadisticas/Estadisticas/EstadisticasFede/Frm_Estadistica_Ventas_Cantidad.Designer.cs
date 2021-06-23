@@ -140,7 +140,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.reporte_venta_cantidad);
             this.Name = "Frm_Estadistica_Ventas_Cantidad";
-            this.Text = "Frm_Estadistica_Ventas_Cantidad";
+            this.Text = "Estadistica Ventas";
             this.Load += new System.EventHandler(this.Frm_Estadistica_Forma_De_Pago_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

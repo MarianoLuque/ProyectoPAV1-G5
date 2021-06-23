@@ -40,8 +40,8 @@
             this.rb_fecha = new System.Windows.Forms.RadioButton();
             this.reporte_equipos = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rb_especial = new System.Windows.Forms.RadioButton();
             this.rb_simple = new System.Windows.Forms.RadioButton();
+            this.rb_especial = new System.Windows.Forms.RadioButton();
             this.cmb_tipo_factura = new Proyecto_PAV1_G5.Clases.ComboBox01();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -183,18 +183,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tipo de Equipo";
             // 
-            // rb_especial
-            // 
-            this.rb_especial.AutoSize = true;
-            this.rb_especial.Location = new System.Drawing.Point(251, 28);
-            this.rb_especial.Name = "rb_especial";
-            this.rb_especial.Size = new System.Drawing.Size(166, 24);
-            this.rb_especial.TabIndex = 56;
-            this.rb_especial.TabStop = true;
-            this.rb_especial.Text = "Equipos Especiales";
-            this.rb_especial.UseVisualStyleBackColor = true;
-            this.rb_especial.CheckedChanged += new System.EventHandler(this.rb_especial_CheckedChanged);
-            // 
             // rb_simple
             // 
             this.rb_simple.AutoSize = true;
@@ -206,6 +194,18 @@
             this.rb_simple.Text = "Equipos Simples";
             this.rb_simple.UseVisualStyleBackColor = true;
             this.rb_simple.CheckedChanged += new System.EventHandler(this.rb_simple_CheckedChanged);
+            // 
+            // rb_especial
+            // 
+            this.rb_especial.AutoSize = true;
+            this.rb_especial.Location = new System.Drawing.Point(251, 28);
+            this.rb_especial.Name = "rb_especial";
+            this.rb_especial.Size = new System.Drawing.Size(166, 24);
+            this.rb_especial.TabIndex = 56;
+            this.rb_especial.TabStop = true;
+            this.rb_especial.Text = "Equipos Especiales";
+            this.rb_especial.UseVisualStyleBackColor = true;
+            this.rb_especial.CheckedChanged += new System.EventHandler(this.rb_especial_CheckedChanged);
             // 
             // cmb_tipo_factura
             // 
@@ -236,6 +236,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.reporte_equipos);
             this.Name = "Frm_Estadistica_Equipos_Vendidos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Estadistica_Equipos_Vendidos";
             this.Load += new System.EventHandler(this.Frm_Estadistica_Equipos_Vendidos_Load);
             this.groupBox1.ResumeLayout(false);

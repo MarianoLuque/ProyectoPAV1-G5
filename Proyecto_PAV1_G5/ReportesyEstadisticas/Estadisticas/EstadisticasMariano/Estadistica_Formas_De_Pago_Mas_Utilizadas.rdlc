@@ -294,6 +294,7 @@
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
+                          <FontSize>12pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
@@ -562,7 +563,7 @@
               <ChartLegend Name="Default">
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>8pt</FontSize>
+                  <FontSize>12pt</FontSize>
                 </Style>
                 <ChartLegendTitle>
                   <Caption />
@@ -572,6 +573,7 @@
                     <TextAlign>Center</TextAlign>
                   </Style>
                 </ChartLegendTitle>
+                <AutoFitTextDisabled>true</AutoFitTextDisabled>
                 <HeaderSeparatorColor>Black</HeaderSeparatorColor>
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
@@ -581,13 +583,12 @@
                 <Caption>Formas de pago mas utilizadas</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                   <TextAlign>Left</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
                   <Color>#a6a6a6</Color>
                 </Style>
-                <Position>TopLeft</Position>
               </ChartTitle>
             </ChartTitles>
             <Palette>SeaGreen</Palette>

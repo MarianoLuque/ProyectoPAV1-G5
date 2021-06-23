@@ -48,7 +48,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!RPRestriccion.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -170,7 +172,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!razon_social.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -200,7 +204,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!cantidad.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -241,8 +247,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSetFormaDePagoYComprasPorProveedor</DataSetName>
-            <Top>0.96868cm</Top>
-            <Left>18.61312cm</Left>
+            <Top>1.93683cm</Top>
+            <Left>19.88312cm</Left>
             <Height>1.2cm</Height>
             <Width>8.92875cm</Width>
             <ZIndex>1</ZIndex>
@@ -287,6 +293,7 @@
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
+                          <FontSize>12pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
@@ -550,32 +557,13 @@
                 </Style>
               </ChartArea>
             </ChartAreas>
-            <ChartLegends>
-              <ChartLegend Name="Default">
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>8pt</FontSize>
-                </Style>
-                <Position>TopLeft</Position>
-                <ChartLegendTitle>
-                  <Caption />
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </ChartLegendTitle>
-                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
-                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
-              </ChartLegend>
-            </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
                 <Caption>Cantidad de compras por proveedor</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                   <TextAlign>Left</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
                   <Color>#a6a6a6</Color>
@@ -600,7 +588,7 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSetFormaDePagoYComprasPorProveedor</DataSetName>
-            <Top>2.53683cm</Top>
+            <Top>1.91748cm</Top>
             <Left>1.12541cm</Left>
             <Height>13.59896cm</Height>
             <Width>18.26854cm</Width>
@@ -618,7 +606,7 @@
         <Height>6.48958in</Height>
         <Style />
       </Body>
-      <Width>11.28633in</Width>
+      <Width>11.34326in</Width>
       <Page>
         <PageHeader>
           <Height>1.39375cm</Height>

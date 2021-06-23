@@ -74,7 +74,7 @@
             <rd:DefaultName>Textbox4</rd:DefaultName>
             <Top>0.60596cm</Top>
             <Height>0.81167cm</Height>
-            <Width>29.51076cm</Width>
+            <Width>26.25638cm</Width>
             <Style>
               <Border />
               <BackgroundColor>LightBlue</BackgroundColor>
@@ -261,8 +261,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>4.43443cm</Top>
-            <Left>22.00041cm</Left>
+            <Top>4.06401cm</Top>
+            <Left>19.28874cm</Left>
             <Height>1.2cm</Height>
             <Width>6.50813cm</Width>
             <ZIndex>1</ZIndex>
@@ -371,6 +371,7 @@
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
+                          <FontSize>12pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
@@ -639,8 +640,8 @@
                 <Caption>Gráfico de Barras de Tipos de Productos</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                   <TextAlign>Left</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
                   <Color>#a6a6a6</Color>
@@ -665,7 +666,7 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>4.43443cm</Top>
+            <Top>4.06401cm</Top>
             <Left>0.75849cm</Left>
             <Height>11.56167cm</Height>
             <Width>17.25964cm</Width>
@@ -680,10 +681,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>6.65794in</Height>
+        <Height>6.32461in</Height>
         <Style />
       </Body>
-      <Width>11.61841in</Width>
+      <Width>10.33842in</Width>
       <Page>
         <PageFooter>
           <Height>1.24354cm</Height>
@@ -742,7 +743,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.41438cm</Top>
-              <Left>26.00854cm</Left>
+              <Left>23.75638cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>1</ZIndex>
@@ -774,7 +775,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
               <Top>0.41438cm</Top>
-              <Left>24.06416cm</Left>
+              <Left>21.812cm</Left>
               <Height>0.6cm</Height>
               <Width>1.73271cm</Width>
               <ZIndex>2</ZIndex>

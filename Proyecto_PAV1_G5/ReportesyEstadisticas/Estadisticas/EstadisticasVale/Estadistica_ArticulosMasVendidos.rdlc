@@ -109,7 +109,10 @@
                         <Y>=Sum(Fields!Total.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
-                        <Style />
+                        <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
                       </ChartDataLabel>
@@ -371,37 +374,17 @@
                 </Style>
               </ChartArea>
             </ChartAreas>
-            <ChartLegends>
-              <ChartLegend Name="Default">
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>8pt</FontSize>
-                </Style>
-                <Position>TopLeft</Position>
-                <ChartLegendTitle>
-                  <Caption />
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </ChartLegendTitle>
-                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
-                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
-              </ChartLegend>
-            </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
                 <Caption>Artículos mas vendidos</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                   <TextAlign>Left</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
                   <Color>#a6a6a6</Color>
                 </Style>
-                <Position>TopLeft</Position>
               </ChartTitle>
             </ChartTitles>
             <Palette>Pacific</Palette>
@@ -422,7 +405,7 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSetArticulos</DataSetName>
-            <Top>4.73287cm</Top>
+            <Top>3.14537cm</Top>
             <Left>0.84349cm</Left>
             <Height>11.56167cm</Height>
             <Width>17.25964cm</Width>
@@ -444,14 +427,16 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!RPRestriccion.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox17</rd:DefaultName>
-            <Top>2.91469cm</Top>
+            <Top>1.96219cm</Top>
             <Left>0.84349cm</Left>
             <Height>0.26042in</Height>
             <Width>11.28633in</Width>
@@ -642,7 +627,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSetArticulos</DataSetName>
-            <Top>4.73287cm</Top>
+            <Top>3.14537cm</Top>
             <Left>18.65375cm</Left>
             <Height>1.2cm</Height>
             <Width>8.92875cm</Width>
@@ -654,7 +639,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>6.65794in</Height>
+        <Height>5.92877in</Height>
         <Style />
       </Body>
       <Width>11.61841in</Width>
