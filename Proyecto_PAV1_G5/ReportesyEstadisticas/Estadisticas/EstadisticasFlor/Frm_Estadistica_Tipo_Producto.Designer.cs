@@ -81,7 +81,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(275, 57);
+            this.label2.Location = new System.Drawing.Point(499, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 20);
             this.label2.TabIndex = 3;
@@ -90,7 +90,7 @@
             // btn_limpiar
             // 
             this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_limpiar.Location = new System.Drawing.Point(554, 63);
+            this.btn_limpiar.Location = new System.Drawing.Point(938, 63);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(75, 32);
             this.btn_limpiar.TabIndex = 25;
@@ -101,7 +101,7 @@
             // btn_calcular
             // 
             this.btn_calcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_calcular.Location = new System.Drawing.Point(658, 63);
+            this.btn_calcular.Location = new System.Drawing.Point(1042, 63);
             this.btn_calcular.Name = "btn_calcular";
             this.btn_calcular.Size = new System.Drawing.Size(75, 32);
             this.btn_calcular.TabIndex = 24;
@@ -114,13 +114,13 @@
             this.rv_tipo_producto.Location = new System.Drawing.Point(13, 106);
             this.rv_tipo_producto.Name = "rv_tipo_producto";
             this.rv_tipo_producto.ServerReport.BearerToken = null;
-            this.rv_tipo_producto.Size = new System.Drawing.Size(720, 498);
+            this.rv_tipo_producto.Size = new System.Drawing.Size(1104, 518);
             this.rv_tipo_producto.TabIndex = 26;
             // 
             // txt_fecha
             // 
             this.txt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fecha.Location = new System.Drawing.Point(380, 22);
+            this.txt_fecha.Location = new System.Drawing.Point(604, 33);
             this.txt_fecha.Mask = "00/00/0000";
             this.txt_fecha.Name = "txt_fecha";
             this.txt_fecha.ReadOnly = true;
@@ -132,7 +132,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(292, 25);
+            this.label1.Location = new System.Drawing.Point(516, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 20);
             this.label1.TabIndex = 44;
@@ -142,7 +142,7 @@
             // 
             this.cmb_tipo_factura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_tipo_factura.FormattingEnabled = true;
-            this.cmb_tipo_factura.Location = new System.Drawing.Point(380, 55);
+            this.cmb_tipo_factura.Location = new System.Drawing.Point(604, 66);
             this.cmb_tipo_factura.Name = "cmb_tipo_factura";
             this.cmb_tipo_factura.Pp_Conseleccion = false;
             this.cmb_tipo_factura.Pp_MensajeError = null;
@@ -155,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 616);
+            this.ClientSize = new System.Drawing.Size(1129, 636);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_fecha);
             this.Controls.Add(this.cmb_tipo_factura);

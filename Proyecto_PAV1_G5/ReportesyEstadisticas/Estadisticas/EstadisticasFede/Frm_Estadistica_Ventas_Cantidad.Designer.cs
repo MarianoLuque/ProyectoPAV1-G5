@@ -42,7 +42,7 @@
             // txt_fecha
             // 
             this.txt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fecha.Location = new System.Drawing.Point(458, 40);
+            this.txt_fecha.Location = new System.Drawing.Point(727, 40);
             this.txt_fecha.Mask = "00/00/0000";
             this.txt_fecha.Name = "txt_fecha";
             this.txt_fecha.ReadOnly = true;
@@ -53,7 +53,7 @@
             // btn_limpiar
             // 
             this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_limpiar.Location = new System.Drawing.Point(847, 40);
+            this.btn_limpiar.Location = new System.Drawing.Point(938, 40);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(75, 27);
             this.btn_limpiar.TabIndex = 41;
@@ -64,7 +64,7 @@
             // btn_calcular
             // 
             this.btn_calcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_calcular.Location = new System.Drawing.Point(847, 72);
+            this.btn_calcular.Location = new System.Drawing.Point(1042, 40);
             this.btn_calcular.Name = "btn_calcular";
             this.btn_calcular.Size = new System.Drawing.Size(75, 28);
             this.btn_calcular.TabIndex = 40;
@@ -76,7 +76,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(370, 43);
+            this.label1.Location = new System.Drawing.Point(639, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 20);
             this.label1.TabIndex = 38;
@@ -87,7 +87,7 @@
             this.groupBox1.Controls.Add(this.rb_todos);
             this.groupBox1.Controls.Add(this.rb_fecha);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(191, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(332, 68);
             this.groupBox1.TabIndex = 37;
@@ -122,17 +122,17 @@
             // 
             this.reporte_venta_cantidad.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.ReportesyEstadísticas.Estadisticas.EstadisticasMariano.Estadisti" +
     "ca_Formas_De_Pago_Mas_Utilizadas.rdlc";
-            this.reporte_venta_cantidad.Location = new System.Drawing.Point(12, 106);
+            this.reporte_venta_cantidad.Location = new System.Drawing.Point(12, 86);
             this.reporte_venta_cantidad.Name = "reporte_venta_cantidad";
             this.reporte_venta_cantidad.ServerReport.BearerToken = null;
-            this.reporte_venta_cantidad.Size = new System.Drawing.Size(910, 513);
+            this.reporte_venta_cantidad.Size = new System.Drawing.Size(1105, 533);
             this.reporte_venta_cantidad.TabIndex = 36;
             // 
             // Frm_Estadistica_Ventas_Cantidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 641);
+            this.ClientSize = new System.Drawing.Size(1129, 636);
             this.Controls.Add(this.txt_fecha);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_calcular);

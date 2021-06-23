@@ -46,7 +46,7 @@
             this.reporte_compras_proveedor.Location = new System.Drawing.Point(12, 82);
             this.reporte_compras_proveedor.Name = "reporte_compras_proveedor";
             this.reporte_compras_proveedor.ServerReport.BearerToken = null;
-            this.reporte_compras_proveedor.Size = new System.Drawing.Size(1099, 338);
+            this.reporte_compras_proveedor.Size = new System.Drawing.Size(1099, 542);
             this.reporte_compras_proveedor.TabIndex = 0;
             // 
             // txt_fecha
@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 450);
+            this.ClientSize = new System.Drawing.Size(1129, 636);
             this.Controls.Add(this.txt_fecha);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_calcular);

@@ -44,7 +44,7 @@
             this.rp_empleados_ventas.Location = new System.Drawing.Point(22, 89);
             this.rp_empleados_ventas.Name = "rp_empleados_ventas";
             this.rp_empleados_ventas.ServerReport.BearerToken = null;
-            this.rp_empleados_ventas.Size = new System.Drawing.Size(995, 416);
+            this.rp_empleados_ventas.Size = new System.Drawing.Size(1095, 535);
             this.rp_empleados_ventas.TabIndex = 0;
             // 
             // groupBox1
@@ -86,7 +86,7 @@
             // txt_fecha
             // 
             this.txt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fecha.Location = new System.Drawing.Point(487, 38);
+            this.txt_fecha.Location = new System.Drawing.Point(670, 42);
             this.txt_fecha.Mask = "00/00/0000";
             this.txt_fecha.Name = "txt_fecha";
             this.txt_fecha.Size = new System.Drawing.Size(100, 26);
@@ -97,7 +97,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(427, 41);
+            this.label1.Location = new System.Drawing.Point(610, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 2;
@@ -106,7 +106,7 @@
             // btn_limpiar
             // 
             this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpiar.Location = new System.Drawing.Point(660, 41);
+            this.btn_limpiar.Location = new System.Drawing.Point(944, 41);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(78, 28);
             this.btn_limpiar.TabIndex = 3;
@@ -117,7 +117,7 @@
             // btn_generar
             // 
             this.btn_generar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_generar.Location = new System.Drawing.Point(755, 41);
+            this.btn_generar.Location = new System.Drawing.Point(1039, 41);
             this.btn_generar.Name = "btn_generar";
             this.btn_generar.Size = new System.Drawing.Size(78, 28);
             this.btn_generar.TabIndex = 3;
@@ -129,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 517);
+            this.ClientSize = new System.Drawing.Size(1129, 636);
             this.Controls.Add(this.btn_generar);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.label1);

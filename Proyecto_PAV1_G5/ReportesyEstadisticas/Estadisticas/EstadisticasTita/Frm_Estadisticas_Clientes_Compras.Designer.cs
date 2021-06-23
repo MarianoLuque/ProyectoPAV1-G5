@@ -42,7 +42,7 @@
             // btn_generar
             // 
             this.btn_generar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_generar.Location = new System.Drawing.Point(747, 43);
+            this.btn_generar.Location = new System.Drawing.Point(1028, 43);
             this.btn_generar.Name = "btn_generar";
             this.btn_generar.Size = new System.Drawing.Size(78, 28);
             this.btn_generar.TabIndex = 7;
@@ -53,7 +53,7 @@
             // btn_limpiar
             // 
             this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpiar.Location = new System.Drawing.Point(652, 43);
+            this.btn_limpiar.Location = new System.Drawing.Point(933, 43);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(78, 28);
             this.btn_limpiar.TabIndex = 8;
@@ -65,7 +65,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(419, 43);
+            this.label1.Location = new System.Drawing.Point(586, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 6;
@@ -74,7 +74,7 @@
             // txt_fecha
             // 
             this.txt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fecha.Location = new System.Drawing.Point(479, 40);
+            this.txt_fecha.Location = new System.Drawing.Point(646, 44);
             this.txt_fecha.Mask = "00/00/0000";
             this.txt_fecha.Name = "txt_fecha";
             this.txt_fecha.Size = new System.Drawing.Size(100, 26);
@@ -86,7 +86,7 @@
             this.groupBox1.Controls.Add(this.rb_facturas);
             this.groupBox1.Controls.Add(this.rb_fecha);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(14, 14);
+            this.groupBox1.Location = new System.Drawing.Point(21, 14);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(392, 71);
             this.groupBox1.TabIndex = 5;
@@ -121,17 +121,17 @@
             // 
             this.rp_cliente_compra.LocalReport.ReportEmbeddedResource = "Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasTita.Estadisticas" +
     "_Cliente_Compras.rdlc";
-            this.rp_cliente_compra.Location = new System.Drawing.Point(21, 106);
+            this.rp_cliente_compra.Location = new System.Drawing.Point(21, 91);
             this.rp_cliente_compra.Name = "rp_cliente_compra";
             this.rp_cliente_compra.ServerReport.BearerToken = null;
-            this.rp_cliente_compra.Size = new System.Drawing.Size(903, 387);
+            this.rp_cliente_compra.Size = new System.Drawing.Size(1096, 533);
             this.rp_cliente_compra.TabIndex = 9;
             // 
             // Frm_Estadisticas_Clientes_Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 505);
+            this.ClientSize = new System.Drawing.Size(1129, 636);
             this.Controls.Add(this.rp_cliente_compra);
             this.Controls.Add(this.btn_generar);
             this.Controls.Add(this.btn_limpiar);

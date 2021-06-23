@@ -45,16 +45,16 @@
             // 
             // reporte_articulos
             // 
-            this.reporte_articulos.Location = new System.Drawing.Point(12, 147);
+            this.reporte_articulos.Location = new System.Drawing.Point(12, 121);
             this.reporte_articulos.Name = "reporte_articulos";
             this.reporte_articulos.ServerReport.BearerToken = null;
-            this.reporte_articulos.Size = new System.Drawing.Size(762, 365);
+            this.reporte_articulos.Size = new System.Drawing.Size(1105, 503);
             this.reporte_articulos.TabIndex = 0;
             // 
             // txt_fecha
             // 
             this.txt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_fecha.Location = new System.Drawing.Point(613, 21);
+            this.txt_fecha.Location = new System.Drawing.Point(719, 28);
             this.txt_fecha.Mask = "00/00/0000";
             this.txt_fecha.Name = "txt_fecha";
             this.txt_fecha.Size = new System.Drawing.Size(100, 26);
@@ -65,7 +65,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(524, 24);
+            this.label2.Location = new System.Drawing.Point(630, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 3;
@@ -140,7 +140,7 @@
             this.cmb_tipo_factura.Enabled = false;
             this.cmb_tipo_factura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_tipo_factura.FormattingEnabled = true;
-            this.cmb_tipo_factura.Location = new System.Drawing.Point(613, 60);
+            this.cmb_tipo_factura.Location = new System.Drawing.Point(719, 67);
             this.cmb_tipo_factura.Name = "cmb_tipo_factura";
             this.cmb_tipo_factura.Pp_Conseleccion = false;
             this.cmb_tipo_factura.Pp_MensajeError = null;
@@ -153,7 +153,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(508, 63);
+            this.label1.Location = new System.Drawing.Point(614, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 20);
             this.label1.TabIndex = 35;
@@ -162,7 +162,7 @@
             // btn_limpiar
             // 
             this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_limpiar.Location = new System.Drawing.Point(534, 109);
+            this.btn_limpiar.Location = new System.Drawing.Point(938, 64);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(75, 32);
             this.btn_limpiar.TabIndex = 38;
@@ -173,7 +173,7 @@
             // btn_calcular
             // 
             this.btn_calcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_calcular.Location = new System.Drawing.Point(638, 109);
+            this.btn_calcular.Location = new System.Drawing.Point(1042, 64);
             this.btn_calcular.Name = "btn_calcular";
             this.btn_calcular.Size = new System.Drawing.Size(75, 32);
             this.btn_calcular.TabIndex = 37;
@@ -185,7 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 524);
+            this.ClientSize = new System.Drawing.Size(1129, 636);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_calcular);
             this.Controls.Add(this.cmb_tipo_factura);

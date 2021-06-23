@@ -50,7 +50,7 @@
             // btn_limpiar
             // 
             this.btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_limpiar.Location = new System.Drawing.Point(557, 130);
+            this.btn_limpiar.Location = new System.Drawing.Point(938, 118);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(75, 32);
             this.btn_limpiar.TabIndex = 54;
@@ -61,7 +61,7 @@
             // btn_calcular
             // 
             this.btn_calcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_calcular.Location = new System.Drawing.Point(661, 130);
+            this.btn_calcular.Location = new System.Drawing.Point(1042, 118);
             this.btn_calcular.Name = "btn_calcular";
             this.btn_calcular.Size = new System.Drawing.Size(75, 32);
             this.btn_calcular.TabIndex = 53;
@@ -73,7 +73,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(531, 84);
+            this.label1.Location = new System.Drawing.Point(638, 124);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 20);
             this.label1.TabIndex = 51;
@@ -82,7 +82,7 @@
             // txt_fecha
             // 
             this.txt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_fecha.Location = new System.Drawing.Point(636, 42);
+            this.txt_fecha.Location = new System.Drawing.Point(743, 82);
             this.txt_fecha.Mask = "00/00/0000";
             this.txt_fecha.Name = "txt_fecha";
             this.txt_fecha.Size = new System.Drawing.Size(100, 26);
@@ -93,7 +93,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(547, 45);
+            this.label2.Location = new System.Drawing.Point(654, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 49;
@@ -165,10 +165,10 @@
             // 
             // reporte_equipos
             // 
-            this.reporte_equipos.Location = new System.Drawing.Point(33, 187);
+            this.reporte_equipos.Location = new System.Drawing.Point(26, 156);
             this.reporte_equipos.Name = "reporte_equipos";
             this.reporte_equipos.ServerReport.BearerToken = null;
-            this.reporte_equipos.Size = new System.Drawing.Size(762, 341);
+            this.reporte_equipos.Size = new System.Drawing.Size(1091, 468);
             this.reporte_equipos.TabIndex = 47;
             // 
             // groupBox2
@@ -176,7 +176,7 @@
             this.groupBox2.Controls.Add(this.rb_simple);
             this.groupBox2.Controls.Add(this.rb_especial);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(26, 115);
+            this.groupBox2.Location = new System.Drawing.Point(546, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(487, 58);
             this.groupBox2.TabIndex = 56;
@@ -212,7 +212,7 @@
             this.cmb_tipo_factura.Enabled = false;
             this.cmb_tipo_factura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_tipo_factura.FormattingEnabled = true;
-            this.cmb_tipo_factura.Location = new System.Drawing.Point(636, 81);
+            this.cmb_tipo_factura.Location = new System.Drawing.Point(743, 121);
             this.cmb_tipo_factura.Name = "cmb_tipo_factura";
             this.cmb_tipo_factura.Pp_Conseleccion = false;
             this.cmb_tipo_factura.Pp_MensajeError = null;
@@ -225,7 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 540);
+            this.ClientSize = new System.Drawing.Size(1129, 636);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_calcular);
@@ -237,7 +237,7 @@
             this.Controls.Add(this.reporte_equipos);
             this.Name = "Frm_Estadistica_Equipos_Vendidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_Estadistica_Equipos_Vendidos";
+            this.Text = "Estadistica Equipos mas Vendidos";
             this.Load += new System.EventHandler(this.Frm_Estadistica_Equipos_Vendidos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
