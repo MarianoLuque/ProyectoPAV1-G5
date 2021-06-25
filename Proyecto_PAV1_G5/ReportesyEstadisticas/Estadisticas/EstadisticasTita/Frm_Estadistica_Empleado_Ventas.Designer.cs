@@ -138,7 +138,7 @@
             this.Controls.Add(this.rp_empleados_ventas);
             this.Name = "Frm_Estadistica_Empleado_Ventas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_Estadistica_Empleado_Ventas";
+            this.Text = "Estadistica Empleados con más Ventas";
             this.Load += new System.EventHandler(this.Frm_Estadistica_Empleado_Ventas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

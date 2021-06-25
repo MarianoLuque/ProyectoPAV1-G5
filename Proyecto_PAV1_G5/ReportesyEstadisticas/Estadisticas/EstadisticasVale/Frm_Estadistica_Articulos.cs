@@ -24,6 +24,8 @@ namespace Proyecto_PAV1_G5.ReportesyEstadisticas.Estadisticas.EstadisticasVale
         private void Frm_Estadistica_Articulos_Load(object sender, EventArgs e)
         {
             cmb_tipo_factura.CargarCombo(venta.DatosComboTipoFactura());
+            cmb_tipo_factura.Enabled = false;
+            txt_fecha.ReadOnly = true;
             this.reporte_articulos.RefreshReport();
         }
 

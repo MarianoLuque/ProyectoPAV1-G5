@@ -140,7 +140,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Frm_Estadisticas_Clientes_Compras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_Estadisticas_Clientes_Compras";
+            this.Text = "Estadisticas Clientes con más Compras";
             this.Load += new System.EventHandler(this.Frm_Estadisticas_Clientes_Compras_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

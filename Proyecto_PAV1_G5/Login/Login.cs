@@ -74,23 +74,6 @@ namespace Proyecto_PAV1_G5
 
         }
 
-        // BOTON PARA VER CONTRASEÑA 
-        //private void btn_Ver_Contraeña_Click(object sender, EventArgs e)
-        //{
-            
-        //    if (txt_password.PasswordChar == '*')
-        //    {
-        //        txt_password.PasswordChar = '\0';
-        //        btn_ocultar_contrasena.BackgroundImage = Image.FromFile("D:\\nano\\Facultad\\UTN\\TERCER AÑO\\PAV\\Grupo 5\\Proyecto_PAV1_G5\\ProyectoPAV1-G5\\Proyecto_PAV1_G5\\Resources\\visto.png");
-        //    }
-        //    else
-        //    {
-        //        txt_password.PasswordChar = '*';
-        //        btn_ocultar_contrasena.BackgroundImage = Image.FromFile("D:\\nano\\Facultad\\UTN\\TERCER AÑO\\PAV\\Grupo 5\\Proyecto_PAV1_G5\\ProyectoPAV1-G5\\Proyecto_PAV1_G5\\Resources\\novistoo.png");
-        //    }
-
-        //}
-
         private void btn_ocultar_contrasena_Click(object sender, EventArgs e)
         {
             txt_password.PasswordChar = '\0';
@@ -109,5 +92,6 @@ namespace Proyecto_PAV1_G5
         {
             btn_ver_contrasena.Hide();
         }
+
     }
 }
